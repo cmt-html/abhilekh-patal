@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="scss/main.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css">
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="icon" type="image/x-icon" href="images/favicon-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<title>Registration</title>
+<style>
+    .ui-widget.ui-widget-content {
+        border: 0px solid #fff;
+        background-color: #ccc;
+        margin: 31px 0px 15px 11px;
+        width: 62%;
+        position: absolute;
+        top: 16px !important;
+        z-index: 9999999999;
+        margin: auto auto;
+        margin-left: auto;
+        right: 15px;
+        margin-left: auto;
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl bg-light fixed-top">
+            <div class="container padding-off ">
+                <a href="#" class="navbar-brand"><img src="images/logo.png" /></a>
+                <div class="float-end ms-auto left-20"><img src="images/searchicon.png" onclick="search()" class="search-panel-icon" /></div>
+                <!-- <form class="search-panel">
+                    <div class="crossIcon">
+                        <input class="form-control searchdiv" type="search" id="tags" aria-label="Search" placeholder="SEARCH">
+                        <img src="images/searchicon.png" class="search-panel-icon" />
+                        <span><img src="images/crss-icon.png" class="crossIconclosed"></span>
+                    </div>
+                </form>   -->
+        </nav>
+    </header>
+
+    <section>
+        <div class="row pt-5">
+            <div class="col-md-6">
+                <div class=" container pt-5" style="width: 60%">
+                    <h1 class="text-center logintile">REGISTER</h1>
+                    <!-- tab-nav start-->
+                    <div class="navtabstyle pt-3 pb-4">
+                        <ul class="nav nav-tabs nav-justified " id="myTab" role="tablist" style="border-bottom: 1px solid #BCBCBC;">
+                            <li class="nav-item">
+                                <a class="nav-link active navtabstyle disabled" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">User</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navtabstyle disabled" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Institute</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="myTabContent">
+                        <!-- tab-nav end-->
+                        <!-- registation  page  user  start-->
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <form>
+                                <div classs="regform">
+                                    <div class="mb-3">
+                                        <label for="exampleInputName" class="form-label labelstyle">First Name </label>
+                                        <input type="email" class="form-control logininputs" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label labelstyle">Last Name </label>
+                                        <input type="text" class="form-control logininputs" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label labelstyle">Mobile No. </label>
+                                        <input type="tel" pattern="[1-9]{1}[0-9]{9}" class="form-control logininputs" id="typePhone" aria-describedby="phonelHelp" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label labelstyle">Country </label>
+                                        <input type="text" class="form-control logininputs" id="examplecountry" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label labelstyle">Email Id </label>
+                                        <input type="email" class="form-control logininputs" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label labelstyle">Password</label>
+                                        <input type="password" class="form-control logininputs" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="pb-4">
+                                        <label for="exampleInputPassword1" class="form-label labelstyle">Confirm Password </label>
+                                        <input type="password" class="form-control logininputs" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="text-center pb-4">
+                                        <button type="submit" class="btn btn-primary regbtn">Register</button>
+                                    </div>
+                                    <div class="signup-link text-center accountfont pb-4"> Already have an account? <a class="reg-page" href="/login.html">Login</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- registation  page  user  end-->
+
+                        <!-- registation  page  institute  start-->
+                        <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <form>
+                                <div class="regform">
+                                    <div class="row jumbotron box8">
+                                        <div class="col-sm-6 form-group">
+                                            <div class="mb-3">
+                                                <label for="exampleInputName" class="form-label labelstyle">First Name </label>
+                                                <input type="text" class="form-control logininputs" id="exampleInputName" aria-describedby="emailHelp">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 form-group">
+                                            <div class="mb-3">
+                                                <label for="exampleInputName" class="form-label labelstyle">Last Name </label>
+                                                <input type="text" class="form-control logininputs" id="exampleInputName" aria-describedby="emailHelp">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputNumber" class="form-label labelstyle">Mobile No. </label>
+                                        <input type="text" class="form-control logininputs" id="exampleInputNumber" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label labelstyle">Email Id </label>
+                                        <input type="email" class="form-control logininputs" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="row jumbotron box8">
+                                        <div class="col-sm-6 form-group">
+                                            <div class="mb-3">
+                                                <label for="exampleInputtext" class="form-label labelstyle">Country </label>
+                                                <input type="text" class="form-control logininputs" id="exampleInputtext" aria-describedby="emailHelp">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 form-group">
+                                            <div class="mb-3">
+                                                <label for="exampleInputName" class="form-label labelstyle">Passport Number </label>
+                                                <input type="text" class="form-control logininputs" id="exampleInputName" aria-describedby="emailHelp">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row jumbotron box8">
+                                        <div class="col-sm-6 form-group">
+                                            <div class="mb-3">
+                                                <label for="exampleInputtext" class="form-label labelstyle">City</label>
+                                                <input type="text" class="form-control logininputs" id="exampleInputtext" aria-describedby="emailHelp">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 form-group">
+                                            <div class="mb-3">
+                                                <label for="exampleInputName" class="form-label labelstyle">State </label>
+                                                <input type="text" class="form-control logininputs" id="exampleInputName" aria-describedby="emailHelp">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label labelstyle">Password</label>
+                                        <input type="password" class="form-control logininputs" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="pb-3">
+                                        <label for="exampleInputPassword1" class="form-label labelstyle">Confirm Password </label>
+                                        <input type="password" class="form-control logininputs" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="form-check">
+                                        <div class="pb-4">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label chechbox" for="exampleCheck1">Accept Agreement</label>
+                                        </div>
+                                    </div>
+                                    <div class="text-center pb-4">
+                                        <button type="submit" class="btn btn-primary regbtn">Register</button>
+                                    </div>
+                                    <div class="signup-link text-center accountfont pb-4"> Already have an account? <a class="reg-page" href="/login.html">Login</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- registation  page  institute end -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 ">
+                <div class="bg-background pt-5">
+                    <div class="container pt-4" style="width: 85%">
+                        <div id="content">
+                            <div id="section1" class="content-section">
+                                <div class="card text-center">
+                                    <a class="text-center pt-5 " href="">
+                                        <img class="img-fluid  pb-md-4" src="images/test.png" alt="" max-width="100%" max-height="100px" class="d-inline-block align-center ">
+                                    </a>
+                                </div>
+                                <div class="p-md-4   text-center">
+                                    <h class=" card-titles headstyle pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt magna aliqua. </h>
+                                    <p class="  card-subtitle pstyle pt-2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit i </p>
+                                </div>
+                                <ul class=" list-group leftRight-scroll list-group-horizontal text-center">
+                                    <li class="p-2">
+                                        <a class="iconcolour " href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="p-2">
+                                        <a class="iconcolour " href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- registation  page  -->
+
+<!--   
+    <script src='https://www.google.com/recaptcha/api.js'></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

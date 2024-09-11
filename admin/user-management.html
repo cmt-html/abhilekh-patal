@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../scss/main-admin.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../images/favicon-icon.png">
+    <link rel="stylesheet" href="../css/jquery.dataTables.min.css">
+    <title>User Management</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl bg-light fixed-top">
+            <div class="container padding-off ">
+                <a href="../index.html" class="navbar-brand"><img src="../images/logo.png" /></a>
+                    <div class="float-end ms-auto left-20"><img src="../images/searchicon.png" onclick="search()" class="search-panel-icon" /></div>
+                        <form class="search-panel">
+                            <div class="crossIcon">
+                                <input class="form-control searchdiv" type="search" id="tags" aria-label="Search" placeholder="SEARCH">
+                                <img src="../images/searchicon.png" class="search-panel-icon" />
+                                <span><img src="../images/crss-icon.png" class="crossIconclosed"></span>
+                            </div>
+                            <div class="row">
+                                <div class="advance-serach mb-3 float-start ">
+                                    <a href="#" class="col-md-6 advance-serach-active">ADVANCE SEARCH</a>
+                                </div>
+                            </div>
+                            <div class="form-search">
+                                <div class="row">
+                                    <div>
+                                        <div class="row">
+                                            <div class="inputGroup col-md-12 col-12  mb-3">
+                                                <label>Category</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12  mb-3">
+                                                <label>Document Type</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12  mb-3">
+                                                <label>Department</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12  mb-3">
+                                                <label>Branch</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12 mb-3 ">
+                                                <label>Place</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12 mb-3 ">
+                                                <label>Language</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12 mb-3 ">
+                                                <label>Category</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12 mb-3 ">
+                                                <label>Year of Publication</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="inputGroup range-slider-div col-md-12">
+                                            <div class=" position-relative">
+                                                <span class="col-md-12 col-lg-2 pb-2 select-fonts"> Year</span>
+                                                <div id="slider-range-mobile"></div>
+                                                <div class=" position-relative">
+                                                    <li class="  float-start widthinput" style="list-style: none;"><span class="fs">From </span><input type="text" name="specificFromYear" id="amount14" type="number" class="form-control rageinput" value="1245"></li>
+                                                    <li class="  float-end widthinput" style="float: left; list-style: none;"><span class="fsfs">To </span><input type="text" name="specificToYear" id="amount14" type="number" class="form-control rageinput" value="2000"></li>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="inputGroup col-md-6">
+                                                    <label class="adlebel mb-2">Keyword</label>
+                                                    <input type="text" class="form-control input-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type here">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" buttonadvancesearch-mobile ">
+                                            <div>
+                                                <button class="resetbutton text-align-end">Reset</button>
+                                                <button class="applybutton ">Search</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                                <img src="../images/menu-icon.png" />
+                        </button>
+                        <div class="collapse navbar-collapse ul-menu-list " id="navbarSupportedContent">
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                                <ul>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    <div class="left-div ">
+                                        <li>
+                                            <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" href="../grid-view.html">EXPLORE</a>
+                                        </li>
+                                        <li class="mobile-lang">
+                                            <div class="dropdown dropdown-li">
+                                                <button class="textlanguage  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    ENG
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">English</a></li>
+                                                    <li><a class="dropdown-item" href="#">Hindi</a></li>
+                                                    <li><a class="dropdown-item" href="#">Marathi</a></li>
+                                                </ul>
+                                            </div>   
+                                        </li>
+                                    </div>
+                                    <div class="right-div">
+                                        <ul>
+                                            <li>
+                                                <form>
+                                                    <div class="row ">
+                                                        <div class="searchinput col-md-6 col-6 col-lg-6 col-xl-6">
+                                                            <span class="search"></span>
+                                                            <input class="form-control" type="search" aria-label="Search" placeholder="SEARCH">
+                                                            <span class="closedIcon-search"><img id="searchCloseIconImg" src="../images/closed-search.png" /></span>
+                                                        </div>
+                                                        <a id="aAdvanceSearch" class="searchButton col-md-6 col-6 col-lg-6 col-xl-6" type="submit">ADVANCE SEARCH</a>
+                                                        <div id="containerAdvanceSearch" class="asvanceSearch col-md-12">
+                                                            <div class="row pb-4">
+                                                                <div class="AdSearch text-align-start">Advance Search </div>
+                                                            </div>
+                                                            <div class="row mb-3 ">
+                                                                <div class="inputGroup col-md-3  ">
+                                                                    <label class="adlebel mb-2">Category</label>
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option default selected>-Select or type-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="inputGroup col-md-3">
+                                                                    <label class="adlebel mb-2">Document Type</label>
+                                                                    <select class="form-select " aria-label="Default select example">
+                                                                        <option default selected>-Select-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="inputGroup col-md-3">
+                                                                    <label class="adlebel mb-2">Department</label>
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option default selected>-Select or type-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="inputGroup col-md-3">
+                                                                    <label class="adlebel mb-2 ">Branch</label>
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option default selected>-Select or type-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3 ">
+                                                                <div class="inputGroup col-md-3  ">
+                                                                    <label class="adlebel mb-2">Place</label>
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option default selected>-Select or type-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="inputGroup col-md-3">
+                                                                    <label class="adlebel mb-2">Language</label>
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option default selected>-Select or type-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="inputGroup col-md-3 position-relative">
+                                                                    <span class="border-div"></span>
+                                                                    <label class="adlebel mb-2">Year of Publication</label>
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option default selected>-Select or type-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="inputGroup col-md-3">
+                                                                    <div class="row position-relative">
+                                                                        <span class="col-md-12 pb-2 select-fonts"> Year</span>
+                                                                        <div id="slider-range-home"></div>
+                                                                        <div class="col-md-6 " style="padding-left: 10px;"><span class="fs">From </span><input type="text" name="specificFromYear" id="amount12" type="number" class="form-control rageinput" value="1245"></div>
+                                                                        <div class="col-md-6 text-right float-end align-items-right"><span class="fsfs">To </span><input type="text" name="specificToYear" id="amount12" type="number" class="form-control rageinput" value="2000"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row search-top-div">
+                                                                <div class="inputGroup col-md-6">
+                                                                    <label class="adlebel mb-2">Keyword</label>
+                                                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type here">
+                                                                </div>
+                                                                <div class=" buttonadvancesearch ">
+                                                                    <div>
+                                                                        <button class="resetbutton text-align-end">Reset</button>
+                                                                        <button class="applybutton ">Search</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <a href="#" id="" class="text-decoration-underline incresefont decrease">-A </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" id="" class="text-decoration-underline incresefont">A </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-decoration-underline increase-size increase">+A </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="../images/color-change.png"> </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="../images/bell-icon.png"> </a>
+                                            </li>
+                                            <li class="deskstop-lang">
+                                                <div class="dropdown dropdown-li">
+                                                    <button class="textlanguage  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        ENG
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                        <li><a class="dropdown-item" href="#">English</a></li>
+                                                        <li><a class="dropdown-item" href="#">Hindi</a></li>
+                                                        <li><a class="dropdown-item" href="#">Marathi</a></li>
+                                                    </ul>
+                                                </div>   
+                                            </li>
+                                            <li class="text-login-text">
+                                                <a href="#">Welcome Admin</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="accordion-menu">
+                                        <li>
+                                            <div class="dropdownlink"> Explore
+                                                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li><a href="../grid-view.html">Explore</a><span class="new">New</span></li>
+                                                <li><a href="../grid-view.html">Collection</a></li>
+                                                <li><a href="../nexus-search.html">Nexus</a><span class="new">New</span></li>
+                                                <li><a href="#">Events</a></li>
+                                                <li><a href="#">Exhibitions</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink"> My Library
+                                                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li><a href="../My-Labrary.html">My Library</a></li>
+                                                <li><a href="account-seiing-lib-Selected-Tag.html">My Tags</a></li>
+                                                <li><a href="#">My Bookmarks</a></li>
+                                                <li><a href="#">Scholar Section</a><span class="new">New</span></li>
+                                                <li><a href="../plan-visit.html">Plan your visit to NAI</a><span class="new">New</span></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink"> About Us
+                                                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Associated Repository</a></li>
+                                                <li><a href="../benifits.html">Benefits</a></li>
+                                                <li><a href="#">Tips</a></li>
+                                                <li><a href="../faq.html">FAQ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink">Account
+                                                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li><a href="account-setting-user-admin.html">My Account</a></li>
+                                                <li><a href="">Admin Panel</a></li>
+                                                <li><a href="upload.html">Upload</a></li>
+                                                <li><a href="records-awaiting-verification-new.html">Records Awaiting Verification</a></li>
+                                                <li><a href="#">Logout</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink">Contact Us
+                                                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li><a href="#">Action 1</a></li>
+                                                <li><a href="#">Action 2</a></li>
+                                                <li><a href="#">Action 3</a></li>
+                                            </ul>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav-item fontstyle ">
+                            <a class="nav-link text-color login-text" href="#">Welcome Admin</a>
+                        </div>
+                        <div class="nav-item dropdown dropdown-mega position-static demo-dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"><img src="../images/menu-icon.png" /></a>
+                            <div class="dropdown-menu shadow megahmenudrop m-2">
+                                <div class="mega-content px-4">
+                                    <div class="container ">
+                                        <div class="row row-cols-5 ">
+                                            <div class="flex-item col1">
+                                                <h5 class="">Explore</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="../grid-view.html"> Explore</a><span class="new">New</span></li>
+                                                    <li><a href="collections.html">Collection</a></li>
+                                                    <li><a href="../nexus-search.html">Nexus</a><span class="new">New</span></li>
+                                                    <li><a href="#">Events</a></li>
+                                                    <li><a href="#">Exhibitions</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item col2">
+                                                <h5>My Library</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="../My-Labrary.html">My Library</a></li>
+                                                    <li><a href="account-seiing-lib-Selected-Tag.html">My Tags</a></li>
+                                                    <li><a href="#">My Bookmarks</a></li>
+                                                    <li><a href="#">Scholar Section</a> <span class="new">New</span></li>
+                                                    <li><a href="../plan-visit.html">Plan your visit to NAI</a><span class="new">New</span> </li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item col3">
+                                                <h5>About Us</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="../about-us.html">About Us</a></li>
+                                                    <li><a href="#">Associated Repository</a></li>
+                                                    <li><a href="../benifits.html">Benefits</a></li>
+                                                    <li><a href="#">Tips</a></li>
+                                                    <li><a href="../faq.html">FAQ</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item col4">
+                                                <h5>Account</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="account-setting-user-admin.html">My Account</a></li>
+                                                    <li>
+                                                        <a href="collections.html">Admin Panel</a>
+                                                    </li>
+                                                    <li><a href="upload.html">Upload</a></li>
+                                                    <li><a href="records-awaiting-verification-new.html">Records Awaiting Verification</a></li>
+                                                    <li><a href="#">Logout</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item col5">
+                                                <h5>Contact Us</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="#">Contact Us</a></li>
+                                                    <li><a href="#">Help</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- collection start -->
+    <div class="container pt-5 mt-5">
+        <div class="row">
+            <div class="col-md-6 col-lg-4 col-12 col-xl-3 col-xxl-2">
+                <h1 class="account-setting pb-1">Admin Panel</h1>
+                <div class="form position-relative">
+                    <span class="searchicon"><img src="../images/searchicon.png" width="20px" /></span>
+                    <input type="text" class=" search-left  " placeholder="SEARCH">
+                    <div class="col-xs-3 menu-collection mt-2">
+                        <div class="navigation nav nav-tabs tabs-left list-group">
+                            <ul>
+                                <li class=" list-group-item size ">
+                                    <a href="#" data-toggle="tab">Dashboard</a>
+                                </li>
+                                <li class="list-group-item size "><a href="home-page-setting-crousal.html" data-toggle="tab">Home Page Setting</a></li>
+                                <li class="list-group-item size  "><a href="collections.html" data-toggle="tab">Collections</a></li>
+                                <li class="list-group-item bg-transparent activecolor"><a href="user-management.html">User Management</a></li>
+                                <li class="list-group-item "><a href="reports.html" data-toggle="tab">Reports</a></li>
+                                <li class="list-group-item bg-transparent"><a href="manage-tag.html">Manage Tags</a></li>
+                                <li class="has-sub"> <a href="POD-order.html">POD <i class="fa fa-caret-right float-end" aria-hidden="true"></i></a>
+                                    <ul>
+                                        <li><a href="POD-order.html">POD Orders</a></li>
+                                        <li><a href="POD-order.html">POD Page Rate</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-sub list-group-item"> <a href="#tab6">DOD <i class="fa fa-caret-right float-end" aria-hidden="true"></i></a>
+                                    <ul>
+                                        <li><a href="DOD-order.html">DOD Orders</a></li>
+                                        <li><a href="DOD-order.html">DOD Page Size</a></li>
+                                        <li><a href="DOD-order.html">DOD Tax</a></li>
+                                        <li><a href="DOD-order.html">DOD Promotions</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-group-item  "><a href="paid-DOD-records.html"> Paid DOD Records</a></li>
+                                <li class="list-group-item  "><a href="records-awaiting-verification-new.html">  Records Awaiting Verification</a></li>
+                                <li class="list-group-item  "><a href="credit-note.html">Credit Note </a></li>
+                                <li class="list-group-item  "><a href="debit-note.html">Debit Note </a></li>
+                                <li class="list-group-item  "><a href="">Download Order Details </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-xl-9  col-xxl-10 col-12 pt-2 pt-md-0 pb-5 leftcontent usermanagement right-content px-4 ps-md-4">
+                <div class="row">
+                    <div class="col-md-3 p-0">
+                        <h1 class="collection-heading">User Management</h1>
+                    </div>
+                    <div class="col-md-7 list-style-user justify-content-end d-flex">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active navtabstyle" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                            </li>
+                            <li class="nav-item navtabstyle" role="presentation">
+                                <button class="nav-link navtabstyle" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Institutions</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link navtabstyle" id="admin-tab" data-bs-toggle="tab" data-bs-target="#admin" type="button" role="tab" aria-controls="admin" aria-selected="false">Admin</button>
+                            </li>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link navtabstyle" id="repository-tab" data-bs-toggle="tab" data-bs-target="#repository" type="button" role="tab" aria-controls="repository" aria-selected="false">Repository Manager</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 p-0">
+                        <div class="collection-button-box float-end col-md-6 d-flex justify-content-end">
+                            <button class="btn collection-active float-start  mt-4 mt-xxl-0 mt-xl-0 " data-bs-toggle="modal" data-bs-target="#exampleModal-collection"> <i class="fa fa-plus  pe-2" aria-hidden="true"></i>Add User</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 p-0 d-flex justify-content-start  pt-3 pb-2">
+                            <div class="dropdown-center">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Nationality
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Action two</a></li>
+                                    <li><a class="dropdown-item" href="#">Action three</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 p-0 d-flex justify-content-end  pt-3 pb-2"><span class="show-entires">Show Entries</span> 
+                            <select class="form-select p-2 rounded-5 widthselect" aria-label="Default select example">
+                                <option selected>25</option>
+                                <option value="1">25</option>
+                                <option value="2">25</option>
+                                <option value="3">25</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="table-collection border-none pt-1 mt-2">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <table id="example">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" width="10%" style="text-align: left !important;">User</th>
+                                            <th scope="col " width="10%">Email Id</th>
+                                            <th scope="col" width="10%">Nationality</th>
+                                            <th scope="col" width="12%">IP Location</th>
+                                            <th scope="col" width="12%">ROD Orders</th>
+                                            <th scope="col" width="10%">Last Login</th>
+                                            <th scope="col" width="12%">Active Since</th>
+                                            <th scope="col" width="8%">Status</th>
+                                            <th scope="col" width="10%" style="text-align: right !important;">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem Ipsum</td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">China</td>
+                                            <td data-label="Nationality">Singapore</td>
+                                            <td data-label="ROD Orders">0</td>
+                                            <td data-label="Last Login">05 Feb, 2022</td>
+                                            <td data-label="Active Since">23 Oct, 2017</td>
+                                            <td data-label="Status">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Account" style="vertical-align: top !important;">Lorem Ipsum</td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Amount">China</td>
+                                            <td data-label="Period">Singapore</td>
+                                            <td data-label="Due Date">0</td>
+                                            <td data-label="Amount">05 Feb, 2022</td>
+                                            <td data-label="Due Date">23 Oct, 2017</td>
+                                            <td data-label="Amount">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Account" style="vertical-align: top !important;">Lorem Ipsum</td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Amount">China</td>
+                                            <td data-label="Period">Singapore</td>
+                                            <td data-label="Due Date">0</td>
+                                            <td data-label="Amount">05 Feb, 2022</td>
+                                            <td data-label="Due Date">23 Oct, 2017</td>
+                                            <td data-label="Amount">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Account" style="vertical-align: top !important;">Lorem Ipsum</td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Amount">China</td>
+                                            <td data-label="Period">Singapore</td>
+                                            <td data-label="Due Date">0</td>
+                                            <td data-label="Amount">05 Feb, 2022</td>
+                                            <td data-label="Due Date">23 Oct, 2017</td>
+                                            <td data-label="Amount">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Account" style="vertical-align: top !important;">Lorem Ipsum</td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Amount">China</td>
+                                            <td data-label="Period">Singapore</td>
+                                            <td data-label="Due Date">0</td>
+                                            <td data-label="Amount">05 Feb, 2022</td>
+                                            <td data-label="Due Date">23 Oct, 2017</td>
+                                            <td data-label="Amount">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Account" style="vertical-align: top !important;">Lorem Ipsum</td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Amount">China</td>
+                                            <td data-label="Period">Singapore</td>
+                                            <td data-label="Due Date">0</td>
+                                            <td data-label="Amount">05 Feb, 2022</td>
+                                            <td data-label="Due Date">23 Oct, 2017</td>
+                                            <td data-label="Amount">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td data-label="Account" style="vertical-align: top !important;">Lorem Ipsum</td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Amount">China</td>
+                                            <td data-label="Period">Singapore</td>
+                                            <td data-label="Due Date">0</td>
+                                            <td data-label="Amount">05 Feb, 2022</td>
+                                            <td data-label="Due Date">23 Oct, 2017</td>
+                                            <td data-label="Amount">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <table id="example-2">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" width="10%" style="text-align: left !important;">Insititute</th>
+                                            <th scope="col " width="10%">Email Id</th>
+                                            <th scope="col" width="10%">Nationality</th>
+                                            <th scope="col" width="12%">IP Location</th>
+                                            <th scope="col" width="12%">Last Login</th>
+                                            <th scope="col" width="10%">Active Since</th>
+                                            <th scope="col" width="12%">Status</th>
+                                            <th scope="col" width="10%" style="text-align: right !important;">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">China</td>
+                                            <td data-label="Nationality">Singapore</td>
+                                            <td data-label="ROD Orders">05 Feb, 2022</td>
+                                            <td data-label="Last Login">23 Oct, 2017</td>
+                                            <td data-label="Active Since">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">China</td>
+                                            <td data-label="Nationality">Singapore</td>
+                                            <td data-label="ROD Orders">05 Feb, 2022</td>
+                                            <td data-label="Last Login">23 Oct, 2017</td>
+                                            <td data-label="Active Since">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">China</td>
+                                            <td data-label="Nationality">Singapore</td>
+                                            <td data-label="ROD Orders">05 Feb, 2022</td>
+                                            <td data-label="Last Login">23 Oct, 2017</td>
+                                            <td data-label="Active Since">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">China</td>
+                                            <td data-label="Nationality">Singapore</td>
+                                            <td data-label="ROD Orders">05 Feb, 2022</td>
+                                            <td data-label="Last Login">23 Oct, 2017</td>
+                                            <td data-label="Active Since">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">China</td>
+                                            <td data-label="Nationality">Singapore</td>
+                                            <td data-label="ROD Orders">05 Feb, 2022</td>
+                                            <td data-label="Last Login">23 Oct, 2017</td>
+                                            <td data-label="Active Since">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">China</td>
+                                            <td data-label="Nationality">Singapore</td>
+                                            <td data-label="ROD Orders">05 Feb, 2022</td>
+                                            <td data-label="Last Login">23 Oct, 2017</td>
+                                            <td data-label="Active Since">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">China</td>
+                                            <td data-label="Nationality">Singapore</td>
+                                            <td data-label="ROD Orders">05 Feb, 2022</td>
+                                            <td data-label="Last Login">23 Oct, 2017</td>
+                                            <td data-label="Active Since">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="admin" role="tabpanel" aria-labelledby="admin-tab">
+                                <table id="example-1">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" width="12%" style="text-align: left !important;">Admin Name </th>
+                                            <th scope="col " width="12%">Email Id</th>
+                                            <th scope="col" width="12%">Nationality</th>
+                                            <th scope="col" width="12%">Last Login</th>
+                                            <th scope="col" width="6%">Active Since</th>
+                                            <th scope="col" width="10%">Status</th>
+                                            <th scope="col" width="8%" style="text-align: right !important;">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum </td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">Indian</td>
+                                            <td data-label="Nationality">05 Feb, 2022</td>
+                                            <td data-label="ROD Orders">23 Oct, 2017</td>
+                                            <td data-label="Last Login">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum </td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">Indian</td>
+                                            <td data-label="Nationality">05 Feb, 2022</td>
+                                            <td data-label="ROD Orders">23 Oct, 2017</td>
+                                            <td data-label="Last Login">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum </td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">Indian</td>
+                                            <td data-label="Nationality">05 Feb, 2022</td>
+                                            <td data-label="ROD Orders">23 Oct, 2017</td>
+                                            <td data-label="Last Login">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum </td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">Indian</td>
+                                            <td data-label="Nationality">05 Feb, 2022</td>
+                                            <td data-label="ROD Orders">23 Oct, 2017</td>
+                                            <td data-label="Last Login">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum </td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">Indian</td>
+                                            <td data-label="Nationality">05 Feb, 2022</td>
+                                            <td data-label="ROD Orders">23 Oct, 2017</td>
+                                            <td data-label="Last Login">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum </td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">Indian</td>
+                                            <td data-label="Nationality">05 Feb, 2022</td>
+                                            <td data-label="ROD Orders">23 Oct, 2017</td>
+                                            <td data-label="Last Login">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum </td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">Indian</td>
+                                            <td data-label="Nationality">05 Feb, 2022</td>
+                                            <td data-label="ROD Orders">23 Oct, 2017</td>
+                                            <td data-label="Last Login">Active</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="repository" role="tabpanel" aria-labelledby="repository-tab">
+                                <table id="example-3">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" width="10%" style="text-align: left !important;">Name </th>
+                                            <th scope="col " width="10%">Email Id</th>
+                                            <th scope="col" width="10%">Nationality</th>
+                                            <th scope="col" width="12%">Last Login</th>
+                                            <th scope="col" width="12%">Active Since</th>
+                                            <th scope="col" width="10%">Status</th>
+                                            <th scope="col" width="12%">Action</th>
+                                            <th scope="col" width="10%" style="text-align: right !important;">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum </td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">Indian</td>
+                                            <td data-label="Nationality">05 Feb, 2022</td>
+                                            <td data-label="ROD Orders">23 Oct, 2017</td>
+                                            <td data-label="Last Login">Active</td>
+                                            <td data-label="Active Since">23 Oct, 2017</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum </td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">Indian</td>
+                                            <td data-label="Nationality">05 Feb, 2022</td>
+                                            <td data-label="ROD Orders">23 Oct, 2017</td>
+                                            <td data-label="Last Login">Active</td>
+                                            <td data-label="Active Since">23 Oct, 2017</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum </td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">Indian</td>
+                                            <td data-label="Nationality">05 Feb, 2022</td>
+                                            <td data-label="ROD Orders">23 Oct, 2017</td>
+                                            <td data-label="Last Login">Active</td>
+                                            <td data-label="Active Since">23 Oct, 2017</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum </td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">Indian</td>
+                                            <td data-label="Nationality">05 Feb, 2022</td>
+                                            <td data-label="ROD Orders">23 Oct, 2017</td>
+                                            <td data-label="Last Login">Active</td>
+                                            <td data-label="Active Since">23 Oct, 2017</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum </td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">Indian</td>
+                                            <td data-label="Nationality">05 Feb, 2022</td>
+                                            <td data-label="ROD Orders">23 Oct, 2017</td>
+                                            <td data-label="Last Login">Active</td>
+                                            <td data-label="Active Since">23 Oct, 2017</td>
+
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum </td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">Indian</td>
+                                            <td data-label="Nationality">05 Feb, 2022</td>
+                                            <td data-label="ROD Orders">23 Oct, 2017</td>
+                                            <td data-label="Last Login">Active</td>
+                                            <td data-label="Active Since">23 Oct, 2017</td>
+
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="User" style="vertical-align: top !important;">Lorem ipsum </td>
+                                            <td data-label="Due Date">
+                                                Loremipsum@gmail.com
+                                            </td>
+                                            <td data-label="Email Id">Indian</td>
+                                            <td data-label="Nationality">05 Feb, 2022</td>
+                                            <td data-label="ROD Orders">23 Oct, 2017</td>
+                                            <td data-label="Last Login">Active</td>
+                                            <td data-label="Active Since">23 Oct, 2017</td>
+                                            <td data-label="Action">
+                                                <div class="justify-content-end d-flex "><img src="../images/pencil-icon.png " data-bs-toggle="modal" data-bs-target="#exampleModal-edit-user" class="me-3 edit-icon-user"><img data-bs-toggle="modal" data-bs-target="#exampleModal-password" src="../images/reset-password.png"
+                                                        class="passowrd-reset">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <nav aria-label="Page navigation example bgwhite" class="float-end justify-content-end pb-5 d-flex">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true"><i class="fa fa-caret-left" aria-hidden="true"></i></span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- all account part-setting start -->
+    </div>
+
+    <div style="clear: both;"></div>
+    <footer class="bg-footer pt-5 pb-5">
+        <div class="container">
+            <div class="row mx-2">
+                <ul class="col-md-3">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about-us.html ">About Us</li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="../Privacy-and-Copyright-Policy.html">Privacy & Copyright Policy</a></li>
+                </ul>
+                <ul class="col-md-3">
+                    <li><a href="../term-condition.html">Terms & Conditions</a></li>
+                    <li><a href="../Disclaimer.html">Disclaimer</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="../Cancellation-Return-Refund-Policy.html">Cancellation, Return & Refund Policy</a></li>
+                </ul>
+                <ul class="col-md-3">
+                    <li>NATIONAL ARCHIVES OF INDIANational Archives Building,Janpath, New Delhi 110001. INDIA</li>
+                    <span class="col-md-4 links ">T:<a href="tel:011-23384797 ">011- 23384797</a></span>
+                    <span class="col-md-4 links ">E:<a href="mailto:archives@nic.in ">archives[at]nic[dot]in</a></span>
+                </ul>
+                <ul class="col-md-3">
+                    <p>© National Archives of India. All Rights Reserved.</p>
+                </ul>
+            </div>
+        </div>    
+    </footer>
+
+    <!-- Button trigger modal -->
+    <div class="modal fade" id="exampleModal-password" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content rounded-3">
+                <div class="modal-header rounded-3 border-0">
+                    <h5 class="update-order-text">Change password</h5>
+                    <button type="button" class="btn-close closedinnerpop" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center bgcolor rounded-3 p-4">
+                    <div class="row">
+                        <div class="mb-3 text-align-left col-md-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Automatically generate Temporary Password and send to user registered email  
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mb-3 mt-4 text-align-left col-md-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Change Password
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-align-left col-md-12 position-relative">
+                            <input type="password" id="password-1" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="">
+                            <i class="fa fa-eye font-eye-click eyeicon" aria-hidden="true" id="eye"></i>
+                        </div>
+                        <div class="form-check px-5">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label label-check" for="defaultCheck1">
+                                Ask for a password change at the next sign-in.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="pb-4 mt-3">
+                        <button type="button" class="deactivebutton float-end">Send E-mail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal-collection" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-3">
+                <div class="modal-header rounded-3 border-0">
+                    <h5>Add User</h5>
+                    <button type="button" class="btn-close closedinnerpop" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center bgcolor rounded-3 p-4">
+                    <div class="row">
+                        <div class="mb-3 text-align-left col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">First Name:*</label>
+                            <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="">
+                        </div>
+                        <div class="mb-3 text-align-left col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Last Name:*</label>
+                            <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="">
+                        </div>
+                        <div class="mb-3 text-align-left col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Email Id:*</label>
+                            <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="">
+                        </div>
+                        <div class="mb-3 text-align-left col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Mobile Number:*</label>
+                            <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="">
+                        </div>
+                        <div class="mb-3 text-align-left col-md-6">
+                            <label for="exampleFormControlTextarea1" class="form-label pt-2  modelcollectionformstyle">Digitized Collection : *</label>
+                            <select class="form-select rounded-5" aria-label="Default select example">
+                                <option selected>select</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 text-align-left col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Passport No/ Country ID No:*</label>
+                            <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="">
+                        </div>
+                        <div class="mb-3 text-align-left col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Password :*</label>
+                            <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="">
+                        </div>
+                        <div class="mb-3 text-align-left col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Verify Password:*</label>
+                            <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="">
+                        </div>
+                        <div class="mb-3 text-align-left col-md-6">
+                            <label for="exampleFormControlTextarea1" class="form-label pt-2 modelcollectionformstyle">Group :*</label>
+                            <select class="form-select rounded-5" aria-label="Default select example">
+                                <option selected>select</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 text-align-left col-md-6">
+                            <label for="exampleFormControlTextarea1" class="form-label pt-2 modelcollectionformstyle">Repository Location :*</label>
+                            <select class="form-select rounded-5" aria-label="Default select example">
+                                <option selected>select</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="pb-4 mt-3">
+                        <button type="button" class="deactivebutton float-end">Add User</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal-edit-user" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-3">
+                <div class="modal-header rounded-3 border-0">
+                    <h5>Edit User</h5>
+                    <button type="button" class="btn-close closedinnerpop" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center bgcolor rounded-3 p-4">
+                    <div class="row">
+                        <div class="mb-3 text-align-left col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">First Name:*</label>
+                            <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Rahul">
+                        </div>
+                        <div class="mb-3 text-align-left col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Last Name:*</label>
+                            <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Sharma">
+                        </div>
+                        <div class="mb-3 text-align-left col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Email Id:*</label>
+                            <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Mobile Number:*">
+                        </div>
+                        <div class="mb-3 text-align-left col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Mobile Number:*</label>
+                            <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="9876543210">
+                        </div>
+                        <div class="mb-3 text-align-left col-md-6">
+                            <label for="exampleFormControlTextarea1" class="form-label pt-2  modelcollectionformstyle">Country:*</label>
+                            <select class="form-select rounded-5" aria-label="Default select example" placeholder="India">
+                                <option selected>India</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 text-align-left col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Passport No/ Country ID No:*</label>
+                            <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Lorem ipsum">
+                        </div>
+                        <div class="mb-3 text-align-left col-md-6">
+                            <label for="exampleFormControlTextarea1" class="form-label pt-2  modelcollectionformstyle">Group :*</label>
+                            <select class="form-select rounded-5" aria-label="Default select example" placeholder="India">
+                                <option selected>India</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 text-align-left col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Repository Location :</label>
+                            <select class="form-select rounded-5" aria-label="Default select example" placeholder="India">
+                                <option selected>India</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select> 
+                        </div>
+                        <div class="pb-4 mt-3">
+                            <button type="button" class="deactivebutton float-end">Add User</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/jquery.bxslider.min.js "></script>
+        <script src="../js/custom.js "></script>
+        <script src="../js/main.js "></script>
+        <script src="../js/jquery-ui.js"></script>
+        <script src="../js/jquery.dataTables.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+                <script>
+            new DataTable('#example,#example-1,#example-2,#example-3', {
+                "bLengthChange": false,
+                "bFilter": false,
+                "bInfo": false,
+                "bAutoWidth": true,
+                // scrollY: false,
+                // scrollX: false,
+                paging: true,
+
+                info: true,
+                "ordering": true,
+            });
+            $("#files").change(function() {
+                filename = this.files[0].name;
+                console.log(filename);
+            });
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- Bootstrap CSS -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <title>RockVault Landing Page</title>
+
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+        }
+        /****heading****/
+        
+        .sliderHeader {
+            position: relative;
+        }
+        /*******slides******/
+        
+        .slidesContainer {
+            position: absolute;
+            top: 32vh;
+            height: 68vh;
+            width: 85vw;
+        }
+        
+        .all-slides {
+            position: absolute;
+        }
+        
+        .transition {
+            transition: top 1.5s ease, opacity 0.7s ease;
+        }
+        
+        .slide-pos-bottom {
+            top: 100%;
+        }
+        
+        .slide-pos-top {
+            top: 0 !important;
+        }
+        
+        .transperent {
+            opacity: 0;
+        }
+        
+        .opaque {
+            opacity: 1 !important;
+        }
+        /*****image*****/
+        
+        .image-main {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            height: 100vh;
+            width: 100vw;
+            background-image: url("./img/main-bg.png");
+            background-repeat: no-repeat;
+            transition: background-size 2s ease 0.2s, background-position 2s ease 0.2s;
+        }
+        
+        .image-s1-pos {
+            background-size: 118%;
+            background-position: 100% 80%;
+        }
+        
+        .image-s2-pos {
+            background-size: 105%;
+            background-position: 100% 81%;
+        }
+        
+        .image-s3-pos {
+            background-size: 100%;
+            background-position: 100% 80%;
+        }
+        
+        .image-s4-pos {
+            background-size: 117%;
+            background-position: 100% 80%;
+        }
+        
+        .slide2_txt,
+        .slide3_txt,
+        .slide4_txt {
+            top: -5rem;
+            position: absolute;
+            transition: opacity 1s ease;
+        }
+        
+        #trusted_text {
+            transition: opacity 1s ease;
+        }
+        
+        #slideno3 {
+            padding-top: 3%;
+        }
+        /* CSS */
+        
+        .login-text {
+            padding-top: 0px;
+            bottom: 0;
+            position: absolute;
+            font-size: 20px;
+            right: 40px;
+            top: 4%;
+        }
+        
+        .isoBadge {
+            padding-top: 0px;
+            position: absolute;
+            right: -200px;
+            bottom: 20px;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div style="overflow: hidden" class="sildercontent"></div> -->
+    <div id="bg-image" class="image-main image-s1-pos image-hide-mobile"></div>
+    <img src="img/landing-mobile-bg.png" class="image-main mobile-view" />
+
+    <!-- <div class="slider-text"> -->
+    <div class="sliderHeader d-flex justify-content-between mx-0 mx-md-5 d-block-mobile">
+        <div class="rvBrand px-2 px-md-0">
+            <div class="rvLogo">
+                <img src="img/rockvault-logo-1.png" alt="RockVault Logo" />
+            </div>
+            <div id="trusted_text" class="rvHeadline txtWhite ft-ProximaTn fs-28 lh-34 ls-1 pt-4 transperent opaque">
+                The Trusted Choice for<br /> Data Management.
+            </div>
+        </div>
+    </div>
+    <div class="login-text px-2 px-md-0">
+        <div class="isoIcon">
+            <div class="isoText txtWhite ft-ProximaN ls-1"><a href="login.html">Login</a></div>
+        </div>
+    </div>
+    <div class="slidesContainer px-2 px-md-0 px-xl-5 mx-2 mx-md-5">
+        <!-- Slide 1 -->
+        <div id="slideno1" class="all-slides transition pt-5 slide1">
+            <div class="con1">
+                <h2 class="slideHeading txtWhite ft-ProximaN fs-50 font-size-mobile-50 pb-4">
+                    RockVault: Your All-in-One<br /> Data Management Solution
+                </h2>
+                <div class="slideText txtWhite ft-ProximaN fs-30 lh-34 mt-4 pt-2 font-mobile break-none">
+                    Safeguard your valuable data with RockVault,<br /> a comprehensive suite of data management solution<br /> designed to meet all your data storage, retrieval,<br /> compliance, and security needs.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <h2 class="txtWhite slide2_txt ft-ProximaLt fs-50 slide-text-heading transperent what-we-pad">
+            What We Offer:
+        </h2>
+        <div id="slideno2" class="slide-pos-bottom transperent all-slides transition slide2">
+            <div class="con2 pt-3 pt-md-5">
+                <div class="row">
+                    <div class="col-12 txtWhite col-md-11 col-xl-8 font-size-wwo">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <h4 class="fs-22 ft-ProximaLt">Secure Storage</h4>
+                                <ul class="pt-2">
+                                    <li class="fs-18 lh-20 w-75 mobile-style-font width-100">
+                                        <span class="ft-ProximaSb">Air Gap Technology:</span> <span class="ft-ProximaTn font-style-wwo">Ensures complete isolation from external threats, even ransomware attacks.</span>
+                                    </li>
+                                    <li class="fs-18 lh-20 pt-3 w-75 mobile-style-font width-100">
+                                        <span class="ft-ProximaSb">Advanced Encryption:</span> <span class="ft-ProximaTn font-style-wwo">Protects your data at rest and in transit with industry-leading encryption algorithms.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h4 class="fs-22 ft-ProximaLt">Compliance Made Easy</h4>
+                                <ul class="pt-2">
+                                    <li class="fs-18 lh-20 w-75 mobile-style-font width-100">
+                                        <span class="ft-ProximaSb">Streamlined Governance:</span> <span class="ft-ProximaTn font-style-wwo">Simplify compliance with regulations like ISO 16363 through automated reporting and audit trails.</span>
+                                    </li>
+                                    <li class="fs-18 lh-20 pt-3 w-75 width-100 mobile-style-font">
+                                        <span class="ft-ProximaSb">Comprehensive Reporting:</span> <span class="ft-ProximaTn font-style-wwo">Gain valuable insights into your data storage and access patterns with detailed reports.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row pt-3 ">
+                            <div class="col-12 col-md-6">
+                                <h4 class="fs-22 ft-ProximaLt">Effortless Retrieval</h4>
+                                <ul class="pt-2">
+                                    <li class="fs-18 lh-20 w-75 width-100  mobile-style-font">
+                                        <span class="ft-ProximaSb">Seamless Data Access:</span> <span class="ft-ProximaTn font-style-wwo">Easily access and retrieve your data whenever you need it.</span>
+                                    </li>
+                                    <li class="fs-18 lh-20 pt-3 w-75 width-100 mobile-style-font">
+                                        <span class="ft-ProximaSb">Immutable Snapshots:</span> <span class="ft-ProximaTn font-style-wwo">Maintain historical versions of your data for easy recovery in case of accidental deletion or modification.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h4 class="fs-22 ft-ProximaLt">Unparalleled Security</h4>
+                                <ul class="pt-2">
+                                    <li class="fs-18 lh-20 w-75 width-100 mobile-style-font">
+                                        <span class="ft-ProximaSb">Proactive Failure Alerts:</span>
+                                        <span class="ft-ProximaTn font-style-wwo">
+                                            Get notified of potential issues before they impact your
+                                            data availability.
+                                        </span>
+                                    </li>
+                                    <li class="fs-18 lh-20 pt-3 w-75 width-100 mobile-style-font">
+                                        <span class="ft-ProximaSb">Ransomware Protection:</span>
+                                        <span class="ft-ProximaTn font-style-wwo">Advanced security features safeguard your data against ransomware attacks and other evolving threats.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <h2 class="txtWhite slide3_txt what-we-offer ft-ProximaLt fs-50 slide-text-heading transperent">
+            Why Choose RockVault?
+        </h2>
+        <div id="slideno3" class="transperent slide-pos-bottom all-slides transition slide3">
+            <div class="con3">
+                <div class="slideText pb-5">
+                    <ul class="txtWhite break-none">
+                        <li class="fs-20 lh-24 mobile-style-font">
+                            <span class="ft-ProximaSb ">Complete Protection:</span><span class="ft-ProximaTn font-style-wwo"> Enjoy peace of mind knowing <br /> your data is secure, compliant, and readily accessible.</span>
+                        </li>
+                        <li class="fs-20 lh-24 pt-3 mobile-style-font">
+                            <span class="ft-ProximaSb">Simplified Management:</span><span class="ft-ProximaTn font-style-wwo"> Effortlessly manage your <br /> data with an intuitive and user-friendly platform.</span>
+                        </li>
+                        <li class="fs-20 lh-24 pt-3 mobile-style-font">
+                            <span class="ft-ProximaSb">Unmatched Reliability:</span><span class="ft-ProximaTn font-style-wwo"> Experience exceptional data<br /> availability and uptime with our robust infrastructure.</span>
+                        </li>
+                        <li class="fs-20 lh-24 pt-3 mobile-style-font">
+                            <span class="ft-ProximaSb">Scalability and Flexibility:</span><span class="ft-ProximaTn font-style-wwo"> Scale your storage capacity<br /> and features to meet your evolving needs.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div id="slideno4" class="transperent slide-pos-bottom all-slides transition">
+
+            <div class="slide4_txt transperent slide4">
+                <h2 class="txtWhite what-we-offer ft-ProximaLt fs-50 slide-text-heading">
+                    Contact for product demo
+                </h2>
+                <p class="txtWhite fs-28 mb-0 pt-5 font-size-mobile"><a href="tel:+919167997777">+91 91679 97777</a></p>
+                <p class="txtWhite fs-28 mb-0 font-size-mobile"><a href="mailto:connect@rockvault.ai">connect@rockvault.ai</a></p>
+            </div>
+
+            <div class="con4">
+                <div class="slideText">
+                    <div class="copyright">
+                        <div class="cmLogo">
+                            <img src="img/cloudmojo-logo.png" alt="" />
+                        </div>
+                        <div class="copyrightText fs-24 txtWhite pt-2">
+                            © CloudMojo Tech Pvt. Ltd.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="isoBadge px-2 px-md-0">
+            <div class="isoIcon">
+                <img src="img/iso-icon.png" alt="Iso Icon" />
+            </div>
+            <div class="isoText txtWhite ft-ProximaN ls-1">ISO 16363 CERTIFIED</div>
+        </div>
+    </div>
+  
+    <!-- Jquery -->
+    <script src="js/jquery-3.7.1.js"></script>
+      <script>
+        let currentSlide = "slide1";
+        let animationTimeout = null;
+        let isAnimationPlaying = false;
+
+        window.addEventListener("wheel", function(e) {
+            if (e.wheelDelta <= 0) {
+
+                if (!isAnimationPlaying) {
+                    console.log(currentSlide);
+                    if (currentSlide == "slide1") {
+                        isAnimationPlaying = true;
+                        clearTimeout(animationTimeout);
+                        $("#trusted_text").removeClass("opaque");
+
+                        $("#bg-image").removeClass("image-s1-pos");
+                        $("#bg-image").addClass("image-s2-pos");
+
+                        $("#slideno1").removeClass("opaque");
+                        $("#slideno1").addClass("transperent");
+                        $("#slideno3").removeClass("opaque");
+                        $("#slideno4").removeClass("opaque");
+
+                        setTimeout(() => {
+                            $("#slideno2").addClass("slide-pos-top opaque");
+                            $(".slide2_txt").addClass("opaque");
+                        }, 500);
+
+                        currentSlide = "slide2";
+                        animationTimeout = setTimeout(() => {
+                            isAnimationPlaying = false;
+                        }, 1500);
+                    } else if (currentSlide == "slide2") {
+                        isAnimationPlaying = true;
+                        clearTimeout(animationTimeout);
+
+                        $("#bg-image").removeClass("image-s2-pos");
+                        $("#bg-image").addClass("image-s3-pos");
+
+                        $("#slideno1").removeClass("opaque");
+                        $("#slideno2").removeClass("opaque");
+                        $("#slideno4").removeClass("opaque");
+
+                        $(".slide2_txt").removeClass("opaque");
+                        //$(".t").css("visibility", "hidden");
+
+                        setTimeout(() => {
+                            $("#slideno3").addClass("slide-pos-top opaque");
+                            $(".slide3_txt").addClass("opaque");
+                        }, 500);
+
+                        currentSlide = "slide3";
+                        animationTimeout = setTimeout(() => {
+                            isAnimationPlaying = false;
+                        }, 1500);
+                    } else if (currentSlide == "slide3") {
+                        isAnimationPlaying = true;
+                        clearTimeout(animationTimeout);
+                        $("#bg-image").removeClass("image-s3-pos");
+                        $("#bg-image").addClass("image-s4-pos");
+
+                        $("#slideno1").removeClass("opaque");
+                        $("#slideno2").removeClass("opaque");
+                        $("#slideno3").removeClass("opaque");
+
+                        $(".slide2_txt").removeClass("opaque");
+                        $(".slide3_txt").removeClass("opaque");
+
+                        setTimeout(() => {
+                            $("#slideno4").addClass("slide-pos-top opaque");
+                            $(".slide4_txt").addClass("opaque");
+                        }, 500);
+                        currentSlide = "slide4";
+                        animationTimeout = setTimeout(() => {
+                            isAnimationPlaying = false;
+                        }, 1500);
+                    }
+                }
+            } else {
+                if (!isAnimationPlaying) {
+                    console.log("scrolling down");
+                    console.log(currentSlide);
+                    if (currentSlide == "slide2") {
+                        isAnimationPlaying = true;
+                        clearTimeout(animationTimeout);
+
+                        $("#bg-image").removeClass("image-s2-pos");
+                        $("#bg-image").addClass("image-s1-pos");
+
+                        //$("#slideno1").addClass("opaque");
+
+                        $(".slide2_txt").removeClass("opaque");
+                        setTimeout(() => {
+                            $("#slideno1").addClass("opaque");
+                            $("#trusted_text").addClass("opaque");
+                        }, 500);
+                        $("#slideno2").removeClass("slide-pos-top opaque");
+                        $("#slideno3").removeClass("opaque");
+                        $("#slideno4").removeClass("opaque");
+                        currentSlide = "slide1";
+                        animationTimeout = setTimeout(() => {
+                            isAnimationPlaying = false;
+                        }, 1500);
+                    } else if (currentSlide == "slide3") {
+                        isAnimationPlaying = true;
+                        clearTimeout(animationTimeout);
+                        $("#bg-image").removeClass("image-s3-pos");
+                        $("#bg-image").addClass("image-s2-pos");
+
+                        $("#slideno1").removeClass("opaque");
+                        $(".slide3_txt").removeClass("opaque");
+                        setTimeout(() => {
+                            $("#slideno2").addClass("opaque");
+                            $(".slide2_txt").addClass("opaque");
+                        }, 500);
+                        $("#slideno3").removeClass("slide-pos-top opaque");
+                        $("#slideno4").removeClass("slide-pos-top opaque");
+                        currentSlide = "slide2";
+                        animationTimeout = setTimeout(() => {
+                            isAnimationPlaying = false;
+                        }, 1500);
+                    } else if (currentSlide == "slide4") {
+                        isAnimationPlaying = true;
+                        clearTimeout(animationTimeout);
+                        $("#bg-image").removeClass("image-s4-pos");
+                        $("#bg-image").addClass("image-s3-pos");
+
+                        $("#slideno1").removeClass("opaque");
+                        $("#slideno2").removeClass("opaque");
+
+                        $(".slide4_txt").removeClass("opaque");
+                        setTimeout(() => {
+                            $("#slideno3").addClass("opaque");
+                            $(".slide3_txt").addClass("opaque");
+                        }, 500);
+                        $("#slideno4").removeClass("slide-pos-top opaque");
+                        currentSlide = "slide3";
+                        animationTimeout = setTimeout(() => {
+                            isAnimationPlaying = false;
+                        }, 1500);
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

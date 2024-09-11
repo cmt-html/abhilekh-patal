@@ -1,0 +1,730 @@
+@font-face {
+    font-family: "Proxima Nova Tn";
+    src: url("../fonts/ProximaNovaT-Thin.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova Ex Lt";
+    src: url("../fonts/ProximaNovaExCn-Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova Rg";
+    src: url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova Lt";
+    src: url("../fonts/ProximaNova-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova Sb";
+    src: url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ft-ProximaTn {
+    font-family: "Proxima Nova Tn";
+}
+
+.ft-ProximaN {
+    font-family: "Proxima Nova Rg";
+}
+
+.ft-ProximaLt {
+    font-family: "Proxima Nova Lt";
+}
+
+.ft-ProximaSb {
+    font-family: "Proxima Nova Sb";
+}
+
+.fs-18 {
+    font-size: 18px !important;
+}
+
+.fs-20 {
+    font-size: 20px !important;
+}
+
+.fs-22 {
+    font-size: 22px !important;
+}
+
+.fs-28 {
+    font-size: 28px !important;
+}
+
+.fs-30 {
+    font-size: 30px !important;
+}
+
+.fs-50 {
+    font-size: 50px !important;
+}
+
+.lh-18 {
+    line-height: 18px !important;
+}
+
+.lh-20 {
+    line-height: 20px !important;
+}
+
+.lh-24 {
+    line-height: 24px !important;
+}
+
+.lh-30 {
+    line-height: 30px !important;
+}
+
+.lh-34 {
+    line-height: 34px !important;
+}
+
+ul li {
+    list-style: none !important;
+}
+
+.txtWhite {
+    color: #ffffff;
+}
+
+.ls-1 {
+    letter-spacing: 1px;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #aaaaaa;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #f5f5f5;
+    width: 3px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+
+/* rockword - admin template scss*/
+
+.bg-transparent{ border: 0 !important;}
+
+/* login form */
+
+::placeholder {
+    color: #fff !important;
+    opacity: 1;
+    /* Firefox */
+}
+
+::-ms-input-placeholder {
+    /* Edge 12-18 */
+    color: #fff !important;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    outline: none;
+}
+
+.bg-transparent {
+    color: #fff;
+    border: 0;
+}
+
+.btn-check:focus+.btn-secondary,
+.btn-secondary:focus {
+    box-shadow: none;
+}
+
+.captcha-decoration {
+    border: 1px solid #fff;
+    width: 92%;
+    float: left;
+    border-right: 0;
+    height: 52px;
+    border-radius: 4px;
+}
+
+.captcha {
+    position: absolute;
+}
+
+.captha-button {
+    width: 20%;
+    float: left;
+}
+
+.label-color label {
+    color: #fff !important;
+}
+
+.card-shadow {
+    background-color: transparent !important;
+    border: 0 !important;
+}
+
+.card-body-bgcolor {
+    background-color: transparent !important;
+}
+
+.form-login {
+    position: absolute !important;
+    top: 0 !important;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+}
+
+.form-heading {
+    border: 0 !important;
+}
+
+.form-heading h4 {
+    color: #fff !important;
+    font-weight: normal;
+    font-size: 28px !important;
+}
+
+.button-bg {
+    background-color: #fff;
+    border: 0;
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 0;
+    color: #2E3EAF;
+    font-size: 18px;
+    font-family: "Proxima Nova Sb";
+}
+
+.color-transperent {
+    background-color: transparent !important;
+}
+
+.forgetPass a {
+    color: #fff;
+
+}
+
+.forgetPass {
+     padding-top: 8px !important;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 10px 19px !important;
+    font-size: 18px !important; 
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff !important;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 2px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.captcha {
+    color: #2E3EAF;
+    background-color: #EDF0FF !important;
+    border-color: #EDF0FF !important;
+    padding: 0px 22px !important;
+    border-radius: 0;
+    margin-left: -15px !important;
+    margin-top: 0px !important;
+    height: 52px;
+    right: 11px;
+}
+
+
+.submit-btn {
+    padding-top:66px;
+}
+
+
+
+.rvBrand {
+    position: relative;
+}
+
+.forgot-pass {
+    line-height: 0px;
+}
+
+
+/* rockword - admin template scss closed*/
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff !important;
+    text-decoration: underline;
+}
+
+#slideno4 .opaque {
+    width: 100% !important;
+}
+
+.slide4_txt {
+    position: relative !important;
+}
+
+.rvLogo img {
+    width: 390px;
+}
+
+.mobile-view {
+    display: none !important;
+}
+
+.image-hide-mobile {
+    display: block;
+}
+
+.isoIcon img {
+    width: 50px;
+}
+
+.slideHeading {
+    border-bottom: 1px solid #ffffff;
+    width: 740px;
+}
+
+.sliderHeader {
+    padding: 3.3rem 3rem 3rem 3rem;
+}
+
+.sliderContent {
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.slide {
+    margin-bottom: 84px;
+    scroll-snap-align: start;
+}
+
+.slide2 ul {
+    position: relative;
+    margin-left: -10px;
+}
+
+.slide2 li::before {
+    content: url("../img/line.png");
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: 14px;
+}
+
+.slide3 ul {
+    position: relative;
+}
+
+.slide3 li::before {
+    content: url("../img/line-four.png");
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: 14px;
+}
+
+.cmLogo img {
+    width: 50px;
+}
+
+.copyright {
+    padding-top: 200px;
+}
+
+.slide4 {
+    margin-bottom: 0;
+}
+
+.sliderTitle {
+    height: 60px;
+}
+
+.powerText-login{ position: absolute; right: 70px; margin-top: 20px; bottom: 34px;}
+.isoText a{ color: #fff !important;}
+@media only screen and (min-width: 1600px) {
+    .mainSlider {
+        height: 950px;
+        width: 100%;
+        background: url(../img/main-bg.png);
+        background-size: 126%;
+        background-position: -495px -1590px;
+        background-repeat: no-repeat;
+        transition: all 1s ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .captcha {
+        color: #2E3EAF;
+        background-color: #EDF0FF !important;
+        border-color: #EDF0FF !important;
+        padding: 0px 9px !important;
+        border-radius: 0;
+        margin-left: -15px !important;
+        margin-top: 0px !important;
+        height: 52px;
+        position: absolute;
+        width: 55px;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .width-100 {
+        width: 100% !important;
+    }
+    .slidesContainer {
+        position: fixed;
+        top: 32vh;
+        height: 68vh;
+        width: 100vw !important;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .mainSlider {
+        height: 768px;
+        width: 100%;
+        background: url(../img/main-bg.png);
+        background-size: 141%;
+        background-position: -494px -953px;
+        background-repeat: no-repeat;
+        transition: all 1s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 1152px) {
+    
+    .mainSlider {
+        height: 768px;
+        width: 100%;
+        background: url(../img/main-bg.png);
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: 144%;
+        background-position: -494px -953px;
+        background-repeat: no-repeat;
+        transition: all 1s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #slideno3 li {
+        padding: 5px 10px !important;
+    }
+    #slideno2 li {
+        padding: 5px 5px 7px 10px !important;
+    }
+    #slideno3 .mobile-style-font {
+        line-height: 48px !important;
+    }
+    #slideno2 .mobile-style-font {
+        line-height: 22px !important;
+    }
+    .break-none br {
+        display: none;
+    }
+    .width-100 {
+        width: 100% !important;
+    }
+    .slidesContainer {
+        position: absolute;
+        top: 32vh;
+        height: 68vh;
+        width: 100vw !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .powerText-login {
+        position: absolute;
+        right: 70px;
+        margin-top: -56px;
+    }
+
+   
+    #slideno3 li {
+        padding: 5px 10px !important;
+    }
+    #slideno2 li {
+        padding: 5px 5px 7px 10px !important;
+    }
+    .font-style-wwo {
+        font-family: "Proxima Nova Lt" !important;
+    }
+    .what-we-pad {
+        padding-top: 30px;
+    }
+    .font-size-wwo .fs-22 {
+        font-size: 18px !important;
+    }
+    .rvHeadline {
+        font-size: 19px !important;
+        padding-top: 15px !important;
+        line-height: 22px !important;
+    }
+    .isoIcon img {
+        width: 25px;
+    }
+    .isoText {
+        width: 70px;
+        line-height: 16px;
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .slide-pos-bottom {
+        top: 0 !important;
+    }
+    .transition {
+        transition: none !important;
+    }
+    .transperent {
+        opacity: 1 !important;
+    }
+    .all-slides {
+        position: relative !important;
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll !important;
+        margin: 0;
+        -webkit-overflow-scrolling: auto;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: auto;
+        overscroll-behavior: contain;
+        overscroll-behavior: none;
+    }
+    .rvLogo img {
+        width: 220px;
+    }
+    .slidesContainer {
+        position: relative !important;
+        width: 95vw !important;
+    }
+    .slidesContainer {
+        top: 0vh !important;
+    }
+    .image-main {
+        position: fixed !important;
+        top: 0%;
+        left: 0%;
+        height: 100vh;
+        width: 100vw;
+        background-image: url("./img/main-bg.png");
+        background-repeat: no-repeat;
+        transition: background-size 2s ease 0.2s, background-position 2s ease 0.2s;
+    }
+    .mobile-style-font {
+        font-size: 16px !important;
+        line-height: 20px !important;
+    }
+    .font-size-mobile {
+        font-size: 22px !important;
+    }
+    .width-100 {
+        width: 90% !important;
+        margin: 0 auto;
+    }
+    #slideno3 {
+        padding-top: 3% !important;
+    }
+    .slideHeading {
+        border-bottom: 1px solid #ffffff;
+        width: 100% !important;
+    }
+    .d-block-mobile {
+        display: block !important;
+        padding-top: 20px !important;
+    }
+    .rvLogo img {
+        max-width: 100% !important;
+    }
+    .slide2_txt,
+    .slide3_txt,
+    .slide4_txt {
+        top: 0 !important;
+        position: relative !important;
+        transition: opacity 1s ease;
+    }
+    .opaque {
+        opacity: 1 !important;
+    }
+    .transperent {
+        opacity: 1;
+    }
+    .font-size-mobile-50 {
+        font-size: 22px !important;
+    }
+    .font-mobile {
+        font-size: 20px !important;
+        line-height: 24px !important;
+    }
+    .copyright {
+        padding-top: 226px;
+        position: relative;
+        bottom: 40px;
+    }
+    .mobile-view {
+        display: block !important;
+        position: fixed;
+    }
+    .image-hide-mobile {
+        display: none;
+    }
+    .fs-50 {
+        font-size: 22px !important;
+    }
+    .br {
+        display: none !important;
+    }
+    .sliderHeader {
+        padding: 10px 10px 0px 10px;
+    }
+    .mainSlider {
+        height: 768px;
+        width: 100%;
+        background: url(../img/main-bg.png);
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: 144%;
+        background-position: -494px -953px;
+        background-repeat: no-repeat;
+        transition: all 1s ease-in-out;
+    }
+    .isoBadge {
+        padding-top: 0px;
+        position: absolute;
+        right: 0px!important;
+        bottom: 20px;
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: 993px) {
+    .powerText-login {
+        position: relative;
+        left: 52px;
+        padding: 20px 0px;
+        margin-top: 100px;
+        text-align: center;
+        bottom: 0;
+    }
+}
+    
+@media only screen and (max-width: 768px) {
+    #slideno3 .mobile-style-font {
+        line-height: 34px !important;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .isoBadge {
+        padding-top: 0px;
+        position: relative!important;
+        right: 0px!important;
+        bottom: 110px!important;
+        text-align: right;
+        width: 82px;
+        margin-left: auto;
+        /* background: #000; */
+    }
+
+    .captcha-decoration {
+        border: 1px solid #fff;
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: rgb(255, 255, 255);
+        width: 87%;
+        float: left;
+        border-right: 0;
+        height: 52px;
+        border-radius: 4px;
+    }
+    .slide2 li::before {
+        content: url("../img/line.png");
+        display: block;
+        position: absolute;
+        left: 14px;
+        top: 22px;
+    }
+    #slideno2 .mobile-style-font {
+        line-height: 22px !important;
+        margin-left: -2px !important;
+    }
+    #slideno3 .mobile-style-font {
+        line-height: 20px !important;
+        padding-top: 1px !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #slideno3 .mobile-style-font {
+        line-height: 20px !important;
+        padding: 8px 0px 17px 0px !important;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    #slideno3 .mobile-style-font {
+        line-height: 18px !important;
+        padding: 8px 0px 2px 0px !important;
+    }
+}

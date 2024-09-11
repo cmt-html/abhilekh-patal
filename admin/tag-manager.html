@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../scss/main-admin.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/jquery.dataTables.min.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon-icon.png">
+    <title>Tag Manager</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl bg-light fixed-top">
+            <div class="container padding-off ">
+                <a href="../index.html" class="navbar-brand"><img src="../images/logo.png" /></a>
+                    <div class="float-end ms-auto left-20"><img src="../images/searchicon.png" onclick="search()" class="search-panel-icon" /></div>
+                        <form class="search-panel">
+                            <div class="crossIcon">
+                                <input class="form-control searchdiv" type="search" id="tags" aria-label="Search" placeholder="SEARCH">
+                                <img src="../images/searchicon.png" class="search-panel-icon" />
+                                <span><img src="../images/crss-icon.png" class="crossIconclosed"></span>
+                            </div>
+                            <div class="row">
+                                <div class="advance-serach mb-3 float-start ">
+                                    <a href="#" class="col-md-6 advance-serach-active">ADVANCE SEARCH</a>
+                                </div>
+                            </div>
+                            <div class="form-search">
+                                <div class="row">
+                                    <div>
+                                        <div class="row">
+                                            <div class="inputGroup col-md-12 col-12  mb-3">
+                                                <label>Category</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12  mb-3">
+                                                <label>Document Type</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12  mb-3">
+                                                <label>Department</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12  mb-3">
+                                                <label>Branch</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12 mb-3 ">
+                                                <label>Place</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12 mb-3 ">
+                                                <label>Language</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12 mb-3 ">
+                                                <label>Category</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12 mb-3 ">
+                                                <label>Year of Publication</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="inputGroup range-slider-div col-md-12">
+                                            <div class=" position-relative">
+                                                <span class="col-md-12 col-lg-2 pb-2 select-fonts"> Year</span>
+                                                <div id="slider-range-mobile"></div>
+                                                <div class=" position-relative">
+                                                    <li class="  float-start widthinput" style="list-style: none;"><span class="fs">From </span><input type="text" name="specificFromYear" id="amount14" type="number" class="form-control rageinput" value="1245"></li>
+                                                    <li class="  float-end widthinput" style="float: left; list-style: none;"><span class="fsfs">To </span><input type="text" name="specificToYear" id="amount14" type="number" class="form-control rageinput" value="2000"></li>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="inputGroup col-md-6">
+                                                    <label class="adlebel mb-2">Keyword</label>
+                                                    <input type="text" class="form-control input-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type here">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" buttonadvancesearch-mobile ">
+                                            <div>
+                                                <button class="resetbutton text-align-end">Reset</button>
+                                                <button class="applybutton ">Search</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                                <img src="../images/menu-icon.png" />
+                        </button>
+                        <div class="collapse navbar-collapse ul-menu-list " id="navbarSupportedContent">
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                                <ul>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    <div class="left-div ">
+                                        <li>
+                                            <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" href="../grid-view.html">EXPLORE</a>
+                                        </li>
+                                        <li class="mobile-lang">
+                                            <div class="dropdown dropdown-li">
+                                                <button class="textlanguage  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    ENG
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">English</a></li>
+                                                    <li><a class="dropdown-item" href="#">Hindi</a></li>
+                                                    <li><a class="dropdown-item" href="#">Marathi</a></li>
+                                                </ul>
+                                            </div>   
+                                        </li>
+                                    </div>
+                                    <div class="right-div">
+                                        <ul>
+                                            <li>
+                                                <form>
+                                                    <div class="row ">
+                                                        <div class="searchinput col-md-6 col-6 col-lg-6 col-xl-6">
+                                                            <span class="search"></span>
+                                                            <input class="form-control" type="search" aria-label="Search" placeholder="SEARCH">
+                                                            <span class="closedIcon-search"><img id="searchCloseIconImg" src="../images/closed-search.png" /></span>
+                                                        </div>
+                                                        <a id="aAdvanceSearch" class="searchButton col-md-6 col-6 col-lg-6 col-xl-6" type="submit">ADVANCE SEARCH</a>
+                                                        <div id="containerAdvanceSearch" class="asvanceSearch col-md-12">
+                                                            <div class="row pb-4">
+                                                                <div class="AdSearch text-align-start">Advance Search </div>
+                                                            </div>
+                                                            <div class="row mb-3 ">
+                                                                <div class="inputGroup col-md-3  ">
+                                                                    <label class="adlebel mb-2">Category</label>
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option default selected>-Select or type-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="inputGroup col-md-3">
+                                                                    <label class="adlebel mb-2">Document Type</label>
+                                                                    <select class="form-select " aria-label="Default select example">
+                                                                        <option default selected>-Select-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="inputGroup col-md-3">
+                                                                    <label class="adlebel mb-2">Department</label>
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option default selected>-Select or type-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="inputGroup col-md-3">
+                                                                    <label class="adlebel mb-2 ">Branch</label>
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option default selected>-Select or type-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3 ">
+                                                                <div class="inputGroup col-md-3  ">
+                                                                    <label class="adlebel mb-2">Place</label>
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option default selected>-Select or type-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="inputGroup col-md-3">
+                                                                    <label class="adlebel mb-2">Language</label>
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option default selected>-Select or type-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="inputGroup col-md-3 position-relative">
+                                                                    <span class="border-div"></span>
+                                                                    <label class="adlebel mb-2">Year of Publication</label>
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option default selected>-Select or type-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="inputGroup col-md-3">
+                                                                    <div class="row position-relative">
+                                                                        <span class="col-md-12 pb-2 select-fonts"> Year</span>
+                                                                        <div id="slider-range-home"></div>
+                                                                        <div class="col-md-6 " style="padding-left: 10px;"><span class="fs">From </span><input type="text" name="specificFromYear" id="amount12" type="number" class="form-control rageinput" value="1245"></div>
+                                                                        <div class="col-md-6 text-right float-end align-items-right"><span class="fsfs">To </span><input type="text" name="specificToYear" id="amount12" type="number" class="form-control rageinput" value="2000"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row search-top-div">
+                                                                <div class="inputGroup col-md-6">
+                                                                    <label class="adlebel mb-2">Keyword</label>
+                                                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type here">
+                                                                </div>
+                                                                <div class=" buttonadvancesearch ">
+                                                                    <div>
+                                                                        <button class="resetbutton text-align-end">Reset</button>
+                                                                        <button class="applybutton ">Search</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <a href="#" id="" class="text-decoration-underline incresefont decrease">-A </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" id="" class="text-decoration-underline incresefont">A </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-decoration-underline increase-size increase">+A </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="../images/color-change.png"> </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="../images/bell-icon.png"> </a>
+                                            </li>
+                                            <li class="deskstop-lang">
+                                                <div class="dropdown dropdown-li">
+                                                    <button class="textlanguage  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        ENG
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                        <li><a class="dropdown-item" href="#">English</a></li>
+                                                        <li><a class="dropdown-item" href="#">Hindi</a></li>
+                                                        <li><a class="dropdown-item" href="#">Marathi</a></li>
+                                                    </ul>
+                                                </div>   
+                                            </li>
+                                            <li class="text-login-text">
+                                                <a href="#">Welcome Admin</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="accordion-menu">
+                                        <li>
+                                            <div class="dropdownlink"> Explore
+                                                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li><a href="../grid-view.html">Explore</a><span class="new">New</span></li>
+                                                <li><a href="../grid-view.html">Collection</a></li>
+                                                <li><a href="../nexus-search.html">Nexus</a><span class="new">New</span></li>
+                                                <li><a href="#">Events</a></li>
+                                                <li><a href="#">Exhibitions</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink"> My Library
+                                                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li><a href="../My-Labrary.html">My Library</a></li>
+                                                <li><a href="account-seiing-lib-Selected-Tag.html">My Tags</a></li>
+                                                <li><a href="#">My Bookmarks</a></li>
+                                                <li><a href="#">Scholar Section</a><span class="new">New</span></li>
+                                                <li><a href="../plan-visit.html">Plan your visit to NAI</a><span class="new">New</span></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink"> About Us
+                                                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Associated Repository</a></li>
+                                                <li><a href="../benifits.html">Benefits</a></li>
+                                                <li><a href="#">Tips</a></li>
+                                                <li><a href="../faq.html">FAQ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink">Account
+                                                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li><a href="account-setting-user-admin.html">My Account</a></li>
+                                                <li><a href="">Admin Panel</a></li>
+                                                <li><a href="upload.html">Upload</a></li>
+                                                <li><a href="records-awaiting-verification-new.html">Records Awaiting Verification</a></li>
+                                                <li><a href="#">Logout</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink">Contact Us
+                                                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li><a href="#">Action 1</a></li>
+                                                <li><a href="#">Action 2</a></li>
+                                                <li><a href="#">Action 3</a></li>
+                                            </ul>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav-item fontstyle ">
+                            <a class="nav-link text-color login-text" href="#">Welcome Admin</a>
+                        </div>
+                        <div class="nav-item dropdown dropdown-mega position-static demo-dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"><img src="../images/menu-icon.png" /></a>
+                            <div class="dropdown-menu shadow megahmenudrop m-2">
+                                <div class="mega-content px-4">
+                                    <div class="container ">
+                                        <div class="row row-cols-5 ">
+                                            <div class="flex-item col1">
+                                                <h5 class="">Explore</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="../grid-view.html"> Explore</a><span class="new">New</span></li>
+                                                    <li><a href="collections.html">Collection</a></li>
+                                                    <li><a href="../nexus-search.html">Nexus</a><span class="new">New</span></li>
+                                                    <li><a href="#">Events</a></li>
+                                                    <li><a href="#">Exhibitions</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item col2">
+                                                <h5>My Library</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="../My-Labrary.html">My Library</a></li>
+                                                    <li><a href="account-seiing-lib-Selected-Tag.html">My Tags</a></li>
+                                                    <li><a href="#">My Bookmarks</a></li>
+                                                    <li><a href="#">Scholar Section</a> <span class="new">New</span></li>
+                                                    <li><a href="../plan-visit.html">Plan your visit to NAI</a><span class="new">New</span> </li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item col3">
+                                                <h5>About Us</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="../about-us.html">About Us</a></li>
+                                                    <li><a href="#">Associated Repository</a></li>
+                                                    <li><a href="../benifits.html">Benefits</a></li>
+                                                    <li><a href="#">Tips</a></li>
+                                                    <li><a href="../faq.html">FAQ</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item col4">
+                                                <h5>Account</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="account-setting-user-admin.html">My Account</a></li>
+                                                    <li>
+                                                        <a href="collections.html">Admin Panel</a>
+                                                    </li>
+                                                    <li><a href="upload.html">Upload</a></li>
+                                                    <li><a href="records-awaiting-verification-new.html">Records Awaiting Verification</a></li>
+                                                    <li><a href="#">Logout</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item col5">
+                                                <h5>Contact Us</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="#">Contact Us</a></li>
+                                                    <li><a href="#">Help</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- collection start -->
+    <div class="container pt-5 mt-5 leftcontent">
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-12 col-xl-6 col-xxl-6">
+                <h1 class="account-setting pb-1 col-md-6 "> <span class="collection-heading">Tags</span></h1>
+            </div>
+            <div class="col-lg-6 col-xl-6  col-xxl-6 col-12  usermanagement right-content-dod">
+                <div class="col-md-12  d-flex justify-content-end  pb-2 p-0">
+                    <div class="searchbox position-relative">
+                        <span class="searchicon"><img src="../images/searchicon.png" width="20px" /></span>
+                        <input type="text" class=" search-left  " placeholder="Search tag..">
+                    </div>
+                    <button class="btn collection-active float-start ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal-collection">Manage tags</button>
+                </div>
+            </div>
+            <div class=" border-none pt-1 mt-2">
+                <span class="mb-2 d-block searchalphoName">Search by Alphabet</span>
+                <div class="later pb-2 pt-2">
+                    “ ‘ 0 1 2 3 4 6 8 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z | A
+                </div>
+                <div class="maincirclediv mb-4">
+                    <div class="circle-tag">
+                        “
+                    </div>
+                    <div class="IndianTelegrap pt-2 ">
+                        "Indian Telegraph Act" (1)
+                    </div>
+                </div>
+                <div class="maincirclediv mb-4">
+                    <div class="circle-tag">
+                        ‘
+                    </div>
+                    <div class="IndianTelegrap pt-2 ">
+                        'B' LANDS in CANTONMENTS (50)
+                    </div>
+                </div>
+                <div class="maincirclediv mb-4">
+                    <div class="circle-tag line-ght">
+                        0
+                    </div>
+                    <div class="IndianTelegrap list-none pt-2 ">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>005 (14)</li>
+                                    <li>009 (16)</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>005 (14)</li>
+                                    <li>009 (16)</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>005 (14)</li>
+                                    <li>009 (16)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="maincirclediv mb-4">
+                    <div class="circle-tag line-ght">
+                        1
+                    </div>
+                    <div class="IndianTelegrap list-none pt-2 ">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>1 (25)</li>
+                                    <li>1876 Newspaper (2)</li>
+                                    <li>1922 (5)</li>
+                                    <li>1932 French India (2)</li>
+                                    <li>1947 Constitution of India (5)</li>
+                                    <li>1970 Nepal India (2)</li>
+                                    <li>1971 Political Metaphor (4)</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>1857 (56)</li>
+                                    <li>1915 POW (9)</li>
+                                    <li>1930 Congress Post (56)</li>
+                                    <li>1937 (9)</li>
+                                    <li>1954 Agreement (56)</li>
+                                    <li>1970 Nepal India (2)</li>
+                                    <li>1970s (9)</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>1857, Mutiny Papers English, Kashmiri Gate (13)</li>
+                                    <li>1919 (20)</li>
+                                    <li>1932 Congress Boycott (13)</li>
+                                    <li>1940 Censor (20)</li>
+                                    <li>1967 (13)</li>
+                                    <li>1971 Liberation War (20)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="maincirclediv mb-4">
+                    <div class="circle-tag line-ght-four">
+                        2
+                    </div>
+                    <div class="IndianTelegrap pt-2 ">
+                        2nd Bn Manipur Rifiles (12)
+                    </div>
+                </div>
+                <div class="maincirclediv mb-4">
+                    <div class="circle-tag line-ght-four">
+                        4
+                    </div>
+                    <div class="IndianTelegrap pt-2 ">
+                        4 (2)
+                    </div>
+                </div>
+                <div class="maincirclediv mb-4">
+                    <div class="circle-tag line-ght-four">
+                        5
+                    </div>
+                    <div class="IndianTelegrap pt-2 ">
+                        5 (21)
+                    </div>
+                </div>
+                <div class="maincirclediv mb-4">
+                    <div class="circle-tag line-ght-four">
+                        6
+                    </div>
+                    <div class="IndianTelegrap pt-2 ">
+                        6 (9)
+                    </div>
+                </div>
+                <div class="maincirclediv mb-4">
+                    <div class="circle-tag line-ght-four">
+                        8
+                    </div>
+                    <div class="IndianTelegrap pt-2 ">
+                        8 july 1949 khel st list berar (8)
+                    </div>
+                </div>
+                <div class="maincirclediv mb-4">
+                    <div class="circle-tag line-ght">
+                        A
+                    </div>
+                    <div class="IndianTelegrap list-none pt-2 ">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>Abdul Ghaffar Khan (25)</li>
+                                    <li>Accession of Princely States (2)</li>
+                                    <li>afghanistan (5)</li>
+                                    <li>Agriculture history (2)</li>
+                                    <li>akalimovement (5)</li>
+                                    <li>Allahabad famine (2)</li>
+                                    <li>Ambedkar (4)</li>
+                                    <li>Argetine (2)</li>
+                                    <li>Army HQ (5)</li>
+                                    <li>Assam (2)</li>
+                                    <li>Assam Political (4)</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>Abdul Rehman Hajee Mahomed (56)</li>
+                                    <li>Accommodation (9)</li>
+                                    <li>1930 Congress Post (56)</li>
+                                    <li>again (56)</li>
+                                    <li>aKALI, sAROJNI & mADAN mOHAN.. (9)</li>
+                                    <li>Albert Howard (56)</li>
+                                    <li>Allan Octavian Hume (9)</li>
+                                    <li>Animals (9)</li>
+                                    <li>Armenian (9)</li>
+                                    <li>arya samaj (56)</li>
+                                    <li>ASSAM LAND REVENUE SETTLEMENT (9)</li>
+                                    <li>ATP (9)</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>Abhishek KC (13)</li>
+                                    <li>Adivasi (20)</li>
+                                    <li>Agriculture (13)</li>
+                                    <li>Akali movement (20)</li>
+                                    <li>All India Conference on Fauna Preservat.. (13)</li>
+                                    <li>Animals in India (20)</li>
+                                    <li>army (20)</li>
+                                    <li>ASIA FOUNDATION (13)</li>
+                                    <li>Assam Oil (20)</li>
+                                    <li>Ayurveda (20)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="maincirclediv mb-4">
+                    <div class="circle-tag line-ght">
+                        B
+                    </div>
+                    <div class="IndianTelegrap list-none pt-2 ">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>B.P. Koirala (25)</li>
+                                    <li>Baini Prashad (2)</li>
+                                    <li>Banglore (5)</li>
+                                    <li>Barwani (2)</li>
+                                    <li>Bengaluru (5)</li>
+                                    <li>bhagat singh case (2)</li>
+                                    <li>Bhutan (4)</li>
+                                    <li>Birth Control (2)</li>
+                                    <li>Bose Biography (5)</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>Bahadur Shah II (56)</li>
+                                    <li>bandman (9)</li>
+                                    <li>Banihal Tunnel (56)</li>
+                                    <li>bcs (9)</li>
+                                    <li>Bhagat (56)</li>
+                                    <li>Bheem Naik (9)</li>
+                                    <li>Bihar (9)</li>
+                                    <li>Bolarum (9)</li>
+                                    <li>botany (56)</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>Bahadur Shah Zafar (13)</li>
+                                    <li>bandman2 (20)</li>
+                                    <li>barkatullah (13)</li>
+                                    <li>Bellary- Kistna Railway (20)</li>
+                                    <li>Bhagat singh (13)</li>
+                                    <li>BhopalaaSAS (20)</li>
+                                    <li>Bill rajendrababuji (20)</li>
+                                    <li>Bombay (20)</li>
+                                    <li>Buddha jayanti (13)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- all account part-setting start -->
+    </div>
+
+    <div style="clear: both;"></div>
+    <footer class="bg-footer pt-5 pb-5">
+        <div class="container">
+            <div class="row mx-2">
+                <ul class="col-md-3">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about-us.html ">About Us</li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="../Privacy-and-Copyright-Policy.html">Privacy & Copyright Policy</a></li>
+                </ul>
+                <ul class="col-md-3">
+                    <li><a href="../term-condition.html">Terms & Conditions</a></li>
+                    <li><a href="../Disclaimer.html">Disclaimer</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="../Cancellation-Return-Refund-Policy.html">Cancellation, Return & Refund Policy</a></li>
+                </ul>
+                <ul class="col-md-3">
+                    <li>NATIONAL ARCHIVES OF INDIANational Archives Building,Janpath, New Delhi 110001. INDIA</li>
+                    <span class="col-md-4 links ">T:<a href="tel:011-23384797 ">011- 23384797</a></span>
+                    <span class="col-md-4 links ">E:<a href="mailto:archives@nic.in ">archives[at]nic[dot]in</a></span>
+                </ul>
+                <ul class="col-md-3">
+                    <p>© National Archives of India. All Rights Reserved.</p>
+                </ul>
+            </div>
+        </div>    
+    </footer>
+
+    <!-- Button trigger modal -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.bxslider.min.js "></script>
+    <script src="../js/custom.js "></script>
+    <script src="../js/main.js "></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/jquery.dataTables.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+        new DataTable('#example', {
+            "bLengthChange": false,
+            "bFilter": false,
+            "bInfo": false,
+            "bAutoWidth": true,
+            // scrollY: false,
+            // scrollX: false,
+            paging: true,
+
+            info: true,
+            "ordering": false,
+        });
+        $("#files").change(function() {
+            filename = this.files[0].name;
+            console.log(filename);
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../scss/main-admin.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,1,200" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon-icon.png">
+    <link rel="stylesheet" href="../css/jquery.dataTables.min.css">
+    <title>Upload</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl bg-light fixed-top">
+            <div class="container padding-off ">
+                <a href="../index.html" class="navbar-brand"><img src="../images/logo.png" /></a>
+                    <div class="float-end ms-auto left-20"><img src="../images/searchicon.png" onclick="search()" class="search-panel-icon" /></div>
+                        <form class="search-panel">
+                            <div class="crossIcon">
+                                <input class="form-control searchdiv" type="search" id="tags" aria-label="Search" placeholder="SEARCH">
+                                <img src="../images/searchicon.png" class="search-panel-icon" />
+                                <span><img src="../images/crss-icon.png" class="crossIconclosed"></span>
+                            </div>
+                            <div class="row">
+                                <div class="advance-serach mb-3 float-start ">
+                                    <a href="#" class="col-md-6 advance-serach-active">ADVANCE SEARCH</a>
+                                </div>
+                            </div>
+                            <div class="form-search">
+                                <div class="row">
+                                    <div>
+                                        <div class="row">
+                                            <div class="inputGroup col-md-12 col-12  mb-3">
+                                                <label>Category</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12  mb-3">
+                                                <label>Document Type</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12  mb-3">
+                                                <label>Department</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12  mb-3">
+                                                <label>Branch</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12 mb-3 ">
+                                                <label>Place</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12 mb-3 ">
+                                                <label>Language</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12 mb-3 ">
+                                                <label>Category</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputGroup col-md-12 col-12 mb-3 ">
+                                                <label>Year of Publication</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>-Select or type-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="inputGroup range-slider-div col-md-12">
+                                            <div class=" position-relative">
+                                                <span class="col-md-12 col-lg-2 pb-2 select-fonts"> Year</span>
+                                                <div id="slider-range-mobile"></div>
+                                                <div class=" position-relative">
+                                                    <li class="  float-start widthinput" style="list-style: none;"><span class="fs">From </span><input type="text" name="specificFromYear" id="amount14" type="number" class="form-control rageinput" value="1245"></li>
+                                                    <li class="  float-end widthinput" style="float: left; list-style: none;"><span class="fsfs">To </span><input type="text" name="specificToYear" id="amount14" type="number" class="form-control rageinput" value="2000"></li>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="inputGroup col-md-6">
+                                                    <label class="adlebel mb-2">Keyword</label>
+                                                    <input type="text" class="form-control input-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type here">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" buttonadvancesearch-mobile ">
+                                            <div>
+                                                <button class="resetbutton text-align-end">Reset</button>
+                                                <button class="applybutton ">Search</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                                <img src="../images/menu-icon.png" />
+                        </button>
+                        <div class="collapse navbar-collapse ul-menu-list " id="navbarSupportedContent">
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                                <ul>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    <div class="left-div ">
+                                        <li>
+                                            <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link" href="../grid-view.html">EXPLORE</a>
+                                        </li>
+                                        <li class="mobile-lang">
+                                            <div class="dropdown dropdown-li">
+                                                <button class="textlanguage  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    ENG
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">English</a></li>
+                                                    <li><a class="dropdown-item" href="#">Hindi</a></li>
+                                                    <li><a class="dropdown-item" href="#">Marathi</a></li>
+                                                </ul>
+                                            </div>   
+                                        </li>
+                                    </div>
+                                    <div class="right-div">
+                                        <ul>
+                                            <li>
+                                                <form>
+                                                    <div class="row ">
+                                                        <div class="searchinput col-md-6 col-6 col-lg-6 col-xl-6">
+                                                            <span class="search"></span>
+                                                            <input class="form-control" type="search" aria-label="Search" placeholder="SEARCH">
+                                                            <span class="closedIcon-search"><img id="searchCloseIconImg" src="../images/closed-search.png" /></span>
+                                                        </div>
+                                                        <a id="aAdvanceSearch" class="searchButton col-md-6 col-6 col-lg-6 col-xl-6" type="submit">ADVANCE SEARCH</a>
+                                                        <div id="containerAdvanceSearch" class="asvanceSearch col-md-12">
+                                                            <div class="row pb-4">
+                                                                <div class="AdSearch text-align-start">Advance Search </div>
+                                                            </div>
+                                                            <div class="row mb-3 ">
+                                                                <div class="inputGroup col-md-3  ">
+                                                                    <label class="adlebel mb-2">Category</label>
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option default selected>-Select or type-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="inputGroup col-md-3">
+                                                                    <label class="adlebel mb-2">Document Type</label>
+                                                                    <select class="form-select " aria-label="Default select example">
+                                                                        <option default selected>-Select-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="inputGroup col-md-3">
+                                                                    <label class="adlebel mb-2">Department</label>
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option default selected>-Select or type-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="inputGroup col-md-3">
+                                                                    <label class="adlebel mb-2 ">Branch</label>
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option default selected>-Select or type-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3 ">
+                                                                <div class="inputGroup col-md-3  ">
+                                                                    <label class="adlebel mb-2">Place</label>
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option default selected>-Select or type-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="inputGroup col-md-3">
+                                                                    <label class="adlebel mb-2">Language</label>
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option default selected>-Select or type-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="inputGroup col-md-3 position-relative">
+                                                                    <span class="border-div"></span>
+                                                                    <label class="adlebel mb-2">Year of Publication</label>
+                                                                    <select class="form-select" aria-label="Default select example">
+                                                                        <option default selected>-Select or type-</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="inputGroup col-md-3">
+                                                                    <div class="row position-relative">
+                                                                        <span class="col-md-12 pb-2 select-fonts"> Year</span>
+                                                                        <div id="slider-range-home"></div>
+                                                                        <div class="col-md-6 " style="padding-left: 10px;"><span class="fs">From </span><input type="text" name="specificFromYear" id="amount12" type="number" class="form-control rageinput" value="1245"></div>
+                                                                        <div class="col-md-6 text-right float-end align-items-right"><span class="fsfs">To </span><input type="text" name="specificToYear" id="amount12" type="number" class="form-control rageinput" value="2000"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row search-top-div">
+                                                                <div class="inputGroup col-md-6">
+                                                                    <label class="adlebel mb-2">Keyword</label>
+                                                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type here">
+                                                                </div>
+                                                                <div class=" buttonadvancesearch ">
+                                                                    <div>
+                                                                        <button class="resetbutton text-align-end">Reset</button>
+                                                                        <button class="applybutton ">Search</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <a href="#" id="" class="text-decoration-underline incresefont decrease">-A </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" id="" class="text-decoration-underline incresefont">A </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-decoration-underline increase-size increase">+A </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="../images/color-change.png"> </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="../images/bell-icon.png"> </a>
+                                            </li>
+                                            <li class="deskstop-lang">
+                                                <div class="dropdown dropdown-li">
+                                                    <button class="textlanguage  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        ENG
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                        <li><a class="dropdown-item" href="#">English</a></li>
+                                                        <li><a class="dropdown-item" href="#">Hindi</a></li>
+                                                        <li><a class="dropdown-item" href="#">Marathi</a></li>
+                                                    </ul>
+                                                </div>   
+                                            </li>
+                                            <li class="text-login-text">
+                                                <a href="#">Welcome Admin</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="accordion-menu">
+                                        <li>
+                                            <div class="dropdownlink"> Explore
+                                                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li><a href="../grid-view.html">Explore</a><span class="new">New</span></li>
+                                                <li><a href="../grid-view.html">Collection</a></li>
+                                                <li><a href="../nexus-search.html">Nexus</a><span class="new">New</span></li>
+                                                <li><a href="#">Events</a></li>
+                                                <li><a href="#">Exhibitions</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink"> My Library
+                                                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li><a href="../My-Labrary.html">My Library</a></li>
+                                                <li><a href="account-seiing-lib-Selected-Tag.html">My Tags</a></li>
+                                                <li><a href="#">My Bookmarks</a></li>
+                                                <li><a href="#">Scholar Section</a><span class="new">New</span></li>
+                                                <li><a href="../plan-visit.html">Plan your visit to NAI</a><span class="new">New</span></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink"> About Us
+                                                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Associated Repository</a></li>
+                                                <li><a href="../benifits.html">Benefits</a></li>
+                                                <li><a href="#">Tips</a></li>
+                                                <li><a href="../faq.html">FAQ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink">Account
+                                                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li><a href="account-setting-user-admin.html">My Account</a></li>
+                                                <li><a href="">Admin Panel</a></li>
+                                                <li><a href="upload.html">Upload</a></li>
+                                                <li><a href="records-awaiting-verification-new.html">Records Awaiting Verification</a></li>
+                                                <li><a href="#">Logout</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="dropdownlink">Contact Us
+                                                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                            </div>
+                                            <ul class="submenuItems">
+                                                <li><a href="#">Action 1</a></li>
+                                                <li><a href="#">Action 2</a></li>
+                                                <li><a href="#">Action 3</a></li>
+                                            </ul>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav-item fontstyle ">
+                            <a class="nav-link text-color login-text" href="#">Welcome Admin</a>
+                        </div>
+                        <div class="nav-item dropdown dropdown-mega position-static demo-dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"><img src="../images/menu-icon.png" /></a>
+                            <div class="dropdown-menu shadow megahmenudrop m-2">
+                                <div class="mega-content px-4">
+                                    <div class="container ">
+                                        <div class="row row-cols-5 ">
+                                            <div class="flex-item col1">
+                                                <h5 class="">Explore</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="../grid-view.html"> Explore</a><span class="new">New</span></li>
+                                                    <li><a href="collections.html">Collection</a></li>
+                                                    <li><a href="../nexus-search.html">Nexus</a><span class="new">New</span></li>
+                                                    <li><a href="#">Events</a></li>
+                                                    <li><a href="#">Exhibitions</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item col2">
+                                                <h5>My Library</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="../My-Labrary.html">My Library</a></li>
+                                                    <li><a href="account-seiing-lib-Selected-Tag.html">My Tags</a></li>
+                                                    <li><a href="#">My Bookmarks</a></li>
+                                                    <li><a href="#">Scholar Section</a> <span class="new">New</span></li>
+                                                    <li><a href="../plan-visit.html">Plan your visit to NAI</a><span class="new">New</span> </li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item col3">
+                                                <h5>About Us</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="../about-us.html">About Us</a></li>
+                                                    <li><a href="#">Associated Repository</a></li>
+                                                    <li><a href="../benifits.html">Benefits</a></li>
+                                                    <li><a href="#">Tips</a></li>
+                                                    <li><a href="../faq.html">FAQ</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item col4">
+                                                <h5>Account</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="account-setting-user-admin.html">My Account</a></li>
+                                                    <li>
+                                                        <a href="collections.html">Admin Panel</a>
+                                                    </li>
+                                                    <li><a href="upload.html">Upload</a></li>
+                                                    <li><a href="records-awaiting-verification-new.html">Records Awaiting Verification</a></li>
+                                                    <li><a href="#">Logout</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item col5">
+                                                <h5>Contact Us</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="#">Contact Us</a></li>
+                                                    <li><a href="#">Help</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- collection start -->
+    <div class="container-xxl">
+        <div class="col-xl-12 col-lg-12 col-md-12 ">
+            <div class="row">
+                <!-- Top menu -->
+                <!-- Top content -->
+                <div class="top-content mt-5 pt-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <div class="f1-buttons ">
+                                    <button type="button" class=" radishcolor float-end btn-previous text-align-left back-main">< Back</button>
+                                </div>
+                                <form role="form" action="" method="post" class="f1 font-boder">
+                                    <div class="f1-steps col-sm-10 col-md-8 col-lg-6">
+                                        <div class="f1-progress">
+                                            <div class="f1-progress-line" data-now-value="16.66" data-number-of-steps="3" style="width: 16.66%;"></div>
+                                        </div>
+                                        <div class="f1-step active">
+                                            <div class="f1-step-icon">
+                                                <span class="material-symbols-outlined">
+                                                    format_list_bulleted
+                                                </span>
+                                            </div>
+                                            <p>Select </p>
+                                        </div>
+                                        <div class="f1-step">
+                                            <div class="f1-step-icon">
+                                                <span class="material-symbols-outlined">
+                                                    description
+                                                </span>
+                                            </div>
+                                            <p>Describe</p>
+                                        </div>
+                                        <div class="f1-step">
+                                            <div class="f1-step-icon"><i class="fa fa-upload" aria-hidden="true"></i></div>
+                                            <p>Upload</p>
+                                        </div>
+                                        <div class="f1-step">
+                                            <div class="f1-step-icon"><i class="fa fa-cog" aria-hidden="true"></i></div>
+                                            <p>Verify</p>
+                                        </div>
+                                        <div class="f1-step">
+                                            <div class="f1-step-icon">
+                                                <span class="material-symbols-outlined">
+                                                    task
+                                                </span>
+                                            </div>
+                                            <p>Complete</p>
+                                        </div>
+                                    </div>
+                                    <fieldset>
+                                        <div class="row">
+                                            <h4 class="heading-upload">Choose Collection</h4>
+                                            <div class="mb-3 col-md-12 col-12 col-lg-12">
+                                                <label for="exampleFormControlTextarea1" class="form-label">Select the collection you wish to submit an item to from the list below, then click "Next".</label>
+                                                <select class="form-control form-select rounded-5 inputstyle bg-transparent" aria-label="Default select example">
+                                                    <option selected>-Type or Select-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <h4 class="heading-upload">Describe the item</h4>
+                                            <p class="form-label">Please fill in the requested information about this submission below. In most browsers, you can use the tab key to move the cursor to the next input box or button, to save you having to use the mouse each time.</p>
+                                            <div class="mb-3 col-md-4 col-12 col-lg-4 pt-3">
+                                                <label for="exampleFormControlTextarea1" class="form-label form-label pt-2 modelcollectionformstyle">Category :*</label>
+                                                <select class="form-control form-select rounded-5 inputstyle bg-transparent" aria-label="Default select example">
+                                                    <option selected>-Type or Select-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 text-align-left col-md-4  pt-3">
+                                                <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Name : *</label>
+                                                <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Cartographic Records">
+                                            </div>
+                                            <div class="mb-3 col-md-4 col-12 col-lg-4  pt-3">
+                                                <label for="exampleFormControlTextarea1" class="form-label form-label pt-2 modelcollectionformstyle">Document Type :*</label>
+                                                <select class="form-control form-select rounded-5 inputstyle bg-transparent" aria-label="Default select example">
+                                                    <option selected>-Type or Select-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-12 col-12 col-lg-6 col-xl-4 pt-3">
+                                                <div class="row">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label pt-2 modelcollectionformstyle">Date of Issue From :* <i class="fa fa-info-circle" aria-hidden="true"></i></label>
+                                                    <div class="col-md-4 col-12 col-xl-4 col-xxl-6 col-lg-4 ">
+                                                        <div class="mb-3">
+                                                            <select class="form-control form-select rounded-5 inputstyle bg-transparent" aria-label="Default select example">
+                                                                <option selected>Month</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4  col-12 col-xl-4 col-xxl-3 col-lg-4 ">
+                                                        <div class="mb-3">
+                                                            <select class="form-control form-select rounded-5 inputstyle bg-transparent" aria-label="Default select example">
+                                                                <option selected>Date </option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-12 col-xl-4 col-xxl-3 col-lg-4 ">
+                                                        <div class="mb-3">
+                                                            <select class="form-control form-select rounded-5 inputstyle bg-transparent" aria-label="Default select example">
+                                                                <option selected>Year</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-12 col-lg-6 col-xl-4 pt-3">
+                                                <div class="row">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label pt-2 modelcollectionformstyle">Date of Issue To :* <i class="fa fa-info-circle" aria-hidden="true"></i></label>
+                                                    <div class="col-md-4 col-12 col-xl-4 col-xxl-6 col-lg-4 ">
+                                                        <div class="mb-3">
+                                                            <select class="form-control form-select rounded-5 inputstyle bg-transparent" aria-label="Default select example">
+                                                                <option selected>Month</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-12 col-xl-4 col-xxl-3 col-lg-4 ">
+                                                        <div class="mb-3">
+                                                            <select class="form-control form-select rounded-5 inputstyle bg-transparent" aria-label="Default select example">
+                                                                <option selected>Date </option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-12 col-xl-4 col-xxl-3 col-lg-4">
+                                                        <div class="mb-3">
+                                                            <select class="form-control form-select rounded-5 inputstyle bg-transparent" aria-label="Default select example">
+                                                                <option selected>Year</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-12 col-lg-6  col-xl-4 pt-3">
+                                                <div class="row">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label pt-2 modelcollectionformstyle">Year of Publication :* <i data-toggle="tooltip" data-placement="top" title="Tooltip on top" class="fa fa-info-circle" aria-hidden="true"></i></label>
+                                                    <div class="col-md-4 col-12 col-12 col-xl-4 col-xxl-6 col-lg-4">
+                                                        <div class="mb-3">
+                                                            <select class="form-control form-select rounded-5 inputstyle bg-transparent" aria-label="Default select example">
+                                                                <option selected>Month</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-12 col-xl-4 col-xxl-3 col-lg-4">
+                                                        <div class="mb-3">
+                                                            <select class="form-control form-select rounded-5 inputstyle bg-transparent" aria-label="Default select example">
+                                                                <option selected>Date </option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4  col-12 col-xl-4 col-xxl-3 col-lg-4">
+                                                        <div class="mb-3">
+                                                            <select class="form-control form-select rounded-5 inputstyle bg-transparent" aria-label="Default select example">
+                                                                <option selected>Year</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clear:both"></div>
+                                            <div class="mb-3 col-md-4 col-12 col-lg-4 pt-3">
+                                                <label for="exampleFormControlTextarea1" class="form-label form-label pt-2 modelcollectionformstyle">Identifier :* <i class="fa fa-info-circle" aria-hidden="true"></i></label>
+                                                <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Type here..">
+                                            </div>
+                                            <div class="mb-3 text-align-left col-md-4 pt-3">
+                                                <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Department :*</label>
+                                                <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Type here..">
+                                            </div>
+                                            <div class="mb-3 col-md-4 col-12 col-lg-4 pt-3">
+                                                <label for="exampleFormControlTextarea1" class="form-label form-label pt-2 modelcollectionformstyle">Branch :*</label>
+                                                <select class="form-control form-select rounded-5 inputstyle bg-transparent" aria-label="Default select example">
+                                                    <option selected>-Type or Select-</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="d-block mr-0 ml-auto collection-button-box-stepper  mt-5">
+                                                <div class="f1-buttons ">
+                                                    <button type="button" class="btn collection-active ms-2  btn-next float-end">Next</button>
+                                                </div>
+                                                <div class="f1-buttons">
+                                                    <button type="button" class="btn  collection-button btn-next float-end">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="discription-box">
+                                        <h4>Describe the item</h4>
+                                        <p>Please fill further information about this submission below.</p>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">File No. :</label>
+                                                    <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Type here..">
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Part Number :</label>
+                                                    <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Type here..">
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Place :</label>
+                                                    <select class="form-select rounded-5" aria-label="Default select example">
+                                                        <option selected="">select</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                      </select>
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Record Contains :</label>
+                                                    <div class="mb-3">
+                                                        <select class="form-control form-select rounded-0 inputstyle bg-transparent col-md-12" multiple="multiple" aria-label="Default select example">
+                                                            <option selected="">Map </option>
+                                                            <option value="1">Photograph</option>
+                                                            <option value="2">Drawing</option>
+                                                            <option value="3">Cartoon</option>
+                                                            <option value="1">Report</option>
+                                                            <option value="2">Agenda & Letters</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Digitized Collection :</label>
+                                                    <div class="mb-3">
+                                                        <select class="form-control form-select rounded-0 inputstyle bg-transparent col-md-12" multiple="multiple" aria-label="Default select example">
+                                                            <option selected="">Digitized Public Records</option>
+                                                            <option value="1">Digitized Private Papers</option>
+                                                            <option value="2">Universities of India</option>
+                                                            <option value="3">Dr. Sitaram</option>
+                                                            <option value="1">Dr. Rajendra Prasad</option>
+                                                            <option value="2">S.C. Dixit</option> 
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Keywords :</label>
+                                                    <div class="mb-3">
+                                                        <select class="form-control form-select rounded-0 inputstyle bg-transparent col-md-12" multiple="multiple" aria-label="Default select example">
+                                                            <option selected="">Visva Bharati Shantiniketan</option>
+                                                            <option value="1">Jamia Millia Islamia</option>
+                                                            <option value="2">Deccan College</option>
+                                                            <option value="3">Banaras Hindu University</option>
+                                                            <option value="1">Gurukula University</option>
+                                                            <option value="2">Aligahh Muslim University</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Remark :</label>
+                                                    <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Type here..">
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <div class="mb-3 col-md-6 col-12 col-lg-12">
+                                                        <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Scale :</label>
+                                                        <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Type here..">
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <div class="mb-3 col-md-6 col-12 col-lg-12">
+                                                        <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">File Size :</label>
+                                                        <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Type here..">
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Series :</label>
+                                                    <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Type here..">
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <div class="mb-3 col-md-6 col-12 col-lg-12">
+                                                        <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Location :</label>
+                                                        <select class="form-select rounded-5" aria-label="Default select example">
+                                                            <option selected="">select</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Organization :</label>
+                                                    <select class="form-select rounded-5" aria-label="Default select example">
+                                                        <option selected="">select</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Scale :</label>
+                                                    <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Type here..">
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Illustration :</label>
+                                                    <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Type here..">
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Rights :</label>
+                                                    <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Type here..">
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Format :</label>
+                                                    <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Type here..">
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Call Number:</label>
+                                                    <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Type here..">
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Contributor :</label>
+                                                    <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Type here..">
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Publisher :</label>
+                                                    <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Type here..">
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Description :</label>
+                                                    <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Type here..">
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Subject :</label>
+                                                    <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Type here..">
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Creator :</label>
+                                                    <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Type here..">
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Accession Number :</label>
+                                                    <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Type here..">
+                                                </div>
+                                                <div class="col-md-12 col-12 col-lg-6 col-xl-4 ">
+                                                    <div class="row">
+                                                        <label for="exampleFormControlTextarea1" class="form-label form-label pt-2 modelcollectionformstyle">Year of Publication :* <i class="fa fa-info-circle" aria-hidden="true"></i></label>
+                                                        <div class="col-md-4 col-xl-4 col-xxl-6 col-lg-4">
+                                                            <div class="mb-3">
+                                                                <select class="form-control form-select rounded-5 inputstyle bg-transparent" aria-label="Default select example">
+                                                                    <option selected>Month</option>
+                                                                    <option value="1">One</option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-xl-4 col-xxl-3 col-lg-4 ">
+                                                            <div class="mb-3">
+                                                                <select class="form-control form-select rounded-5 inputstyle bg-transparent" aria-label="Default select example">
+                                                                    <option selected>Date </option>
+                                                                    <option value="1">One</option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-xl-4 col-xxl-3 col-lg-4 ">
+                                                            <div class="mb-3">
+                                                                <select class="form-control form-select rounded-5 inputstyle bg-transparent" aria-label="Default select example">
+                                                                    <option selected>Year</option>
+                                                                    <option value="1">One</option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 col-md-4 col-12 col-lg-4 ">
+                                                    <label for="exampleFormControlTextarea1" class="form-label form-label modelcollectionformstyle">Series :</label>
+                                                    <input type="text" class="form-control rounded-5  inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="Type here..">
+                                                </div>
+                                            </div>
+                                            <div class="d-block mr-0 ml-auto collection-button-box-stepper ">
+                                                <div class="f1-buttons ">
+                                                    <button type="button" class="btn collection-active ms-2  btn-next float-end">Next</button>
+                                                </div>
+                                                <div class="f1-buttons">
+                                                    <button type="button" class="btn  collection-button btn-next float-end">Save Draft</button>
+                                                </div>
+                                                <div class="f1-buttons ">
+                                                    <button type="button" class=" radishcolor float-end btn-previous">Cancel</button>
+                                                </div>
+                                            </div>
+                                    </fieldset>
+                                    <fieldset class="uploadItem">
+                                        <div class="col-12 col-md-12 mb-5 ">
+                                            <h4>Upload the item</h4>
+                                            <p>Please enter the name of the file on your local hard drive corresponding to your item. If you click "Browse...", a new window will appear in which you can locate and select the file on your local hard drive.
+                                                Please also note that the DSpace system is able to preserve the content of certain types of files better than other types. Information about file types and levels of support for each are available.</p>
+                                            <div class="col-xl-12 col-lg-12 mt-5">
+                                                <div class="row">
+                                                    <div class="col-12 mb-5 js wow fadeInUp">
+                                                        <div class="col-md-12 ms-auto">
+                                                            <div class="input-file-box rounded-3 text-center col-md-12 col-lg-12 m-auto">
+                                                                <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple />
+                                                                <label for="file-1">Drag and drop files here<br>Or<br><span
+                                                                    class="btn btn-border btn-height-sm rounded-3 px-3">Browse
+                                                                    Document</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <table class="table">
+                                                            <thead class="thead-dark text-center">
+                                                                <tr>
+                                                                    <th scope="col" style="text-align: center;">#</th>
+                                                                    <th scope="col">Name</th>
+                                                                    <th scope="col">Status</th>
+                                                                    <th scope="col">Description</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="text-align: center;">Uploading</td>
+                                                                    <td>file1.png</td>
+                                                                    <td><img src="../images/worning-1.png" /></td>
+                                                                    <td>
+                                                                        <div class="mb-3 col-md-6 col-lg-6 col-12">
+                                                                            <input type="email" placeholder="Type here" class="form-control bg-transparent border-input" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="text-align: center;">Uploading</td>
+                                                                    <td>file1.png</td>
+                                                                    <td> <img src="../images/success.png" /></td>
+                                                                    <td>
+                                                                        <div class="mb-3 col-md-6 col-lg-6 col-12">
+                                                                            <input type="email" placeholder="Type here" class="form-control bg-transparent border-input" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <h4>Submit Uploaded Item</h4>
+                                                <p>Your file was successfully uploaded.</p>
+                                                <p>The table below shows the files which have uploaded for this item.</p>
+                                                <table class="table">
+                                                    <thead class="thead-dark text-center">
+                                                        <tr>
+                                                            <th scope="col">Primary bistream</th>
+                                                            <th scope="col">File</th>
+                                                            <th scope="col">Size</th>
+                                                            <th scope="col">Description</th>
+                                                            <th scope="col">File Format</th>
+                                                            <th scope="col" style="text-align: right;">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Uploading</td>
+                                                            <td>file1.png</td>
+                                                            <td>9702 bytes</td>
+                                                            <td>None</td>
+                                                            <td>image/png <span class="know-heading">(known)</span></td>
+                                                            <td>
+                                                                <div class="d-flex justify-content-end"><span class=" float-start pe-4 edit-icon" data-bs-toggle="modal" data-bs-target="#exampleModal-Edit"><img src="../images/pencil.png"></span><span class=" deleteicon  float-start" aria-hidden="true"
+                                                                        data-bs-toggle="modal" data-bs-target="#exampleModal-delete"><img src="../images/delete.png"></span></div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Uploading</td>
+                                                            <td>file1.png</td>
+                                                            <td>9702 bytes</td>
+                                                            <td>None</td>
+                                                            <td>image/png <span class="know-heading">(known)</span></td>
+                                                            <td>
+                                                                <div class="d-flex justify-content-end"><span class=" float-start pe-4 edit-icon" data-bs-toggle="modal" data-bs-target="#exampleModal-Edit"><img src="../images/pencil.png"></span><span class=" deleteicon  float-start" aria-hidden="true"
+                                                                        data-bs-toggle="modal" data-bs-target="#exampleModal-delete"><img src="../images/delete.png"></span></div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="f1-buttons">
+                                                    <!-- <button type="button" class="btn btn-previous btn-border">Previous</button> -->
+                                                    <button type="button" class="btn button-add">Add Another File</button>
+                                                </div>
+                                                <p class="pt-0 m-0">You can verify that the file(s) have been uploaded correctly by:</p>
+                                                <ul>
+                                                    <li>Clicking on the filenames above. This will download the file in a new browser window, so that you can check the contents.</li>
+                                                    <li>The system can calculate a checksum you can verify. <a href="#" class="page-link">Click here for more information.</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="d-block mr-0 ml-auto collection-button-box-stepper ">
+                                            <div class="f1-buttons ">
+                                                <button type="button" class="btn collection-active ms-2  btn-next float-end">Next</button>
+                                            </div>
+                                            <div class="f1-buttons">
+                                                <button type="button" class="btn  collection-button btn-next float-end">Save Draft</button>
+                                            </div>
+                                            <div class="f1-buttons ">
+                                                <button type="button" class=" radishcolor float-end btn-previous">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="verify-submit">
+                                        <h4>Verify Submission</h4>
+                                        <p>If everything is OK, please click the "Next" button at the bottom of the page. <br>You can safely check the files which have been uploaded - a new window will be opened to display them.</p>
+                                        <div class="row">
+                                            <div class="col-md-9">
+                                                <div class="bg-resource p-3 rounded-3 content mCustomScrollbar " id="content-1">
+                                                    <div class="col-md-7 m-4 pt-3">
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Resource Type </div>
+                                                            <div class="col-md-6 col-6 text-test">TEST</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Title </div>
+                                                            <div class="col-md-6 col-6 text-test">TEST</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Series </div>
+                                                            <div class="col-md-6 col-6 text-test">None</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Author </div>
+                                                            <div class="col-md-6 col-6 text-test">None</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Publisher </div>
+                                                            <div class="col-md-6 col-6 text-test">Baldwin, Cradock, And Joy</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Year/Date of Publication </div>
+                                                            <div class="col-md-6 col-6 text-test">None</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">None </div>
+                                                            <div class="col-md-6 col-6 text-test">Subject </div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Subject </div>
+                                                            <div class="col-md-6 col-6 text-test">None</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="f1-buttons text-left-Correct mt-4 mt-md-0">
+                                                    <button type="button" class="btn collection-button ms-2  btn-next">Correct one of these</button>
+                                                    <!-- 
+                                                    <button type="button" class="btn btn-border float-strat">Correct one of these</button> -->
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9 mt-4">
+                                                <div class="bg-resource p-3 rounded-3 content mCustomScrollbar " id="content-2">
+                                                    <div class="col-md-7 m-4 pt-3">
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">File No. </div>
+                                                            <div class="col-md-6 col-6 text-test">TEST</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Part Number </div>
+                                                            <div class="col-md-6 col-6 text-test">TEST</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Record Contains </div>
+                                                            <div class="col-md-6 col-6 text-test">None</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Digitized Collection </div>
+                                                            <div class="col-md-6 col-6 text-test">None</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Remarks </div>
+                                                            <div class="col-md-6 col-6 text-test">BBaldwin, Cradock, And Joy</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Place </div>
+                                                            <div class="col-md-6 col-6 text-test">None</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Scale </div>
+                                                            <div class="col-md-6 col-6 text-test">Subject </div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">File Size </div>
+                                                            <div class="col-md-6 col-6 text-test">None</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Pages </div>
+                                                            <div class="col-md-6 col-6 text-test">None</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Pages </div>
+                                                            <div class="col-md-6 col-6 text-test">None</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Series</div>
+                                                            <div class="col-md-6 col-6 text-test">None</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Location</div>
+                                                            <div class="col-md-6 col-6 text-test">None</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Organization</div>
+                                                            <div class="col-md-6 col-6 text-test">None</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Scale</div>
+                                                            <div class="col-md-6 col-6 text-test">None</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Illustration</div>
+                                                            <div class="col-md-6 col-6 text-test">None</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Rights</div>
+                                                            <div class="col-md-6 col-6 text-test">None</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Format</div>
+                                                            <div class="col-md-6 col-6 text-test">None</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Call Number</div>
+                                                            <div class="col-md-6 col-6 text-test">None</div>
+                                                        </div>
+                                                        <div class="row border-bottom-verify">
+                                                            <div class="col-md-6 col-6 text-style">Contributor</div>
+                                                            <div class="col-md-6 col-6 text-test">None</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="f1-buttons text-left-Correct mt-4">
+                                                    <button type="button" class="btn collection-button ms-2  btn-next">Correct one of these</button>
+                                                    <!-- <button type="button" class="btn btn-border float-strat">Correct one of these</button> -->
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9 pt-4 mt-5">
+                                                <table class="table table-color">
+                                                    <thead class="thead-dark text-left">
+                                                        <tr>
+                                                            <th scope="col">File</th>
+                                                            <th scope="col">Size</th>
+                                                            <th scope="col">Description</th>
+                                                            <th scope="col">File Format</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><span class="know-heading">file1.png </span></td>
+                                                            <td>2 KB</span>
+                                                            </td>
+                                                            <td>Lorem ipsum</td>
+                                                            <td>image/png <span class="know-heading">(known)</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="know-heading">file1.png </span></td>
+                                                            <td>2 KB</span>
+                                                            </td>
+                                                            <td>Lorem ipsum</td>
+                                                            <td>image/png <span class="know-heading">(known)</span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="col-md-3 pt-4 mt-5">
+                                                <div class="f1-buttons text-left-Correct">
+                                                    <button type="button" class="btn collection-button ms-2  btn-next">Add/ Remove</button>
+                                                    <!-- <button type="button" class="btn btn-border float-strat"></button> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="d-block mr-0 ml-auto collection-button-box-stepper ">
+                                                <div class="f1-buttons ">
+                                                    <button type="button" class="btn collection-active ms-2  btn-next float-end">Next</button>
+                                                </div>
+                                                <div class="f1-buttons">
+                                                    <button type="button" class="btn  collection-button btn-next float-end">Save Draft</button>
+                                                </div>
+                                                <div class="f1-buttons ">
+                                                    <button type="button" class=" radishcolor float-end btn-previous">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="upload-submit-data">
+                                        <div class="row">
+                                            <div class="col-md-12 text-center pt-5 mt-5 pb-5 mb-5">
+                                                <h1>Upload Complete</h1>
+                                                <div class="d-flex justify-content-center mt-5 pt-2 mb-5 ">
+                                                    <button type="button" class="btn collection-active ms-2  btn-next ">Add Another Item</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-block mr-0 ml-auto collection-button-box-stepper ">
+                                            <div class="f1-buttons ">
+                                                <button type="button" class="btn collection-active ms-2  btn-next float-end">Next</button>
+                                            </div>
+                                            <div class="f1-buttons">
+                                                <button type="button" class="btn  collection-button btn-next float-end">Save Draft</button>
+                                            </div>
+                                            <div class="f1-buttons ">
+                                                <button type="button" class=" radishcolor float-end btn-previous">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="clear: both;"></div>
+        <footer class="bg-footer pt-5 pb-5">
+            <div class="container">
+                <div class="row mx-2">
+                    <ul class="col-md-3">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about-us.html ">About Us</li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="../Privacy-and-Copyright-Policy.html">Privacy & Copyright Policy</a></li>
+                    </ul>
+                    <ul class="col-md-3">
+                        <li><a href="../term-condition.html">Terms & Conditions</a></li>
+                        <li><a href="../Disclaimer.html">Disclaimer</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="../Cancellation-Return-Refund-Policy.html">Cancellation, Return & Refund Policy</a></li>
+                    </ul>
+                    <ul class="col-md-3">
+                        <li>NATIONAL ARCHIVES OF INDIANational Archives Building,Janpath, New Delhi 110001. INDIA</li>
+                        <span class="col-md-4 links ">T:<a href="tel:011-23384797 ">011- 23384797</a></span>
+                        <span class="col-md-4 links ">E:<a href="mailto:archives@nic.in ">archives[at]nic[dot]in</a></span>
+                    </ul>
+                    <ul class="col-md-3">
+                        <p>© National Archives of India. All Rights Reserved.</p>
+                    </ul>
+                </div>
+            </div>    
+        </footer>
+
+        <!-- Button trigger modal -->
+        <div class="modal fade" id="exampleModal-collection" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg ">
+                <div class="modal-content rounded-3">
+                    <div class="modal-header rounded-5 border-0">
+                        <h5>Add Tax</h5>
+                        <button type="button" class="btn-close closedinnerpop" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center bgcolor rounded-bottom p-4 ">
+                        <div class="row">
+                            <div class="mb-3 text-align-left col-md-6">
+                                <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Tax: *</label>
+                                <input type="text" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="">
+                            </div>
+                            <div class="mb-3 col-md-12">
+                                <label for="exampleFormControlTextarea1" class="form-label pt-2 modelcollectionformstyle">Description : *</label>
+                                <textarea class="form-control bg-transparent rounded-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+
+                            <div class="mb-3 text-align-left col-md-6">
+                                <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Tax Rate(%): *</label>
+                                <input type="text" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="">
+                            </div>
+                        </div>
+                        <div class=" pb-4 mt-3">
+                            <button type="button" class="deactivebutton float-end">Add Tax</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/jquery.bxslider.min.js "></script>
+        <script src="../js/custom.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/jquery-ui.js"></script>
+        <script src="../js/jquery.backstretch.min.js "></script>
+        <script src="../js/top.include.min.js "></script>
+        <script src="../js/jquery.dataTables.min.js"></script>
+        <script src="../js/jquery.mCustomScrollbar.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+                <script src="../js/jquery.smartWizard.min.js" type="text/javascript"></script>
+        <script>
+            new DataTable('#example', {
+                "bLengthChange": false,
+                "bFilter": false,
+                "bInfo": false,
+                "bAutoWidth": true,
+                // scrollY: false,
+                // scrollX: false,
+                paging: true,
+
+                info: false,
+                "ordering": true,
+            });
+            $("#files").change(function() {
+                filename = this.files[0].name;
+                console.log(filename);
+            });
+            $("#content-1").mCustomScrollbar({
+                scrollButtons: {
+                    enable: true
+                },
+                theme: "light-thick",
+                scrollbarPosition: "outside"
+            });
+            $("#content-2").mCustomScrollbar({
+                scrollButtons: {
+                    enable: true
+                },
+                theme: "light-thick",
+                scrollbarPosition: "outside"
+            });
+        </script>
+        <script>
+            (function(document, window, index) {
+                var inputs = document.querySelectorAll('.inputfile');
+                Array.prototype.forEach.call(inputs, function(input) {
+                    var label = input.nextElementSibling,
+                        labelVal = label.innerHTML;
+                    input.addEventListener('change', function(e) {
+                        var fileName = '';
+                        if (this.files && this.files.length > 1)
+                            fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
+                        else
+                            fileName = e.target.value.split('\\').pop();
+
+                        if (fileName)
+                            label.querySelector('span').innerHTML = fileName;
+                        else
+                            label.innerHTML = labelVal;
+                    });
+                    // Firefox bug fix
+                    input.addEventListener('focus', function() {
+                        input.classList.add('has-focus');
+                    });
+                    input.addEventListener('blur', function() {
+                        input.classList.remove('has-focus');
+                    });
+                });
+            }(document, window, 0));
+        </script>
+
+</body>
+
+</html>
