@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="images/favicon-icon.png">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="scss/main.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -372,119 +373,287 @@
         <div class="backdrop-shaddow">&nbsp;</div>
     </header>
 
-    <div>
-        <section class="slider-banner pt-5">
-            <div class="slider">
-                <div><img src="images/slider.png" width="100%" alt="" /></div>
-                <div><img src="images/slider.png" width="100%" alt="" /></div>
-                <div><img src="images/slider.png" width="100%" alt="" /></div>
-            </div>
-        </section>
 
-        <section>
-            <div class="container">
-                <div class="row">
-                    <h1 class="heading col-md-6 pb-0">Our Record Categories</h1>
-                    <!-- <span class="viewAll  float-end col-md-6 tex-right-viewall"><a href="#">View all>></a></span> -->
+    <section class="slider-banner">
+        <div class="swiper HomepageSlider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/slider.png" alt="slider image" />
                 </div>
-                <div class="row p-0 mt-3">
-                    <div class="record-categories mb-4">
-                        <ul>
-                            <li class="col-md-12 col-12 col-lg-4"><span class="col-md-4"><img src="images/record1.png"
-                                        alt="" /></span><span class="pt-3 py-5 col-md-4">
-                                    <h2>Documents</h2>
-                                    <p>207 Records</p>
-                                </span></li>
-                            <li class="col-md-12 col-12 col-lg-4"><span class="col-md-4"><img src="images/record2.png"
-                                        alt="" /></span><span class="pt-3 py-5 col-md-4">
-                                    <h2>Cartographic</h2>
-                                    <p>207 Records</p>
-                                </span></li>
-                            <li class="col-md-12  col-12 col-lg-4"> <span class="col-md-4"><img src="images/record3.png"
-                                        alt="" /></span><span class="pt-3 py-5  col-md-4">
-                                    <h2>Photographs</h2>
-                                    <p>207 Records</p>
-                                </span></li>
-                        </ul>
-                    </div>
+                <div class="swiper-slide">
+                    <img src="images/slider.png" alt="slider image" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slider.png" alt="slider image" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slider.png" alt="slider image" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slider.png" alt="slider image" />
                 </div>
             </div>
-        </section>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
 
-        <section class="text-center">
-            <div class="container">
-                <div class="bg-about-section">
-                    <h1 class="pt-5">About Us</h1>
-                    <p>Abhilekh Patal Portal for Access to Archives and Learning is an initiative of NAI to make its
-                        rich <br>treasure of Indian Archival Records available to one and all at the click of a
-                        button.<br> Abhilekh Patal contains the reference
-                        media of more than 3.7 million files held by the National<br> Archives of India.</p>
-                    <div class="pb-3 white-text px-4">
-                        OVER 284781 DIGITIZED RECORDS ARE AVAILABLE FOR ONLINE ACCESS.<br>
-                    </div>
-                    <button class="readbutton"><a href="about-us.html" style="color: #fff; text-decoration: none;">Read
-                            More</a></button>
-                </div>
+    <section class="categories">
+        <div class="container">
+            <div class="row">
+                <h1 class="heading col-md-6 pb-0">Our Record Categories</h1>
+                <!-- <span class="viewAll  float-end col-md-6 tex-right-viewall"><a href="#">View all>></a></span> -->
             </div>
-        </section>
 
-        <section>
-            <div class="container sliderdiv">
-                <h1 class="heading col-md-12 pb-3 pt-4 text-center">Our Record Categories</h1>
-                <div class="slider1">
-                    <div class="slide"><img src="images/image89.png" width="98%" alt=""></div>
-                    <div class="slide"><img src="images/image91.png" width="98%" alt=""></div>
-                    <div class="slide"><img src="images/image90.png" width="98%" alt=""></div>
-                    <div class="slide"><img src="images/image92.png" width="98%" alt=""></div>
-                    <div class="slide"><img src="images/image89.png" width="98%" alt=""></div>
-                    <div class="slide"><img src="images/image91.png" width="98%" alt=""></div>
-                    <div class="slide"><img src="images/image90.png" width="98%" alt=""></div>
-                    <div class="slide"><img src="images/image92.png" width="98%" alt=""></div>
+            <!-- <div class="record-categories mb-4">
+                <ul class="row">
+                    <li class="col-md-12 col-12 col-lg-4"><span class="col-md-4"><img src="images/record1.png"
+                                alt="" /></span><span class="pt-3 py-5 col-md-4">
+                            <h2>Documents</h2>
+                            <p>207 Records</p>
+                        </span></li>
+                    <li class="col-md-12 col-12 col-lg-4"><span class="col-md-4"><img src="images/record2.png"
+                                alt="" /></span><span class="pt-3 py-5 col-md-4">
+                            <h2>Cartographic</h2>
+                            <p>207 Records</p>
+                        </span></li>
+                    <li class="col-md-12  col-12 col-lg-4"> <span class="col-md-4"><img src="images/record3.png"
+                                alt="" /></span><span class="pt-3 py-5  col-md-4">
+                            <h2>Photographs</h2>
+                            <p>207 Records</p>
+                        </span></li>
+                </ul>
+            </div> -->
+        </div>
 
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="record-categories">
+                        <div class="c-card">
+                            <div class="icon"><img src="images/record1.png" alt="record"></div>
+                            <div class="c-card-cont">
+                                <h2>Documents</h2>
+                                <p>207 Records</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container counterdiv">
-                <h1 class="heading col-md-12 pb-4 text-center mt-5 pt-3">Statistics as on 23 AUG, 2023</h1>
-                <div class="row">
-                    <div class="four col-md-4 col-lg-2 text-center">
-                        <div class="counter-box colored text-center"> <span class="counter">149487</span>
-                            <p>Unique Visitors</p>
+                <div class="col-md-4">
+                    <div class="record-categories">
+                        <div class="c-card">
+                            <div class="icon"><img src="images/record2.png" alt="record"></div>
+                            <div class="c-card-cont">
+                                <h2>Documents</h2>
+                                <p>207 Records</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="four col-md-4 col-lg-2 text-center">
-                        <div class="counter-box text-center"><span class="counter">270772</span>
-                            <p>Website Hits</p>
-                        </div>
-                    </div>
-                    <div class="four col-md-4 col-lg-2 text-center">
-                        <div class="counter-box text-center"> <span class="counter">23942</span>
-                            <p>Reference User</p>
-                        </div>
-                    </div>
-                    <div class="four col-md-4 col-lg-2 text-center">
-                        <div class="counter-box text-center"> <span class="counter">2997041</span>
-                            <p>Reference Media</p>
-                        </div>
-                    </div>
-                    <div class="four col-md-4 col-lg-2 text-center">
-                        <div class="counter-box text-center"> <span class="counter">284781</span>
-                            <p>Digitized Records</p>
-                        </div>
-                    </div>
-                    <div class="four col-md-4 col-lg-2 text-center">
-                        <div class="counter-box text-center"> <span class="counter">14530347</span>
-                            <p>Digitized Pages</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="record-categories">
+                        <div class="c-card">
+                            <div class="icon"><img src="images/record3.png" alt="record"></div>
+                            <div class="c-card-cont">
+                                <h2>Documents</h2>
+                                <p>207 Records</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    
+
+    <section class="trending">
+        <div class="container">
+           <div class="tranding-head heading">
+            <h2 class="f-v-center">
+                <span class="material-symbols-outlined mr-2 icon"> trending_up </span>
+                Trending
+            </h2>
+
+            <a href="#">More ></a>
+           </div>
+
+
+            <div class="trending-slider">
+                <div class="swiper trendingSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider-content">
+                                <div class="img-with-icon">
+                                    <img src="./images/user-home/tranding-1.jpg" alt="Document">
+                                    <div class="views">
+                                        <span class="material-symbols-outlined"> visibility </span>
+                                        5K
+                                    </div>
+                                </div>
+                                <div class="bottom-heading">
+                                    <h2>Constitution of Defence Re..</h2>
+                                    <p>Defence</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="slider-content">
+                                <div class="img-with-icon">
+                                    <img src="./images/user-home/tranding-2.jpg" alt="Document">
+                                    <div class="views">
+                                        <span class="material-symbols-outlined"> visibility </span>
+                                        4.5K
+                                    </div>
+                                </div>
+                                <div class="bottom-heading">
+                                    <h2>Dr. S. Sinha of Bihar</h2>
+                                    <p>Dr. Rajendra Prasad</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="slider-content">
+                                <div class="img-with-icon">
+                                    <img src="./images/user-home/tranding-3.jpg" alt="Document">
+                                    <div class="views">
+                                        <span class="material-symbols-outlined"> visibility </span>
+                                        4.2K
+                                    </div>
+                                </div>
+                                <div class="bottom-heading">
+                                    <h2>Adaptations of Modificati..</h2>
+                                    <p>Education & Health</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="slider-content">
+                                <div class="img-with-icon">
+                                    <img src="./images/user-home/tranding-4.jpg" alt="Document">
+                                    <div class="views">
+                                        <span class="material-symbols-outlined"> visibility </span>
+                                        4K
+                                    </div>
+                                </div>
+                                <div class="bottom-heading">
+                                    <h2>The Cotton - Transfers </h2>
+                                    <p>Education & Health</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="slider-content">
+                                <div class="img-with-icon">
+                                    <img src="./images/user-home/tranding-5.jpg" alt="Document">
+                                    <div class="views">
+                                        <span class="material-symbols-outlined"> visibility </span>
+                                        5K
+                                    </div>
+                                </div>
+                                <div class="bottom-heading">
+                                    <h2>The Cotton - Transfers </h2>
+                                    <p>Education & Health</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center about-us-sec">
+        <div class="container">
+            <div class="bg-about-section">
+                <h2 class="py-4">About Us</h2>
+                <p>Abhilekh Patal Portal for Access to Archives and Learning is an initiative of NAI to make its
+                    rich <br>treasure of Indian Archival Records available to one and all at the click of a
+                    button.<br> Abhilekh Patal contains the reference
+                    media of more than 3.7 million files held by the National<br> Archives of India.</p>
+
+                <p class="mb-5"> OVER 284781 DIGITIZED RECORDS ARE AVAILABLE FOR ONLINE ACCESS.</p>
+
+
+                <a href="about-us.html" class="readbutton">Read More</a>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container sliderdiv">
+            <h1 class="heading col-md-12 text-center">Associated Repositories</h1>
+           
+
+
+            <div class="swiper associated-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/image89.png" alt="image"></div>
+                  <div class="swiper-slide"><img src="images/image91.png" alt="image"></div>
+                  <div class="swiper-slide"><img src="images/image90.png" alt="image"></div>
+                  <div class="swiper-slide"><img src="images/image89.png" alt="image"></div>
+                  <div class="swiper-slide"><img src="images/image91.png" alt="image"></div>
+                  <div class="swiper-slide"><img src="images/image90.png" alt="image"></div>
+                  <div class="swiper-slide"><img src="images/image92.jpg" alt="image"></div>
+                  
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container counterdiv">
+            <h1 class="heading col-md-12  text-center py-4">Statistics as on 23 AUG, 2023</h1>
+            <div class="row">
+                <div class="four col-md-4 col-lg-2 text-center">
+                    <div class="counter-box colored text-center"> <span class="counter">149487</span>
+                        <p>Unique Visitors</p>
+                    </div>
+                </div>
+                <div class="four col-md-4 col-lg-2 text-center">
+                    <div class="counter-box text-center"><span class="counter">270772</span>
+                        <p>Website Hits</p>
+                    </div>
+                </div>
+                <div class="four col-md-4 col-lg-2 text-center">
+                    <div class="counter-box text-center"> <span class="counter">23942</span>
+                        <p>Reference User</p>
+                    </div>
+                </div>
+                <div class="four col-md-4 col-lg-2 text-center">
+                    <div class="counter-box text-center"> <span class="counter">2997041</span>
+                        <p>Reference Media</p>
+                    </div>
+                </div>
+                <div class="four col-md-4 col-lg-2 text-center">
+                    <div class="counter-box text-center"> <span class="counter">284781</span>
+                        <p>Digitized Records</p>
+                    </div>
+                </div>
+                <div class="four col-md-4 col-lg-2 text-center">
+                    <div class="counter-box text-center"> <span class="counter">14530347</span>
+                        <p>Digitized Pages</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
 
     <footer class="bg-footer">
@@ -581,10 +750,11 @@
     <!-- <div class="modal-backdrop-menu"></div> -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
