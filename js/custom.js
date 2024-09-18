@@ -577,18 +577,39 @@ if (window.innerWidth <= 1200) {
     $("body").toggleClass("menuActive");
   });
 
-
-
-  
-$("#search").on("focus", function(){
-  $(".mobile-advanceSearch").removeClass("active");
-})
-  
+  $("#search").on("focus", function () {
+    $(".mobile-advanceSearch").removeClass("active");
+  });
 }
 
+$(".has-sub i").on("click", function () {
+  $(this).parent().toggleClass("active");
+  $(this).siblings("ul").slideToggle(500);
+});
 
+// To close menu when click on nav
 
+$("header a").click(function () {
+  $(".backdrop-shaddow").click();
+});
 
+// ==================================
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {  
+  anchor.addEventListener('click', function (e) {  
+      e.preventDefault();  
+      
+      const targetElement = document.querySelector(this.getAttribute('href'));  
+      const headerOffset = document.querySelector('header').offsetHeight;  
+      const elementPosition = targetElement.getBoundingClientRect().top;  
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;  
+
+      window.scrollTo({  
+          top: offsetPosition - 50,  
+          behavior: "smooth"  
+      });  
+  });  
+});  
 
 // <!-- Initialize Swiper -->
 
@@ -611,7 +632,7 @@ var swiper = new Swiper(".trendingSwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  
+
   //   pagination: { el: ".swiper-pagination", clickable: true,  },
 
   breakpoints: {
@@ -630,22 +651,19 @@ var swiper = new Swiper(".trendingSwiper", {
   },
 });
 
-
-
 var swiper = new Swiper(".associated-slider", {
   slidesPerView: 4,
   spaceBetween: 10,
   centeredSlides: false,
-  
-  
-    pagination: { el: ".swiper-pagination", clickable: true,  },
+
+  pagination: { el: ".swiper-pagination", clickable: true },
 
   breakpoints: {
     320: {
       slidesPerView: 1,
       spaceBetween: 10,
     },
-    
+
     768: {
       slidesPerView: 4,
       spaceBetween: 15,

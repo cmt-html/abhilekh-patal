@@ -1,0 +1,113 @@
+.views.flx {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  a {
+    text-decoration: underline;
+  }
+
+  ul {
+    width: auto !important;
+    li {
+      margin: 0 5px;
+    }
+  }
+}
+
+.dropdown-lan {
+  .textlanguage {
+    padding-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.filter {
+  background: url(../images/calendar.png) no-repeat;
+  display: block;
+  float: right;
+  height: 19px;
+  width: 19px;
+  background-size: cover;
+  margin-left: 10px;
+}
+
+// *{
+//     outline: 1px solid;
+// }
+
+@media (max-width: 1199.98px) {
+  .views.flx {
+    ul {
+      padding-right: 0px !important;
+      display: flex;
+    }
+  }
+
+  .date-range {
+    float: none !important;
+    width: auto !important;
+    left: 0px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-row {
+    margin: 20px 0;
+    display: flex;
+  }
+
+  .views.flx {
+    width: auto;
+    margin-left: 20px;
+    margin-bottom: 35px;
+    flex-direction: row;
+  }
+
+  .col-product {
+    width: 33.33% !important;
+  }
+
+  .views .clearAll{
+    width: auto;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .col-product {
+    width: 50% !important;
+    flex-grow: 0.5;
+    justify-content: center;
+  }
+
+  .views.flx {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .select-filter ul li {
+    padding: 5px 10px !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    margin: 0 !important;
+
+    &:not(:first-child){
+        margin-left: 10px !important;
+    }
+  }
+
+  .views.flx, .date-range{
+    margin-bottom: 20px;
+  }
+
+  .dropdown-lan .textlanguage{
+    font-size: 14px;
+  }
+
+  .catlist{ width: auto !important; }
+  .custom-row{ flex-direction: column; }
+  .filter {height: 15px; width: 15px;}
+  
+}

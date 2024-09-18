@@ -462,8 +462,30 @@ if (window.innerWidth <= 1200) {
   $("#search").on("focus", function () {
     $(".mobile-advanceSearch").removeClass("active");
   });
-} // <!-- Initialize Swiper -->
+}
 
+$(".has-sub i").on("click", function () {
+  $(this).parent().toggleClass("active");
+  $(this).siblings("ul").slideToggle(500);
+}); // To close menu when click on nav
+
+$("header a").click(function () {
+  $(".backdrop-shaddow").click();
+}); // ==================================
+
+document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    var targetElement = document.querySelector(this.getAttribute('href'));
+    var headerOffset = document.querySelector('header').offsetHeight;
+    var elementPosition = targetElement.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    window.scrollTo({
+      top: offsetPosition - 50,
+      behavior: "smooth"
+    });
+  });
+}); // <!-- Initialize Swiper -->
 
 var swiper = new Swiper(".HomepageSlider", {
   slidesPerView: 1,
