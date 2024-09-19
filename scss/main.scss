@@ -313,7 +313,7 @@ input[type="search"]::-webkit-search-results-decoration {
   font-size: 10px;
   position: absolute;
   top: initial;
-  bottom: -10px;
+  bottom: -12px;
   background: #fff;
   left: auto;
   margin-left: 6px;
@@ -764,10 +764,7 @@ input[type="search"]::-webkit-search-results-decoration {
   z-index: 9999999;
 }
 
-.dropdown-menu-2 {
-  // max-height: 159px;
-  // overflow: scroll;
-}
+
 
 .searchinput {
   border-radius: 40px 0px 0px 40px;
@@ -2330,6 +2327,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
   span.icon {
     margin-right: 8px;
+    color: #73081C;
   }
 }
 
@@ -5315,4 +5313,5 @@ input:disabled {
 
 @import "./header.scss";
 @import "./explore.scss";
+@import "./login.scss";
 @import "./footer.scss";
