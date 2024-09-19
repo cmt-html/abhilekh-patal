@@ -474,10 +474,10 @@ $("header a").click(function () {
 }); // ==================================
 
 document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
-  anchor.addEventListener('click', function (e) {
+  anchor.addEventListener("click", function (e) {
     e.preventDefault();
-    var targetElement = document.querySelector(this.getAttribute('href'));
-    var headerOffset = document.querySelector('header').offsetHeight;
+    var targetElement = document.querySelector(this.getAttribute("href"));
+    var headerOffset = document.querySelector("header").offsetHeight;
     var elementPosition = targetElement.getBoundingClientRect().top;
     var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
     window.scrollTo({
@@ -542,4 +542,8 @@ var swiper = new Swiper(".associated-slider", {
       spaceBetween: 15
     }
   }
+});
+var scroll = new LocomotiveScroll({
+  el: document.querySelector("main"),
+  smooth: true
 });
