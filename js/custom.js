@@ -660,7 +660,12 @@ var swiper = new Swiper(".associated-slider", {
 
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+    },
+
+    600: {
+      slidesPerView: 2,
       spaceBetween: 10,
     },
 
@@ -668,6 +673,15 @@ var swiper = new Swiper(".associated-slider", {
       slidesPerView: 4,
       spaceBetween: 15,
     },
+
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+
+    1200: {
+      slidesPerView: 4,
+    }
   },
 });
 

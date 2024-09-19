@@ -115,7 +115,7 @@ header .advanceSearch-btn {
 }
 header #containerAdvanceSearch {
   display: none;
-  top: 59px;
+  top: 79px;
 }
 
 input::placeholder {
