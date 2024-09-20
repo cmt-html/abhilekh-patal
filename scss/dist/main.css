@@ -12604,7 +12604,6 @@ body,
 html {
   padding: 0;
   margin: 0;
-  background-color: #eaeaea;
   font-family: "Raleway", sans-serif !important;
   overflow-x: hidden !important;
 }
@@ -18084,10 +18083,10 @@ body.menuActive {
   }
 
   nav.megahmenudrop {
-    top: 68px !important;
+    top: 0px !important;
     right: -100% !important;
     left: initial;
-    height: 91vh;
+    height: 100vh;
   }
 
   nav.megahmenudrop.active {
@@ -18538,6 +18537,10 @@ body.menuActive {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
+}
+
+.login-wrraper {
+  display: flex;
 }
 
 @media (max-width: 600px) {

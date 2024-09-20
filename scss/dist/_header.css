@@ -329,10 +329,10 @@ body.menuActive {
   }
 
   nav.megahmenudrop {
-    top: 68px !important;
+    top: 0px !important;
     right: -100% !important;
     left: initial;
-    height: 91vh;
+    height: 100vh;
   }
 
   nav.megahmenudrop.active {

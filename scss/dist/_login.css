@@ -26,8 +26,59 @@
   line-height: 1.2;
 }
 
+.login-wrraper.user-login {
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 0;
+  height: calc(100vh - 80px);
+  position: relative;
+}
+.login-wrraper.user-login .login {
+  margin-top: 0;
+}
+.login-wrraper.user-login .img-wrapper {
+  max-width: 720px;
+  width: 100%;
+}
+.login-wrraper.user-login .img-wrapper img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+@media (min-width: 1440px) {
+  .login-wrraper.user-login .img-wrapper {
+    max-width: 50%;
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .login-wrraper.user-login .login {
+    max-width: 50%;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .login-wrraper.user-login {
+    flex-direction: column-reverse;
+    height: auto;
+    margin-top: 67px;
+  }
+  .login-wrraper.user-login .login {
+    max-width: 420px;
+  }
+  .login-wrraper.user-login .img-wrapper {
+    max-width: 720px;
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+  }
+}
 @media (max-width: 600px) {
-  .loginlable, .login .form-control.logininput {
+  .loginlable,
+.login .form-control.logininput {
     font-size: 13px;
   }
 }

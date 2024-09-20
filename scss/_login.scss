@@ -1,42 +1,102 @@
 .login-wrraper {
+  width: 100%;
+  height: calc(100vh - 80px);
+  background: #fff;
+  margin-bottom: -23px;
+}
+
+.login {
+  max-width: 420px;
+  margin: 0 auto;
+  margin-top: 79px;
+
+  .form-control.logininput {
+    font-size: 16px;
+    color: #000;
+  }
+
+  .pass-link {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #676767;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+}
+
+.login-wrraper.user-login {
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 0;
+  height: calc(100vh - 80px);
+  position: relative;
+
+  .login {
+    margin-top: 0;
+    
+  }
+
+  .img-wrapper {
+    max-width: 720px;
     width: 100%;
-    height: calc(100vh - 80px);
-    background: #fff;
-    margin-bottom: -23px;
-}
-
-.login{
-    max-width: 420px;
-    margin: 0 auto;
-    margin-top: 79px;
-
-
-
-
-    .form-control.logininput {
-        font-size: 16px;
-        color: #000;
+    img {
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: top center;
     }
-
-    .pass-link {
-        font-size: 12px;
-        text-decoration: underline;
-        color: #676767;
-        font-weight: 500;
-    }
-
-    p{
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.2;
-    }
+  }
 }
 
 
+@media (min-width: 1440px) {
+    .login-wrraper.user-login {
+        
+        .img-wrapper {
+          max-width: 50%;
+          width: 100%;
+        }
+      }
+}
 
 
-@media(max-width:600px){
-    .loginlable, .login .form-control.logininput{
-        font-size: 13px;
+@media (max-width: 992px) {
+    .login-wrraper.user-login{
+        .login{
+            max-width: 50%;
+            width: 100%;
+        }
     }
+}
+
+@media (max-width: 767px) {
+  .login-wrraper.user-login {
+    flex-direction: column-reverse;
+    height: auto;
+    margin-top: 67px;
+
+    .login{
+        max-width: 420px;
+    }
+
+    .img-wrapper {
+      max-width: 720px;
+      width: 100%;
+      height: 25vh;
+      overflow: hidden;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .loginlable,
+  .login .form-control.logininput {
+    font-size: 13px;
+  }
 }
