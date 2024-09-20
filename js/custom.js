@@ -681,13 +681,76 @@ var swiper = new Swiper(".associated-slider", {
 
     1200: {
       slidesPerView: 4,
-    }
+    },
   },
 });
 
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("main"),
+  smooth: true,
+});
 
-  const scroll = new LocomotiveScroll({
-    el: document.querySelector("main"),
-    smooth: true,
-  });
+// Register js start form here  =================>
 
+function validatePassword() {
+  const password = document.getElementById("password").value;
+
+  // Validate length
+  const length = document.getElementById("length");
+  if (password.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+
+  // Validate number
+  const number = document.getElementById("number");
+  if (/\d/.test(password)) {
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+
+  // Validate special character
+  const special = document.getElementById("special");
+  if (/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+    special.classList.remove("invalid");
+    special.classList.add("valid");
+  } else {
+    special.classList.remove("valid");
+    special.classList.add("invalid");
+  }
+
+  // Validate uppercase letter
+  const uppercase = document.getElementById("uppercase");
+  if (/[A-Z]/.test(password)) {
+    uppercase.classList.remove("invalid");
+    uppercase.classList.add("valid");
+  } else {
+    uppercase.classList.remove("valid");
+    uppercase.classList.add("invalid");
+  }
+
+  // Validate lowercase letter
+  const lowercase = document.getElementById("lowercase");
+  if (/[a-z]/.test(password)) {
+    lowercase.classList.remove("invalid");
+    lowercase.classList.add("valid");
+  } else {
+    lowercase.classList.remove("valid");
+    lowercase.classList.add("invalid");
+  }
+}
+
+function togglePasswordVisibility() {
+  const passwordInput = document.getElementById("password");
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+  } else {
+    passwordInput.type = "password";
+  }
+}
