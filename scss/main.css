@@ -11580,6 +11580,8 @@ html {
   margin: 0;
   font-family: "Raleway", sans-serif !important;
   overflow-x: hidden !important;
+  width: 100%;
+  height: 100%;
 }
 
 ol,
@@ -11598,6 +11600,14 @@ dl {
   font-size: inherit;
   color: inherit;
   font-weight: inherit;
+}
+
+.bg-color-light-pink {
+  background-color: #FBF0EE;
+}
+
+.bg-color-gray2 {
+  background-color: #eaeaea;
 }
 
 a {
@@ -17302,9 +17312,13 @@ input[type=number] {
   border-radius: 6px;
   max-width: 296px;
   width: 100%;
-  transition: 0.5s;
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
   scale: 0;
   z-index: 9;
+  font-family: Raleway;
+  font-size: 16px !important;
+  font-weight: 500;
+  color: #676767;
 }
 .pass-input-wrapper #password-requirements ul li {
   display: flex;
@@ -17316,10 +17330,10 @@ input[type=number] {
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  border: 2px solid #339C61;
+  border: 2px solid #339c61;
 }
 .pass-input-wrapper #password-requirements ul li.invalid .status {
-  border: 2px solid #D62522;
+  border: 2px solid #d62522;
 }
 .pass-input-wrapper #password-requirements ul li.valid .status {
   border: none;
@@ -17346,9 +17360,78 @@ input[type=number] {
   background-color: #fff;
 }
 
+.login-wrraper.register-wrapper {
+  font-family: "Raleway", sans-serif !important;
+  height: 100%;
+}
+.login-wrraper.register-wrapper .register-slider {
+  max-width: 720px;
+  width: 100%;
+  padding: 0 15px;
+}
+.login-wrraper.register-wrapper .registerSwiper {
+  max-width: 550px;
+  width: 100%;
+  margin: 50px auto;
+  padding-bottom: 90px;
+}
+.login-wrraper.register-wrapper .buttons-wrapper {
+  position: relative;
+  max-width: 130px;
+  width: 100%;
+  margin: 35px auto auto;
+}
+.login-wrraper.register-wrapper .swiper-button-next:after,
+.login-wrraper.register-wrapper .swiper-button-prev:after {
+  content: "";
+}
+.login-wrraper.register-wrapper .swiper-button-next {
+  background-image: url(../images/slider-arrow-right.svg);
+}
+.login-wrraper.register-wrapper .swiper-button-prev {
+  background-image: url(../images/slider-arrow-left.svg);
+}
+.login-wrraper.register-wrapper .swiper-button-next,
+.login-wrraper.register-wrapper .swiper-button-prev {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-wrraper.register-wrapper .img-wrraper {
+  margin-bottom: 40px;
+}
+.login-wrraper.register-wrapper .register-slider {
+  font-family: "Raleway", sans-serif !important;
+}
+.login-wrraper.register-wrapper .register-slider h3, .login-wrraper.register-wrapper .register-slider .h3 {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 17px;
+  color: #676767;
+}
+.login-wrraper.register-wrapper .register-slider p {
+  font-family: inherit;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
 @media (min-width: 1440px) {
+  .login-wrraper.register-wrapper > .register-slider {
+    max-width: 50%;
+  }
   .login-wrraper.user-login .img-wrapper {
     max-width: 50%;
+    width: 100%;
+  }
+  .login-wrraper.register-wrapper .registerSwiper {
+    max-width: 80%;
+  }
+  .login-wrraper.register-wrapper .registerSwiper img {
     width: 100%;
   }
 }
@@ -17356,6 +17439,9 @@ input[type=number] {
   .login-wrraper.user-login .login {
     max-width: 50%;
     width: 100%;
+  }
+  .login-wrraper.register-wrapper > .register-slider {
+    max-width: 50%;
   }
 }
 @media (max-width: 767px) {
@@ -17373,10 +17459,40 @@ input[type=number] {
     height: 25vh;
     overflow: hidden;
   }
+  .login-wrraper.register-wrapper > .register-slider {
+    max-width: 100%;
+  }
+  .login-wrraper.register-wrapper {
+    flex-direction: column;
+  }
+  .login-wrraper.register-wrapper .login {
+    margin-top: 50px;
+  }
 }
 @media (max-width: 600px) {
   .loginlable,
   .login .form-control.logininput {
+    font-size: 13px;
+  }
+  .login-wrraper.register-wrapper .buttons-wrapper {
+    max-width: 100px;
+  }
+  .login-wrraper.register-wrapper .swiper-button-next,
+  .login-wrraper.register-wrapper .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+  }
+  .login-wrraper.register-wrapper .registerSwiper {
+    margin: 50px auto auto;
+    padding-bottom: 60px;
+  }
+  .login-wrraper.register-wrapper .login {
+    margin-top: 15px;
+  }
+  .login-wrraper.register-wrapper .register-slider h3, .login-wrraper.register-wrapper .register-slider .h3 {
+    font-size: 16px;
+  }
+  .login-wrraper.register-wrapper .register-slider p {
     font-size: 13px;
   }
 }

@@ -10,6 +10,7 @@ $gray4: #ccc;
 $graydark1: #2d2d2d;
 $gray-dark: #676767;
 $gray-dark-update: #9b9b9b;
+$light-pink: #FBF0EE;
 body,
 html {
   padding: 0;
@@ -17,7 +18,10 @@ html {
   // background-color: $gray2;
   font-family: "Raleway", sans-serif !important;
   overflow-x: hidden !important;
+  width: 100%;
+  height: 100%;
 }
+
 
 ol,
 ul,
@@ -35,6 +39,13 @@ dl {
   font-size: inherit;
   color: inherit;
   font-weight: inherit;
+}
+
+.bg-color-light-pink{
+  background-color: $light-pink;
+}
+.bg-color-gray2{
+  background-color: $gray2;
 }
 
 a {

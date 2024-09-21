@@ -12606,6 +12606,8 @@ html {
   margin: 0;
   font-family: "Raleway", sans-serif !important;
   overflow-x: hidden !important;
+  width: 100%;
+  height: 100%;
 }
 
 ol,
@@ -12624,6 +12626,14 @@ dl {
   font-size: inherit;
   color: inherit;
   font-weight: inherit;
+}
+
+.bg-color-light-pink {
+  background-color: #FBF0EE;
+}
+
+.bg-color-gray2 {
+  background-color: #eaeaea;
 }
 
 a {
@@ -18511,6 +18521,23 @@ body.menuActive {
     width: 15px;
   }
 }
+/* For Chrome, Safari, and Edge */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  /* Remove spinners */
+}
+
+.form-control:focus {
+  box-shadow: 0px 0px 10px 2px rgba(28, 49, 128, 0.2);
+}
+
 .login-wrraper {
   width: 100%;
   height: calc(100vh - 80px);
@@ -18539,12 +18566,241 @@ body.menuActive {
   line-height: 1.2;
 }
 
-.login-wrraper {
+.login-wrraper.user-login {
   display: flex;
+  margin-top: 80px;
+  margin-bottom: 0;
+  height: calc(100vh - 80px);
+  position: relative;
+}
+.login-wrraper.user-login .login {
+  margin-top: 0;
+}
+.login-wrraper.user-login .img-wrapper {
+  max-width: 720px;
+  width: 100%;
+}
+.login-wrraper.user-login .img-wrapper img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 
+.pass-input-wrapper {
+  position: relative;
+}
+.pass-input-wrapper .toggle-visibility {
+  width: 18px;
+  display: block;
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.pass-input-wrapper #password-requirements {
+  position: absolute;
+  top: calc(100% + 10px);
+  background-color: #fff;
+  border: 1px solid #bcbcbc;
+  padding: 15px;
+  border-radius: 6px;
+  max-width: 296px;
+  width: 100%;
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+  scale: 0;
+  z-index: 9;
+  font-family: Raleway;
+  font-size: 16px !important;
+  font-weight: 500;
+  color: #676767;
+}
+.pass-input-wrapper #password-requirements ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 13px;
+}
+.pass-input-wrapper #password-requirements ul li .status {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #339c61;
+}
+.pass-input-wrapper #password-requirements ul li.invalid .status {
+  border: 2px solid #d62522;
+}
+.pass-input-wrapper #password-requirements ul li.valid .status {
+  border: none;
+  background-image: url(../images/check.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.pass-input-wrapper #password-requirements::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #bcbcbc;
+  border-right: 2px solid #bcbcbc;
+  border-radius: 3px;
+  position: absolute;
+  transform: rotate(-45deg);
+  top: -8px;
+  left: 15%;
+  background-color: #fff;
+}
+.pass-input-wrapper #password:focus ~ #password-requirements {
+  scale: 1;
+  background-color: #fff;
+}
+
+.login-wrraper.register-wrapper {
+  font-family: "Raleway", sans-serif !important;
+  height: 100%;
+}
+.login-wrraper.register-wrapper .register-slider {
+  max-width: 720px;
+  width: 100%;
+  padding: 0 15px;
+}
+.login-wrraper.register-wrapper .registerSwiper {
+  max-width: 550px;
+  width: 100%;
+  margin: 50px auto;
+  padding-bottom: 90px;
+}
+.login-wrraper.register-wrapper .buttons-wrapper {
+  position: relative;
+  max-width: 130px;
+  width: 100%;
+  margin: 35px auto auto;
+}
+.login-wrraper.register-wrapper .swiper-button-next:after,
+.login-wrraper.register-wrapper .swiper-button-prev:after {
+  content: "";
+}
+.login-wrraper.register-wrapper .swiper-button-next {
+  background-image: url(../images/slider-arrow-right.svg);
+}
+.login-wrraper.register-wrapper .swiper-button-prev {
+  background-image: url(../images/slider-arrow-left.svg);
+}
+.login-wrraper.register-wrapper .swiper-button-next,
+.login-wrraper.register-wrapper .swiper-button-prev {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-wrraper.register-wrapper .img-wrraper {
+  margin-bottom: 40px;
+}
+.login-wrraper.register-wrapper .register-slider {
+  font-family: "Raleway", sans-serif !important;
+}
+.login-wrraper.register-wrapper .register-slider h3, .login-wrraper.register-wrapper .register-slider .h3 {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 17px;
+  color: #676767;
+}
+.login-wrraper.register-wrapper .register-slider p {
+  font-family: inherit;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media (min-width: 1440px) {
+  .login-wrraper.register-wrapper > .register-slider {
+    max-width: 50%;
+  }
+
+  .login-wrraper.user-login .img-wrapper {
+    max-width: 50%;
+    width: 100%;
+  }
+
+  .login-wrraper.register-wrapper .registerSwiper {
+    max-width: 80%;
+  }
+  .login-wrraper.register-wrapper .registerSwiper img {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .login-wrraper.user-login .login {
+    max-width: 50%;
+    width: 100%;
+  }
+
+  .login-wrraper.register-wrapper > .register-slider {
+    max-width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .login-wrraper.user-login {
+    flex-direction: column-reverse;
+    height: auto;
+    margin-top: 67px;
+  }
+  .login-wrraper.user-login .login {
+    max-width: 420px;
+  }
+  .login-wrraper.user-login .img-wrapper {
+    max-width: 720px;
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+  }
+
+  .login-wrraper.register-wrapper > .register-slider {
+    max-width: 100%;
+  }
+
+  .login-wrraper.register-wrapper {
+    flex-direction: column;
+  }
+  .login-wrraper.register-wrapper .login {
+    margin-top: 50px;
+  }
+}
 @media (max-width: 600px) {
-  .loginlable, .login .form-control.logininput {
+  .loginlable,
+.login .form-control.logininput {
+    font-size: 13px;
+  }
+
+  .login-wrraper.register-wrapper .buttons-wrapper {
+    max-width: 100px;
+  }
+
+  .login-wrraper.register-wrapper .swiper-button-next,
+.login-wrraper.register-wrapper .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+  }
+
+  .login-wrraper.register-wrapper .registerSwiper {
+    margin: 50px auto auto;
+    padding-bottom: 60px;
+  }
+
+  .login-wrraper.register-wrapper .login {
+    margin-top: 15px;
+  }
+
+  .login-wrraper.register-wrapper .register-slider h3, .login-wrraper.register-wrapper .register-slider .h3 {
+    font-size: 16px;
+  }
+  .login-wrraper.register-wrapper .register-slider p {
     font-size: 13px;
   }
 }

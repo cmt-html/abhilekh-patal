@@ -1,20 +1,18 @@
 /* For Chrome, Safari, and Edge */
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* For Firefox */
-input[type=number] {
-    -moz-appearance: textfield; /* Remove spinners */
+input[type="number"] {
+  -moz-appearance: textfield; /* Remove spinners */
 }
 
-
-.form-control:focus{
-    box-shadow: 0px 0px 10px 2px rgba(28, 49, 128, 0.2);
+.form-control:focus {
+  box-shadow: 0px 0px 10px 2px rgba(28, 49, 128, 0.2);
 }
-
 
 .login-wrraper {
   width: 100%;
@@ -56,7 +54,6 @@ input[type=number] {
 
   .login {
     margin-top: 0;
-    
   }
 
   .img-wrapper {
@@ -72,123 +69,200 @@ input[type=number] {
   }
 }
 
-
-
-
 // Register css
 
-
 .pass-input-wrapper {
-    position: relative;
+  position: relative;
 
-    .toggle-visibility{
-        width: 18px;
-        display: block;
+  .toggle-visibility {
+    width: 18px;
+    display: block;
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  #password-requirements {
+    position: absolute;
+    top: calc(100% + 10px);
+    background-color: #fff;
+    border: 1px solid #bcbcbc;
+    padding: 15px;
+    border-radius: 6px;
+    max-width: 296px;
+    width: 100%;
+    transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+    scale: 0;
+    z-index: 9;
+    font-family: Raleway;
+    font-size: 16px !important;
+    font-weight: 500;
+    color: #676767;
+
+    ul {
+      li {
         display: flex;
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        cursor: pointer;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 13px;
+
+        .status {
+          width: 22px;
+          height: 22px;
+          border-radius: 50%;
+          border: 2px solid #339c61;
+        }
+
+        &.invalid {
+          .status {
+            border: 2px solid #d62522;
+          }
+        }
+
+        &.valid {
+          .status {
+            border: none;
+            background-image: url(../images/check.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+      }
     }
 
+    &::before {
+      content: "";
+      width: 15px;
+      height: 15px;
+      border-top: 2px solid #bcbcbc;
+      border-right: 2px solid #bcbcbc;
+      border-radius: 3px;
+      position: absolute;
+      transform: rotate(-45deg);
+      top: -8px;
+      left: 15%;
+      background-color: #fff;
+    }
+  }
 
-
-    #password-requirements{
-        position: absolute;
-        top: calc(100% + 10px);
+  #password {
+    &:focus {
+      ~ #password-requirements {
+        scale: 1;
         background-color: #fff;
-        border: 1px solid #bcbcbc;
-        padding: 15px;
-        border-radius: 6px;
-        max-width: 296px;
-        width: 100%;
-        transition: .5s;
-        scale: 0;
-        z-index: 9;
-
-        ul{
-            li{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 13px;
-
-                .status{
-                    width: 22px;
-                    height: 22px;
-                    border-radius: 50%;
-                    border: 2px solid #339C61;
-                }
-
-
-
-                &.invalid{
-                    .status{
-                        border: 2px solid #D62522;
-                    }
-                }
-
-                &.valid{
-                    .status{
-                        border: none;
-                        background-image: url(../images/check.svg);
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                    }
-                }
-            }
-
-
-        }
-
-        &::before{
-            content: "";
-            width: 15px;
-            height: 15px;
-            border-top: 2px solid #bcbcbc ;
-            border-right: 2px solid #bcbcbc ;
-            border-radius: 3px;
-            position: absolute;
-            transform: rotate(-45deg);
-            top: -8px;
-            left: 15%;
-            background-color: #fff;
-        }
+      }
     }
-
-
-    #password{
-        &:focus{
-            ~  #password-requirements{
-                scale: 1;
-                background-color: #fff;
-            }
-        }
-    }
-
+  }
 }
+
+.login-wrraper.register-wrapper {
+  font-family: "Raleway", sans-serif !important;
+  height: 100%;
+  .register-slider {
+    max-width: 720px;
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .registerSwiper {
+    max-width: 550px;
+    width: 100%;
+    margin: 50px auto;
+    padding-bottom: 90px;
+  }
+
+  .buttons-wrapper {
+    position: relative;
+    max-width: 130px;
+    width: 100%;
+    margin: 35px auto auto;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    content: "";
+  }
+
+  .swiper-button-next {
+    background-image: url(../images/slider-arrow-right.svg);
+  }
+
+  .swiper-button-prev {
+    background-image: url(../images/slider-arrow-left.svg);
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img-wrraper {
+    margin-bottom: 40px;
+  }
+
+  .register-slider {
+    font-family: "Raleway", sans-serif !important;
+    h3 {
+      font-family: inherit;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 17px;
+      color: #676767;
+    }
+    p {
+      font-family: inherit;
+      color: #000000;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+}
+
+
 
 
 @media (min-width: 1440px) {
-    .login-wrraper.user-login {
-        
-        .img-wrapper {
-          max-width: 50%;
-          width: 100%;
-        }
-      }
+  .login-wrraper.register-wrapper {
+    > .register-slider{
+      max-width: 50%;
+    }
+  }
+  .login-wrraper.user-login {
+    .img-wrapper {
+      max-width: 50%;
+      width: 100%;
+    }
+  }
+
+  .login-wrraper.register-wrapper .registerSwiper{
+    max-width: 80%;
+
+    img{
+      width: 100%;
+    }
+  }
 }
 
-
 @media (max-width: 992px) {
-    .login-wrraper.user-login{
-        .login{
-            max-width: 50%;
-            width: 100%;
-        }
+  .login-wrraper.user-login {
+    .login {
+      max-width: 50%;
+      width: 100%;
     }
+  }
+
+  .login-wrraper.register-wrapper > .register-slider {
+    max-width: 50%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -197,8 +271,8 @@ input[type=number] {
     height: auto;
     margin-top: 67px;
 
-    .login{
-        max-width: 420px;
+    .login {
+      max-width: 420px;
     }
 
     .img-wrapper {
@@ -208,11 +282,53 @@ input[type=number] {
       overflow: hidden;
     }
   }
+
+  .login-wrraper.register-wrapper > .register-slider {
+    max-width: 100%;
+  }
+
+  .login-wrraper.register-wrapper {
+    flex-direction: column;
+
+    .login {
+      margin-top: 50px;
+    }
+  }
 }
 
 @media (max-width: 600px) {
   .loginlable,
   .login .form-control.logininput {
     font-size: 13px;
+  }
+
+  .login-wrraper.register-wrapper .buttons-wrapper {
+    max-width: 100px;
+  }
+
+  .login-wrraper.register-wrapper {
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .login-wrraper.register-wrapper .registerSwiper {
+    margin: 50px auto auto;
+    padding-bottom: 60px;
+  }
+
+  .login-wrraper.register-wrapper .login {
+    margin-top: 15px;
+  }
+
+  .login-wrraper.register-wrapper .register-slider {
+    h3{
+      font-size: 16px;
+    }
+    p{
+      font-size: 13px;
+    }
   }
 }

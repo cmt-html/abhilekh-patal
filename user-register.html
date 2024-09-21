@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="scss/main.css">
     <title>User Registration</title>
 
@@ -27,8 +28,8 @@
     </header>
 
 
-    <main class="main">
-        <section class="login-wrraper user-login">
+    
+        <section class="login-wrraper user-login register-wrapper">
 
             <div class="login">
                 <div class="container pt-4 pt-md-5">
@@ -79,6 +80,24 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
+                                        <label for="PassportNumber" class="form-label loginlable">Passport Number</label>
+                                        <input type="text" class="form-control logininput" id="PassportNumber"
+                                            aria-describedby="PassportNumber">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="City" class="form-label loginlable">City</label>
+                                        <input type="text" class="form-control logininput" id="City"
+                                            aria-describedby="City">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
                                         <label for="State" class="form-label loginlable">State</label>
                                         <input type="text" class="form-control logininput" id="State"
                                             aria-describedby="State">
@@ -91,11 +110,10 @@
                             <div class="mb-3">
                                 <label for="password " class="form-label loginlable">Password </label>
                                 <div class="pass-input-wrapper">
-                                    <input type="password" class="form-control logininput" id="password"
+                                    <input type="password" class="form-control logininput password" id="password"
                                         aria-describedby="Password" oninput="validatePassword()" />
                                     <span class="toggle-visibility" onclick="togglePasswordVisibility()">
                                         <img src="/images/eye.svg" alt="eye icon">
-                                        <img src="/images/eye-close.svg" alt="eye close icon">
                                     </span>
 
                                     <div id="password-requirements">
@@ -120,11 +138,10 @@
 
                                 <label for="rePassword" class="form-label loginlable">Confirm Password </label>
                                 <div class="pass-input-wrapper">
-                                    <input type="password" class="form-control logininput" id="rePassword "
-                                        aria-describedby="rePassword ">
+                                    <input type="password" class="form-control logininput password" id="rePassword"
+                                        aria-describedby="rePassword">
                                     <span class="toggle-visibility" onclick="togglePasswordVisibility()">
                                         <img src="/images/eye.svg" alt="eye icon">
-                                        <img src="/images/eye-close.svg" alt="eye close icon">
                                     </span>
                                 </div>
                             </div>
@@ -159,34 +176,110 @@
                 </div>
             </div>
 
-            <div class="img-wrapper">
-                <img src="/images/smart-female-student-with-book-library.jpg" alt="smart female student with book">
+            <div class="register-slider bg-color-light-pink">
+                <div class="swiper registerSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img-wrraper">
+                                <img src="/images/smart-female-student-with-book-library-slider-img.jpg"
+                                    alt="smart female student with book library slider img">
+                            </div>
+                            <div class="register-slider">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt magna aliqua. </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit i</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="img-wrraper">
+                                <img src="/images/smart-female-student-with-book-library-slider-img.jpg"
+                                    alt="smart female student with book library slider img">
+                            </div>
+                            <div class="register-slider">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt magna aliqua. </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit i</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="img-wrraper">
+                                <img src="/images/smart-female-student-with-book-library-slider-img.jpg"
+                                    alt="smart female student with book library slider img">
+                            </div>
+                            <div class="register-slider">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt magna aliqua. </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit i</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
+                    <div class="buttons-wrapper">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+
+                </div>
             </div>
 
         </section>
-    </main>
+    
+
 
     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+
+
     <script>
-        const togglePassword = document.querySelector("#togglePassword");
-        const password = document.querySelector("#password");
-        togglePassword.addEventListener("click", function () {
-            // toggle the type attribute
-            const type = password.getAttribute("type") === "password" ? "text" : "password";
-            password.setAttribute("type", type);
-            // toggle the icon
-            this.classList.toggle("bi-eye");
-        });
-        // prevent form submit
-        const form = document.querySelector("form");
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
+        var swiper = new Swiper(".registerSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 35,
+            centeredSlides: false,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            // autoplay: {
+            //     delay: 4000,
+            //     disableOnInteraction: false,
+            // },
+
+            //   pagination: { el: ".swiper-pagination", clickable: true,  },
+
+            // breakpoints: {
+            //     320: {
+            //         slidesPerView: 2,
+            //         spaceBetween: 10,
+            //     },
+            //     640: {
+            //         slidesPerView: 2,
+            //         spaceBetween: 20,
+            //     },
+            //     768: {
+            //         slidesPerView: 4,
+            //         spaceBetween: 40,
+            //     },
+            // },
         });
     </script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/custom.js"></script>
 </body>
 
 </html>

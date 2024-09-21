@@ -334,15 +334,15 @@ $(".advance-serach").click(function () {
 //     // mode: 'fade'
 //   });
 // });
-$(document).ready(function () {
-  $(".slider1").bxSlider({
-    slideWidth: 460,
-    minSlides: 2,
-    maxSlides: 4,
-    auto: true,
-    slideMargin: 0,
-  });
-});
+// $(document).ready(function () {
+//   $(".slider1").bxSlider({
+//     slideWidth: 460,
+//     minSlides: 2,
+//     maxSlides: 4,
+//     auto: true,
+//     slideMargin: 0,
+//   });
+// });
 
 $(document).ready(function () {
   $(".counter").each(function () {
@@ -685,10 +685,12 @@ var swiper = new Swiper(".associated-slider", {
   },
 });
 
-const scroll = new LocomotiveScroll({
-  el: document.querySelector("main"),
-  smooth: true,
-});
+
+
+
+
+
+
 
 // Register js start form here  =================>
 
@@ -747,10 +749,20 @@ function validatePassword() {
 }
 
 function togglePasswordVisibility() {
-  const passwordInput = document.getElementById("password");
-  if (passwordInput.type === "password") {
-    passwordInput.type = "text";
-  } else {
-    passwordInput.type = "password";
-  }
+  const passwordInput = document.querySelectorAll(".password");
+
+  passwordInput.forEach((el) => {
+    if (el.type === "password") {
+      el.type = "text";
+    } else {
+      el.type = "password";
+    }
+  });
 }
+
+
+
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("main"),
+  smooth: true,
+});
