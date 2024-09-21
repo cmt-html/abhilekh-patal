@@ -16535,7 +16535,7 @@ header {
   width: 100%;
   top: 0 !important;
   left: 0;
-  z-index: 9;
+  z-index: 999999;
   background-color: #fff;
   padding: 15px 0 !important;
   box-shadow: 4px 1px 7px #e0e0e0;
