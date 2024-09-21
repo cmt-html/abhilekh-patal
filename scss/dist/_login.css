@@ -65,6 +65,10 @@ input[type=number] {
   object-position: top center;
 }
 
+.signup-link a {
+  text-decoration: underline;
+}
+
 .pass-input-wrapper {
   position: relative;
 }
