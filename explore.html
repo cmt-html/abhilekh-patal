@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="icon" type="image/x-icon" href="images/favicon-icon.png">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.css">  
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.css">
     <link
-    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="scss/main.css" />
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="scss/main.css">
     <title>Grid View</title>
-    
+
 </head>
 
-<body  class="bg-color-gray2">
+<body class="bg-color-gray2">
     <header>
         <div class="container">
             <div class="header-wrapper">
@@ -168,13 +169,13 @@
                                             </div>
 
                                             <div class="col-md-6 col-6" style="padding-left: 10px; position: relative;">
-                                                <span class="fsfs">From </span><input type="text" name="specificFromYear"
-                                                     class="form-control rageinput" value="1245">
+                                                <span class="fsfs">From </span><input type="text"
+                                                    name="specificFromYear" class="form-control rageinput" value="1245">
                                             </div>
                                             <div class="col-md-6 col-6 text-right float-end align-items-right"
                                                 style="position: relative;">
                                                 <span class="fsfs">To </span><input type="text" name="specificToYear"
-                                                     class="form-control rageinput" value="2000">
+                                                    class="form-control rageinput" value="2000">
                                             </div>
 
                                         </div>
@@ -338,249 +339,663 @@
 
         <div class="backdrop-shaddow">&nbsp;</div>
     </header>
+    <main>
+        <div>
+            <section class="select-multiselectoption">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-lg-9">
+                            <div class="row">
+                                <div class="col-md-1 catlist">
+                                    <div class="dropdown dropdown-lan">
+                                        <button class="textlanguage  dropdown-toggle" type="button"
+                                            id="dropdownMenuButton15" data-bs-toggle="dropdown"
+                                            aria-expanded="false">Category
+                                        </button>
+                                        <ul
+                                            class="dropdown-menu dropdown-menu-1 width-ul checkbox-menu allow-focus  p-2">
+                                            <li>
+                                                <div class="form-check checkbox">
+                                                    <label>
+                                                        <input type="checkbox" class="form-check-input check"
+                                                            id="checkAll">
+                                                        All
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-check checkbox ">
+                                                    <input class="form-check-input check" type="checkbox" value=""
+                                                        id="flexCheckChecked1">
+                                                    <label class="form-check-label" for="flexCheckChecked1">Public
+                                                        Records</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-check checkbox">
+                                                    <input class="form-check-input check" type="checkbox" value=""
+                                                        id="flexCheckChecked2">
+                                                    <label class="form-check-label" for="flexCheckChecked2">Cartographic
+                                                        Records</label>
+                                                </div>
+                                            </li>
 
-    <div>
-        <section class="select-multiselectoption">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-lg-9">
-                        <div class="row">
-                            <div class="col-md-1 catlist">
-                                <div class="dropdown dropdown-lan">
-                                    <button class="textlanguage  dropdown-toggle" type="button"
-                                        id="dropdownMenuButton15" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Category
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-1 width-ul checkbox-menu allow-focus  p-2">
-                                        <li>
-                                            <div class="form-check checkbox">
-                                                <label>
-                                                    <input type="checkbox" class="form-check-input check" id="checkAll">
-                                                    All
-                                                </label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="form-check checkbox ">
-                                                <input class="form-check-input check" type="checkbox" value=""
-                                                    id="flexCheckChecked1">
-                                                <label class="form-check-label" for="flexCheckChecked1">Public
-                                                    Records</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="form-check checkbox">
-                                                <input class="form-check-input check" type="checkbox" value=""
-                                                    id="flexCheckChecked2">
-                                                <label class="form-check-label" for="flexCheckChecked2">Cartographic
-                                                    Records</label>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="form-check checkbox">
-                                                <input class="form-check-input check" type="checkbox" value=""
-                                                    id="flexCheckChecked3">
-                                                <label class="form-check-label" for="flexCheckChecked3">Oriental
-                                                    Records</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="form-check checkbox">
-                                                <input class="form-check-input check" type="checkbox" value=""
-                                                    id="flexCheckChecked4">
-                                                <label class="form-check-label" for="flexCheckChecked4">Library
-                                                    Collection</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="form-check checkbox">
-                                                <input class="form-check-input check" type="checkbox" value=""
-                                                    id="flexCheckChecked5">
-                                                <label class="form-check-label" for="flexCheckChecked5">Reference
-                                                    Tools</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="form-check checkbox">
-                                                <input class="form-check-input check" type="checkbox" value=""
-                                                    id="flexCheckChecked6">
-                                                <label class="form-check-label"
-                                                    for="flexCheckChecked6">Microfilms</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="form-check checkbox">
-                                                <input class="form-check-input check" type="checkbox" value=""
-                                                    id="flexCheckChecked7">
-                                                <label class="form-check-label" for="flexCheckChecked7">Audio</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="form-check checkbox">
-                                                <input class="form-check-input check" type="checkbox" value=""
-                                                    id="flexCheckChecked8">
-                                                <label class="form-check-label" for="flexCheckChecked8">Video</label>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                            <li>
+                                                <div class="form-check checkbox">
+                                                    <input class="form-check-input check" type="checkbox" value=""
+                                                        id="flexCheckChecked3">
+                                                    <label class="form-check-label" for="flexCheckChecked3">Oriental
+                                                        Records</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-check checkbox">
+                                                    <input class="form-check-input check" type="checkbox" value=""
+                                                        id="flexCheckChecked4">
+                                                    <label class="form-check-label" for="flexCheckChecked4">Library
+                                                        Collection</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-check checkbox">
+                                                    <input class="form-check-input check" type="checkbox" value=""
+                                                        id="flexCheckChecked5">
+                                                    <label class="form-check-label" for="flexCheckChecked5">Reference
+                                                        Tools</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-check checkbox">
+                                                    <input class="form-check-input check" type="checkbox" value=""
+                                                        id="flexCheckChecked6">
+                                                    <label class="form-check-label"
+                                                        for="flexCheckChecked6">Microfilms</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-check checkbox">
+                                                    <input class="form-check-input check" type="checkbox" value=""
+                                                        id="flexCheckChecked7">
+                                                    <label class="form-check-label"
+                                                        for="flexCheckChecked7">Audio</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-check checkbox">
+                                                    <input class="form-check-input check" type="checkbox" value=""
+                                                        id="flexCheckChecked8">
+                                                    <label class="form-check-label"
+                                                        for="flexCheckChecked8">Video</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-1 catlist">
-                                <div class="dropdown dropdown-lan dropdown-lan-1">
-                                    <button class="textlanguage  dropdown-toggle" type="button"
-                                        id="dropdownMenuButton23" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Language</button>
-                                    <ul class="dropdown-menu dropdown-menu-2  p-2">
-                                        <li>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckChecked10" checked>
-                                                <label class="form-check-label" for="flexCheckChecked10">English</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckChecked11">
-                                                <label class="form-check-label" for="flexCheckChecked11">Hindi</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckChecked12">
-                                                <label class="form-check-label" for="flexCheckChecked12">Persian</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckChecked13">
-                                                <label class="form-check-label" for="flexCheckChecked13">Arabic</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckChecked14">
-                                                <label class="form-check-label" for="flexCheckChecked14">Urdu</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckChecked15">
-                                                <label class="form-check-label" for="flexCheckChecked15">Gujrati</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckChecked9">
-                                                <label class="form-check-label" for="flexCheckChecked9">Marathi</label>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                <div class="col-md-1 catlist">
+                                    <div class="dropdown dropdown-lan dropdown-lan-1">
+                                        <button class="textlanguage  dropdown-toggle" type="button"
+                                            id="dropdownMenuButton23" data-bs-toggle="dropdown"
+                                            aria-expanded="false">Language</button>
+                                        <ul class="dropdown-menu dropdown-menu-2  p-2">
+                                            <li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckChecked10" checked>
+                                                    <label class="form-check-label"
+                                                        for="flexCheckChecked10">English</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckChecked11">
+                                                    <label class="form-check-label"
+                                                        for="flexCheckChecked11">Hindi</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckChecked12">
+                                                    <label class="form-check-label"
+                                                        for="flexCheckChecked12">Persian</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckChecked13">
+                                                    <label class="form-check-label"
+                                                        for="flexCheckChecked13">Arabic</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckChecked14">
+                                                    <label class="form-check-label"
+                                                        for="flexCheckChecked14">Urdu</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckChecked15">
+                                                    <label class="form-check-label"
+                                                        for="flexCheckChecked15">Gujrati</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckChecked9">
+                                                    <label class="form-check-label"
+                                                        for="flexCheckChecked9">Marathi</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-1 catlist">
-                                <div class="dropdown dropdown-lan dropdown-lan-2 ">
-                                    <button class="textlanguage  dropdown-toggle" type="button"
-                                        id="dropdownMenuButton32" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Document
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-2  width-ul-design  p-2"
-                                        aria-labelledby="dropdownMenuButton20">
-                                        <li>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckChecked20">
-                                                <label class="form-check-label" for="flexCheckChecked20">Both</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckChecked21">
-                                                <label class="form-check-label"
-                                                    for="flexCheckChecked21">Digitized</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckChecked40">
-                                                <label class="form-check-label"
-                                                    for="flexCheckChecked40">Non-Digitized</label>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                <div class="col-md-1 catlist">
+                                    <div class="dropdown dropdown-lan dropdown-lan-2 ">
+                                        <button class="textlanguage  dropdown-toggle" type="button"
+                                            id="dropdownMenuButton32" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Document
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-2  width-ul-design  p-2"
+                                            aria-labelledby="dropdownMenuButton20">
+                                            <li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckChecked20">
+                                                    <label class="form-check-label"
+                                                        for="flexCheckChecked20">Both</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckChecked21">
+                                                    <label class="form-check-label"
+                                                        for="flexCheckChecked21">Digitized</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckChecked40">
+                                                    <label class="form-check-label"
+                                                        for="flexCheckChecked40">Non-Digitized</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-lg-3">
-                        <div class="row custom-row">
-                            <div class="date-range">
-                                <div class="dropdown dropdown-lan dropdown-lan-4">
-                                    <button class="textlanguage filterdatelenth" type="button" id="dropdownMenuButton85"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Filter by Date<span class="filter"></span>
-                                    </button>
-                                    <ul class="dropdown-menu  dropdown-menu-5 menuleft">
-                                        <div class="row">
-                                            <span class="col-md-12 select-font">Select Year</span>
-                                            <li class="col-md-5"><span>From </span><input type="text"
-                                                    name="specificFromYear" id="amount" class="form-control rageinput"
-                                                    value="1245"></li>
-                                            <div class="col-md-2"></div>
-                                            <li class="col-md-5 text-right float-end align-items-right"><span>To
-                                                </span><input type="text" name="specificToYear" id="amount1"
-                                                    class="form-control rageinput" value="2000"></li>
-                                            <div id="slider-range"></div>
-                                            <li><input type="submit" class="applybutton" value="Apply"
-                                                    onclick="specificYearFilter()"></li>
-                                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="row custom-row">
+                                <div class="date-range">
+                                    <div class="dropdown dropdown-lan dropdown-lan-4">
+                                        <button class="textlanguage filterdatelenth" type="button"
+                                            id="dropdownMenuButton85" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Filter by Date<span class="filter"></span>
+                                        </button>
+                                        <ul class="dropdown-menu  dropdown-menu-5 menuleft">
+                                            <div class="row">
+                                                <span class="col-md-12 select-font">Select Year</span>
+                                                <li class="col-md-5"><span>From </span><input type="text"
+                                                        name="specificFromYear" id="amount"
+                                                        class="form-control rageinput" value="1245"></li>
+                                                <div class="col-md-2"></div>
+                                                <li class="col-md-5 text-right float-end align-items-right"><span>To
+                                                    </span><input type="text" name="specificToYear" id="amount1"
+                                                        class="form-control rageinput" value="2000"></li>
+                                                <div id="slider-range"></div>
+                                                <li><input type="submit" class="applybutton" value="Apply"
+                                                        onclick="specificYearFilter()"></li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="views flx col-md-5">
+                                    <ul>
+                                        <li><span class="list-view"></span></li>
+                                        <li><span class="list-grid"></span></li>
+                                        <li><span class="list-dashboard"></span></li>
                                     </ul>
+                                    <a href="javascript:void(0)" class="clearAll mt-2">Clear all</a>
                                 </div>
                             </div>
-                            <div class="views flx col-md-5">
-                                <ul>
-                                    <li><span class="list-view"></span></li>
-                                    <li><span class="list-grid"></span></li>
-                                    <li><span class="list-dashboard"></span></li>
-                                </ul>
-                                <a href="javascript:void(0)" class="clearAll mt-2">Clear all</a>
-                            </div>
                         </div>
-                    </div>
-                    <div class="select-filter ">
-                        <span class="d-block leftselect">Selected Filters:</span>
-                        <ul>
-                            <li>Urdu<span class="closedIcon"></span></li>
-                            <li>Persian<span class="closedIcon"></span></li>
-                            <li>Arabic<span class="closedIcon"></span></li>
-                        </ul>
+                        <div class="select-filter ">
+                            <span class="d-block leftselect">Selected Filters:</span>
+                            <ul>
+                                <li>Urdu<span class="closedIcon"></span></li>
+                                <li>Persian<span class="closedIcon"></span></li>
+                                <li>Arabic<span class="closedIcon"></span></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <div class="container dashboad-list">
-                <div class="row">
-                    <div class="col-product">
+            <section>
+                <div class="container dashboad-list">
+                    <div class="row">
+                        <div class="col-product">
+                            <div class="product position-relative edit_hover_class">
+                                <img src="images/Screenshot1.png" width="100%" alt="" />
+                                <div class="col-md-6">
+                                    <div class="bgeye"><img src="images/view.png" alt="" />
+                                        <span>1594</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="dropdown iconhover">
+                                        <a href='#' class=" bgdotted" id="dropdownMenuButton26"
+                                            data-bs-toggle="dropdown" aria-expanded="false"><img src="images/dotted.png"
+                                                alt=""> </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Share</a></li>
+                                            <li><a class="dropdown-item" href="#">Add to Library</a></li>
+                                            <li><a class="dropdown-item" href="#">Show Next</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 pb-3">
+                                    <h1>GUDAH Plan of the Purgu..</h1>
+                                    <p>Cartographic Records</p>
+                                </div>
+                            </div>
+
+                            <div class="product position-relative edit_hover_class">
+                                <img src="images/home-department.png" width="100%" alt="" />
+                                <div class="col-md-6">
+                                    <div class="bgeye"><img src="images/view.png" alt="" />
+                                        <span>1594</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="dropdown">
+                                        <a href='#' class=" bgdotted" id="dropdownMenuButton86"
+                                            data-bs-toggle="dropdown" aria-expanded="false"><img src="images/dotted.png"
+                                                alt=""> </a>
+                                        <ul class="dropdown-menu ">
+                                            <li><a class="dropdown-item" href="#">Share</a></li>
+                                            <li><a class="dropdown-item" href="#">Add to Library</a></li>
+                                            <li><a class="dropdown-item" href="#">Show Next</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 pb-3">
+                                    <h1>GUDAH Plan of the Purgu..</h1>
+                                    <p>Cartographic Records</p>
+                                </div>
+                            </div>
+
+                            <div class="product position-relative edit_hover_class">
+                                <img src="images/ism-ay.png" width="100%" alt="" />
+                                <div class="col-md-6">
+                                    <div class="bgeye"><img src="images/view.png" alt="" />
+                                        <span>1594</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="dropdown">
+                                        <a href='#' class=" bgdotted" id="dropdownMenuButton87"
+                                            data-bs-toggle="dropdown" aria-expanded="false"><img src="images/dotted.png"
+                                                alt=""> </a>
+                                        <ul class="dropdown-menu ">
+                                            <li><a class="dropdown-item" href="#">Share</a></li>
+                                            <li><a class="dropdown-item" href="#">Add to Library</a></li>
+                                            <li><a class="dropdown-item" href="#">Show Next</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 pb-3">
+                                    <h1>GUDAH Plan of the Purgu..</h1>
+                                    <p>Cartographic Records</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-product">
+                            <div class="product position-relative edit_hover_class">
+                                <img src="images/consolution.png" width="100%" alt="" />
+                                <div class="col-md-6">
+                                    <div class="bgeye"><img src="images/view.png" alt="">
+                                        <span>1594</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="dropdown">
+                                        <a href='#' class=" bgdotted" id="dropdownMenuButton88"
+                                            data-bs-toggle="dropdown" aria-expanded="false"><img src="images/dotted.png"
+                                                alt=""> </a>
+                                        <ul class="dropdown-menu ">
+                                            <li><a class="dropdown-item" href="#">Share</a></li>
+                                            <li><a class="dropdown-item" href="#">Add to Library</a></li>
+                                            <li><a class="dropdown-item" href="#">Show Next</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 pb-3">
+                                    <h1>GUDAH Plan of the Purgu..</h1>
+                                    <p>Cartographic Records</p>
+                                </div>
+                            </div>
+
+                            <div class="product position-relative edit_hover_class">
+                                <img src="images/part.png" width="100%" />
+                                <div class="col-md-6">
+                                    <div class="bgeye"><img src="images/view.png">
+                                        <span>1594</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="dropdown">
+                                        <a href='#' class=" bgdotted" id="dropdownMenuButton90"
+                                            data-bs-toggle="dropdown" aria-expanded="false"><img src="images/dotted.png"
+                                                alt=""> </a>
+                                        <ul class="dropdown-menu ">
+                                            <li><a class="dropdown-item" href="#">Share</a></li>
+                                            <li><a class="dropdown-item" href="#">Add to Library</a></li>
+                                            <li><a class="dropdown-item" href="#">Show Next</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 pb-3">
+                                    <h1>GUDAH Plan of the Purgu..</h1>
+                                    <p>Cartographic Records</p>
+                                </div>
+                            </div>
+
+                            <div class="product position-relative edit_hover_class">
+                                <img src="images/north-western.png" width="100%" alt="" />
+                                <div class="col-md-6">
+                                    <div class="bgeye"><img src="images/view.png" alt="" />
+                                        <span>1594</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="dropdown">
+                                        <a href='#' class=" bgdotted" id="dropdownMenuButton91"
+                                            data-bs-toggle="dropdown" aria-expanded="false"><img src="images/dotted.png"
+                                                alt=""> </a>
+                                        <ul class="dropdown-menu ">
+                                            <li><a class="dropdown-item" href="#">Share</a></li>
+                                            <li><a class="dropdown-item" href="#">Add to Library</a></li>
+                                            <li><a class="dropdown-item" href="#">Show Next</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 pb-3">
+                                    <h1>GUDAH Plan of the Purgu..</h1>
+                                    <p>Cartographic Records</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-product">
+                            <div class="product">
+                                <img src="images/sneha-balahar.png" width="100%" alt="" />
+                                <div class="col-md-6"></div>
+                                <div class="col-md-6"></div>
+                                <div class="col-md-12 pb-3">
+                                    <h1>GUDAH Plan of the Purgu..</h1>
+                                    <p>Cartographic Records</p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="images/Rashtriya-Tarang.png" width="100%" alt="" />
+                                <div class="col-md-6"></div>
+                                <div class="col-md-6"></div>
+                                <div class="col-md-12 pb-3">
+                                    <h1>GUDAH Plan of the Purgu..</h1>
+                                    <p>Cartographic Records</p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="images/indian-institute.png" width="100%" alt="" />
+                                <div class="col-md-6"></div>
+                                <div class="col-md-6"></div>
+                                <div class="col-md-12 pb-3">
+                                    <h1>GUDAH Plan of the Purgu..</h1>
+                                    <p>Cartographic Records</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-product">
+                            <div class="product">
+                                <img src="images/addaption-modification.png" width="100%" alt="" />
+                                <div class="col-md-6"></div>
+                                <div class="col-md-6"></div>
+                                <div class="col-md-12 pb-3">
+                                    <h1>GUDAH Plan of the Purgu..</h1>
+                                    <p>Cartographic Records</p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="images/correspondace.png" width="100%" alt="" />
+                                <div class="col-md-6"></div>
+                                <div class="col-md-6"></div>
+                                <div class="col-md-12 pb-3">
+                                    <h1>GUDAH Plan of the Purgu..</h1>
+                                    <p>Cartographic Records</p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="images/the-cotton.png" width="100%" alt="" />
+                                <div class="col-md-6"></div>
+                                <div class="col-md-6"></div>
+                                <div class="col-md-12 pb-3">
+                                    <h1>GUDAH Plan of the Purgu..</h1>
+                                    <p>Cartographic Records</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-product">
+                            <div class="product">
+                                <img src="images/consolution.png" width="100%" alt="" />
+                                <div class="col-md-6"></div>
+                                <div class="col-md-6"></div>
+                                <div class="col-md-12 pb-3">
+                                    <h1>GUDAH Plan of the Purgu..</h1>
+                                    <p>Cartographic Records</p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="images/panjabiskech.png" width="100%" alt="" />
+                                <div class="col-md-6"></div>
+                                <div class="col-md-6"></div>
+                                <div class="col-md-12 pb-3">
+                                    <h1>GUDAH Plan of the Purgu..</h1>
+                                    <p>Cartographic Records</p>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="images/panjab-seakch.png" width="100%" alt="" />
+                                <div class="col-md-6"></div>
+                                <div class="col-md-6"></div>
+                                <div class="col-md-12 pb-3">
+                                    <h1>GUDAH Plan of the Purgu..</h1>
+                                    <p>Cartographic Records</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--grid view-->
+            <div class="container grid-view">
+                <div class="row ">
+                    <div class="col-product col-md-3">
                         <div class="product position-relative edit_hover_class">
-                            <img src="images/Screenshot1.png" width="100%" alt="" />
+                            <img src="images/1.png" width="100%" alt="" />
                             <div class="col-md-6">
                                 <div class="bgeye"><img src="images/view.png" alt="" />
                                     <span>1594</span>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="dropdown iconhover">
-                                    <a href='#' class=" bgdotted" id="dropdownMenuButton26" data-bs-toggle="dropdown"
+                                <div class="dropdown">
+                                    <a href='#' class=" bgdotted" id="dropdownMenuButton92" data-bs-toggle="dropdown"
+                                        aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
+                                    <ul class="dropdown-menu ">
+                                        <li><a class="dropdown-item" href="#">Share</a></li>
+                                        <li><a class="dropdown-item" href="#">Add to Library</a></li>
+                                        <li><a class="dropdown-item" href="#">Show Next</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12 pb-3">
+                                <h1>GUDAH Plan of the Purgu..</h1>
+                                <p>Cartographic Records</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-product col-md-3">
+                        <div class="product position-relative edit_hover_class">
+                            <img src="images/2.png" width="100%" alt="" />
+                            <div class="col-md-6">
+                                <div class="bgeye"><img src="images/view.png" alt="" />
+                                    <span>1594</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="dropdown ">
+                                    <a href='#' class=" bgdotted" id="dropdownMenuButton93" data-bs-toggle="dropdown"
+                                        aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
+                                    <ul class="dropdown-menu ">
+                                        <li><a class="dropdown-item" href="#">Share</a></li>
+                                        <li><a class="dropdown-item" href="#">Add to Library</a></li>
+                                        <li><a class="dropdown-item" href="#">Show Next</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12 pb-3">
+                                <h1>GUDAH Plan of the Purgu..</h1>
+                                <p>Cartographic Records</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-product col-md-3">
+                        <div class="product position-relative edit_hover_class">
+                            <img src="images/3.png" width="100%" alt="" />
+                            <div class="col-md-6">
+                                <div class="bgeye"><img src="images/view.png" alt="">
+                                    <span>1594</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="dropdown">
+                                    <a href='#' class=" bgdotted" id="dropdownMenuButton95" data-bs-toggle="dropdown"
+                                        aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
+                                    <ul class="dropdown-menu ">
+                                        <li><a class="dropdown-item" href="#">Share</a></li>
+                                        <li><a class="dropdown-item" href="#">Add to Library</a></li>
+                                        <li><a class="dropdown-item" href="#">Show Next</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12 pb-3">
+                                <h1>GUDAH Plan of the Purgu..</h1>
+                                <p>Cartographic Records</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-product col-md-3">
+                        <div class="product position-relative edit_hover_class">
+                            <img src="images/4.png" width="100%" alt="" />
+                            <div class="col-md-6">
+                                <div class="bgeye"><img src="images/view.png">
+                                    <span>1594</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="dropdown ">
+                                    <a href='#' class=" bgdotted" id="dropdownMenuButton99" data-bs-toggle="dropdown"
+                                        aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
+                                    <ul class="dropdown-menu ">
+                                        <li><a class="dropdown-item" href="#">Share</a></li>
+                                        <li><a class="dropdown-item" href="#">Add to Library</a></li>
+                                        <li><a class="dropdown-item" href="#">Show Next</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12 pb-3">
+                                <h1>GUDAH Plan of the Purgu..</h1>
+                                <p>Cartographic Records</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-product col-md-3">
+                        <div class="product position-relative edit_hover_class">
+                            <img src="images/5.png" width="100%" alt="" />
+                            <div class="col-md-6">
+                                <div class="bgeye"><img src="images/view.png" alt="" />
+                                    <span>1594</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="dropdown">
+                                    <a href='#' class=" bgdotted" id="dropdownMenuButton101" data-bs-toggle="dropdown"
+                                        aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
+                                    <ul class="dropdown-menu ">
+                                        <li><a class="dropdown-item" href="#">Share</a></li>
+                                        <li><a class="dropdown-item" href="#">Add to Library</a></li>
+                                        <li><a class="dropdown-item" href="#">Show Next</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12 pb-3">
+                                <h1>GUDAH Plan of the Purgu..</h1>
+                                <p>Cartographic Records</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-product col-md-3">
+                        <div class="product position-relative edit_hover_class">
+                            <img src="images/6.png" width="100%" alt="" />
+                            <div class="col-md-6">
+                                <div class="bgeye"><img src="images/view.png" alt="">
+                                    <span>1594</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="dropdown ">
+                                    <a href='#' class=" bgdotted" id="dropdownMenuButton102" data-bs-toggle="dropdown"
+                                        aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
+                                    <ul class="dropdown-menu ">
+                                        <li><a class="dropdown-item" href="#">Share</a></li>
+                                        <li><a class="dropdown-item" href="#">Add to Library</a></li>
+                                        <li><a class="dropdown-item" href="#">Show Next</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12 pb-3">
+                                <h1>GUDAH Plan of the Purgu..</h1>
+                                <p>Cartographic Records</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-product col-md-3">
+                        <div class="product position-relative edit_hover_class">
+                            <img src="images/7.png" width="100%" />
+                            <div class="col-md-6">
+                                <div class="bgeye"><img src="images/view.png" alt="" />
+                                    <span>1594</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="dropdown">
+                                    <a href='#' class=" bgdotted" id="dropdownMenuButton2" data-bs-toggle="dropdown"
                                         aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">Share</a></li>
@@ -594,9 +1009,10 @@
                                 <p>Cartographic Records</p>
                             </div>
                         </div>
-
+                    </div>
+                    <div class="col-product col-md-3">
                         <div class="product position-relative edit_hover_class">
-                            <img src="images/home-department.png" width="100%" alt="" />
+                            <img src="images/8.png" width="100%" />
                             <div class="col-md-6">
                                 <div class="bgeye"><img src="images/view.png" alt="" />
                                     <span>1594</span>
@@ -604,7 +1020,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="dropdown">
-                                    <a href='#' class=" bgdotted" id="dropdownMenuButton86" data-bs-toggle="dropdown"
+                                    <a href='#' class=" bgdotted" id="dropdownMenuButton107" data-bs-toggle="dropdown"
                                         aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
                                     <ul class="dropdown-menu ">
                                         <li><a class="dropdown-item" href="#">Share</a></li>
@@ -618,9 +1034,37 @@
                                 <p>Cartographic Records</p>
                             </div>
                         </div>
-
+                    </div>
+                    <div class="col-product col-md-3">
                         <div class="product position-relative edit_hover_class">
-                            <img src="images/ism-ay.png" width="100%" alt="" />
+                            <img src="images/9.png" width="100%" alt="" />
+
+                            <div class="col-md-6">
+                                <div class="bgeye"><img src="images/view.png" alt="" />
+                                    <span>1594</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="dropdown ">
+                                    <a href='#' class=" bgdotted" id="dropdownMenuButton108" data-bs-toggle="dropdown"
+                                        aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
+                                    <ul class="dropdown-menu ">
+                                        <li><a class="dropdown-item" href="#">Share</a></li>
+                                        <li><a class="dropdown-item" href="#">Add to Library</a></li>
+                                        <li><a class="dropdown-item" href="#">Show Next</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12 pb-3">
+                                <h1>GUDAH Plan of the Purgu..</h1>
+                                <p>Cartographic Records</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-product col-md-3">
+                        <div class="product position-relative edit_hover_class">
+                            <img src="images/10.png" width="100%" alt="" />
+
                             <div class="col-md-6">
                                 <div class="bgeye"><img src="images/view.png" alt="" />
                                     <span>1594</span>
@@ -628,7 +1072,33 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="dropdown">
-                                    <a href='#' class=" bgdotted" id="dropdownMenuButton87" data-bs-toggle="dropdown"
+                                    <a href='#' class=" bgdotted" id="dropdownMenuButton109" data-bs-toggle="dropdown"
+                                        aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Share</a></li>
+                                        <li><a class="dropdown-item" href="#">Add to Library</a></li>
+                                        <li><a class="dropdown-item" href="#">Show Next</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12 pb-3">
+                                <h1>GUDAH Plan of the Purgu..</h1>
+                                <p>Cartographic Records</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-product col-md-3">
+                        <div class="product position-relative edit_hover_class">
+                            <img src="images/11.png" width="100%" alt="" />
+                            <div class="col-md-6">
+                                <div class="bgeye"><img src="images/view.png" alt="" />
+                                    <span>1594</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+
+                                <div class="dropdown ">
+                                    <a href='#' class=" bgdotted" id="dropdownMenuButton110" data-bs-toggle="dropdown"
                                         aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
                                     <ul class="dropdown-menu ">
                                         <li><a class="dropdown-item" href="#">Share</a></li>
@@ -643,58 +1113,9 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-product">
+                    <div class="col-product col-md-3">
                         <div class="product position-relative edit_hover_class">
-                            <img src="images/consolution.png" width="100%" alt="" />
-                            <div class="col-md-6">
-                                <div class="bgeye"><img src="images/view.png" alt="">
-                                    <span>1594</span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="dropdown">
-                                    <a href='#' class=" bgdotted" id="dropdownMenuButton88" data-bs-toggle="dropdown"
-                                        aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
-                                    <ul class="dropdown-menu ">
-                                        <li><a class="dropdown-item" href="#">Share</a></li>
-                                        <li><a class="dropdown-item" href="#">Add to Library</a></li>
-                                        <li><a class="dropdown-item" href="#">Show Next</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-12 pb-3">
-                                <h1>GUDAH Plan of the Purgu..</h1>
-                                <p>Cartographic Records</p>
-                            </div>
-                        </div>
-
-                        <div class="product position-relative edit_hover_class">
-                            <img src="images/part.png" width="100%" />
-                            <div class="col-md-6">
-                                <div class="bgeye"><img src="images/view.png">
-                                    <span>1594</span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="dropdown">
-                                    <a href='#' class=" bgdotted" id="dropdownMenuButton90" data-bs-toggle="dropdown"
-                                        aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
-                                    <ul class="dropdown-menu ">
-                                        <li><a class="dropdown-item" href="#">Share</a></li>
-                                        <li><a class="dropdown-item" href="#">Add to Library</a></li>
-                                        <li><a class="dropdown-item" href="#">Show Next</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-12 pb-3">
-                                <h1>GUDAH Plan of the Purgu..</h1>
-                                <p>Cartographic Records</p>
-                            </div>
-                        </div>
-
-                        <div class="product position-relative edit_hover_class">
-                            <img src="images/north-western.png" width="100%" alt="" />
+                            <img src="images/12.png" width="100%" alt="" />
                             <div class="col-md-6">
                                 <div class="bgeye"><img src="images/view.png" alt="" />
                                     <span>1594</span>
@@ -702,7 +1123,59 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="dropdown">
-                                    <a href='#' class=" bgdotted" id="dropdownMenuButton91" data-bs-toggle="dropdown"
+                                    <a href='#' class=" bgdotted" id="dropdownMenuButton111" data-bs-toggle="dropdown"
+                                        aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
+
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Share</a></li>
+                                        <li><a class="dropdown-item" href="#">Add to Library</a></li>
+                                        <li><a class="dropdown-item" href="#">Show Next</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12 pb-3">
+                                <h1>GUDAH Plan of the Purgu..</h1>
+                                <p>Cartographic Records</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-product col-md-3">
+                        <div class="product position-relative edit_hover_class">
+                            <img src="images/13.png" width="100%" alt="" />
+                            <div class="col-md-6">
+                                <div class="bgeye"><img src="images/view.png" alt="" />
+                                    <span>1594</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="dropdown ">
+                                    <button class=" bgdotted" type="button" id="dropdownMenuButton112"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="images/dotted.png" alt=""> </button>
+                                    <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Share</a></li>
+                                        <li><a class="dropdown-item" href="#">Add to Library</a></li>
+                                        <li><a class="dropdown-item" href="#">Show Next</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12 pb-3">
+                                <h1>GUDAH Plan of the Purgu..</h1>
+                                <p>Cartographic Records</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-product col-md-3">
+                        <div class="product position-relative edit_hover_class">
+                            <img src="images/14.png" width="100%" alt="" />
+                            <div class="col-md-6">
+                                <div class="bgeye"><img src="images/view.png" alt=" " />
+                                    <span>1594</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="dropdown ">
+                                    <a href='#' class=" bgdotted" id="dropdownMenuButton81" data-bs-toggle="dropdown"
                                         aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
                                     <ul class="dropdown-menu ">
                                         <li><a class="dropdown-item" href="#">Share</a></li>
@@ -717,89 +1190,26 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-product col-md-3">
+                        <div class="product position-relative edit_hover_class">
+                            <img src="images/15.png" width="100%" alt="" />
+                            <div class="col-md-6">
+                                <div class="bgeye"><img src="images/view.png" alt="" />
+                                    <span>1594</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="dropdown ">
+                                    <a href='#' class=" bgdotted" id="dropdownMenuButton82" data-bs-toggle="dropdown"
+                                        aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
 
-                    <div class="col-product">
-                        <div class="product">
-                            <img src="images/sneha-balahar.png" width="100%" alt="" />
-                            <div class="col-md-6"></div>
-                            <div class="col-md-6"></div>
-                            <div class="col-md-12 pb-3">
-                                <h1>GUDAH Plan of the Purgu..</h1>
-                                <p>Cartographic Records</p>
+                                    <ul class="dropdown-menu ">
+                                        <li><a class="dropdown-item" href="#">Share</a></li>
+                                        <li><a class="dropdown-item" href="#">Add to Library</a></li>
+                                        <li><a class="dropdown-item" href="#">Show Next</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="product">
-                            <img src="images/Rashtriya-Tarang.png" width="100%" alt="" />
-                            <div class="col-md-6"></div>
-                            <div class="col-md-6"></div>
-                            <div class="col-md-12 pb-3">
-                                <h1>GUDAH Plan of the Purgu..</h1>
-                                <p>Cartographic Records</p>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <img src="images/indian-institute.png" width="100%" alt="" />
-                            <div class="col-md-6"></div>
-                            <div class="col-md-6"></div>
-                            <div class="col-md-12 pb-3">
-                                <h1>GUDAH Plan of the Purgu..</h1>
-                                <p>Cartographic Records</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-product">
-                        <div class="product">
-                            <img src="images/addaption-modification.png" width="100%" alt="" />
-                            <div class="col-md-6"></div>
-                            <div class="col-md-6"></div>
-                            <div class="col-md-12 pb-3">
-                                <h1>GUDAH Plan of the Purgu..</h1>
-                                <p>Cartographic Records</p>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <img src="images/correspondace.png" width="100%" alt="" />
-                            <div class="col-md-6"></div>
-                            <div class="col-md-6"></div>
-                            <div class="col-md-12 pb-3">
-                                <h1>GUDAH Plan of the Purgu..</h1>
-                                <p>Cartographic Records</p>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <img src="images/the-cotton.png" width="100%" alt="" />
-                            <div class="col-md-6"></div>
-                            <div class="col-md-6"></div>
-                            <div class="col-md-12 pb-3">
-                                <h1>GUDAH Plan of the Purgu..</h1>
-                                <p>Cartographic Records</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-product">
-                        <div class="product">
-                            <img src="images/consolution.png" width="100%" alt="" />
-                            <div class="col-md-6"></div>
-                            <div class="col-md-6"></div>
-                            <div class="col-md-12 pb-3">
-                                <h1>GUDAH Plan of the Purgu..</h1>
-                                <p>Cartographic Records</p>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <img src="images/panjabiskech.png" width="100%" alt="" />
-                            <div class="col-md-6"></div>
-                            <div class="col-md-6"></div>
-                            <div class="col-md-12 pb-3">
-                                <h1>GUDAH Plan of the Purgu..</h1>
-                                <p>Cartographic Records</p>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <img src="images/panjab-seakch.png" width="100%" alt="" />
-                            <div class="col-md-6"></div>
-                            <div class="col-md-6"></div>
                             <div class="col-md-12 pb-3">
                                 <h1>GUDAH Plan of the Purgu..</h1>
                                 <p>Cartographic Records</p>
@@ -807,704 +1217,314 @@
                         </div>
                     </div>
                 </div>
+                <!--closed-->
             </div>
-        </section>
+            <!-- list view-->
+            <div class="container list-view-show">
+                <div class="row pb-3 ">
+                    <div class="grid-view-result-div">
+                        <div class=" bgcolor  pt-0 pt-md-0 pt-lg-0 pt-xl-0 mt-3">
+                            <div class="row">
+                                <div class="  col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                                    <img src="images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class=" col-md-8 col-sm-7 col-lg-9 col-xl-10 ">
+                                    <div class="card-body ">
+                                        <div class="card-content-1 ">
+                                            <figcaption>
+                                                <ul class=" fsize  p-0">
+                                                    <li class="headingview pb-4">
+                                                        <span class=""></span> GUDAH Plan of the Purgunuh of Gooduh,
+                                                        Bhutteeana or Sirsuh District. Surveyed by Captain William Brown
+                                                        1839-1840.
+                                                    </li>
+                                                    <li class="viewgrid pb-4">
+                                                        <span class="pleft">Department:</span> Survey Of India (Maps)
+                                                    </li>
+                                                    <li class="viewgrid pb-3">
+                                                        <span class="pleft">Year:</span> 1839
+                                                    </li>
+                                                    <li class="viewgrid pb-3">
+                                                        <span class="pleft">Place :</span> Gudah
+                                                    </li>
+                                                    <li class="viewgrid pb-3">
+                                                        <span class="pleft">Digitized Collection :</span> Digitized
+                                                        Cartographic Records
+                                                    </li>
+                                                    <li class="viewgrid pb-4 ">
+                                                        <span class="pleft">Held by :</span> National Archives of India
+                                                    </li>
+                                                </ul>
+                                            </figcaption>
+                                        </div>
 
-        <!--grid view-->
-        <div class="container grid-view">
-            <div class="row ">
-                <div class="col-product col-md-3">
-                    <div class="product position-relative edit_hover_class">
-                        <img src="images/1.png" width="100%" alt="" />
-                        <div class="col-md-6">
-                            <div class="bgeye"><img src="images/view.png" alt="" />
-                                <span>1594</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="dropdown">
-                                <a href='#' class=" bgdotted" id="dropdownMenuButton92" data-bs-toggle="dropdown"
-                                    aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
-                                <ul class="dropdown-menu ">
-                                    <li><a class="dropdown-item" href="#">Share</a></li>
-                                    <li><a class="dropdown-item" href="#">Add to Library</a></li>
-                                    <li><a class="dropdown-item" href="#">Show Next</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-12 pb-3">
-                            <h1>GUDAH Plan of the Purgu..</h1>
-                            <p>Cartographic Records</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-product col-md-3">
-                    <div class="product position-relative edit_hover_class">
-                        <img src="images/2.png" width="100%" alt="" />
-                        <div class="col-md-6">
-                            <div class="bgeye"><img src="images/view.png" alt="" />
-                                <span>1594</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 ">
-                            <div class="dropdown ">
-                                <a href='#' class=" bgdotted" id="dropdownMenuButton93" data-bs-toggle="dropdown"
-                                    aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
-                                <ul class="dropdown-menu ">
-                                    <li><a class="dropdown-item" href="#">Share</a></li>
-                                    <li><a class="dropdown-item" href="#">Add to Library</a></li>
-                                    <li><a class="dropdown-item" href="#">Show Next</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-12 pb-3">
-                            <h1>GUDAH Plan of the Purgu..</h1>
-                            <p>Cartographic Records</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-product col-md-3">
-                    <div class="product position-relative edit_hover_class">
-                        <img src="images/3.png" width="100%" alt="" />
-                        <div class="col-md-6">
-                            <div class="bgeye"><img src="images/view.png" alt="">
-                                <span>1594</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="dropdown">
-                                <a href='#' class=" bgdotted" id="dropdownMenuButton95" data-bs-toggle="dropdown"
-                                    aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
-                                <ul class="dropdown-menu ">
-                                    <li><a class="dropdown-item" href="#">Share</a></li>
-                                    <li><a class="dropdown-item" href="#">Add to Library</a></li>
-                                    <li><a class="dropdown-item" href="#">Show Next</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-12 pb-3">
-                            <h1>GUDAH Plan of the Purgu..</h1>
-                            <p>Cartographic Records</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-product col-md-3">
-                    <div class="product position-relative edit_hover_class">
-                        <img src="images/4.png" width="100%" alt="" />
-                        <div class="col-md-6">
-                            <div class="bgeye"><img src="images/view.png">
-                                <span>1594</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 ">
-                            <div class="dropdown ">
-                                <a href='#' class=" bgdotted" id="dropdownMenuButton99" data-bs-toggle="dropdown"
-                                    aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
-                                <ul class="dropdown-menu ">
-                                    <li><a class="dropdown-item" href="#">Share</a></li>
-                                    <li><a class="dropdown-item" href="#">Add to Library</a></li>
-                                    <li><a class="dropdown-item" href="#">Show Next</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-12 pb-3">
-                            <h1>GUDAH Plan of the Purgu..</h1>
-                            <p>Cartographic Records</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-product col-md-3">
-                    <div class="product position-relative edit_hover_class">
-                        <img src="images/5.png" width="100%" alt="" />
-                        <div class="col-md-6">
-                            <div class="bgeye"><img src="images/view.png" alt="" />
-                                <span>1594</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="dropdown">
-                                <a href='#' class=" bgdotted" id="dropdownMenuButton101" data-bs-toggle="dropdown"
-                                    aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
-                                <ul class="dropdown-menu ">
-                                    <li><a class="dropdown-item" href="#">Share</a></li>
-                                    <li><a class="dropdown-item" href="#">Add to Library</a></li>
-                                    <li><a class="dropdown-item" href="#">Show Next</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-12 pb-3">
-                            <h1>GUDAH Plan of the Purgu..</h1>
-                            <p>Cartographic Records</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-product col-md-3">
-                    <div class="product position-relative edit_hover_class">
-                        <img src="images/6.png" width="100%" alt="" />
-                        <div class="col-md-6">
-                            <div class="bgeye"><img src="images/view.png" alt="">
-                                <span>1594</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 ">
-                            <div class="dropdown ">
-                                <a href='#' class=" bgdotted" id="dropdownMenuButton102" data-bs-toggle="dropdown"
-                                    aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
-                                <ul class="dropdown-menu ">
-                                    <li><a class="dropdown-item" href="#">Share</a></li>
-                                    <li><a class="dropdown-item" href="#">Add to Library</a></li>
-                                    <li><a class="dropdown-item" href="#">Show Next</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-12 pb-3">
-                            <h1>GUDAH Plan of the Purgu..</h1>
-                            <p>Cartographic Records</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-product col-md-3">
-                    <div class="product position-relative edit_hover_class">
-                        <img src="images/7.png" width="100%" />
-                        <div class="col-md-6">
-                            <div class="bgeye"><img src="images/view.png" alt="" />
-                                <span>1594</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="dropdown">
-                                <a href='#' class=" bgdotted" id="dropdownMenuButton2" data-bs-toggle="dropdown"
-                                    aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Share</a></li>
-                                    <li><a class="dropdown-item" href="#">Add to Library</a></li>
-                                    <li><a class="dropdown-item" href="#">Show Next</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-12 pb-3">
-                            <h1>GUDAH Plan of the Purgu..</h1>
-                            <p>Cartographic Records</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-product col-md-3">
-                    <div class="product position-relative edit_hover_class">
-                        <img src="images/8.png" width="100%" />
-                        <div class="col-md-6">
-                            <div class="bgeye"><img src="images/view.png" alt="" />
-                                <span>1594</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="dropdown">
-                                <a href='#' class=" bgdotted" id="dropdownMenuButton107" data-bs-toggle="dropdown"
-                                    aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
-                                <ul class="dropdown-menu ">
-                                    <li><a class="dropdown-item" href="#">Share</a></li>
-                                    <li><a class="dropdown-item" href="#">Add to Library</a></li>
-                                    <li><a class="dropdown-item" href="#">Show Next</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-12 pb-3">
-                            <h1>GUDAH Plan of the Purgu..</h1>
-                            <p>Cartographic Records</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-product col-md-3">
-                    <div class="product position-relative edit_hover_class">
-                        <img src="images/9.png" width="100%" alt="" />
-
-                        <div class="col-md-6">
-                            <div class="bgeye"><img src="images/view.png" alt="" />
-                                <span>1594</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 ">
-                            <div class="dropdown ">
-                                <a href='#' class=" bgdotted" id="dropdownMenuButton108" data-bs-toggle="dropdown"
-                                    aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
-                                <ul class="dropdown-menu ">
-                                    <li><a class="dropdown-item" href="#">Share</a></li>
-                                    <li><a class="dropdown-item" href="#">Add to Library</a></li>
-                                    <li><a class="dropdown-item" href="#">Show Next</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-12 pb-3">
-                            <h1>GUDAH Plan of the Purgu..</h1>
-                            <p>Cartographic Records</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-product col-md-3">
-                    <div class="product position-relative edit_hover_class">
-                        <img src="images/10.png" width="100%" alt="" />
-
-                        <div class="col-md-6">
-                            <div class="bgeye"><img src="images/view.png" alt="" />
-                                <span>1594</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="dropdown">
-                                <a href='#' class=" bgdotted" id="dropdownMenuButton109" data-bs-toggle="dropdown"
-                                    aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Share</a></li>
-                                    <li><a class="dropdown-item" href="#">Add to Library</a></li>
-                                    <li><a class="dropdown-item" href="#">Show Next</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-12 pb-3">
-                            <h1>GUDAH Plan of the Purgu..</h1>
-                            <p>Cartographic Records</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-product col-md-3">
-                    <div class="product position-relative edit_hover_class">
-                        <img src="images/11.png" width="100%" alt="" />
-                        <div class="col-md-6">
-                            <div class="bgeye"><img src="images/view.png" alt="" />
-                                <span>1594</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-
-                            <div class="dropdown ">
-                                <a href='#' class=" bgdotted" id="dropdownMenuButton110" data-bs-toggle="dropdown"
-                                    aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
-                                <ul class="dropdown-menu ">
-                                    <li><a class="dropdown-item" href="#">Share</a></li>
-                                    <li><a class="dropdown-item" href="#">Add to Library</a></li>
-                                    <li><a class="dropdown-item" href="#">Show Next</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-12 pb-3">
-                            <h1>GUDAH Plan of the Purgu..</h1>
-                            <p>Cartographic Records</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-product col-md-3">
-                    <div class="product position-relative edit_hover_class">
-                        <img src="images/12.png" width="100%" alt="" />
-                        <div class="col-md-6">
-                            <div class="bgeye"><img src="images/view.png" alt="" />
-                                <span>1594</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="dropdown">
-                                <a href='#' class=" bgdotted" id="dropdownMenuButton111" data-bs-toggle="dropdown"
-                                    aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
-
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Share</a></li>
-                                    <li><a class="dropdown-item" href="#">Add to Library</a></li>
-                                    <li><a class="dropdown-item" href="#">Show Next</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-12 pb-3">
-                            <h1>GUDAH Plan of the Purgu..</h1>
-                            <p>Cartographic Records</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-product col-md-3">
-                    <div class="product position-relative edit_hover_class">
-                        <img src="images/13.png" width="100%" alt="" />
-                        <div class="col-md-6">
-                            <div class="bgeye"><img src="images/view.png" alt="" />
-                                <span>1594</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 ">
-                            <div class="dropdown ">
-                                <button class=" bgdotted" type="button" id="dropdownMenuButton112"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="images/dotted.png" alt=""> </button>
-                                <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Share</a></li>
-                                    <li><a class="dropdown-item" href="#">Add to Library</a></li>
-                                    <li><a class="dropdown-item" href="#">Show Next</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-12 pb-3">
-                            <h1>GUDAH Plan of the Purgu..</h1>
-                            <p>Cartographic Records</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-product col-md-3">
-                    <div class="product position-relative edit_hover_class">
-                        <img src="images/14.png" width="100%" alt="" />
-                        <div class="col-md-6">
-                            <div class="bgeye"><img src="images/view.png" alt=" " />
-                                <span>1594</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 ">
-                            <div class="dropdown ">
-                                <a href='#' class=" bgdotted" id="dropdownMenuButton81" data-bs-toggle="dropdown"
-                                    aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
-                                <ul class="dropdown-menu ">
-                                    <li><a class="dropdown-item" href="#">Share</a></li>
-                                    <li><a class="dropdown-item" href="#">Add to Library</a></li>
-                                    <li><a class="dropdown-item" href="#">Show Next</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-12 pb-3">
-                            <h1>GUDAH Plan of the Purgu..</h1>
-                            <p>Cartographic Records</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-product col-md-3">
-                    <div class="product position-relative edit_hover_class">
-                        <img src="images/15.png" width="100%" alt="" />
-                        <div class="col-md-6">
-                            <div class="bgeye"><img src="images/view.png" alt="" />
-                                <span>1594</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 ">
-                            <div class="dropdown ">
-                                <a href='#' class=" bgdotted" id="dropdownMenuButton82" data-bs-toggle="dropdown"
-                                    aria-expanded="false"><img src="images/dotted.png" alt=""> </a>
-
-                                <ul class="dropdown-menu ">
-                                    <li><a class="dropdown-item" href="#">Share</a></li>
-                                    <li><a class="dropdown-item" href="#">Add to Library</a></li>
-                                    <li><a class="dropdown-item" href="#">Show Next</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-12 pb-3">
-                            <h1>GUDAH Plan of the Purgu..</h1>
-                            <p>Cartographic Records</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--closed-->
-        </div>
-        <!-- list view-->
-        <div class="container list-view-show">
-            <div class="row pb-3 ">
-                <div class="grid-view-result-div">
-                    <div class=" bgcolor  pt-0 pt-md-0 pt-lg-0 pt-xl-0 mt-3">
-                        <div class="row">
-                            <div class="  col-sm-5 col-md-4 col-lg-3 col-xl-2">
-                                <img src="images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class=" col-md-8 col-sm-7 col-lg-9 col-xl-10 ">
-                                <div class="card-body ">
-                                    <div class="card-content-1 ">
-                                        <figcaption>
-                                            <ul class=" fsize  p-0">
-                                                <li class="headingview pb-4">
-                                                    <span class=""></span> GUDAH Plan of the Purgunuh of Gooduh,
-                                                    Bhutteeana or Sirsuh District. Surveyed by Captain William Brown
-                                                    1839-1840.
+                                        <div class="card-action">
+                                            <ul class="iconlist">
+                                                <li class="iconimg">
+                                                    <img src="images/view1.png" alt="" /> <span>1594</span>
                                                 </li>
-                                                <li class="viewgrid pb-4">
-                                                    <span class="pleft">Department:</span> Survey Of India (Maps)
+                                                <li class="iconimg">
+                                                    <img src="images/Line 96.png" alt="" />
                                                 </li>
-                                                <li class="viewgrid pb-3">
-                                                    <span class="pleft">Year:</span> 1839
+                                                <li class="iconimg">
+                                                    <img src="images/Group.png" alt="" />
                                                 </li>
-                                                <li class="viewgrid pb-3">
-                                                    <span class="pleft">Place :</span> Gudah
+                                                <li class="iconimg">
+                                                    <img src="images/bookmark.png" alt="" />
                                                 </li>
-                                                <li class="viewgrid pb-3">
-                                                    <span class="pleft">Digitized Collection :</span> Digitized
-                                                    Cartographic Records
+
+                                                <li class="iconimg">
+                                                    <img src="images/Group(1).png" alt="" />
                                                 </li>
-                                                <li class="viewgrid pb-4 ">
-                                                    <span class="pleft">Held by :</span> National Archives of India
+                                                <li class="iconimg">
+                                                    <img src="images/translation 1.png" alt="" />
                                                 </li>
                                             </ul>
-                                        </figcaption>
-                                    </div>
-
-                                    <div class="card-action">
-                                        <ul class="iconlist">
-                                            <li class="iconimg">
-                                                <img src="images/view1.png" alt="" /> <span>1594</span>
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/Line 96.png" alt="" />
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/Group.png" alt="" />
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/bookmark.png" alt="" />
-                                            </li>
-
-                                            <li class="iconimg">
-                                                <img src="images/Group(1).png" alt="" />
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/translation 1.png" alt="" />
-                                            </li>
-                                        </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class=" bgcolor  pt-3 pt-md-4 pt-lg-4 pt-xl-4 mt-3">
-                        <div class="row">
-                            <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2">
-                                <img src="images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8 col-sm-7 col-lg-9 col-xl-10">
-                                <div class="card-body ">
-                                    <div class="card-content-1 ">
-                                        <figcaption>
-                                            <ul class=" fsize p-0">
-                                                <li class="headingview pb-4">
-                                                    <span class=""></span> GUDAH Plan of the Purgunuh of Gooduh,
-                                                    Bhutteeana or Sirsuh District. Surveyed by Captain William Brown
-                                                    1839-1840.
+                        <div class=" bgcolor  pt-3 pt-md-4 pt-lg-4 pt-xl-4 mt-3">
+                            <div class="row">
+                                <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                                    <img src="images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8 col-sm-7 col-lg-9 col-xl-10">
+                                    <div class="card-body ">
+                                        <div class="card-content-1 ">
+                                            <figcaption>
+                                                <ul class=" fsize p-0">
+                                                    <li class="headingview pb-4">
+                                                        <span class=""></span> GUDAH Plan of the Purgunuh of Gooduh,
+                                                        Bhutteeana or Sirsuh District. Surveyed by Captain William Brown
+                                                        1839-1840.
+                                                    </li>
+                                                    <li class="viewgrid pb-4">
+                                                        <span class="pleft">Department:</span> Survey Of India (Maps)
+                                                    </li>
+                                                    <li class="viewgrid pb-4">
+                                                        <span class="pleft">Year:</span> 1839
+                                                    </li>
+                                                    <li class="viewgrid pb-3">
+                                                        <span class="pleft">Place :</span> Gudah
+                                                    </li>
+                                                    <li class="viewgrid pb-3">
+                                                        <span class="pleft">Digitized Collection :</span> Digitized
+                                                        Cartographic Records
+                                                    </li>
+                                                    <li class="viewgrid pb-4">
+                                                        <span class="pleft">Held by :</span> National Archives of India
+                                                    </li>
+                                                </ul>
+                                            </figcaption>
+                                        </div>
+                                        <div class="card-action">
+                                            <ul class="iconlist">
+                                                <li class="iconimg">
+                                                    <img src="images/view1.png" alt="" /> <span>1594</span>
                                                 </li>
-                                                <li class="viewgrid pb-4">
-                                                    <span class="pleft">Department:</span> Survey Of India (Maps)
+                                                <li class="iconimg">
+                                                    <img src="images/Line 96.png" alt="" />
                                                 </li>
-                                                <li class="viewgrid pb-4">
-                                                    <span class="pleft">Year:</span> 1839
+                                                <li class="iconimg">
+                                                    <img src="images/Group.png" alt="" />
                                                 </li>
-                                                <li class="viewgrid pb-3">
-                                                    <span class="pleft">Place :</span> Gudah
+                                                <li class="iconimg">
+                                                    <img src="images/bookmark.png" alt="" />
                                                 </li>
-                                                <li class="viewgrid pb-3">
-                                                    <span class="pleft">Digitized Collection :</span> Digitized
-                                                    Cartographic Records
+
+                                                <li class="iconimg">
+                                                    <img src="images/Group(1).png" alt="" />
                                                 </li>
-                                                <li class="viewgrid pb-4">
-                                                    <span class="pleft">Held by :</span> National Archives of India
+                                                <li class="iconimg">
+                                                    <img src="images/translation 1.png" alt="" />
                                                 </li>
                                             </ul>
-                                        </figcaption>
-                                    </div>
-                                    <div class="card-action">
-                                        <ul class="iconlist">
-                                            <li class="iconimg">
-                                                <img src="images/view1.png" alt="" /> <span>1594</span>
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/Line 96.png" alt="" />
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/Group.png" alt="" />
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/bookmark.png" alt="" />
-                                            </li>
-
-                                            <li class="iconimg">
-                                                <img src="images/Group(1).png" alt="" />
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/translation 1.png" alt="" />
-                                            </li>
-                                        </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class=" bgcolor  pt-3 pt-md-4 pt-lg-4 pt-xl-4 mt-3">
-                        <div class="row">
-                            <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2">
-                                <img src="images/1.png" width="100%" class="img-fluid rounded-start" alt="" />
-                            </div>
-                            <div class=" col-md-8 col-sm-7 col-lg-9 col-xl-10 ">
-                                <div class="card-body ">
-                                    <div class="card-content-1 ">
-                                        <figcaption>
-                                            <ul class=" fsize  p-0">
-                                                <li class="headingview pb-4">
-                                                    <span class=""></span> GUDAH Plan of the Purgunuh of Gooduh,
-                                                    Bhutteeana or Sirsuh District. Surveyed by Captain William Brown
-                                                    1839-1840.
+                        <div class=" bgcolor  pt-3 pt-md-4 pt-lg-4 pt-xl-4 mt-3">
+                            <div class="row">
+                                <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                                    <img src="images/1.png" width="100%" class="img-fluid rounded-start" alt="" />
+                                </div>
+                                <div class=" col-md-8 col-sm-7 col-lg-9 col-xl-10 ">
+                                    <div class="card-body ">
+                                        <div class="card-content-1 ">
+                                            <figcaption>
+                                                <ul class=" fsize  p-0">
+                                                    <li class="headingview pb-4">
+                                                        <span class=""></span> GUDAH Plan of the Purgunuh of Gooduh,
+                                                        Bhutteeana or Sirsuh District. Surveyed by Captain William Brown
+                                                        1839-1840.
+                                                    </li>
+                                                    <li class="viewgrid pb-3">
+                                                        <span class="pleft">Department:</span> Survey Of India (Maps)
+                                                    </li>
+                                                    <li class="viewgrid pb-3">
+                                                        <span class="pleft">Year:</span> 1839
+                                                    </li>
+                                                    <li class="viewgrid pb-3">
+                                                        <span class="pleft">Place :</span> Gudah
+                                                    </li>
+                                                    <li class="viewgrid pb-4">
+                                                        <span class="pleft">Digitized Collection :</span> Digitized
+                                                        Cartographic Records
+                                                    </li>
+                                                    <li class="viewgrid pb-4">
+                                                        <span class="pleft">Held by :</span> National Archives of India
+                                                    </li>
+                                                </ul>
+                                            </figcaption>
+                                        </div>
+                                        <div class="card-action">
+                                            <ul class="iconlist">
+                                                <li class="iconimg">
+                                                    <img src="images/view1.png" alt="" /> <span>1594</span>
                                                 </li>
-                                                <li class="viewgrid pb-3">
-                                                    <span class="pleft">Department:</span> Survey Of India (Maps)
+                                                <li class="iconimg">
+                                                    <img src="images/Line 96.png" alt="" />
                                                 </li>
-                                                <li class="viewgrid pb-3">
-                                                    <span class="pleft">Year:</span> 1839
+                                                <li class="iconimg">
+                                                    <img src="images/Group.png" alt="" />
                                                 </li>
-                                                <li class="viewgrid pb-3">
-                                                    <span class="pleft">Place :</span> Gudah
+                                                <li class="iconimg">
+                                                    <img src="images/bookmark.png" alt="" />
                                                 </li>
-                                                <li class="viewgrid pb-4">
-                                                    <span class="pleft">Digitized Collection :</span> Digitized
-                                                    Cartographic Records
+
+                                                <li class="iconimg">
+                                                    <img src="images/Group(1).png" alt="" />
                                                 </li>
-                                                <li class="viewgrid pb-4">
-                                                    <span class="pleft">Held by :</span> National Archives of India
+                                                <li class="iconimg">
+                                                    <img src="images/translation 1.png" alt="" />
                                                 </li>
                                             </ul>
-                                        </figcaption>
-                                    </div>
-                                    <div class="card-action">
-                                        <ul class="iconlist">
-                                            <li class="iconimg">
-                                                <img src="images/view1.png" alt="" /> <span>1594</span>
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/Line 96.png" alt="" />
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/Group.png" alt="" />
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/bookmark.png" alt="" />
-                                            </li>
-
-                                            <li class="iconimg">
-                                                <img src="images/Group(1).png" alt="" />
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/translation 1.png" alt="" />
-                                            </li>
-                                        </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class=" bgcolor  pt-3 pt-md-4 pt-lg-4 pt-xl-4 mt-3">
-                        <div class="row">
-                            <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2">
-                                <img src="images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="  col-md-8 col-sm-7 col-lg-9 col-xl-10 ">
-                                <div class="card-body ">
-                                    <div class="card-content-1 ">
-                                        <figcaption>
-                                            <ul class=" fsize  p-0 ">
-                                                <li class="headingview pb-4">
-                                                    <span class=""></span> GUDAH Plan of the Purgunuh of Gooduh,
-                                                    Bhutteeana or Sirsuh District. Surveyed by Captain William Brown
-                                                    1839-1840.
+                        <div class=" bgcolor  pt-3 pt-md-4 pt-lg-4 pt-xl-4 mt-3">
+                            <div class="row">
+                                <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                                    <img src="images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="  col-md-8 col-sm-7 col-lg-9 col-xl-10 ">
+                                    <div class="card-body ">
+                                        <div class="card-content-1 ">
+                                            <figcaption>
+                                                <ul class=" fsize  p-0 ">
+                                                    <li class="headingview pb-4">
+                                                        <span class=""></span> GUDAH Plan of the Purgunuh of Gooduh,
+                                                        Bhutteeana or Sirsuh District. Surveyed by Captain William Brown
+                                                        1839-1840.
+                                                    </li>
+                                                    <li class="viewgrid pb-3">
+                                                        <span class="pleft">Department:</span> Survey Of India (Maps)
+                                                    </li>
+                                                    <li class="viewgrid pb-3">
+                                                        <span class="pleft">Year:</span> 1839
+                                                    </li>
+                                                    <li class="viewgrid pb-3">
+                                                        <span class="pleft">Place :</span> Gudah
+                                                    </li>
+                                                    <li class="viewgrid pb-4">
+                                                        <span class="pleft">Digitized Collection :</span> Digitized
+                                                        Cartographic Records
+                                                    </li>
+                                                    <li class="viewgrid pb-4">
+                                                        <span class="pleft">Held by :</span> National Archives of India
+                                                    </li>
+                                                </ul>
+                                            </figcaption>
+                                        </div>
+
+                                        <div class="card-action">
+                                            <ul class="iconlist">
+                                                <li class="iconimg">
+                                                    <img src="images/view1.png" alt="" /> <span>1594</span>
                                                 </li>
-                                                <li class="viewgrid pb-3">
-                                                    <span class="pleft">Department:</span> Survey Of India (Maps)
+                                                <li class="iconimg">
+                                                    <img src="images/Line 96.png" alt="" />
                                                 </li>
-                                                <li class="viewgrid pb-3">
-                                                    <span class="pleft">Year:</span> 1839
+                                                <li class="iconimg">
+                                                    <img src="images/Group.png" alt="" />
                                                 </li>
-                                                <li class="viewgrid pb-3">
-                                                    <span class="pleft">Place :</span> Gudah
+                                                <li class="iconimg">
+                                                    <img src="images/bookmark.png" alt="" />
                                                 </li>
-                                                <li class="viewgrid pb-4">
-                                                    <span class="pleft">Digitized Collection :</span> Digitized
-                                                    Cartographic Records
+                                                <li class="iconimg">
+                                                    <img src="images/Group(1).png" alt="" />
                                                 </li>
-                                                <li class="viewgrid pb-4">
-                                                    <span class="pleft">Held by :</span> National Archives of India
+                                                <li class="iconimg">
+                                                    <img src="images/translation 1.png" alt="" />
                                                 </li>
                                             </ul>
-                                        </figcaption>
-                                    </div>
-
-                                    <div class="card-action">
-                                        <ul class="iconlist">
-                                            <li class="iconimg">
-                                                <img src="images/view1.png" alt="" /> <span>1594</span>
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/Line 96.png" alt="" />
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/Group.png" alt="" />
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/bookmark.png" alt="" />
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/Group(1).png" alt="" />
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/translation 1.png" alt="" />
-                                            </li>
-                                        </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class=" bgcolor  pt-3 pt-md-4 pt-lg-4 pt-xl-4 mt-3">
-                        <div class="row">
-                            <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2">
-                                <img src="images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class=" col-md-8 col-sm-7 col-lg-9 col-xl-10 ">
-                                <div class="card-body ">
-                                    <div class="card-content-1 ">
-                                        <figcaption>
-                                            <ul class=" fsize  p-0">
-                                                <li class="headingview pb-4">
-                                                    <span class=""></span> GUDAH Plan of the Purgunuh of Gooduh,
-                                                    Bhutteeana or Sirsuh District. Surveyed by Captain William Brown
-                                                    1839-1840.
+                        <div class=" bgcolor  pt-3 pt-md-4 pt-lg-4 pt-xl-4 mt-3">
+                            <div class="row">
+                                <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                                    <img src="images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class=" col-md-8 col-sm-7 col-lg-9 col-xl-10 ">
+                                    <div class="card-body ">
+                                        <div class="card-content-1 ">
+                                            <figcaption>
+                                                <ul class=" fsize  p-0">
+                                                    <li class="headingview pb-4">
+                                                        <span class=""></span> GUDAH Plan of the Purgunuh of Gooduh,
+                                                        Bhutteeana or Sirsuh District. Surveyed by Captain William Brown
+                                                        1839-1840.
+                                                    </li>
+                                                    <li class="viewgrid pb-3">
+                                                        <span class="pleft">Department:</span> Survey Of India (Maps)
+                                                    </li>
+                                                    <li class="viewgrid pb-3">
+                                                        <span class="pleft">Year:</span> 1839
+                                                    </li>
+                                                    <li class="viewgrid pb-3">
+                                                        <span class="pleft">Place :</span> Gudah
+                                                    </li>
+                                                    <li class="viewgrid pb-4">
+                                                        <span class="pleft">Digitized Collection :</span> Digitized
+                                                        Cartographic Records
+                                                    </li>
+                                                    <li class="viewgrid pb-4">
+                                                        <span class="pleft">Held by :</span> National Archives of India
+                                                    </li>
+                                                </ul>
+                                            </figcaption>
+                                        </div>
+
+                                        <div class="card-action ">
+                                            <ul class="iconlist">
+                                                <li class="iconimg">
+                                                    <img src="images/view1.png" alt="" /> <span>1594</span>
                                                 </li>
-                                                <li class="viewgrid pb-3">
-                                                    <span class="pleft">Department:</span> Survey Of India (Maps)
+                                                <li class="iconimg">
+                                                    <img src="images/Line 96.png" alt="" />
                                                 </li>
-                                                <li class="viewgrid pb-3">
-                                                    <span class="pleft">Year:</span> 1839
+                                                <li class="iconimg">
+                                                    <img src="images/Group.png" alt="" />
                                                 </li>
-                                                <li class="viewgrid pb-3">
-                                                    <span class="pleft">Place :</span> Gudah
+                                                <li class="iconimg">
+                                                    <img src="images/bookmark.png" alt="" />
                                                 </li>
-                                                <li class="viewgrid pb-4">
-                                                    <span class="pleft">Digitized Collection :</span> Digitized
-                                                    Cartographic Records
+                                                <li class="iconimg">
+                                                    <img src="images/Group(1).png" alt="" />
                                                 </li>
-                                                <li class="viewgrid pb-4">
-                                                    <span class="pleft">Held by :</span> National Archives of India
+                                                <li class="iconimg">
+                                                    <img src="images/translation 1.png" alt="" />
                                                 </li>
                                             </ul>
-                                        </figcaption>
-                                    </div>
-
-                                    <div class="card-action ">
-                                        <ul class="iconlist">
-                                            <li class="iconimg">
-                                                <img src="images/view1.png" alt="" /> <span>1594</span>
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/Line 96.png" alt="" />
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/Group.png" alt="" />
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/bookmark.png" alt="" />
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/Group(1).png" alt="" />
-                                            </li>
-                                            <li class="iconimg">
-                                                <img src="images/translation 1.png" alt="" />
-                                            </li>
-                                        </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1513,58 +1533,58 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <footer class="bg-footer">
-        <div class="container">
-            <div class="foo-content">
-                <div class="colunm-1 colum">
-                    <div class="container">
-                        <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="about-us.html"></a><a href="">Contact Us</a></li>
-                            <li><a href="Privacy-and-Copyright-Policy.html">Privacy &amp; Copyright Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="colunm-2 colum">
-                    <div class="container">
-                        <ul>
-                            <li><a href="term-condition.html">Terms &amp; Conditions</a></li>
-                            <li><a href="Disclaimer.html">Disclaimer</a></li>
-                            <li><a href="#">Sitemap</a></li>
-                            <li><a href="Cancellation-Return-Refund-Policy.html">Cancellation, Return &amp; Refund
-                                    Policy</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="colunm-3 colum">
-                    <div class="container">
-                        <p>NATIONAL ARCHIVES OF
-                            INDIA National Archives
-                            Building,Janpath, New
-                            Delhi 110001. INDIA</p>
-
-                        <div class="row">
-                            <div class="col-md-6"><a href="tel:011-23384797">T: 011- 23384797 </a></div>
-                            <div class="col-md-6"><a href="mailto:archives@nic.in">E: archives@nic.in</a></div>
+        <footer class="bg-footer">
+            <div class="container">
+                <div class="foo-content">
+                    <div class="colunm-1 colum">
+                        <div class="container">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="about-us.html"></a><a href="">Contact Us</a></li>
+                                <li><a href="Privacy-and-Copyright-Policy.html">Privacy &amp; Copyright Policy</a></li>
+                            </ul>
                         </div>
-
                     </div>
-                </div>
-                <div class="colunm-4 colum">
-                    <div class="container">
-                        <div class="foo-logo-wrraper">
-                            <img src="images/NAI-logo-footer.png" alt="NAI Logo Footer">
-                            <p>&copy; National Archives of India. All Rights Reserved.</p>
+                    <div class="colunm-2 colum">
+                        <div class="container">
+                            <ul>
+                                <li><a href="term-condition.html">Terms &amp; Conditions</a></li>
+                                <li><a href="Disclaimer.html">Disclaimer</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                                <li><a href="Cancellation-Return-Refund-Policy.html">Cancellation, Return &amp; Refund
+                                        Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="colunm-3 colum">
+                        <div class="container">
+                            <p>NATIONAL ARCHIVES OF
+                                INDIA National Archives
+                                Building,Janpath, New
+                                Delhi 110001. INDIA</p>
+
+                            <div class="row">
+                                <div class="col-md-6"><a href="tel:011-23384797">T: 011- 23384797 </a></div>
+                                <div class="col-md-6"><a href="mailto:archives@nic.in">E: archives@nic.in</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="colunm-4 colum">
+                        <div class="container">
+                            <div class="foo-logo-wrraper">
+                                <img src="images/NAI-logo-footer.png" alt="NAI Logo Footer">
+                                <p>&copy; National Archives of India. All Rights Reserved.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </main>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-ui.js"></script>

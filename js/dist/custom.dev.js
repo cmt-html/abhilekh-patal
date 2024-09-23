@@ -472,20 +472,20 @@ $(".has-sub i").on("click", function () {
 $("header a").click(function () {
   $(".backdrop-shaddow").click();
 }); // ==================================
-
-document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    var targetElement = document.querySelector(this.getAttribute("href"));
-    var headerOffset = document.querySelector("header").offsetHeight;
-    var elementPosition = targetElement.getBoundingClientRect().top;
-    var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-    window.scrollTo({
-      top: offsetPosition - 50,
-      behavior: "smooth"
-    });
-  });
-}); // <!-- Initialize Swiper -->
+// document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+//   anchor.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     const targetElement = document.querySelector(this.getAttribute("href"));
+//     const headerOffset = document.querySelector("header").offsetHeight;
+//     const elementPosition = targetElement.getBoundingClientRect().top;
+//     const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+//     window.scrollTo({
+//       top: offsetPosition - 50,
+//       behavior: "smooth",
+//     });
+//   });
+// });
+// <!-- Initialize Swiper -->
 
 var swiper = new Swiper(".HomepageSlider", {
   slidesPerView: 1,

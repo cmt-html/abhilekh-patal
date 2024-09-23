@@ -10,7 +10,7 @@ $gray4: #ccc;
 $graydark1: #2d2d2d;
 $gray-dark: #676767;
 $gray-dark-update: #9b9b9b;
-$light-pink: #FBF0EE;
+$light-pink: #fbf0ee;
 body,
 html {
   padding: 0;
@@ -18,10 +18,7 @@ html {
   // background-color: $gray2;
   font-family: "Raleway", sans-serif !important;
   overflow-x: hidden !important;
-  width: 100%;
-  height: 100%;
 }
-
 
 ol,
 ul,
@@ -41,10 +38,10 @@ dl {
   font-weight: inherit;
 }
 
-.bg-color-light-pink{
+.bg-color-light-pink {
   background-color: $light-pink;
 }
-.bg-color-gray2{
+.bg-color-gray2 {
   background-color: $gray2;
 }
 
@@ -775,8 +772,6 @@ input[type="search"]::-webkit-search-results-decoration {
   z-index: 9999999;
 }
 
-
-
 .searchinput {
   border-radius: 40px 0px 0px 40px;
   border: 1px solid $gray-dark;
@@ -1279,7 +1274,8 @@ input[type="search"]::-webkit-search-results-decoration {
   visibility: visible;
 }
 
-.edit_hover_class a.show, .edit_hover_class  .show a {
+.edit_hover_class a.show,
+.edit_hover_class .show a {
   visibility: visible !important;
 }
 /* list view*/
@@ -1596,7 +1592,7 @@ input[type="search"]::-webkit-search-results-decoration {
   padding: 40px 40px 40px 40px;
   box-shadow: rgb(129, 129, 129) 3px 3px 8px;
   border-radius: 4px;
-  
+
   .applybutton {
     background-color: $redish;
     border: 1px solid $redish;
@@ -2338,7 +2334,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
   span.icon {
     margin-right: 8px;
-    color: #73081C;
+    color: #73081c;
   }
 }
 
@@ -3148,6 +3144,7 @@ input:disabled {
 
 .upload_dropZone {
   color: #0f3c4b;
+  border-radius: 15px;
   background-color: var(--colorPrimaryPale, #f8f8f8);
   outline: 2px dashed var(--colorPrimaryHalf, #9d9898);
   outline-offset: -2px;
@@ -3588,6 +3585,27 @@ input:disabled {
   height: 8px;
 }
 
+.upload-photo {
+  .btn-upload {
+    margin-right: 15px;
+    margin-bottom: 5px !important;
+    border: 1px dashed;
+    padding: 4px 8px;
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 500;
+    background: #EBEBEB;
+  }
+  .wrapper {
+    display: flex;
+  }
+
+  .upload_dropZone {
+    padding: 0 15px !important;
+  }
+}
+
 @media screen and (max-width: 1920px) {
   .ul-menu-list ul li {
     display: inline-block;
@@ -3961,8 +3979,7 @@ input:disabled {
 }
 
 @media (max-width: 992px) {
-
-  .c-card .icon{
+  .c-card .icon {
     max-width: 40px !important;
   }
 
@@ -5312,12 +5329,10 @@ input:disabled {
   }
 }
 
-
-
 @media (max-width: 460px) {
   .associated-slider {
     padding-bottom: 10px;
-}
+  }
 }
 
 // Imran's new css
@@ -5325,4 +5340,5 @@ input:disabled {
 @import "./header.scss";
 @import "./explore.scss";
 @import "./login.scss";
+@import "./document-viewer.scss";
 @import "./footer.scss";

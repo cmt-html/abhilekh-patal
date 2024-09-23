@@ -10,9 +10,8 @@
     <link rel="icon" type="image/x-icon" href="images/favicon-icon.png">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js">
     </script>
-   
-    <link href="css/bootstrap-datepicker.css"
-        rel="stylesheet">
+
+    <link href="css/bootstrap-datepicker.css" rel="stylesheet">
 
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -21,7 +20,7 @@
     <title>Plan Visit</title>
 </head>
 
-<body>
+<body class="bg-color-gray2">
     <header>
         <nav class="navbar navbar-expand-xl bg-light fixed-top">
             <div class="container padding-off">
@@ -509,7 +508,8 @@
                     <div class="mb-3 row">
                         <label for="staticbirth" class="col-md-4 col-form-label">Date of Birth :</label>
                         <div class="col-md-7">
-                            <input type="text" class="date form-control logininput " data-date-format="mm-dd-yyyy" />
+                            <input type="text" placeholder="dd - mm - yyyy" class="date form-control logininput "
+                                data-date-format="mm-dd-yyyy" />
                         </div>
                     </div>
                     <div class="mb-3 row">
@@ -590,18 +590,18 @@
                             <div class="col-md-4">
                                 <label for="validationDefault01" class="form-label">First name</label>
                                 <input type="text" class="form-control logininput" id="validationDefault01"
-                                    value="type here.." required>
+                                    placeholder="type here.." required>
                             </div>
                             <div class="col-md-4">
                                 <label for="validationDefault02" class="form-label">Period</label>
                                 <input type="text" class="form-control logininput" id="validationDefault02"
-                                    value="type here.." required>
+                                    placeholder="type here.." required>
                             </div>
                             <div class="col-md-4">
                                 <label for="validationDefaultUsername" class="form-label">Remark</label>
                                 <div class="input-group">
                                     <input type="text" class="form-control logininput" id="validationDefaultUsername"
-                                        value="type here.." aria-describedby="inputGroupPrepend2" required>
+                                        placeholder="type here.." aria-describedby="inputGroupPrepend2" required>
                                 </div>
                             </div>
                             <div class="col-12 pb-4">
@@ -609,16 +609,16 @@
                             </div>
                         </form>
                     </div>
-                    <P class="scholars mt-4 ">*Scholars are requested to attach a letter of recommendation from their
+                    <p class="scholars mt-4 ">*Scholars are requested to attach a letter of recommendation from their
                         University/ Institute/Department. However, the foreign scholars are requested to broing a letter
                         of accreditation from the diplomatic representatives of their
-                        country in India as well.</P>
+                        country in India as well.</p>
                     <fieldset class="upload_dropZone text-center mb-3 p-4">
                         <legend class="visually-hidden">Image uploader</legend>
                         <svg class="upload_svg" width="60" height="2px" aria-hidden="true">
                             <use href="#icon-imageUpload"></use>
                         </svg>
-                        <p class="small my-2"> Drag and drop files here orDrag</p>
+                        <p class="small my-2"> Drag and drop files here or </p>
                         <input id="upload_image_background" data-post-name="image_background"
                             data-post-url="https://someplace.com/image/uploads/backgrounds/"
                             class="position-absolute invisible" type="file" multiple
@@ -626,6 +626,29 @@
                         <label class="btn btn-upload mb-3" for="upload_image_background">Browse Document</label>
                         <div class="upload_gallery d-flex flex-wrap justify-content-center gap-3 mb-0"></div>
                     </fieldset>
+
+
+                    <div class="upload-photo">
+                        <h2 class="col-form-label">Upload Your Photo:</h2>
+                        <fieldset class="upload_dropZone text-center mb-3 p-4">
+                            <legend class="visually-hidden">Image uploader</legend>
+                            <svg class="upload_svg" width="60" height="2px" aria-hidden="true">
+                                <use href="#icon-imageUpload"></use>
+                            </svg>
+                            <div class="wrapper">
+
+                                <input id="upload_image_background2" data-post-name="image_background"
+                                    data-post-url="https://someplace.com/image/uploads/backgrounds/"
+                                    class="position-absolute invisible" type="file" multiple
+                                    accept="image/jpeg, image/png, image/svg+xml" />
+                                <label class="btn btn-upload mb-3" for="upload_image_background2">Choose Cover</label>
+                                <p class="small my-2"> No file choosen </p>
+                            </div>
+                            <p class="text-start">(Dimensions 175px w X 250px h)</p>
+                            <div class="upload_gallery d-flex flex-wrap justify-content-center gap-3 mb-0"></div>
+                        </fieldset>
+                    </div>
+
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-2">
                         <button class="btn btn-primary next  btn-btnstart" data-bs-target="#exampleModalplan"
                             data-bs-toggle="modal">Next
@@ -705,31 +728,31 @@
 
                         <div class="col-md-6 sidepadding-off">
                             <form action="" method="post" class="stylelb" name="signupForm" id="signupForm"></form>
-                                <div class=" mb-2 col-md-12 col-lg-12 col-12">
-                                    <label for="exampleInputEmail1" class="form-label stylelb">AGE</label>
-                                    <input type="email" class="form-control modelpop" id="exampleInputEmail1" value="32"
-                                        aria-describedby="emailHelp">
-                                </div>
-                                <div class="mb-2 col-md-12 col-lg-12 col-12 ">
-                                    <label for="exampleInputEmail1" class="form-label stylelb">ID Proof</label>
-                                    <input type="email" class="form-control modelpop" id="exampleInputEmail1"
-                                        value="Passport" aria-describedby="emailHelp">
-                                </div>
-                                <div class=" mb-2 col-md-12 col-lg-12 col-12">
-                                    <label for="exampleInputEmail1" class="form-label stylelb">Mobile Number </label>
-                                    <input type="email" class="form-control modelpop" id="exampleInputEmail1"
-                                        value="82910 28322" aria-describedby="emailHelp">
-                                </div>
-                                <div class=" mb-2 col-md-12 col-lg-12 col-12">
-                                    <label for="exampleInputEmail1" class="form-label stylelb">Profession</label>
-                                    <input type="email" class="form-control modelpop" id="exampleInputEmail1"
-                                        value="Journalist" aria-describedby="emailHelp">
-                                </div>
-                                <div class="mb-2 col-md-12 col-lg-12 col-12">
-                                    <label for="exampleInputname" class="form-label stylelb">Valid From</label>
-                                    <input type="name" class="form-control modelpop" id="exampleInputEmail1"
-                                        value="28-08-2023" aria-describedby="emailHelp">
-                                </div>
+                            <div class=" mb-2 col-md-12 col-lg-12 col-12">
+                                <label for="exampleInputEmail1" class="form-label stylelb">AGE</label>
+                                <input type="email" class="form-control modelpop" id="exampleInputEmail1" value="32"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-2 col-md-12 col-lg-12 col-12 ">
+                                <label for="exampleInputEmail1" class="form-label stylelb">ID Proof</label>
+                                <input type="email" class="form-control modelpop" id="exampleInputEmail1"
+                                    value="Passport" aria-describedby="emailHelp">
+                            </div>
+                            <div class=" mb-2 col-md-12 col-lg-12 col-12">
+                                <label for="exampleInputEmail1" class="form-label stylelb">Mobile Number </label>
+                                <input type="email" class="form-control modelpop" id="exampleInputEmail1"
+                                    value="82910 28322" aria-describedby="emailHelp">
+                            </div>
+                            <div class=" mb-2 col-md-12 col-lg-12 col-12">
+                                <label for="exampleInputEmail1" class="form-label stylelb">Profession</label>
+                                <input type="email" class="form-control modelpop" id="exampleInputEmail1"
+                                    value="Journalist" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-2 col-md-12 col-lg-12 col-12">
+                                <label for="exampleInputname" class="form-label stylelb">Valid From</label>
+                                <input type="name" class="form-control modelpop" id="exampleInputEmail1"
+                                    value="28-08-2023" aria-describedby="emailHelp">
+                            </div>
                             </form>
                         </div>
                     </div>

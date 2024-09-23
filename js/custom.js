@@ -595,21 +595,21 @@ $("header a").click(function () {
 
 // ==================================
 
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
+// document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+//   anchor.addEventListener("click", function (e) {
+//     e.preventDefault();
 
-    const targetElement = document.querySelector(this.getAttribute("href"));
-    const headerOffset = document.querySelector("header").offsetHeight;
-    const elementPosition = targetElement.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+//     const targetElement = document.querySelector(this.getAttribute("href"));
+//     const headerOffset = document.querySelector("header").offsetHeight;
+//     const elementPosition = targetElement.getBoundingClientRect().top;
+//     const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-    window.scrollTo({
-      top: offsetPosition - 50,
-      behavior: "smooth",
-    });
-  });
-});
+//     window.scrollTo({
+//       top: offsetPosition - 50,
+//       behavior: "smooth",
+//     });
+//   });
+// });
 
 // <!-- Initialize Swiper -->
 
