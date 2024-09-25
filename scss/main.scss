@@ -5079,6 +5079,10 @@ ul#nav {
 }
 
 @include media-breakpoint-down(md) {
+    .containercenter {
+        width: 90%;
+        margin: 120px auto auto;
+    }
     .btn-default {
         margin-bottom: 10px;
         padding: 10px;

@@ -12424,6 +12424,7 @@ li {
   line-height: 13px;
   letter-spacing: 0em;
   border: 1px solid #2D2D2D;
+  margin-bottom: 6px !important;
 }
 
 .fa-solid,
@@ -15988,7 +15989,7 @@ h4,
 }
 
 .pagination {
-  margin-top: -40px;
+  margin-top: 0px;
 }
 
 table.dataTable thead .sorting:before,
@@ -17615,6 +17616,30 @@ ul.ui-sortable li {
   }
 }
 @media (max-width: 767.98px) {
+  .my-bookmark.order {
+    font-family: "Raleway", sans-serif !important;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color: #73081C;
+    margin-bottom: 11px !important;
+    display: block;
+  }
+  .account-setting-div .col-product {
+    width: 50%;
+  }
+  .eidtbutton {
+    text-align: left;
+  }
+  .tab-pane .eidtbutton {
+    text-align: right;
+  }
+  .bg-order {
+    padding: 20px 8px 4px;
+    padding-bottom: 4px;
+    display: block;
+  }
   .modal-dialog {
     position: relative;
     width: 90% !important;

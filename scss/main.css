@@ -16220,6 +16220,10 @@ ul#nav {
   }
 }
 @media (max-width: 767.98px) {
+  .containercenter {
+    width: 90%;
+    margin: 120px auto auto;
+  }
   .btn-default {
     margin-bottom: 10px;
     padding: 10px;
