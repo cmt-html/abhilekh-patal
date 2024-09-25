@@ -13683,7 +13683,7 @@ input[type=search]::-webkit-search-results-decoration {
   display: inline-block;
   border-radius: 2px;
   align-content: center;
-  margin-top: 10px;
+  margin-top: 7px;
 }
 
 .text-uppercase {
@@ -14024,10 +14024,12 @@ input[type=search]::-webkit-search-results-decoration {
 .closedinnerpop {
   opacity: 1;
   position: absolute;
-  top: -2%;
-  right: -7px;
+  top: 0%;
+  right: 0px;
   background-color: #FFFFFF;
   border-radius: 23px;
+  cursor: pointer;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
   border: 0;
 }
 
@@ -15009,7 +15011,7 @@ ul#nav {
 
 #nav li a {
   display: block;
-  padding: 5px 15px;
+  padding: 9px 15px;
   text-decoration: none;
 }
 
@@ -15020,8 +15022,22 @@ ul#nav {
   border-radius: 5px;
 }
 
-.is-open {
-  transition: 2s ease-in;
+.bg-color-trans {
+  background-color: transparent !important;
+}
+
+.contact-modal label,
+.contact-modal h5,
+.contact-modal .h5 {
+  color: #676767;
+}
+.contact-modal textarea {
+  font-size: 14px;
+  color: #BCBCBC !important;
+  font-weight: 500;
+  min-height: 156px;
+  border: 1px solid #BCBCBC;
+  border-radius: 12px;
 }
 
 #nav .sectionFaq {
@@ -15068,8 +15084,9 @@ ul#nav {
     top: 0;
     right: 0;
     max-width: 70%;
-    max-height: 580px;
-    overflow: scroll;
+    max-height: 470px;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 }
 .btn-check:checked + .btn,
@@ -15270,7 +15287,7 @@ ul#nav {
 }
 @media screen and (max-width: 1366px) {
   .textuppercase {
-    padding-left: 4px;
+    padding-left: 20px;
   }
   @-moz-document url-prefix() {
     @media screen and (max-width: 1366px) and (pointer: coarse) {
@@ -15944,7 +15961,6 @@ ul#nav {
     width: 100%;
     top: 0;
     height: auto;
-    z-index: 9999999;
   }
   .left-div {
     float: left;
@@ -16141,7 +16157,6 @@ ul#nav {
     top: 0;
     height: auto;
     z-index: 9999999;
-    padding-bottom: 20px;
   }
   .asvanceSearch {
     margin-left: 0;
@@ -16284,7 +16299,7 @@ ul#nav {
     padding: 10px;
   }
   .modal-dialog {
-    width: 90% !important;
+    width: 95% !important;
   }
   .headterm {
     font-size: 20px;
@@ -16523,6 +16538,13 @@ ul#nav {
   }
 }
 @media (max-width: 575.98px) {
+  .modal-headers {
+    padding-left: 0;
+  }
+  .button-step {
+    justify-content: center;
+    display: flex;
+  }
   .img-fluid.av {
     height: 100% !important;
   }

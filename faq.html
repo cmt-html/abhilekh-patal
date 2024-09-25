@@ -3,12 +3,14 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="scss/main.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="icon" type="image/x-icon" href="images/favicon-icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="scss/main-admin.css" />
+    <link rel="stylesheet" type="text/css" href="scss/main.css" />
     <title>FAQ</title>
 
 </head>
@@ -458,7 +460,7 @@
                                 <img class="img-responsive" src="images/faq.png" alt="" width="100%" height="" class="d-inline-block align ">
                             </div>
                             <div class=" imgwords-search imgword">
-                                <h2 class="text-center  pt-top"> FAQ</h2>
+                                <h2 class="text-center pt-top"> FAQ</h2>
                                 <div class="container">
                                     <div class="row height d-flex justify-content-center align-items-center">
                                         <div class="col-md-12">
@@ -715,7 +717,7 @@
                         <div class=" text-center caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem <br>ipsum dolor sit amet, consectetur
                         </div>
                         <div class="text-center">
-                            <button type="button" class="btn btn-light buttoncontactus  text-center m-4">Contact Us</button>
+                            <button type="button" class="btn btn-light buttoncontactus  text-center m-4" data-bs-toggle="modal" data-bs-target="#contactFormfterLogin">Contact Us</button>
                         </div>
                     </div>
                 </div>
@@ -753,6 +755,54 @@
                 </div>
             </div>
         </footer>
+
+
+
+        <div class="modal fade px-md-4 contact-modal" id="contactFormfterLogin" tabindex="-1" aria-labelledby="contactFormfterLogin" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content ">
+                    <div class="modal-header border-0 mt-md-4">
+                        <h5 class="modal-headers">Contact Us</h5>
+                        <button type="button" class="btn-close closedinnerpop" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center rounded-0 px-md-5 ">
+                        <div class="mb-3 text-align-left">
+                            <label for="exampleFormControlInput" class="form-label">Full Name : *</label>
+                            <input type="name" class="form-control logininput" id="exampleFormControlInput1" placeholder="">
+                        </div>
+                        <div class="mb-3 text-align-left">
+                            <label for="exampleFormControlInput1" class="form-label">Email Id : *</label>
+                            <input type="email" class="form-control logininput" id="exampleFormControlInput1" placeholder="">
+                        </div>
+                        <div class="mb-3 text-align-left">
+                            <label class="form-label">Subject</label>
+                            <select class="form-select  logininput" aria-label="Default select example">
+                            <option selected></option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 text-align-left">
+
+                            <div class="form-outline">
+                                <label class="form-label" for="textAreaExample1">Message</label>
+                                <textarea class="form-control bg-color-trans" id="textAreaExample1" rows="4" placeholder="Type here..."></textarea>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class=" col-12 pb-4 mt-3 px-5 ">
+                        <button type="button" class="col-12 deactivebutton-set ">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.bxslider.min.js "></script>

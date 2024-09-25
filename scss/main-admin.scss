@@ -1531,11 +1531,12 @@ input:disabled {
 
 .modal-headers {
     font-family: "Raleway", sans-serif !important;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 19px;
     letter-spacing: 0em;
     color: #434343;
+    padding: 10px;
     padding-left: 27px;
 }
 
@@ -3169,8 +3170,8 @@ input:disabled {
     width: 26px;
     background-position: 33px 40px;
     position: absolute;
-    right: -6px;
-    top: -5px;
+    right: -6px !important;
+    top: 0 !important;
     outline: none;
     opacity: 1 !important;
 }
@@ -5830,8 +5831,8 @@ ul.ui-sortable {
         height: 24px !important;
         width: 18px !important;
         position: absolute !important;
-        right: -12px !important;
-        top: -17px !important;
+        right: -6px !important;
+        top: 0 !important;
         outline: none;
         opacity: 1 !important;
         left: auto !important;
@@ -6165,6 +6166,9 @@ ul.ui-sortable {
         margin-right: calc(-.5 * var(--bs-offcanvas-padding-x));
         margin-bottom: calc(-.5 * var(--bs-offcanvas-padding-y));
     }
+    .pt-top {
+        font-size: inherit !important;
+    }
     .slider-banner {
         padding-top: 56px !important;
     }
@@ -6202,6 +6206,10 @@ ul.ui-sortable {
 }
 
 @include media-breakpoint-down(lg) {
+    .closedinnerpop {
+        box-shadow: none !important;
+        border: 0;
+    }
     .top-content .collection-button {
         padding: 8px 40px 8px 40px !important;
     }
@@ -6252,8 +6260,8 @@ ul.ui-sortable {
         height: 24px !important;
         width: 18px !important;
         position: absolute !important;
-        right: -12px !important;
-        top: -17px !important;
+        right: -6px !important;
+        top: 0 !important;
         outline: none;
         opacity: 1 !important;
         left: auto !important;
@@ -6484,6 +6492,10 @@ ul.ui-sortable {
 }
 
 @include media-breakpoint-down(md) {
+    .closedinnerpop {
+        box-shadow: none !important;
+        border: 0;
+    }
     .my-bookmark.order {
         font-family: "Raleway", sans-serif !important;
         font-size: 24px;
@@ -6601,8 +6613,8 @@ ul.ui-sortable {
         width: 21px !important;
         background-position: 33px 40px !important;
         position: absolute !important;
-        right: -5px !important;
-        top: -0px !important;
+        right: -6px !important;
+        top: 0 !important;
         outline: none;
         opacity: 1 !important;
         left: auto !important;
