@@ -1525,6 +1525,7 @@ input:disabled {
     right: -7px;
     background-color: #FFFFFF;
     border-radius: 23px;
+    border: 0;
 }
 
 .modal-headers {
@@ -4045,9 +4046,6 @@ h4,
     border-color: #f35b3f;
 }
 
-
-
-
 .radishcolor {
     color: #73081C;
     background-color: transparent;
@@ -4310,18 +4308,14 @@ h4,
 .navigation ul li {
     float: none;
     position: relative;
-
     &.has-sub {
-    position: relative !important;
-
+        position: relative !important;
     }
-    
-    a{
+    a {
         position: relative;
         z-index: 1;
     }
-
-    > i{
+    >i {
         position: absolute;
         top: 50%;
         right: 15px;
@@ -4334,8 +4328,6 @@ h4,
         justify-content: center !important;
     }
 }
-
-
 
 .navigation ul ul {
     margin-top: 0.05em;
@@ -5649,9 +5641,8 @@ option {
     }
 }
 
-
-ul.ui-sortable{
-    li{
+ul.ui-sortable {
+    li {
         background-color: #fff !important;
     }
 }
@@ -5820,7 +5811,6 @@ ul.ui-sortable{
 
 @include media-breakpoint-down(xl) {
     .modal-dialog-centered {
-        
         min-height: calc(100% - var(--bs-modal-margin) * 2);
     }
     .dataTables_wrapper {
@@ -6493,6 +6483,12 @@ ul.ui-sortable{
 }
 
 @include media-breakpoint-down(md) {
+    .modal-dialog {
+        position: relative;
+        width: 90% !important;
+        margin: var(--bs-modal-margin);
+        pointer-events: none;
+    }
     .deletetext p {
         font-size: 14px;
         font-weight: 600;
@@ -6938,10 +6934,6 @@ ul.ui-sortable{
 }
 
 
-
-
-
-
 /***** Media queries *****/
 
 @media (min-width: 992px) and (max-width: 1199px) {}
@@ -6949,65 +6941,50 @@ ul.ui-sortable{
 @media (min-width: 768px) and (max-width: 991px) {}
 
 @media (max-width: 767px) {
-
     .navigation ul {
-
         li {
             float: none;
             display: flex;
             flex-direction: column;
-        
             &.active {
-                 i{
+                i {
                     transform: rotate(90deg);
                     top: 10px !important;
                 }
             }
-            
-            a{
-                
-            }
-        
-            > i{
+            a {}
+            >i {
                 top: 18px !important;
                 transition: all .5s;
             }
         }
     }
-
-    .search-left{
+    .search-left {
         width: 100% !important;
     }
-
-    .searchicon{
+    .searchicon {
         max-width: 18px;
-
-        &~ input{
+        &~input {
             font-size: 14px;
             padding: 10px 40px;
         }
     }
-    
-
     li.has-sub {
-        ul{
+        ul {
             display: none;
         }
     }
-
     #example_wrapper {
         td[data-label="Cover Image"] {
             display: flex;
             justify-content: center;
             flex-direction: column;
             align-items: center;
-
-            img{
+            img {
                 margin-top: 15px;
             }
         }
     }
-
     .collection-button-box {
         display: flex !important;
         justify-content: center !important;
@@ -7047,8 +7024,7 @@ ul.ui-sortable{
     .f1-buttons button {
         margin-bottom: 5px;
     }
-
-    .account-setting{
+    .account-setting {
         text-align: center;
     }
 }
