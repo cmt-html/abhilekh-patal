@@ -216,10 +216,13 @@ input[type=number] {
     width: 100%;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 1250px) {
+  .login-wrraper.user-login .img-wrapper {
+    max-width: 45%;
+  }
+
   .login-wrraper.user-login .login {
-    max-width: 50%;
-    width: 100%;
+    max-width: 40%;
   }
 
   .login-wrraper.register-wrapper > .register-slider {

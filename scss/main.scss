@@ -3548,6 +3548,14 @@ input:disabled {
   letter-spacing: 0em;
   text-align: left;
 }
+
+
+
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+  color: #fff !important;
+  background-color: #73081c !important;
+  border: none !important;
+}
 /*nexus-search end*/
 /* 404-error end*/
 
@@ -5150,6 +5158,11 @@ input:disabled {
     zoom: 1;
     width: 310px;
   }
+
+  .counterdiv{
+    margin-bottom: 40px !important;
+  }
+
   .record-categories ul li span {
     width: auto;
     padding-top: 0px;
@@ -5283,6 +5296,18 @@ input:disabled {
   .heading {
     margin-bottom: 20px;
   }
+
+  .btn.btn-primary.next {
+    margin: auto;
+    margin-bottom: 25px; 
+  }
+
+  .plan-visit {
+    margin: 0;
+    p{
+      text-align: left;
+    }
+  }
 }
 
 @media (max-width: 600px) {
@@ -5336,6 +5361,8 @@ input:disabled {
 }
 
 // Imran's new css
+
+// *{outline: 1px solid}
 
 @import "./header.scss";
 @import "./explore.scss";
