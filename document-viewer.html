@@ -14,9 +14,52 @@
     <link rel="icon" type="image/x-icon" href="images/favicon-icon.png">
     <title>Document Viewver</title>
 
+    <style>
+        #slider-range-home {
+            margin-top: -19px;
+            width: 64%;
+            float: right;
+            display: block;
+            position: absolute;
+            right: 17px;
+        }
+        
+        .ui-widget.ui-widget-content {
+            border: 0px solid #fff;
+            background-color: #ccc;
+            margin: 31px 0px 16px 11px;
+            width: 85%;
+            position: absolute;
+            top: 33px !important;
+            z-index: 9999999999;
+        }
+        
+        .applybutton {
+            background-color: #73081C;
+            padding: 9px 42px;
+            border-radius: 40px;
+            border: 0;
+            color: #fff;
+            float: right;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        
+        .js #features {
+            margin-left: -12000px;
+            width: 100%;
+        }
+        
+        .bg-light {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 9;
+        }
+    </style>
 </head>
 
-<body class="bg-color-gray2">
+<body>
     <header>
         <nav class="navbar navbar-expand-xl bg-light fixed-top">
             <div class="container padding-off ">
@@ -472,7 +515,7 @@
     </header>
 
     <!--grid view-->
-    <!-- <div class="button-menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    <div class="button-menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
     <div id="container">
         <nav class="menu-document">
             <ul>
@@ -554,24 +597,11 @@
                 </div>
 
             </div>
-             features
+            <!-- features -->
         </div>
         <div id='thumbs_holder'></div>
-    </div> -->
+    </div>
     <!--! end of #container -->
-
-
-    <section class="flipBook">
-        <div class="container">
-            <div class="wow-book-wrraper">
-                <div class="main">
-                    <div id="features">
-                        <div id="cover"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!--document viever-->
     <section class="select-multiselectoption">

@@ -1,303 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="scss/main.css">
+    <link rel="stylesheet" type="text/css" href="scss/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="icon" type="image/x-icon" href="images/favicon-icon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Benefits</title>
-    <style>
-        .ui-widget.ui-widget-content {
-            border: 0px solid #fff;
-            background-color: #ccc;
-            margin: 31px 0px 15px 11px;
-            width: 62%;
-            position: absolute;
-            top: 16px !important;
-            z-index: 9999999999;
-            margin: auto auto;
-            margin-left: auto;
-            right: 15px;
-            margin-left: auto;
-        }
-        
-        .moretext {
-            display: none;
-        }
-        
-        .hero-text {
-            text-align: left;
-            position: absolute;
-            left: 61%;
-            transform: translate(-50%, -50%);
-            color: white;
-            position: absolute;
-            top: 40%;
-            width: 100%;
-            transform: translate(-50%, -50%);
-            font-family: "Raleway", sans-serif;
-        }
-        
-        .hero-text button {
-            border: none;
-            outline: 0;
-            display: inline-block;
-            padding: 10px 25px;
-            color: black;
-            background-color: #ddd;
-            text-align: center;
-            cursor: pointer;
-        }
-        
-        .head-img {
-            font-family: "Raleway", sans-serif;
-            font-size: 64px;
-            font-weight: 600;
-            line-height: 75px;
-            letter-spacing: 0em;
-            text-align: left;
-        }
-        
-        .hero-text button:hover {
-            background-color: #555;
-            color: white;
-        }
-        
-        .counters {
-            font-family: Lato;
-            font-size: 51px;
-            font-weight: 800;
-            line-height: 61px;
-            letter-spacing: 0.04em;
-            text-align: left;
-            color: #73081C;
-        }
-        
-        .countpage {
-            font-family: "Raleway", sans-serif !important;
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 58px;
-            letter-spacing: 0em;
-            text-align: left;
-        }
-        
-        .hero-text button.btnstarteds:focus {
-            outline: none;
-            background-color: #FFFFFF;
-            color: #EAEAEA;
-        }
-        
-        .hero-text button.btnstarteds {
-            height: 38px;
-            border-radius: 23.4px;
-            font-family: "Raleway", sans-serif !important;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 19px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: #EAEAEA;
-            border: 1px solid #EAEAEA;
-            background-color: #73081C;
-        }
-        
-        .btntouchs {
-            height: 38px;
-            border-radius: 23.4px;
-            border: 1px solid #EAEAEA;
-            background-color: #73081C;
-            font-family: "Raleway", sans-serif !important;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 19px;
-            letter-spacing: 0em;
-            text-align: left;
-        }
-        
-        .hero-text button.btntouchs {
-            border: 1px solid #EAEAEA;
-            outline: 0;
-            display: inline-block;
-            padding: 10px 25px;
-            color: #EAEAEA;
-            background-color: #ddd;
-            text-align: center;
-            cursor: pointer;
-            background-color: #73081C;
-        }
-        
-        .hero-text button.btntouchs:hover {
-            background-color: #ffffff;
-            color: #73081C;
-        }
-        
-        .hero-text button.btnstarteds:hover {
-            background-color: #ffffff;
-            color: #73081C;
-        }
-        
-        .imgtext {
-            font-family: "Raleway", sans-serif !important;
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 21px;
-            letter-spacing: 0em;
-            color: #FFFFFF;
-            width: 28%;
-        }
-        
-        .focus {
-            background-color: #ffffff;
-        }
-        /* For iPhone 4 Portrait or Landscape View */
-        
-        @media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-            .imgtext {
-                font-family: "Raleway", sans-serif !important;
-                font-size: 5px;
-                font-weight: 500;
-                line-height: px;
-                letter-spacing: 0em;
-                color: #FFFFFF;
-            }
-            .hero-text {
-                top: 23% !important;
-            }
-        }
-        
-        @media (max-width: 575.98px) {
-            .img-fluid.frantimg {
-                height: 343px!important;
-            }
-            .hero-text {
-                left: 27% !important;
-                transform: translate(-50%, -50%);
-                top: 22% !important
-            }
-            .imgtext {
-                font-family: "Raleway", sans-serif !important;
-                font-size: 5px;
-                font-weight: 500;
-                line-height: px;
-                letter-spacing: 0em;
-                color: #FFFFFF;
-                width: 45%;
-            }
-            .head-img {
-                font-size: 12px;
-            }
-            .hero-text button.btnstarteds {
-                font-size: 9px!important;
-            }
-            .hero-text button.btntouchs {
-                font-size: 9px!important;
-            }
-            .counters {
-                font-size: 22px !important;
-            }
-            .heading {
-                font-size: 18px;
-            }
-            .pright {
-                padding-right: 0;
-            }
-        }
-        
-        @media (max-width: 899px) {
-            .img-fluid.frantimg {
-                height: 343px!important;
-            }
-            .hero-text {
-                top: 20% !important;
-                left: 54% !important;
-            }
-            .imgtext {
-                font-family: "Raleway", sans-serif !important;
-                font-size: 11px !important;
-                font-weight: 500;
-                line-height: px;
-                letter-spacing: 0em;
-                color: #FFFFFF;
-            }
-            .head-img {
-                font-size: 22px;
-            }
-            .hero-text button.btnstarteds {
-                font-size: 12px;
-            }
-            .hero-text button.btntouchs {
-                font-size: 12px;
-            }
-            .counters {
-                font-size: 37px;
-            }
-        }
-        
-        .bg-lights {
-            color: #A54141;
-            font-family: "Raleway", sans-serif !important;
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 21px;
-            letter-spacing: 0em;
-            text-align: left;
-            text-decoration: none;
-        }
-        
-        @media (max-width: 1185px) {
-            .img-fluid.frantimg {
-                height: 475px!important;
-            }
-            .hero-text {
-                top: 29% !important;
-                left: 32% !;
-            }
-            .imgtext {
-                font-family: "Raleway", sans-serif !important;
-                font-size: 11px!important;
-                font-weight: 500;
-                line-height: px;
-                letter-spacing: 0em;
-                color: #FFFFFF;
-            }
-            .hero-text button.btnstarteds {
-                font-size: 12px;
-            }
-            .hero-text button.btntouchs {
-                font-size: 12px;
-            }
-            .counters {
-                font-size: 37px;
-            }
-        }
-        
-        @media (max-width: 1250px) {
-            .hero-text {
-                top: 26% !important;
-            }
-        }
-        
-        @media (max-width: 1450px) {
-            .hero-text {
-                top: 23% !important;
-            }
-            .img-fluid.frantimg {
-                height: 493px!important;
-            }
-        }
-        
-        @media (max-width: 1600px) {
-            .hero-text {
-                top: 32% !important;
-            }
-        }
-    </style>
+
 
 </head>
 
@@ -305,7 +18,7 @@
     <header>
         <nav class="navbar navbar-expand-xl bg-light fixed-top">
             <div class="container padding-off ">
-                <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="logo" /></a>
+                <a href="index.html" class="navbar-brand"><img src="images/logo.png" /></a>
                 <div class="float-end ms-auto left-20"><img src="images/searchicon.png" onclick="search()" class="search-panel-icon" /></div>
                 <form class="search-panel">
                     <div class="crossIcon">
@@ -444,8 +157,8 @@
                                             <li><a class="dropdown-item" href="#">Marathi</a></li>
                                         </ul>
                                 </li>
-                            </div>
-                            <div class="right-div">
+                                </div>
+                                <div class="right-div">
                                     <li>
                                         <form>
                                             <div class="row">
@@ -574,7 +287,7 @@
                                                 <li><a class="dropdown-item" href="#">Hindi</a></li>
                                                 <li><a class="dropdown-item" href="#">Marathi</a></li>
                                             </ul>
-                                        </div>    
+                                        </div>
                                     </li>
                                     <li class="text-login-text">
                                         <a href="#">Welcome Admin</a>
@@ -644,86 +357,91 @@
                                 </ul>
                             </li>
                         </ul>
-                    </div>
-                </div>
-                <div class="nav-item fontstyle ">
-                    <a class="nav-link text-color login-text" href="#">Welcome Admin</a>
-                </div>
-                <div class="nav-item dropdown dropdown-mega position-static demo-dropdown">
-                    <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"><img src="images/menu-icon.png" /></a>
-                    <div class="dropdown-menu shadow megahmenudrop m-2">
-                        <div class="mega-content px-4">
-                            <div class="container ">
-                                <div class="row row-cols-5 ">
-                                    <div class="flex-item col1">
-                                        <h5 class="">Explore</h5>
-                                        <ul class="meghamenuli">
-                                            <li><a href="grid-view.html"> Explore</a><span class="new">New</span></li>
-                                            <li><a href="grid-view.html">Collection</a></li>
-                                            <li><a href="nexus-search.html">Nexus</a><span class="new">New</span></li>
-                                            <li><a href="#">Events</a></li>
-                                            <li><a href="#">Exhibitions</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="flex-item col2">
-                                        <h5>My Library</h5>
-                                        <ul class="meghamenuli">
-                                            <li><a href="My-Labrary.html">My Library</a></li>
+                        </div>
+                        </div>
+                        <div class="nav-item fontstyle ">
+                            <a class="nav-link text-color login-text" href="#">Welcome Admin</a>
+                        </div>
+                        <div class="nav-item dropdown dropdown-mega position-static demo-dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"><img src="images/menu-icon.png" /></a>
+                            <div class="dropdown-menu shadow megahmenudrop m-2">
+                                <div class="mega-content px-4">
+                                    <div class="container ">
+                                        <div class="row row-cols-5 ">
+                                            <div class="flex-item col1">
+                                                <h5 class="">Explore</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="grid-view.html"> Explore</a><span class="new">New</span></li>
+                                                    <li><a href="grid-view.html">Collection</a></li>
+                                                    <li><a href="nexus-search.html">Nexus</a><span class="new">New</span></li>
+                                                    <li><a href="#">Events</a></li>
+                                                    <li><a href="#">Exhibitions</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item col2">
+                                                <h5>My Library</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="My-Labrary.html">My Library</a></li>
 
 
-                                            <li><a href="admin/account-seiing-lib-Selected-Tag.html">My Tags</a></li>
-                                            <li><a href="admin/account-setting-lib-collection.html">My Favourite</a></li>
-                                            <li><a href="#">Scholar Section</a> <span class="new">New</span></li>
-                                            <li><a href="plan-visit.html">Plan your visit to NAI</a><span class="new">New</span> </li>
-                                        </ul>
-                                    </div>
-                                    <div class="flex-item col3">
-                                        <h5>About Us</h5>
-                                        <ul class="meghamenuli">
-                                            <li><a href="about-us.html">About Us</a></li>
-                                            <li><a href="#">Associated Repository</a></li>
-                                            <li><a href="benifits.html">Benefits</a></li>
+                                                    <li><a href="admin/account-seiing-lib-Selected-Tag.html">My Tags</a></li>
+                                                    <li><a href="admin/account-setting-lib-collection.html">My Favourite</a></li>
+                                                    <li><a href="#">Scholar Section</a> <span class="new">New</span></li>
+                                                    <li><a href="plan-visit.html">Plan your visit to NAI</a><span class="new">New</span> </li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item col3">
+                                                <h5>About Us</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="about-us.html">About Us</a></li>
+                                                    <li><a href="#">Associated Repository</a></li>
+                                                    <li><a href="benifits.html">Benefits</a></li>
 
 
-                                            <li><a href="#">Tips</a></li>
-                                            <li><a href="faq.html">FAQ</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="flex-item col4">
-                                        <h5>Account</h5>
-                                        <ul class="meghamenuli">
-                                            <li><a href="admin/account-setting-user-admin.html">My Account</a></li>
-                                            <li>
-                                                <a href="admin/collections.html">Admin Panel</a>
-                                            </li>
-                                            <li><a href="admin/upload.html">Upload</a></li>
-                                            <li><a href="admin/records-awaiting-verification-new.html">Records Awaiting Verification</a></li>
-                                            <li><a href="#">Logout</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="flex-item col5">
-                                        <h5>Contact Us</h5>
-                                        <ul class="meghamenuli">
-                                            <li><a href="#">Contact Us</a></li>
-                                            <li><a href="#">Help</a></li>
-                                        </ul>
+                                                    <li><a href="#">Tips</a></li>
+                                                    <li><a href="faq.html">FAQ</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item col4">
+                                                <h5>Account</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="admin/account-setting-user-admin.html">My Account</a></li>
+                                                    <li>
+                                                        <a href="admin/collections.html">Admin Panel</a>
+                                                    </li>
+                                                    <li><a href="admin/upload.html">Upload</a></li>
+                                                    <li><a href="admin/records-awaiting-verification-new.html">Records Awaiting Verification</a></li>
+                                                    <li><a href="#">Logout</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item col5">
+                                                <h5>Contact Us</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="#">Contact Us</a></li>
+                                                    <li><a href="#">Help</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
         </nav>
     </header>
 
-    <section>
-        <div class="col">
-            <div class=" text-center">
-                <span class="aboutimg">
-                    <img class="img-fluid frantimg" src="images/laptop-librarys.png" alt="" width="100%" height="" class="d-inline-block align ">
-                </span>
-                <div class="col-md-6">
+    <section class="bg-color-gray2">
+        <div class="col topSpace">
+            <div class=" text-center position-relative">
+
+                <div class="imgbefore">
+
+                    <div class="talkbubble">
+                    </div>
+                    <div class="rightImg col-12"> <img class="img-fluid imgStyle" src="images/banner-img.png" alt="" height="" class="d-inline-block align"></div>
+
+                </div>
+                <div class="col-md-12 col-lg-6 col-12 text-bg">
                     <div class="hero-text">
                         <h1 class="head-img">LOREN IPSUM</h1>
                         <p class=" justify-content-start imgtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod,tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco lab liqua. Ut enim ad minim veniam,quis nostrud
@@ -732,28 +450,28 @@
                                 <button autofocus class="btnstarteds" id="myButton">GET STARTED</button>
                                 <button class="btntouchs focus">GET IN TOUCH</button>
                             </div>
+
+
                     </div>
                 </div>
-                <div class="col-md-6">
- 
-                </div>
+
             </div>
         </div>
-        <div class=" col-md-12 col-lg-12 text-center ">
-            <div class="d-flex justify-content-center colored text-center pt-3 "><span class="counters pe-2 ">2354638+ </span>
-                <p class="countpage"> Pages</p><span class="counters  pe-2">2354638+ </span>
-                <p class="countpage"> Pages</p>
+        <div class=" col-md-12 col-lg-12 text-center counterDiv ">
+            <div class="d-flext-desk  justify-content-center colored text-center pt-3 "><span class="counters pe-2 " id="counter">2354638 </span><span class="counters pe-2 "> +</span>
+                <p class="countpage"> Pages</p><span class="counters  pe-2" id="counter-inner">2354638 </span><span class="counters pe-2 "> +</span>
+                <p class="countpage"> Books</p>
             </div>
             <h1 class="heading col-md-12 pb-3 text-center pt-3">Indulge in these perks with Abhilekh Patal</h1>
         </div>
-        <div class="container pt-3" style="width: 83%;">
+        <div class="container pt-3">
             <div class="row justify-content-center p-0 p-md-4 ">
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6">
                     <div class="imgabout pright">
                         <img class="img-fluid" src="images/Rectangleimg.png" alt="" width="100%" height="" class="d-inline-block align">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6">
                     <div class="text-start abouthead mt-4">
                         <h2 class="headabout">Scholar Section</h2>
                     </div>
@@ -772,8 +490,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center p-0 p-md-4">
-                <div class="col-md-6">
+            <div class="row justify-content-center p-0 p-md-4 reveseColunm">
+                <div class="col-md-12 col-lg-6">
                     <div class="text-start abouthead mt-4">
                         <h2 class="headabout">Personal Library</h2>
                     </div>
@@ -788,19 +506,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6">
                     <div class="imgabout">
-                        <img class="img-fluid" src="images/Rectangleimg1.png" alt="" width="100%" height="" class="d-inline-block align">
+                        <img class="img-fluid" src="images/img-rectangle.png" alt="" width="100%" height="" class="d-inline-block align">
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center p-0 p-md-4 ">
-                <div class="col-md-6">
-                    <div class="imgabout pright">
-                        <img class="img-fluid" src="images/Rectangleimg2.png" alt="" width="100%" height="" class="d-inline-block align">
+                <div class="col-md-12 col-lg-6">
+                    <div class="imgabout pright ">
+                        <img class="img-fluid " src="images/Rectangleimg2.png" alt="" width="100%" height="" class="d-inline-block align">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6">
                     <div class="text-start abouthead mt-4">
                         <h2 class="headabout">Document Translation</h2>
                     </div>
@@ -817,7 +535,7 @@
                 </div>
             </div>
             <div class="row justify-content-center p-0 p-md-4">
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6">
                     <div class="text-start abouthead mt-4">
                         <h2 class="headabout">Upto 5 DOD free per month</h2>
                     </div>
@@ -832,7 +550,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6">
                     <div class="imgabout">
                         <img class="img-fluid" src="images/Rectangleimg3.png" alt="" width="100%" height="" class="d-inline-block align">
                     </div>
@@ -841,7 +559,7 @@
         </div>
     </section>
 
-    <footer class="bg-footer pt-5 pb-5 mt-5">
+    <footer class="bg-footer pt-5 pb-5 mt-0 ">
         <div class="container">
             <div class="row mx-2">
                 <ul class="col-md-2">
@@ -870,20 +588,59 @@
             </div>
         </div>
     </footer>
-     
-        <script src="js/jquery.min.js"></script>
-        <script src="js/jquery.bxslider.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>        <script src="js/custom.js"></script>
-        <script>
-            $('.moreless-button').click(function() {
-                $('.moretext').slideToggle();
-                if ($('.moreless-button').text() == "Read more") {
-                    $(this).text("Read less")
-                } else {
-                    $(this).text("Read more")
-                }
-            });
-        </script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $('.moreless-button').click(function() {
+            $('.moretext').slideToggle();
+            if ($('.moreless-button').text() == "Read more >>") {
+                $(this).text("Read less")
+            } else {
+                $(this).text("Read more >>")
+            }
+        });
+
+
+
+        let counterElement = document.getElementById('counter');
+        let count = 0;
+        let target = 2354638;
+        let speed = 10; // Speed of counter increment
+
+        function updateCounter() {
+            if (count < target) {
+                count = count + 500;
+                counterElement.textContent = count;
+                setTimeout(updateCounter, speed);
+            }
+        }
+
+
+        updateCounter();
+
+
+        let counterElementinner = document.getElementById('counter-inner');
+        let countinner = 0;
+        let targetinner = 23546381;
+        let speedinner = 10; // Speed of counter increment
+
+        // alert(countinner);
+
+        function updateCounter_inner() {
+            if (countinner < targetinner) {
+
+                countinner = count + 500;
+                counterElementinner.textContent = countinner;
+                setTimeout(updateCounter_inner, speedinner);
+            }
+        }
+
+
+        updateCounter_inner();
+    </script>
 
 </body>
 
