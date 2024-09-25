@@ -188,11 +188,9 @@ p {
 }
 
 abbr[title] {
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   cursor: help;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
 }
 
 address {
@@ -503,4 +501,4 @@ progress {
 
 [hidden] {
   display: none !important;
-}/*# sourceMappingURL=bootstrap-reboot.css.map */
+}

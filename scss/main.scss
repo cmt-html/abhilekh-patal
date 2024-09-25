@@ -1826,6 +1826,11 @@ input[type="search"]::-webkit-search-results-decoration {
     color: #eaeaea;
 }
 
+.backButton {
+    height: 45px !important;
+    width: 160px !important;
+}
+
 .form i {
     margin-left: -30px;
     cursor: pointer;
@@ -2265,7 +2270,7 @@ input[type="search"]::-webkit-search-results-decoration {
     font-family: "Raleway", sans-serif !important;
     font-size: 18px;
     font-weight: 600;
-    line-height: 16px;
+    line-height: 18px;
     letter-spacing: 0em;
     text-align: center;
     color: $gray-dark;
@@ -3562,8 +3567,10 @@ input:disabled {
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0em;
+    white-space: nowrap;
     text-align: center;
     color: #73081c;
+    text-decoration: underline;
 }
 
 
@@ -3706,7 +3713,7 @@ ul#nav {
 
 #nav li a {
     display: block;
-    padding: 10px 15px;
+    padding: 5px 15px;
     text-decoration: none;
 }
 
@@ -3771,15 +3778,17 @@ ul#nav {
     }
 }
 
-
-
-
-
-.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
-  color: #fff !important;
-  background-color: #73081c !important;
-  border: none !important;
+.btn-check:checked+.btn,
+ :not(.btn-check)+.btn:active,
+.btn:first-child:active,
+.btn.active,
+.btn.show {
+    color: #fff !important;
+    background-color: #73081c !important;
+    border: none !important;
 }
+
+
 /*nexus-search end*/
 
 
@@ -4845,6 +4854,23 @@ ul#nav {
     margin-bottom: 44px !important;
 }
 
+.header-top-space {
+    margin-top: 69px;
+}
+
+.imgword {
+    top: 50% !important;
+    left: 50% !important;
+    font-size: 56px;
+    transform: translate(-50%, -50%);
+    padding: 0 !important;
+    margin: 0px;
+}
+
+.cnacellation {
+    padding: 90px 0px 40px !important;
+}
+
 @include media-breakpoint-down(lg) {
     .col-form-label {
         font-size: 15px;
@@ -5087,9 +5113,30 @@ ul#nav {
 }
 
 @include media-breakpoint-down(md) {
+    .error-404 {
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 48px;
+    }
+    .under-sevice {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .cnacellation {
+        padding: 70px 0px 10px !important;
+    }
+    .cancelText {
+        font-size: 25px !important;
+    }
+    .pbottom {
+        margin-bottom: 0px;
+    }
+    .aboutGapping {
+        padding: 0px 15px;
+    }
     .containercenter {
-        width: 90%;
-        margin: 120px auto auto;
+        width: 100%;
+        margin: 0px auto auto;
     }
     .btn-default {
         margin-bottom: 10px;
@@ -5105,14 +5152,14 @@ ul#nav {
         font-size: 18px;
     }
     .fw-bolds {
-        font-size: 20px;
+        font-size: 18px;
     }
     .pcontent {
-        font-size: 18px;
+        font-size: 16px;
     }
     .caption {
         font-family: "Raleway", sans-serif !important;
-        font-size: 14px;
+        font-size: 18px;
     }
     .head-text {
         font-size: 24px;
@@ -5330,98 +5377,123 @@ ul#nav {
         height: 100%;
         overflow: hidden;
     }
-    .imgword {
-        top: 8% !important;
-        font-size: 28px;
+    // .imgword {
+    //     top: 8% !important;
+    //     font-size: 28px;
+    // }
+    .headabout {
+        font-size: 20px;
+    }
+    .contentbody {
+        font-size: 16px;
+    }
+    .countpage {
+        line-height: 24px !important;
+    }
+    .pt-top {
+        padding-top: 20px !important;
+    }
+    .textuppercase {
+        font-size: 18px;
+    }
+    .form .fa-search {
+        position: absolute;
+        top: 11px;
+        left: 46px;
+        color: #9ca3af;
+        font-size: 22px;
+    }
+    .form {
+        position: relative;
     }
 }
 
 @include media-breakpoint-down(sm) {
-  .img-fluid.av {
-    height: 100% !important;
-  }
-  .imgword {
-    top: 10%;
-    font-size: 28px;
-  }
-  .sidepadding-off {
-    padding-left: 16px !important;
-  }
-  .sidepadding-off {
-    padding-left: 16px !important;
-  }
-  .left-div li {
-    padding: 0px 7px !important;
-  }
-  .ul-menu-list ul li {
-    display: inline-block;
-    list-style: none;
-    padding: 0px 6px !important;
-    line-height: 25px;
-    margin-top: 15px;
-    float: none;
-    text-align: center;
-  }
-  .headingview {
-    padding: 20px 0px 20px 0px;
-    font-size: 20px;
-  }
-  #container ul li {
-    list-style: none;
-    float: left;
-    top: 221px !important;
-    position: relative;
-    margin-bottom: 17px !important;
-  }
-  #container nav {
-    height: 46px;
-    position: absolute;
-    right: 56px;
-    top: 101px;
-    z-index: 1;
-    zoom: 1;
-    width: 310px;
-  }
-  .record-categories ul li span {
-    width: auto;
-    padding-top: 0px;
-  }
-  .record-categories ul li img {
-    width: auto;
-  }
-  .imgwords-search {
-    top: 10%;
-    left: 0;
-    right: 0;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .searchinput {
-    border-radius: 40px 0px 0px 40px;
-    border: 1px solid #676767;
-    position: relative;
-    padding: 4px 0px 2px 0px;
-    border-right: 0;
-    right: 0;
-  }
-  .menu-icon-mobile {
-    display: none;
-  }
-  .record-categories {
-    ul {
-      li {
-        list-style-type: none;
-        display: inline-block;
-        background: #fff;
-        height: auto;
-        width: 96%;
-        padding: 20px 20px;
-        margin: 10px 0px;
-        border-radius: 6px;
-        font-family: "Raleway", sans-serif !important;
-      }
+    .img-fluid.av {
+        height: 100% !important;
     }
-  }
+    .imgword {
+        top: 10%;
+        font-size: 28px;
+    }
+    .sidepadding-off {
+        padding-left: 16px !important;
+    }
+    .sidepadding-off {
+        padding-left: 16px !important;
+    }
+    .left-div li {
+        padding: 0px 7px !important;
+    }
+    .ul-menu-list ul li {
+        display: inline-block;
+        list-style: none;
+        padding: 0px 6px !important;
+        line-height: 25px;
+        margin-top: 15px;
+        float: none;
+        text-align: center;
+    }
+    .headingview {
+        padding: 20px 0px 20px 0px;
+        font-size: 20px;
+    }
+    #container ul li {
+        list-style: none;
+        float: left;
+        top: 221px !important;
+        position: relative;
+        margin-bottom: 17px !important;
+    }
+    #container nav {
+        height: 46px;
+        position: absolute;
+        right: 56px;
+        top: 101px;
+        z-index: 1;
+        zoom: 1;
+        width: 310px;
+    }
+    .record-categories ul li span {
+        width: auto;
+        padding-top: 0px;
+    }
+    .record-categories ul li img {
+        width: auto;
+    }
+    .imgwords-search {
+        top: 10%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .searchinput {
+        border-radius: 40px 0px 0px 40px;
+        border: 1px solid #676767;
+        position: relative;
+        padding: 4px 0px 2px 0px;
+        border-right: 0;
+        right: 0;
+    }
+    .menu-icon-mobile {
+        display: none;
+    }
+    .record-categories {
+        ul {
+            li {
+                list-style-type: none;
+                display: inline-block;
+                background: #fff;
+                height: auto;
+                width: 96%;
+                padding: 20px 20px;
+                margin: 10px 0px;
+                border-radius: 6px;
+                font-family: "Raleway", sans-serif !important;
+            }
+        }
+    }
 }
 
 @media (min-width: 1250px) {
@@ -5476,45 +5548,37 @@ ul#nav {
 }
 
 @media (max-width: 767px) {
-  .record-categories {
-    margin-bottom: 15px;
-  }
-
-  .categories {
-    .col-md-4 {
-      display: flex;
-      justify-content: center;
+    .record-categories {
+        margin-bottom: 15px;
     }
-  }
-
-  .c-card h2 {
-    font-size: 20px;
-  }
-
-  .c-card .icon {
-    max-width: 60px !important;
-  }
-
-  .associated-slider {
-    padding-bottom: 30px;
-  }
-
-  .trending,
-  .categories {
-    margin-bottom: 25px;
-  }
-
-  .about-us-sec {
-    margin-bottom: 30px;
-  }
-
-  .tranding-head h2 {
-    font-size: 20px;
-  }
-
-  .heading {
-    margin-bottom: 20px;
-  }
+    .categories {
+        .col-md-4 {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .c-card h2 {
+        font-size: 20px;
+    }
+    .c-card .icon {
+        max-width: 60px !important;
+    }
+    .associated-slider {
+        padding-bottom: 30px;
+    }
+    .trending,
+    .categories {
+        margin-bottom: 25px;
+    }
+    .about-us-sec {
+        margin-bottom: 30px;
+    }
+    .tranding-head h2 {
+        font-size: 20px;
+    }
+    .heading {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -5559,10 +5623,18 @@ ul#nav {
     }
 }
 
+@media (max-width: 320px) {
+    .form .fa-search {
+        position: absolute;
+        top: 65%;
+        left: 58px;
+        color: #9ca3af;
+        font-size: 22px;
+    }
+}
+
 // Imran's new css
-
 // *{outline: 1px solid}
-
 @import "./header.scss";
 @import "./explore.scss";
 @import "./login.scss";
