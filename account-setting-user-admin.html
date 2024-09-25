@@ -23,7 +23,7 @@
 
         <nav class="navbar navbar-expand-xl bg-light fixed-top">
             <div class="container padding-off ">
-                <a href="#" class="navbar-brand"><img src="images/logo.png" alt="logo.png"/></a>
+                <a href="#" class="navbar-brand"><img src="images/logo.png" alt="logo.png" /></a>
 
                 <div class="float-end ms-auto left-20"><img src="images/searchicon.png" onclick="search()" class="search-panel-icon" /></div>
 
@@ -640,18 +640,43 @@
                         </div>
                         <div class="col-md-12 col-lg-12 col-12 col-xl-12 bgwhite p-4 p-md-4 mt-4">
                             <div class="row">
-                                <div class="col-md-6 col-6 col-lg-6 col-xl-6 pb-4">
-                                    <span class="personal-text">Membership</span>
+                                <div class="col-md-6 col-8 col-lg-6 col-xl-6 pb-4">
+                                    <span class="personal-text pe-2">My Interests</span>
+                                    <i class="fa fa-info-circle pl-4" data-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom"></i>
                                 </div>
-                                <div class="col-md-6  col-6 col-lg-6 col-xl-6 edit-text-right">
-                                    <span class="text-right edittext d-block">Renew </button>
+                                <div class="col-md-6  col-4 col-lg-6 col-xl-6  eidtbuttons">
+                                    <a class=" change-password text-right edittext-1" data-bs-toggle="modal" data-bs-target="#exampleedit">Edit</a>
+                                </div>
+                                <div class="pb-2 button-head"> Records</div>
+                                <div class="pb-4 ">
+                                    <button type="button" class=" px-4 btn-default btn-block me-3 mb-2"><span></span>
+                                        Finance Department</button>
+                                    <button type="button" class="px-4 col-xs-12 btn-default btn-block mb-2 me-3"><span></span>
+                                        Foreign & Politics
+                                    </button>
+
+                                    <button type="button" class="px-4 btn-default btn-block  mb-2 me-3"><span></span>
+                                        Ministry of Rehabilitation
+                                    </button>
+                                </div>
+                                <div class="pb-2 button-head me-3">Cartography<span class="place-by ml-2"> (by Place)
                                     </span>
                                 </div>
-                                <div class="col-md-12 input-group">
-                                    <div class="pb-3 col-md-6 col-lg-4 col-12 col-xl-6">
-                                        <label>Active Since</label>
-                                        <input type="text" class="" placeholder="12/08/2023" />
-                                    </div>
+                                <div class="pb-4 ">
+                                    <button type="button" class="px-4  btn-default btn-block me-3"><span></span>
+                                        Peshawar</button>
+                                    <button type="button" class="px-4 btn-default btn-block me-3"><span></span>
+                                        Sunderbans
+                                    </button>
+                                </div>
+                                <div class="pb-2 button-head me-3 mb-2"> Photographs
+                                </div>
+                                <div class="pb-3 ">
+                                    <button type="button" class="px-4  btn-default btn-block me-3 mb-2 "><span></span>
+                                        Lorem ipsum dolor sit</button>
+                                    <button type="button" class="px-4 btn-default btn-block me-3 "><span></span>
+                                        Lorem ipsum
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -2119,10 +2144,122 @@
             </div>
         </div>
     </div>
-    <!-- modal-pop-up deactivate account end  -->
-
-
-    <!-- modal-pop-up change password account start -->
+    <!--user account popup  Explore By Interests start -->
+    <div class="modal fade mx-2 pt-5" id="exampleedit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg pt-5">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-headers mx-2">Explore by Interests</h5>
+                    <button type="button" class="btn-close closedinnerpop" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body  bgcolor rounded-0">
+                    <div class="col-md-12 col-12 col-lg-12 col-xl-12 pb-4">
+                        <span class="personal-selection mx-5">Select Subjects that interest you to help us personalise
+                        yor experience on Abhilekh Patal.</span>
+                    </div>
+                    <div class="pb-2 mx-5  px-2 button-head "> Records</div>
+                    <div class=" longEnough-a content pb-4" data-mcs-theme="red">
+                        <div class="pb-2 text-center">
+                            <button type="button" class="px-2 me-2 btn-default system  btn-block">
+                            World War I</button>
+                            <button type="button" class="px-2  me-2  btn-default system btn-block">
+                            World War I
+                        </button>
+                            <button type="button" class=" px-2 me-2  btn-default btn-block"><span><i
+                                    class="fa fa-check"></i></span>
+                            Ministry of Rehabilitation
+                        </button>
+                            <button type="button" class=" px-2 me-2 btn-default system btn-block">
+                            Ministry of Rehabilitation
+                        </button>
+                        </div>
+                        <div class="pb-2 text-center">
+                            <button type="button" class="px-2 me-2 btn-default btn-block"><i class="fa fa-check"
+                                aria-hidden="true"></i>
+                            World War I</button>
+                            <button type="button" class="px-2 me-2  btn-default system btn-block">
+                            World War I
+                        </button>
+                            <button type="button" class="px-2 me-2 btn-default system btn-block ">
+                            Ministry of Rehabilitation
+                        </button>
+                            <button type="button" class="px-2 me-2 btn-default system btn-block ">
+                            Ministry of Rehabilitation
+                        </button>
+                        </div>
+                        <div class="pb-2 text-center">
+                            <button type="button" class="px-2 me-2 btn-default system btn-block ">
+                            World War I</button>
+                            <button type="button" class="px-2 me-2 btn-default system btn-block ">
+                            World War I
+                        </button>
+                            <button type="button" class="px-2 me-2 btn-default system btn-block ">
+                            Ministry of Rehabilitation
+                        </button>
+                            <button type="button" class="px-2  me-2 btn-default btn-block "><i class="fa fa-check"
+                                aria-hidden="true"></i>
+                            Ministry of Rehabilitation
+                        </button>
+                        </div>
+                    </div>
+                    <div class="pb-2 mx-5 px-2 button-head">Cartography<span>(by Place)</span>
+                    </div>
+                    <div class=" longEnough-b content pb-4" data-mcs-theme="red">
+                        <div class="pb-2 text-center">
+                            <button type="button" class="px-2  me-2 btn-default system btn-block "> Delhi</button>
+                            <button type="button" class="px-2  me-2  btn-default system btn-block "><span></span>Punjab</button>
+                            <button type="button" class="px-2  me-2   btn-default system btn-block "><span></span>Tinnevelly</button>
+                            <button type="button" class="px-2  me-2  btn-default system btn-block ">Outh- Nepal</button>
+                            <button type="button" class="px-2  me-2  btn-default btn-block "><span><i
+                                    class="fa fa-check pe-2"></i></span>Sunderbans</button>
+                            <button type="button" class="px-2  me-2  btn-default system btn-block "><span></span>Sunderbans</button>
+                        </div>
+                        <div class="pb-2 magin-style">
+                            <button type="button" class=" px-2 me-2  btn-default system btn-block"> Kumaon</button>
+                            <button type="button" class="px-2 me-2 btn-default system btn-blockp"><span></span>Hyderabad</button>
+                            <button type="button" class=" px-2  me-2 btn-default btn-block "><span><i
+                                    class="fa fa-check pe-2"></i></span>Peshawar</button>
+                            <button type="button" class=" px-2  me-2  btn-default system btn-block">Bilaspur</button>
+                            <button type="button" class=" px-2  me-2  btn-default system btn-block "><span></span>Jhelum</button>
+                        </div>
+                    </div>
+                    <div class="pb-2  mx-5 px-2 button-head">Photographs</div>
+                    <div class="scrollbar" id="style-5">
+                        <div class=" pb-4 force-overflow">
+                            <div class=" pb-2 text-center">
+                                <button type="button" class="px-2 me-2 btn-default system btn-block"><span></span>
+                                Lorem ipsum dolor sit</button>
+                                <button type="button" class="px-2 me-2  btn-default system btn-block"><span></span>
+                                Lorem ipsum
+                            </button>
+                                <button type="button" class=" px-2 me-2  btn-default btn-block"><span></span><i
+                                    class="fa fa-check pe-2"></i></span>
+                                Lorem ipsum dolor sit</button>
+                                <button type="button" class=" px-2 me-2  btn-default system btn-block"><span></span>
+                                Lorem ipsum dolor sit</button>
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="px-2 me-2  btn-default system btn-block"><span></span>
+                                Lorem ipsum dolor sit</button>
+                                <button type="button" class="px-2  me-2 btn-default btn-block"><span><i
+                                        class="fa fa-check pe-2"></i></span>
+                                Lorem ipsum
+                            </button>
+                                <button type="button" class=" px-2 me-2  btn-default system btn-block"><span></span>
+                                Lorem ipsum dolor sit</button>
+                                <button type="button" class=" px-2 me-2 btn-default system btn-block"><span></span>
+                                Lorem ipsum dolor sit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-4 mt-3 px-5">
+                    <button type="button" class="deactivebutton float-end">Update Explore</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--user account popup  Explore By Interests end -->
 
     <div class="modal fade px-4" id="exampleModalform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
