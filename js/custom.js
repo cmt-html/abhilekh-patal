@@ -1,3 +1,8 @@
+// image gallery
+
+
+//closed
+
 $(document).ready(function() {
 
     $('#nav').children('li').first().children('a').addClass('active-1')
