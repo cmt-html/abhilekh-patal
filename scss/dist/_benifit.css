@@ -27,7 +27,8 @@
 .imgbefore:before {
   content: "";
   position: absolute;
-  z-index: 99;
+  z-index: 0;
+  z-index: 1;
   width: 60%;
   left: 0;
   height: 100% !important;
@@ -40,7 +41,6 @@
 }
 
 .hero-text {
-  z-index: 999;
   top: 50% !important;
 }
 
@@ -314,7 +314,7 @@
   .imgbefore::before {
     content: "";
     position: relative;
-    z-index: 99;
+    z-index: 0;
     width: 100%;
     left: 0;
     display: none;
