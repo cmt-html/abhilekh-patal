@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="scss/main.css" />
+    <link rel="stylesheet" type="text/css" href="scss/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="icon" type="image/x-icon" href="images/favicon-icon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
     <title>404 Error</title>
 
 </head>
@@ -17,8 +18,9 @@
     <header>
         <nav class="navbar navbar-expand-xl bg-light fixed-top">
             <div class="container padding-off ">
-                <a href="#" class="navbar-brand"><img src="images/logo.png" /></a>
-                <div class="float-end ms-auto left-20"><img src="images/searchicon.png" onclick="search()" class="search-panel-icon" /></div>
+                <a href="#" class="navbar-brand"><img src="images/logo.png"  alt="img"/></a>
+                <div class="float-end ms-auto left-20"><img src="images/searchicon.png" alt="img" onclick="search()"
+                        class="search-panel-icon" /></div>
                 <!--<form class="search-panel">
                     <div class="crossIcon">
                         <input class="form-control searchdiv" type="search" id="tags" aria-label="Search" placeholder="SEARCH">
@@ -26,6 +28,7 @@
                         <span><img src="images/crss-icon.png" class="crossIconclosed"></span>
                     </div>
                 </form>   -->
+            </div>
         </nav>
     </header>
 
@@ -50,31 +53,7 @@
         </div>
     </section>
 
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script>
-        const togglePassword = document.querySelector("#togglePassword");
-        const password = document.querySelector("#password");
-
-        togglePassword.addEventListener("click", function() {
-            // toggle the type attribute
-            const type = password.getAttribute("type") === "password" ? "text" : "password";
-            password.setAttribute("type", type);
-
-            // toggle the icon
-            this.classList.toggle("bi-eye");
-        });
-
-        // prevent form submit
-        const form = document.querySelector("form");
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-        });
-    </script>
     <script src="js/jquery.min.js"></script>
-
-
-    <script src="js/jquery.bxslider.min.js "></script>
-
     <script src="js/custom.js"></script>
     <script src="js/main.js"></script>
     <script src="js/jquery-ui.js"></script>
