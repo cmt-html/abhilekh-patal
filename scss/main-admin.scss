@@ -949,6 +949,23 @@ li {
     color: #73081C !important;
 }
 
+.productInline {
+    .btn:hover {
+        color: var(--bs-btn-hover-color);
+        background-color: #FFF !important;
+        border-color: #FFF;
+    }
+}
+
+.search-bar-favourites {
+    .form-select {
+        border: 1px solid #B4B4B4;
+        max-width: 74px;
+        border-radius: 23px;
+        padding: 4px 9px;
+    }
+}
+
 .btn.btn.dropdown-toggle {
     font-family: "Raleway", sans-serif !important;
     font-size: 16px;
@@ -958,6 +975,12 @@ li {
     text-align: left;
     color: #ACACAC;
     border-bottom: 2PX solid #ACACAC;
+}
+
+.libcollection {
+    a {
+        color: #2D2D2D !important;
+    }
 }
 
 .activeorder {
@@ -1120,7 +1143,8 @@ li {
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
-    margin-top: -24px;
+    margin-top: 7px;
+    margin-bottom: 3px !important;
 }
 
 .p-tittle {
@@ -1135,11 +1159,11 @@ li {
 .viewimg {
     width: 37px;
     height: 37px;
-    left: 16px;
+    left: 9px;
     border-radius: 8px;
+    bottom: 10px;
     background: #FFFFFF;
-    position: relative;
-    top: -57px !important;
+    position: absolute;
     text-align: center;
 }
 
@@ -1165,7 +1189,9 @@ li {
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
+    max-width: 200px;
     color: #676766;
+    width: 100%;
 }
 
 .search-img {
@@ -1194,13 +1220,38 @@ li {
     border-width: 0px, 0px, 0px, 0px;
     border-color: #676767;
     border-radius: 22px;
+    padding-left: 45px;
 }
 
 .searchicone {
-    border-top-left-radius: 22px;
-    border-bottom-left-radius: 22px;
-    border-color: #676767;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-color: transparent;
     border-right: 0px;
+}
+
+.searchIcon {
+    position: absolute;
+    top: 0px;
+    background: none;
+    border: 0;
+    padding: 8px 9px;
+    padding-left: 15px;
+}
+
+.ul-border {
+    border-bottom: 1px solid #BCBCBC !important;
+}
+
+.modelTop {
+    margin-top: 197px;
+}
+
+.showEntries {
+    display: flex;
+    max-width: 210px;
+    width: 100%;
+    align-items: center;
 }
 
 [class^="item"] {
@@ -1216,20 +1267,20 @@ li {
 }
 
 .item-4 {
-    float: right;
-    top: 25px !important;
+    top: -1px !important;
     width: 27px;
-    height: 27px;
-    position: relative;
-    border-radius: 50%;
+    height: 32px;
+    position: absolute;
+    border-radius: 53%;
     background-color: #FFF;
     transition: 0.3s ease-out;
     z-index: 9;
+    right: -1px;
     &:before,
     &:after {
         content: "";
         position: absolute;
-        width: 70%;
+        width: 48%;
         height: 2px;
         background-color: #555555;
         left: 50%;
@@ -1240,11 +1291,6 @@ li {
     }
     &:before {
         transform: translate(-50%, -50%) rotate(-45deg);
-    }
-    &:hover,
-    &:focus {
-        transform: scale(1.15);
-        opacity: 1;
     }
 }
 
@@ -1679,7 +1725,7 @@ input:disabled {
     font-weight: 500;
     line-height: 21px;
     letter-spacing: 0em;
-    color: #BCBCBC;
+    color: #676767;
     text-align: left;
 }
 
@@ -1752,6 +1798,7 @@ input:disabled {
     width: 26px;
     border-radius: 4px;
     background: #EAEAEA;
+    float: right;
 }
 
 .table tr {
@@ -5144,7 +5191,7 @@ option {
     .dataTables_wrapper {
         position: relative;
         clear: both;
-        overflow-x: scroll !important;
+        overflow-x: auto !important;
         width: 1600px !important;
     }
     .incresefont {
@@ -5710,17 +5757,29 @@ ul.ui-sortable {
 }
 
 .search-bar-favourites {
-    margin: 20px 0px;
-    max-width: 235px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px 35px;
+    max-width: 100%;
     width: 100%;
     input {
         background-color: transparent !important;
+    }
+    .searchBox {
+        position: relative;
     }
 }
 
 .active-12 {
     color: $redish;
     border-bottom: 1px solid $redish !important;
+}
+
+// * {
+//     outline: 1px solid red;
+// }
+.select-multiselectoption {
+    padding-top: 60px!important;
 }
 
 // categories page closed    
@@ -6575,6 +6634,15 @@ ul.ui-sortable {
 }
 
 @include media-breakpoint-down(md) {
+    .select-multiselectoption {
+        padding-top: 120px!important;
+    }
+    .search-bar-favourites .searchBox {
+        margin-bottom: 20px;
+    }
+    .search-bar-favourites {
+        display: block;
+    }
     .h-tittle {
         font-size: 16px;
     }
@@ -6947,8 +7015,6 @@ ul.ui-sortable {
     .viewimg {
         width: 34px;
         height: 35px;
-        left: 9px;
-        top: -45px !important;
     }
     .gallery_product {
         gap: 20px;

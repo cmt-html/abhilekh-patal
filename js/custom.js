@@ -1,7 +1,36 @@
 // image gallery
 
 
-//closed
+$(document).ready(function() {
+
+
+    $(".filter-button").click(function() {
+
+        var value = $(this).attr('data-filter');
+        //alert(value);
+        if (value == "all") {
+            $('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+
+        } else {
+
+            $(".filter").not('.' + value).hide('3000');
+            $('.filter').filter('.' + value).show('3000');
+
+        }
+    });
+
+
+
+});
+
+$('.filter-button').click(function() {
+        var $this = $(this);
+        $('.filter-button').removeClass('active-12');
+        $(this).addClass('active-12');
+
+    })
+    //closed
 
 $(document).ready(function() {
 
