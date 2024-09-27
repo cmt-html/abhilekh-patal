@@ -14004,6 +14004,7 @@ input[type=search]::-webkit-search-results-decoration {
   line-height: 16px;
   letter-spacing: 0em;
   text-align: left;
+  margin-bottom: 20px;
   color: #2d2d2d;
 }
 
@@ -14086,6 +14087,7 @@ input[type=search]::-webkit-search-results-decoration {
   left: 480px;
   border-radius: 26.68px;
   border: 0.97px;
+  padding-left: 15px;
   border: 0.97px solid #bcbcbc;
 }
 
@@ -17865,6 +17867,7 @@ input[type=number] {
 .imgbefore:before {
   content: "";
   position: absolute;
+  z-index: 0;
   z-index: 1;
   width: 60%;
   left: 0;
@@ -17878,7 +17881,6 @@ input[type=number] {
 }
 
 .hero-text {
-  z-index: 1;
   top: 50% !important;
 }
 
@@ -18136,7 +18138,7 @@ input[type=number] {
   .imgbefore::before {
     content: "";
     position: relative;
-    z-index: 99;
+    z-index: 0;
     width: 100%;
     left: 0;
     display: none;
