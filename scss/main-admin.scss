@@ -13,6 +13,7 @@ body,
 html {
     padding: 0;
     margin: 0;
+    height: auto;
     background-color: $gray3;
     font-family: 'Raleway', sans-serif !important;
     background-color: #eaeaea;
@@ -962,7 +963,7 @@ li {
         border: 1px solid #B4B4B4;
         max-width: 74px;
         border-radius: 23px;
-        padding: 4px 9px;
+        padding: 6px 9px;
     }
 }
 
@@ -5050,6 +5051,7 @@ option {
     padding-left: 1.5em;
     font-size: 1.4em;
     height: 18px;
+    border: 1px solid #f0f0f0;
 }
 
 #sortable li span {
@@ -5782,6 +5784,44 @@ ul.ui-sortable {
     padding-top: 60px!important;
 }
 
+#sortable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#sortable li {
+    margin: 10px 3px 10px 3px;
+    padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-left: 0;
+    font-size: 1.4em;
+    height: 45px;
+    border-radius: 38px;
+    padding-top: 10px;
+    padding-right: 16px;
+    line-height: 23px;
+    font-size: 16px;
+    color: #434343;
+    width: 100%;
+    text-align: left;
+}
+
+.padding-div {
+    padding: 10px 20px !important;
+    border: 1px solid #ccc;
+    text-align: right;
+    display: block;
+}
+
+#sortable li span {
+    position: absolute;
+    margin-left: -1.3em;
+}
+
 // categories page closed    
 //select box
 @media (min-width: 1400px) {
@@ -5910,6 +5950,7 @@ ul.ui-sortable {
 @include media-breakpoint-up(xl) {
     .select-multiselectoption {
         padding-top: 90px;
+        margin-bottom: 90px !important;
         .closedIcon {
             background: url("../images/closed.png")no-repeat;
             display: block;
@@ -6634,6 +6675,9 @@ ul.ui-sortable {
 }
 
 @include media-breakpoint-down(md) {
+    .pos {
+        position: relative;
+    }
     .select-multiselectoption {
         padding-top: 120px!important;
     }
