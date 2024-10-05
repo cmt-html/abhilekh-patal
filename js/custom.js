@@ -76,6 +76,21 @@ $(document).ready(function() {
     });
 });
 //tabs
+
+
+$(document).ready(function() {
+    $(".admin-panel").on("click", function() {
+
+        $(".menu-open").slideToggle("open-panel");
+        $(".admin-panel").toggleClass("rotateIcon");
+
+
+    })
+
+})
+
+
+
 $(document).ready(function() {
     console.log("document ready");
 

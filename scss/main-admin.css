@@ -11594,6 +11594,11 @@ img {
   background-color: transparent;
 }
 
+.device-manage-action .btn {
+  color: #fff !important;
+  background-color: #73081C;
+}
+
 .ul-menu-list ul li {
   display: inline-block;
   list-style: none;
@@ -12146,6 +12151,7 @@ li {
 .bgcolor {
   background-color: #F8F8F8;
   padding-left: 10px;
+  padding-top: 20px !important;
   padding-bottom: 20px;
 }
 
@@ -12228,6 +12234,8 @@ li {
   line-height: 19px;
   letter-spacing: 0em;
   color: #676767;
+  display: flex;
+  justify-content: space-between;
 }
 
 .bg-order.border-bottom .active {
@@ -12276,8 +12284,12 @@ li {
   color: #676767 !important;
 }
 
+.right-panel {
+  margin-bottom: 34px;
+}
+
 .Scholar-p {
-  margin-left: 55px;
+  margin-left: 15px;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -12285,6 +12297,9 @@ li {
   letter-spacing: 0em;
   text-align: left;
   color: #676766;
+}
+.Scholar-p p {
+  margin-bottom: 0;
 }
 
 .fw {
@@ -12305,7 +12320,7 @@ li {
   letter-spacing: 0em;
   text-align: left;
   color: #A54141;
-  margin-top: -11px;
+  margin-top: 0;
 }
 
 .bg-order {
@@ -12316,7 +12331,7 @@ li {
 .my-laptop {
   background: url("../images/my-laptops.png") no-repeat;
   width: 56px;
-  height: 45px;
+  height: 70px;
   display: block;
   float: left;
   margin-right: 15px;
@@ -12359,7 +12374,7 @@ li {
   font-family: "Raleway", sans-serif !important;
   font-size: 16px;
   font-weight: 500;
-  line-height: 19px;
+  line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
   color: #676767;
@@ -12375,6 +12390,10 @@ li {
 
 .btn.btn.dropdown-toggle:hover {
   color: #73081C !important;
+}
+
+.btn .btn:focus .btn.active {
+  outline: none !important;
 }
 
 .productInline .btn:hover {
@@ -12397,8 +12416,9 @@ li {
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
-  color: #ACACAC;
-  border-bottom: 2PX solid #ACACAC;
+  margin-right: 10px;
+  color: #676767;
+  border-bottom: 0PX solid #ACACAC;
 }
 
 .libcollection a {
@@ -12924,12 +12944,6 @@ input:disabled {
   padding: 5px 29px 9px 20px;
 }
 
-.imgmember {
-  float: left;
-  margin-right: 10px;
-  margin-top: 20px;
-}
-
 .btn.btn-secondary {
   background: none;
   border: none;
@@ -13033,6 +13047,11 @@ input:disabled {
   margin: 0 0 1.5em;
 }
 
+.contact-us {
+  max-width: 556px;
+  width: 100%;
+}
+
 .updatenew {
   font-family: "Raleway", sans-serif !important;
   font-size: 24px;
@@ -13114,6 +13133,7 @@ input:disabled {
 
 .pbbuttom {
   padding-bottom: 36px !important;
+  margin-top: 0px;
 }
 
 .input-group.form-first {
@@ -13234,7 +13254,7 @@ input:disabled {
 .table th {
   background-color: #f8f8f8;
   border: none;
-  padding: 13px;
+  padding: 7px;
   text-transform: none;
   font-family: "Raleway", sans-serif !important;
   font-size: 16px;
@@ -14534,6 +14554,7 @@ input:disabled {
 .input-group-save input {
   border: 1px solid #ccc;
   padding: 7px 15px;
+  outline: none;
   border-radius: 50px;
 }
 
@@ -14589,8 +14610,10 @@ input:disabled {
 }
 
 .buttonmodelpop {
-  width: 233px;
-  margin: 0 auto;
+  width: 92%;
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: flex-end;
 }
 .buttonmodelpop .cancelbutton {
   background: none;
@@ -14600,6 +14623,7 @@ input:disabled {
   width: 114px;
   font-weight: 700;
   font-size: 16px;
+  margin-right: 12px;
   font-family: "Raleway", sans-serif !important;
 }
 .buttonmodelpop .deactivebutton {
@@ -14638,6 +14662,10 @@ input:disabled {
 
 .modal {
   border-radius: 0 !important;
+}
+
+.bg-gray {
+  background-color: #FFFFFF !important;
 }
 
 /*side panel admin css*/
@@ -14683,12 +14711,6 @@ table.dataTable tfoot th {
 .bg-library {
   background-color: #fff;
   padding: 5px 29px 9px 20px;
-}
-
-.imgmember {
-  float: left;
-  margin-right: 10px;
-  margin-top: 10px;
 }
 
 .btn.btn-secondary {
@@ -15176,6 +15198,10 @@ table.dataTable tfoot th {
 
 .right-content-dod {
   padding-top: 10px;
+}
+
+.footer-always-bottom {
+  min-height: 800px;
 }
 
 .paid-color {
@@ -16204,8 +16230,34 @@ option {
 }
 
 /*submenu closed*/
+.form-outline .form-control {
+  background-color: transparent;
+  font-family: "Raleway", sans-serif !important;
+  max-width: 480px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-outline .form-control {
+  min-height: 156px;
+}
+
+.selectBox {
+  background-color: transparent;
+  font-family: "Raleway", sans-serif !important;
+  max-width: 480px;
+  width: 100%;
+  font-size: 14px !important;
+  font-weight: 500;
+}
+
 .form-select {
   border: 1px solid #B4B4B4;
+}
+
+.contact-header-top {
+  margin-top: 35px !important;
 }
 
 .back-main {
@@ -16787,6 +16839,9 @@ option {
   }
 }
 @media (max-width: 992px) {
+  .m-none-tab {
+    margin-right: 0 !important;
+  }
   .searchinput .form-control {
     font-size: 14px;
     background-color: transparent;
@@ -16916,6 +16971,20 @@ ul.ui-sortable li {
   width: 100%;
 }
 
+.statistics {
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+.statistics .static-img {
+  display: block;
+  align-self: center;
+}
+.statistics .static-img img {
+  height: 45px;
+  width: 45px;
+}
+
 .gallery_product {
   margin-bottom: 30px;
   width: 100%;
@@ -16949,6 +17018,10 @@ ul.ui-sortable li {
   border-bottom: 1px solid #73081C !important;
 }
 
+.centerButton {
+  text-align: center;
+}
+
 .select-multiselectoption {
   padding-top: 60px !important;
 }
@@ -16979,6 +17052,16 @@ ul.ui-sortable li {
   text-align: left;
 }
 
+.border-right-div {
+  height: 63px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 2px;
+  background-color: #ccc;
+}
+
 .padding-div {
   padding: 10px 20px !important;
   border: 1px solid #ccc;
@@ -16986,9 +17069,33 @@ ul.ui-sortable li {
   display: block;
 }
 
+.border-right-div {
+  height: 63px;
+  position: relative;
+  width: 2px;
+  background-color: #ccc;
+}
+
 #sortable li span {
   position: absolute;
   margin-left: -1.3em;
+}
+
+.accordian-mneu-button button {
+  display: none;
+}
+
+.table-collection table tr:last-child {
+  border: 0;
+}
+
+.grid-view-result-div {
+  padding-top: 0px;
+}
+
+.tearms-condition-pop {
+  max-width: 697px;
+  width: 100%;
 }
 
 @media (min-width: 1400px) {
@@ -17138,7 +17245,6 @@ ul.ui-sortable li {
   .dataTables_wrapper {
     position: relative;
     clear: both;
-    overflow-x: scroll !important;
     width: 1600px !important;
   }
   .dataTables_scrollBody {
@@ -17768,6 +17874,64 @@ ul.ui-sortable li {
   }
 }
 @media (max-width: 767.98px) {
+  .line-height-device {
+    line-height: 20px;
+  }
+  .pbbuttom {
+    padding-bottom: 36px !important;
+    margin-top: 20px;
+  }
+  .border-right-div {
+    display: none;
+  }
+  .d-flex-box {
+    display: flex !important;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  .centerButton {
+    text-align: left;
+  }
+  .img-benifit img {
+    width: 134px !important;
+  }
+  .statistics {
+    margin-bottom: 20px;
+  }
+  .right-content {
+    padding-top: 15px !important;
+  }
+  .rotateIcon i {
+    transform: rotate(180deg);
+  }
+  .admin-panel {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 13px;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .admin-panel .account-setting {
+    margin: 0;
+  }
+  .accordian-mneu-button button {
+    display: block;
+    float: right;
+    background-color: none;
+    border: 0;
+    width: 40px;
+    font-size: 30px;
+    border: 0 !important;
+    background-color: transparent;
+  }
+  .open-panel {
+    display: none;
+  }
+  .menu-open {
+    display: none;
+  }
   .pos {
     position: relative;
   }

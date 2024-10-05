@@ -5155,6 +5155,9 @@ ul#nav {
 }
 
 @include media-breakpoint-down(md) {
+    .imgmember {
+        width: 134px !important;
+    }
     .eee-image__dropdown {
         left: 58% !important;
         top: 7% !important;

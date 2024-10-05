@@ -16293,6 +16293,9 @@ ul#nav {
   }
 }
 @media (max-width: 767.98px) {
+  .imgmember {
+    width: 134px !important;
+  }
   .eee-image__dropdown {
     left: 58% !important;
     top: 7% !important;
