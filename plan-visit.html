@@ -10,13 +10,10 @@
     <link rel="icon" type="image/x-icon" href="images/favicon-icon.png">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js">
     </script>
-   
-    <link href="css/bootstrap-datepicker.css"
-        rel="stylesheet">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="css/bootstrap-datepicker.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <title>Plan Visit</title>
 </head>
@@ -25,16 +22,14 @@
     <header>
         <nav class="navbar navbar-expand-xl bg-light fixed-top">
             <div class="container padding-off">
-                <a href="index.html" class="navbar-brand"><img src="images/logo.png" /></a>
-                <div class="float-end ms-auto left-20"><img src="images/searchicon.png" onclick="search()"
-                        class="search-panel-icon" />
+                <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="logo" /></a>
+                <div class="float-end ms-auto left-20"><img src="images/searchicon.png" alt="searchicon" onclick="search()" class="search-panel-icon" />
                 </div>
                 <form class="search-panel">
                     <div class="crossIcon">
-                        <input class="form-control searchdiv" type="search" id="tags" aria-label="Search"
-                            placeholder="SEARCH">
-                        <img src="images/searchicon.png" class="search-panel-icon" />
-                        <span><img src="images/crss-icon.png" class="crossIconclosed"></span>
+                        <input class="form-control searchdiv" type="search" id="tags" aria-label="Search" placeholder="SEARCH">
+                        <img src="images/searchicon.png" class="search-panel-icon" alt="searchicon" />
+                        <span><img src="images/crss-icon.png" class="crossIconclosed" alt="crss-icon"></span>
                     </div>
                     <div class="row">
                         <div class="advance-serach mb-3 float-start">
@@ -47,7 +42,7 @@
                                 <div class="row">
                                     <div class="inputGroup col-md-12 col-12  mb-3">
                                         <label>Category</label>
-                                        <select class="form-select" aria-label="Default select example">
+                                        <select class="form-select">
                                             <option selected>-Select or type-</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -56,7 +51,7 @@
                                     </div>
                                     <div class="inputGroup col-md-12 col-12  mb-3">
                                         <label>Document Type</label>
-                                        <select class="form-select" aria-label="Default select example">
+                                        <select class="form-select">
                                             <option selected>-Select-</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -65,7 +60,7 @@
                                     </div>
                                     <div class="inputGroup col-md-12 col-12  mb-3">
                                         <label>Department</label>
-                                        <select class="form-select" aria-label="Default select example">
+                                        <select class="form-select">
                                             <option selected>-Select or type-</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -74,7 +69,7 @@
                                     </div>
                                     <div class="inputGroup col-md-12 col-12  mb-3">
                                         <label>Branch</label>
-                                        <select class="form-select" aria-label="Default select example">
+                                        <select class="form-select">
                                             <option selected>-Select or type-</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -83,7 +78,7 @@
                                     </div>
                                     <div class="inputGroup col-md-12 col-12 mb-3">
                                         <label>Place</label>
-                                        <select class="form-select" aria-label="Default select example">
+                                        <select class="form-select">
                                             <option selected>-Select or type-</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -92,7 +87,7 @@
                                     </div>
                                     <div class="inputGroup col-md-12 col-12 mb-3">
                                         <label>Language</label>
-                                        <select class="form-select" aria-label="Default select example">
+                                        <select class="form-select">
                                             <option selected>-Select or type-</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -101,7 +96,7 @@
                                     </div>
                                     <div class="inputGroup col-md-12 col-12 mb-3">
                                         <label>Category</label>
-                                        <select class="form-select" aria-label="Default select example">
+                                        <select class="form-select">
                                             <option selected>-Select or type-</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -110,7 +105,7 @@
                                     </div>
                                     <div class="inputGroup col-md-12 col-12 mb-3">
                                         <label>Year of Publication</label>
-                                        <select class="form-select" aria-label="Default select example">
+                                        <select class="form-select">
                                             <option selected>-Select or type-</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -123,23 +118,16 @@
                                         <span class="col-md-12 col-lg-2 pb-2 select-fonts"> Year</span>
                                         <div id="slider-range-mobile"></div>
                                         <div class=" position-relative">
-                                            <li class="  float-start widthinput" style="list-style: none;"><span
-                                                    class="fs">From </span><input type="text" name="specificFromYear"
-                                                    id="amount14" type="number" class="form-control rageinput"
-                                                    value="1245"></li>
+                                            <li class="  float-start widthinput" style="list-style: none;"><span class="fs">From </span><input type="text" name="specificFromYear" id="amount14" type="number" class="form-control rageinput" value="1245"></li>
                                             <li class="  float-end widthinput" style="float: left; list-style: none;">
-                                                <span class="fsfs">To </span><input type="text" name="specificToYear"
-                                                    id="amount14" type="number" class="form-control rageinput"
-                                                    value="2000">
+                                                <span class="fsfs">To </span><input type="text" name="specificToYear" id="amount142" type="number" class="form-control rageinput" value="2000">
                                             </li>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="inputGroup col-md-6">
                                             <label class="adlebel mb-2">Keyword</label>
-                                            <input type="text" class="form-control input-control"
-                                                id="exampleInputEmail1" aria-describedby="emailHelp"
-                                                placeholder="Type here">
+                                            <input type="text" class="form-control input-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type here">
                                         </div>
                                     </div>
                                 </div>
@@ -153,16 +141,13 @@
                         </div>
                     </div>
                 </form>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
                     <img src="images/menu-icon.png" />
                 </button>
                 <div class="collapse navbar-collapse ul-menu-list" id="navbarSupportedContent">
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
-                        aria-labelledby="navbarOffcanvasLgLabel">
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
                         <ul>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             <div class="left-div">
                                 <li>
                                     <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
@@ -172,8 +157,7 @@
                                 </li>
                                 <li class="mobile-lang">
                                     <div class="dropdown dropdown-li">
-                                        <button class="textlanguage  dropdown-toggle" type="button"
-                                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <button class="textlanguage  dropdown-toggle" type="button" id="dropdownMenuButton-21" data-bs-toggle="dropdown">
                                             ENG
                                         </button>
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -182,156 +166,146 @@
                                             <li><a class="dropdown-item" href="#">Marathi</a></li>
                                         </ul>
                                 </li>
-                            </div>
-                            <div class="right-div">
-                                <li>
-                                    <form>
-                                        <div class="row">
-                                            <div class="searchinput col-md-6 col-6 col-lg-6 col-xl-6">
-                                                <span class="search"></span>
-                                                <input class="form-control" type="search" aria-label="Search"
-                                                    placeholder="SEARCH">
-                                                <span class="closedIcon-search"><img id="searchCloseIconImg"
+                                </div>
+                                <div class="right-div">
+                                    <li>
+                                        <form>
+                                            <div class="row">
+                                                <div class="searchinput col-md-6 col-6 col-lg-6 col-xl-6">
+                                                    <span class="search"></span>
+                                                    <input class="form-control" type="search" aria-label="Search" placeholder="SEARCH">
+                                                    <span class="closedIcon-search"><img id="searchCloseIconImg"
                                                         src="images/closed-search.png" /></span>
-                                            </div>
-                                            <a id="aAdvanceSearch" class="searchButton col-md-6 col-6 col-lg-6 col-xl-6"
-                                                type="submit">ADVANCE SEARCH</a>
-                                            <div id="containerAdvanceSearch" class="asvanceSearch col-md-12">
-                                                <div class="row pb-4">
-                                                    <div class="AdSearch text-align-start">Advance Search </div>
                                                 </div>
-                                                <div class="row mb-3">
-                                                    <div class="inputGroup col-md-3 ">
-                                                        <label class="adlebel mb-2">Category</label>
-                                                        <select class="form-select" aria-label="Default select example">
+                                                <a id="aAdvanceSearch" class="searchButton col-md-6 col-6 col-lg-6 col-xl-6" type="submit">ADVANCE SEARCH</a>
+                                                <div id="containerAdvanceSearch" class="asvanceSearch col-md-12">
+                                                    <div class="row pb-4">
+                                                        <div class="AdSearch text-align-start">Advance Search </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="inputGroup col-md-3 ">
+                                                            <label class="adlebel mb-2">Category</label>
+                                                            <select class="form-select">
                                                             <option default selected>-Select or type-</option>
                                                             <option value="1">One</option>
                                                             <option value="2">Two</option>
                                                             <option value="3">Three</option>
                                                         </select>
-                                                    </div>
-                                                    <div class="inputGroup col-md-3">
-                                                        <label class="adlebel mb-2">Document Type</label>
-                                                        <select class="form-select" aria-label="Default select example">
+                                                        </div>
+                                                        <div class="inputGroup col-md-3">
+                                                            <label class="adlebel mb-2">Document Type</label>
+                                                            <select class="form-select">
                                                             <option default selected>-Select-</option>
                                                             <option value="1">One</option>
                                                             <option value="2">Two</option>
                                                             <option value="3">Three</option>
                                                         </select>
-                                                    </div>
-                                                    <div class="inputGroup col-md-3">
-                                                        <label class="adlebel mb-2">Department</label>
-                                                        <select class="form-select" aria-label="Default select example">
+                                                        </div>
+                                                        <div class="inputGroup col-md-3">
+                                                            <label class="adlebel mb-2">Department</label>
+                                                            <select class="form-select">
                                                             <option default selected>-Select or type-</option>
                                                             <option value="1">One</option>
                                                             <option value="2">Two</option>
                                                             <option value="3">Three</option>
                                                         </select>
-                                                    </div>
-                                                    <div class="inputGroup col-md-3">
-                                                        <label class="adlebel mb-2">Branch</label>
-                                                        <select class="form-select" aria-label="Default select example">
+                                                        </div>
+                                                        <div class="inputGroup col-md-3">
+                                                            <label class="adlebel mb-2">Branch</label>
+                                                            <select class="form-select">
                                                             <option default selected>-Select or type-</option>
                                                             <option value="1">One</option>
                                                             <option value="2">Two</option>
                                                             <option value="3">Three</option>
                                                         </select>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <div class="inputGroup col-md-3 ">
-                                                        <label class="adlebel mb-2">Place</label>
-                                                        <select class="form-select" aria-label="Default select example">
+                                                    <div class="row mb-3">
+                                                        <div class="inputGroup col-md-3 ">
+                                                            <label class="adlebel mb-2">Place</label>
+                                                            <select class="form-select">
                                                             <option default selected>-Select or type-</option>
                                                             <option value="1">One</option>
                                                             <option value="2">Two</option>
                                                             <option value="3">Three</option>
                                                         </select>
-                                                    </div>
-                                                    <div class="inputGroup col-md-3">
-                                                        <label class="adlebel mb-2">Language</label>
-                                                        <select class="form-select" aria-label="Default select example">
+                                                        </div>
+                                                        <div class="inputGroup col-md-3">
+                                                            <label class="adlebel mb-2">Language</label>
+                                                            <select class="form-select">
                                                             <option default selected>-Select or type-</option>
                                                             <option value="1">One</option>
                                                             <option value="2">Two</option>
                                                             <option value="3">Three</option>
                                                         </select>
-                                                    </div>
-                                                    <div class="inputGroup col-md-3 position-relative">
-                                                        <span class="border-div"></span>
+                                                        </div>
+                                                        <div class="inputGroup col-md-3 position-relative">
+                                                            <span class="border-div"></span>
 
-                                                        <label class="adlebel mb-2">Year of Publication</label>
-                                                        <select class="form-select" aria-label="Default select example">
+                                                            <label class="adlebel mb-2">Year of Publication</label>
+                                                            <select class="form-select">
                                                             <option default selected>-Select or type-</option>
                                                             <option value="1">One</option>
                                                             <option value="2">Two</option>
                                                             <option value="3">Three</option>
                                                         </select>
+                                                        </div>
+                                                        <div class="inputGroup col-md-3">
+                                                            <div class="row position-relative">
+                                                                <span class="col-md-12 pb-2 select-fonts"> Year</span>
+                                                                <div id="slider-range-home"></div>
+                                                                <div class="col-md-6" style="padding-left: 10px;"><span class="fs">From </span><input type="text" name="specificFromYear" id="amount12" type="number" class="form-control rageinput" value="1245"></div>
+                                                                <div class="col-md-6 text-right float-end align-items-right">
+                                                                    <span class="fsfs">To </span><input type="text" name="specificToYear" id="amount12" type="number" class="form-control rageinput" value="2000">
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="inputGroup col-md-3">
-                                                        <div class="row position-relative">
-                                                            <span class="col-md-12 pb-2 select-fonts"> Year</span>
-                                                            <div id="slider-range-home"></div>
-                                                            <div class="col-md-6" style="padding-left: 10px;"><span
-                                                                    class="fs">From </span><input type="text"
-                                                                    name="specificFromYear" id="amount12" type="number"
-                                                                    class="form-control rageinput" value="1245"></div>
-                                                            <div
-                                                                class="col-md-6 text-right float-end align-items-right">
-                                                                <span class="fsfs">To </span><input type="text"
-                                                                    name="specificToYear" id="amount12" type="number"
-                                                                    class="form-control rageinput" value="2000">
+                                                    <div class="row search-top-div">
+                                                        <div class="inputGroup col-md-6">
+                                                            <label class="adlebel mb-2">Keyword</label>
+                                                            <input type="text" class="form-control" id="exampleInputEmail-20" aria-describedby="emailHelp" placeholder="Type here">
+                                                        </div>
+                                                        <div class=" buttonadvancesearch">
+                                                            <div>
+                                                                <button class="resetbutton text-align-end">Reset</button>
+                                                                <button class="applybutton">Search</button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row search-top-div">
-                                                    <div class="inputGroup col-md-6">
-                                                        <label class="adlebel mb-2">Keyword</label>
-                                                        <input type="text" class="form-control" id="exampleInputEmail1"
-                                                            aria-describedby="emailHelp" placeholder="Type here">
-                                                    </div>
-                                                    <div class=" buttonadvancesearch">
-                                                        <div>
-                                                            <button class="resetbutton text-align-end">Reset</button>
-                                                            <button class="applybutton">Search</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </div>
-                                        </div>
-                                    </form>
-                                </li>
-                                <li>
-                                    <a href="#" id="" class="text-decoration-underline incresefont decrease">-A </a>
-                                </li>
-                                <li>
-                                    <a href="#" id="" class="text-decoration-underline incresefont">A </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-decoration-underline increase-size increase">+A </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/color-change.png"> </a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/bell-icon.png"> </a>
-                                </li>
-                                <li class="deskstop-lang">
-                                    <div class="dropdown dropdown-li">
-                                        <button class="textlanguage  dropdown-toggle" type="button"
-                                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        </form>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="" class="text-decoration-underline incresefont decrease">-A </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="" class="text-decoration-underline incresefont">A </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-decoration-underline increase-size increase">+A </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/color-change.png"> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/bell-icon.png"> </a>
+                                    </li>
+                                    <li class="deskstop-lang">
+                                        <div class="dropdown dropdown-li">
+                                            <button class="textlanguage  dropdown-toggle" type="button" id="dropdownMenuButton-1" data-bs-toggle="dropdown" aria-expanded="false">
                                             ENG
                                         </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item" href="#">English</a></li>
-                                            <li><a class="dropdown-item" href="#">Hindi</a></li>
-                                            <li><a class="dropdown-item" href="#">Marathi</a></li>
-                                        </ul>
-                                </li>
-                                <li class="text-login-text">
-                                    <a href="#">Welcome Admin</a>
-                                </li>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">English</a></li>
+                                                <li><a class="dropdown-item" href="#">Hindi</a></li>
+                                                <li><a class="dropdown-item" href="#">Marathi</a></li>
+                                            </ul>
+                                    </li>
+                                    <li class="text-login-text">
+                                        <a href="#">Welcome Admin</a>
+                                    </li>
                         </ul>
                         <ul class="accordion-menu">
                             <li>
@@ -354,255 +328,273 @@
                                     <li><a href="../My-Labrary.html">My Library</a></li>
                                     <li><a href="account-seiing-lib-Selected-Tag.html">My Tags</a></li>
                                     <li>
-                                    <li><a href="admin/account-setting-lib-collection.html">My Favourite</a>
-                                    </li>
-                                    <li><a href="#">Scholar Section</a><span class="new">New</span></li>
-                                    <li><a href="../plan-visit.html">Plan your visit to NAI</a><span
-                                            class="new">New</span></li>
+                                        <li><a href="admin/account-setting-lib-collection.html">My Favourite</a>
+                                        </li>
+                                        <li><a href="#">Scholar Section</a><span class="new">New</span></li>
+                                        <li><a href="../plan-visit.html">Plan your visit to NAI</a><span class="new">New</span></li>
                                 </ul>
-                            </li>
-                            <li>
-                                <div class="dropdownlink"> About Us
-                                    <i class="fa fa-sort-desc" aria-hidden="true"></i>
-                                </div>
-                                <ul class="submenuItems">
-                                    <li><a href="about-us.html">About Us</a></li>
-                                    <li><a href="#">Associated Repository</a></li>
-                                    <li><a href="benifits.html">Benefits</a></li>
-                                    <li><a href="mylibrary-collection.html">Mylibrary Collection</a></li>
-                                    <li><a href="#">Tips</a></li>
-                                    <li><a href="../faq.html">FAQ</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div class="dropdownlink">Account
-                                    <i class="fa fa-sort-desc" aria-hidden="true"></i>
-                                </div>
-                                <ul class="submenuItems">
-                                    <li><a href="account-setting-user-admin.html">My Account</a></li>
-                                    <li>
-                                        <a href="">Admin Panel</a>
-                                    </li>
-                                    <li><a href="upload.html">Upload</a></li>
-                                    <li><a href="records-awaiting-verification-new.html">Records Awaiting
+                                </li>
+                                <li>
+                                    <div class="dropdownlink"> About Us
+                                        <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="submenuItems">
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="#">Associated Repository</a></li>
+                                        <li><a href="benifits.html">Benefits</a></li>
+                                        <li><a href="mylibrary-collection.html">Mylibrary Collection</a></li>
+                                        <li><a href="#">Tips</a></li>
+                                        <li><a href="../faq.html">FAQ</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="dropdownlink">Account
+                                        <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="submenuItems">
+                                        <li><a href="account-setting-user-admin.html">My Account</a></li>
+                                        <li>
+                                            <a href="">Admin Panel</a>
+                                        </li>
+                                        <li><a href="upload.html">Upload</a></li>
+                                        <li><a href="records-awaiting-verification-new.html">Records Awaiting
                                             Verification</a></li>
-                                    <li><a href="#">Logout</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div class="dropdownlink">Contact Us
-                                    <i class="fa fa-sort-desc" aria-hidden="true"></i>
-                                </div>
-                                <ul class="submenuItems">
-                                    <li><a href="#">Action 1</a></li>
-                                    <li><a href="#">Action 2</a></li>
-                                    <li><a href="#">Action 3</a></li>
-                                </ul>
-                            </li>
+                                        <li><a href="#">Logout</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="dropdownlink">Contact Us
+                                        <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="submenuItems">
+                                        <li><a href="#">Action 1</a></li>
+                                        <li><a href="#">Action 2</a></li>
+                                        <li><a href="#">Action 3</a></li>
+                                    </ul>
+                                </li>
                         </ul>
-                    </div>
-                </div>
-                <div class="nav-item fontstyle">
-                    <a class="nav-link text-color login-text" href="#">Welcome Admin</a>
-                </div>
-                <div class="nav-item dropdown dropdown-mega position-static demo-dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                        data-bs-auto-close="outside"><img src="images/menu-icon.png" /></a>
-                    <div class="dropdown-menu shadow megahmenudrop m-2">
-                        <div class="mega-content px-4">
-                            <div class="container">
-                                <div class="row row-cols-5">
-                                    <div class="flex-item col1">
-                                        <h5 class="">Explore</h5>
-                                        <ul class="meghamenuli">
-                                            <li><a href="grid-view.html"> Explore</a><span class="new">New</span></li>
-                                            <li><a href="grid-view.html">Collection</a></li>
-                                            <li><a href="nexus-search.html">Nexus</a><span class="new">New</span></li>
-                                            <li><a href="#">Events</a></li>
-                                            <li><a href="#">Exhibitions</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="flex-item col2">
-                                        <h5>My Library</h5>
-                                        <ul class="meghamenuli">
-                                            <li><a href="My-Labrary.html">My Library</a></li>
-                                            <li><a href="admin/account-seiing-lib-Selected-Tag.html">My Tags</a></li>
-                                            <li><a href="admin/account-setting-lib-collection.html">My Favourite</a>
-                                            </li>
-                                            <li><a href="#">Scholar Section</a> <span class="new">New</span></li>
-                                            <li><a href="plan-visit.html">Plan your visit to NAI</a><span
-                                                    class="new">New</span> </li>
-                                        </ul>
-                                    </div>
-                                    <div class="flex-item col3">
-                                        <h5>About Us</h5>
-                                        <ul class="meghamenuli">
-                                            <li><a href="about-us.html">About Us</a></li>
-                                            <li><a href="#">Associated Repository</a></li>
-                                            <li><a href="benifits.html">Benefits</a></li>
-                                            <li><a href="#">Tips</a></li>
-                                            <li><a href="faq.html">FAQ</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="flex-item col4">
-                                        <h5>Account</h5>
-                                        <ul class="meghamenuli">
-                                            <li><a href="admin/account-setting-user-admin.html">My Account</a></li>
-                                            <li>
-                                                <a href="admin/collections.html">Admin Panel</a>
-                                            </li>
-                                            <li><a href="admin/upload.html">Upload</a></li>
-                                            <li><a href="admin/records-awaiting-verification-new.html">Records Awaiting
+                        </div>
+                        </div>
+                        <div class="nav-item fontstyle">
+                            <a class="nav-link text-color login-text" href="#">Welcome Admin</a>
+                        </div>
+                        <div class="nav-item dropdown dropdown-mega position-static demo-dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"><img src="images/menu-icon.png" /></a>
+                            <div class="dropdown-menu shadow megahmenudrop m-2">
+                                <div class="mega-content px-4">
+                                    <div class="container">
+                                        <div class="row row-cols-5">
+                                            <div class="flex-item col1">
+                                                <h5 class="">Explore</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="grid-view.html"> Explore</a><span class="new">New</span></li>
+                                                    <li><a href="grid-view.html">Collection</a></li>
+                                                    <li><a href="nexus-search.html">Nexus</a><span class="new">New</span></li>
+                                                    <li><a href="#">Events</a></li>
+                                                    <li><a href="#">Exhibitions</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item col2">
+                                                <h5>My Library</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="My-Labrary.html">My Library</a></li>
+                                                    <li><a href="admin/account-seiing-lib-Selected-Tag.html">My Tags</a></li>
+                                                    <li><a href="admin/account-setting-lib-collection.html">My Favourite</a>
+                                                    </li>
+                                                    <li><a href="#">Scholar Section</a> <span class="new">New</span></li>
+                                                    <li><a href="plan-visit.html">Plan your visit to NAI</a><span class="new">New</span> </li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item col3">
+                                                <h5>About Us</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="about-us.html">About Us</a></li>
+                                                    <li><a href="#">Associated Repository</a></li>
+                                                    <li><a href="benifits.html">Benefits</a></li>
+                                                    <li><a href="#">Tips</a></li>
+                                                    <li><a href="faq.html">FAQ</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item col4">
+                                                <h5>Account</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="admin/account-setting-user-admin.html">My Account</a></li>
+                                                    <li>
+                                                        <a href="admin/collections.html">Admin Panel</a>
+                                                    </li>
+                                                    <li><a href="admin/upload.html">Upload</a></li>
+                                                    <li><a href="admin/records-awaiting-verification-new.html">Records Awaiting
                                                     Verification</a></li>
-                                            <li><a href="#">Logout</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="flex-item col5">
-                                        <h5>Contact Us</h5>
-                                        <ul class="meghamenuli">
-                                            <li><a href="#">Contact Us</a></li>
-                                            <li><a href="#">Help</a></li>
-                                        </ul>
+                                                    <li><a href="#">Logout</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex-item col5">
+                                                <h5>Contact Us</h5>
+                                                <ul class="meghamenuli">
+                                                    <li><a href="#">Contact Us</a></li>
+                                                    <li><a href="#">Help</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                        </div>
         </nav>
     </header>
 
     <!-- PLAN VISIT PAGE START  -->
-    <section class="select-multiselectoption">
-        <div class="container pt-5 px-auto mt-4">
+    <section class="select-multiselectoption pb-5 bg-color-gray2">
+        <div class="container pt-md-5 px-auto mt-md-4">
             <div class="plan-visit">
-                <P class=" planvisit  mb-4">Plan your visit to NAI</P>
+                <p class=" planvisit  mb-4">Plan your visit to NAI</p>
             </div>
             <div class="row m-md-4">
                 <div class="col-md-6 px-lg-5">
-                    <P class="mb-5 p-details">Personal Details :</P>
-                    <div class="mb-3 row">
-                        <label for="inputlocation" class="col-md-4 col-form-label">Prefix :</label>
-                        <div class="col-md-7">
-                            <select class="form-select selectinput" aria-label="Default select example">
+                    <p class="mb-5 p-details">Personal Details :</p>
+                    <div class="row">
+                        <div class="mb-3">
+                            <div class="row">
+                                <label for="inputlocation" class="col-md-4 col-form-label">Prefix :</label>
+                                <div class="col-md-7">
+                                    <select class="form-select selectinput">
                                 <option selected> -Select-</option>
                                 <option value="1">New Delhi</option>
                                 <option value="2">BHUBANESWAR</option>
                                 <option value="3">BHOPAL</option>
                                 <option value="3">PUNE</option>
                             </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="row">
+                                <label for="staticName-1" class="col-md-4 col-form-label">Full Name :</label>
+                                <div class="col-md-7">
+                                    <input type="name" class="form-control logininput" id="staticName-1" value="" title="name.">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="row">
+                                <label for="staticName-2" class="col-md-4 col-form-label">Father’s/ Husbands Name. :</label>
+                                <div class="col-md-7">
+                                    <input type="name" class="form-control logininput " id="staticName-2" value="" title="name.">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 ">
+                            <div class="row">
+                                <label for="staticbirth" class="col-md-4 col-form-label">Date of Birth :</label>
+                                <div class="col-md-7">
+                                    <input type="date" class="date form-control logininput " data-date-format="mm-dd-yyyy" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 ">
+                            <div class="row">
+                                <label for="inputQualification" class="col-md-4  col-form-label">Qualification :</label>
+                                <div class="col-md-7">
+                                    <input type="Qualification" class="form-control logininput " id="staticQualification" value="" title="Qualification">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 ">
+                            <div class="row">
+                                <label for="inputCountry" class="col-md-4  col-form-label">Nationality :</label>
+                                <div class="col-md-7">
+                                    <input type="country" class="form-control logininput" id="staticcountry" value="" title="country">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 ">
+                            <div class="row">
+                                <label for="staticemail" class="col-md-4 col-form-label">Email Id :</label>
+                                <div class="col-md-7">
+                                    <input type="email" class="form-control logininput " id="staticemail" value="" title="email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 ">
+                            <div class="row">
+                                <label for="staticPhone" class="col-md-4 col-form-label">Mobile Number :</label>
+                                <div class="col-md-7">
+                                    <input name="Phone" type="Phone no" class="form-control logininput" id="staticPhone " placeholder="" title="Phone no.">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 ">
+                            <div class="row">
+                                <label for="exampleFormControlTextarea1" class="col-md-4 col-form-label">Address (local) :</label>
+                                <div class="col-md-7">
+                                    <textarea class="form-control rounded-3" id="exampleFormControlTextarea1" rows="3" style="background: none;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 ">
+                            <div class="row">
+                                <label for="exampleFormControlTextarea" class="col-md-4 col-form-label">Address (Permanant) :</label>
+                                <div class="col-md-7">
+                                    <textarea class="form-control rounded-3" id="exampleFormControlTextarea" rows="3" style="background: none;"></textarea>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="mb-3 row">
-                        <label for="staticName" class="col-md-4 col-form-label">Full Name :</label>
-                        <div class="col-md-7">
-                            <input type="name" class="form-control logininput" id="staticName" value="" title="name.">
-                        </div>
-                    </div>
-                    <div class="mb-3 row">
-                        <label for="staticName" class="col-md-4 col-form-label">Father’s/ Husbands Name. :</label>
-                        <div class="col-md-7">
-                            <input type="name" class="form-control logininput " id="staticName" value="" title="name.">
-                        </div>
-                    </div>
-                    <div class="mb-3 row">
-                        <label for="staticbirth" class="col-md-4 col-form-label">Date of Birth :</label>
-                        <div class="col-md-7">
-                            <input type="date" class="date form-control logininput "
-                                data-date-format="mm-dd-yyyy" />
-                        </div>
-                    </div>
-                    <div class="mb-3 row">
-                        <label for="inputQualification" class="col-md-4  col-form-label">Qualification :</label>
-                        <div class="col-md-7">
-                            <input type="Qualification" class="form-control logininput " id="staticQualification"
-                                value="" title="Qualification">
-                        </div>
-                    </div>
-                    <div class="mb-3 row">
-                        <label for="inputCountry" class="col-md-4  col-form-label">Nationality :</label>
-                        <div class="col-md-7">
-                            <input type="country" class="form-control logininput" id="staticcountry" value=""
-                                title="country">
-                        </div>
-                    </div>
-                    <div class="mb-3 row">
-                        <label for="staticName" class="col-md-4 col-form-label">Email Id :</label>
-                        <div class="col-md-7">
-                            <input type="email" class="form-control logininput " id="staticemail" value=""
-                                title="email">
-                        </div>
-                    </div>
-                    <div class="mb-3 row">
-                        <label for="staticName" class="col-md-4 col-form-label">Mobile Number :</label>
-                        <div class="col-md-7">
-                            <input name="Phone" type="Phone no" class="form-control logininput" id="staticPhone "
-                                placeholder="" title="Phone no.">
-                        </div>
-                    </div>
-                    <div class="mb-3 row">
-                        <label for="staticName" class="col-md-4 col-form-label">Address (local) :</label>
-                        <div class="col-md-7">
-                            <textarea class="form-control rounded-3" id="exampleFormControlTextarea1" rows="3"
-                                style="background: none;"></textarea>
-                        </div>
-                    </div>
-                    <div class="mb-3 row">
-                        <label for="staticName" class="col-md-4 col-form-label">Address (Permanant) :</label>
-                        <div class="col-md-7">
-                            <textarea class="form-control rounded-3" id="exampleFormControlTextarea" rows="3"
-                                style="background: none;"></textarea>
-                        </div>
-                    </div>
+
                 </div>
 
                 <div class="col-md-6 px-lg-5">
-                    <P class="mb-5 p-details">Professional Details :</P>
-                    <div class="mb-3 row">
-                        <label for="inputCountry" class="col-md-4 col-form-label">Profession :</label>
-                        <div class="col-md-7">
-                            <input type="text" class="form-control logininput " id="staticName" value="">
+                    <p class="mb-5 p-details">Professional Details :</p>
+                    <div class="mb-3 ">
+                        <div class="row">
+                            <label for="inputCountry" class="col-md-4 col-form-label">Profession :</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control logininput " id="inputCountry" value="">
+                            </div>
                         </div>
                     </div>
-                    <div class="mb-3 row">
-                        <label for="inputCountry" class="col-md-4 col-form-label">Subject of Research:</label>
-                        <div class="col-md-7">
-                            <input type="text" class="form-control logininput " id="staticName" value="">
+                    <div class="mb-3">
+                        <div class="row">
+                            <label for="inputCountry-1" class="col-md-4 col-form-label">Subject of Research:</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control logininput " id="inputCountry-1" value="">
+                            </div>
                         </div>
                     </div>
-                    <div class="mb-3 row">
-                        <label for="inputCountry" class="col-md-4 col-form-label">University/ Institute Registered
+                    <div class="mb-3 ">
+                        <div class="row">
+                            <label for="inputCountry-2" class="col-md-4 col-form-label">University/ Institute Registered
                             with:</label>
-                        <div class="col-md-7">
-                            <input type="text" class="form-control logininput " id="staticName" value="">
+                            <div class="col-md-7">
+                                <input type="text" class="form-control logininput " id="inputCountry-2" value="">
+                            </div>
                         </div>
                     </div>
-                    <div class="mb-3 row  borderstyle pb-4 ">
-                        <label for="inputCountry" class="col-md-4 col-form-label">Period for which admission is
+                    <div class="mb-3  borderstyle pb-4 ">
+                        <div class="row">
+                            <label for="inputCountry-3" class="col-md-4 col-form-label">Period for which admission is
                             sought:</label>
-                        <div class="col-md-7">
-                            <input type="text" class="form-control logininput " id="staticName" value="">
+                            <div class="col-md-7">
+                                <input type="text" class="form-control logininput " id="inputCountry-3" value="">
+                            </div>
                         </div>
                     </div>
-                    <P class="mb-4 mt-5 p-details">Particulars of Records to be consulted:</P>
+                    <p class="mb-4 mt-5 p-details">Particulars of Records to be consulted:</p>
                     <div class="layoutdetails">
                         <form class="row g-3 m-2 formdetails">
                             <div class="col-md-4">
                                 <label for="validationDefault01" class="form-label">First name</label>
-                                <input type="text" class="form-control logininput" id="validationDefault01"
-                                    value="type here.." required>
+                                <input type="text" class="form-control logininput" id="validationDefault01" value="type here.." required>
                             </div>
                             <div class="col-md-4">
                                 <label for="validationDefault02" class="form-label">Period</label>
-                                <input type="text" class="form-control logininput" id="validationDefault02"
-                                    value="type here.." required>
+                                <input type="text" class="form-control logininput" id="validationDefault02" value="type here.." required>
                             </div>
                             <div class="col-md-4">
                                 <label for="validationDefaultUsername" class="form-label">Remark</label>
                                 <div class="input-group">
-                                    <input type="text" class="form-control logininput" id="validationDefaultUsername"
-                                        value="type here.." aria-describedby="inputGroupPrepend2" required>
+                                    <input type="text" class="form-control logininput" id="validationDefaultUsername" value="type here.." aria-describedby="inputGroupPrepend2" required>
                                 </div>
                             </div>
                             <div class="col-12 pb-4">
@@ -610,26 +602,20 @@
                             </div>
                         </form>
                     </div>
-                    <P class="scholars mt-4 ">*Scholars are requested to attach a letter of recommendation from their
-                        University/ Institute/Department. However, the foreign scholars are requested to broing a letter
-                        of accreditation from the diplomatic representatives of their
-                        country in India as well.</P>
+                    <p class="scholars mt-4 ">*Scholars are requested to attach a letter of recommendation from their University/ Institute/Department. However, the foreign scholars are requested to broing a letter of accreditation from the diplomatic representatives of their
+                        country in India as well.</p>
                     <fieldset class="upload_dropZone text-center mb-3 p-4">
                         <legend class="visually-hidden">Image uploader</legend>
                         <svg class="upload_svg" width="60" height="2px" aria-hidden="true">
                             <use href="#icon-imageUpload"></use>
                         </svg>
                         <p class="small my-2"> Drag and drop files here orDrag</p>
-                        <input id="upload_image_background" data-post-name="image_background"
-                            data-post-url="https://someplace.com/image/uploads/backgrounds/"
-                            class="position-absolute invisible" type="file" multiple
-                            accept="image/jpeg, image/png, image/svg+xml" />
+                        <input id="upload_image_background" data-post-name="image_background" data-post-url="https://someplace.com/image/uploads/backgrounds/" class="pos invisible" type="file" multiple accept="image/jpeg, image/png, image/svg+xml" />
                         <label class="btn btn-upload mb-3" for="upload_image_background">Browse Document</label>
                         <div class="upload_gallery d-flex flex-wrap justify-content-center gap-3 mb-0"></div>
                     </fieldset>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-2">
-                        <button class="btn btn-primary next  btn-btnstart" data-bs-target="#exampleModalplan"
-                            data-bs-toggle="modal">Next
+                        <button class="btn btn-primary next  btn-btnstart" data-bs-target="#exampleModalplan" data-bs-toggle="modal">Next
                         </button>
                     </div>
                 </div>
@@ -639,24 +625,19 @@
     <!-- PLAN VISIT PAGE END  -->
 
     <!-- Button trigger modal -->
-    <div class="modal fade mt-5" id="exampleModalplan" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade mt-5" id="exampleModalplan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog mt-5">
             <div class="modal-content">
                 <div class="modal-header modelhead text-center bg-order">
                     <h5 class="modal-title modelbtnheads text-center ">Visitors Pass</h5>
                     <p class="eee-image">
                         <a href="javascript:void(0)" class="eee-image--click eee-image__link">
-                            <img class="eee-image__image" src="images/sharebutton.png" class="" alt="..." height=""
-                                width="">
+                            <img class="eee-image__image" src="images/sharebutton.png" alt="sharebutton" height="" width="">
                         </a>
-                    <div class="eee-image__dropdown">
-                        <a class="eee-image__dropdown-link"
-                            href="https://cdn0.vox-cdn.com/thumbor/FhcChfRMtaB3GugSo3WVILhgAvE=/cdn0.vox-cdn.com/uploads/chorus_asset/file/4316999/SamuraiJack.0.gif"
-                            data-lightbox="image-1" data-title="Samurai Jack is back"></a>
-                        <a class="eee-image__dropdown-link" href="#">Send to Email </a>
-                        <a class="eee-image__dropdown-link" href="#">Save</a>
-                    </div>
+                        <div class="eee-image__dropdown">
+                            <a class="eee-image__dropdown-link" href="#">Send to Email </a>
+                            <a class="eee-image__dropdown-link" href="#">Save as PDF</a>
+                        </div>
                     </p>
                 </div>
                 <div class="modal-body">
@@ -671,65 +652,55 @@
                         </div>
                     </div>
                     <div class="row m-4">
-                        <div class="col-md-6 stylelb">
+                        <div class="col-md-6 col-6 stylelb">
                             <form action="" method="post" class="stylelb" name="signupForm" id="signupForm">
                                 <div class=" mb-2 col-md-12 col-lg-12 col-12">
 
                                     <label for="exampleInputname" class="form-label stylelb margin-off">Full Name
                                     </label>
-                                    <input type="name" class="form-control modelpop margin-off" id="exampleInputname"
-                                        value="Syed Shahnawaz Zaidi" aria-describedby="Name">
+                                    <input type="name" class="form-control modelpop margin-off" id="exampleInputname" value="Syed Shahnawaz Zaidi" aria-describedby="Name">
                                 </div>
                                 <div class="mb-2 col-md-12 col-lg-12 col-12">
-                                    <label for="exampleInputname" class="form-label stylelb">Nationality</label>
-                                    <input type="name" class="form-control modelpop" id="exampleInputEmail1"
-                                        value="Indian" aria-describedby="emailHelp">
+                                    <label for="exampleInputname-1" class="form-label stylelb">Nationality</label>
+                                    <input type="name" class="form-control modelpop" id="exampleInputname-1" value="Indian" aria-describedby="emailHelp">
                                 </div>
                                 <div class="mb-2 col-md-12 col-lg-12 col-12">
-                                    <label for="exampleInputEmail1" class="form-label stylelb ">Email ID </label>
-                                    <input type="email" class="form-control modelpop" id="exampleInputEmail1" type="..."
-                                        value="syed@cloudmojo.tech ">
+                                    <label for="exampleInputname-2" class="form-label stylelb ">Email ID </label>
+                                    <input type="email" class="form-control modelpop" id="exampleInputname-2" value="syed@cloudmojo.tech">
 
                                 </div>
                                 <div class="mb-2 col-md-12 col-lg-12 col-12">
-                                    <label for="exampleInputname" class="form-label stylelb">Company</label>
-                                    <input type="name" class="form-control modelpop" id="exampleInputEmail1"
-                                        value="Cloudmojo" aria-describedby="emailHelp">
+                                    <label for="exampleInputname-3" class="form-label stylelb">Company</label>
+                                    <input type="name" class="form-control modelpop" id="exampleInputname-3" value="Cloudmojo" aria-describedby="emailHelp">
                                 </div>
                                 <div class="mb-2 col-md-12 col-lg-12 col-12">
-                                    <label for="exampleInputname" class="form-label stylelb">Valid From</label>
-                                    <input type="name" class="form-control modelpop" id="exampleInputEmail1"
-                                        value="28-08-2023" aria-describedby="emailHelp">
+                                    <label for="exampleInputname-4" class="form-label stylelb">Valid From</label>
+                                    <input type="name" class="form-control modelpop" id="exampleInputname-4" value="28-08-2023" aria-describedby="emailHelp">
                                 </div>
                             </form>
                         </div>
 
-                        <div class="col-md-6 sidepadding-off">
-                            <form action="" method="post" class="stylelb" name="signupForm" id="signupForm"></form>
+                        <div class="col-md-6  col-6 sidepadding-off">
+                            <form action="" method="post" class="stylelb" name="signupForm" id="signupForm-1">
                                 <div class=" mb-2 col-md-12 col-lg-12 col-12">
-                                    <label for="exampleInputEmail1" class="form-label stylelb">AGE</label>
-                                    <input type="email" class="form-control modelpop" id="exampleInputEmail1" value="32"
-                                        aria-describedby="emailHelp">
+                                    <label for="exampleInputname-5" class="form-label stylelb">AGE</label>
+                                    <input type="email" class="form-control modelpop" id="exampleInputname-5" value="32" aria-describedby="emailHelp">
                                 </div>
                                 <div class="mb-2 col-md-12 col-lg-12 col-12 ">
-                                    <label for="exampleInputEmail1" class="form-label stylelb">ID Proof</label>
-                                    <input type="email" class="form-control modelpop" id="exampleInputEmail1"
-                                        value="Passport" aria-describedby="emailHelp">
+                                    <label for="exampleInputname-6" class="form-label stylelb">ID Proof</label>
+                                    <input type="email" class="form-control modelpop" id="exampleInputname-6" value="Passport" aria-describedby="emailHelp">
                                 </div>
                                 <div class=" mb-2 col-md-12 col-lg-12 col-12">
-                                    <label for="exampleInputEmail1" class="form-label stylelb">Mobile Number </label>
-                                    <input type="email" class="form-control modelpop" id="exampleInputEmail1"
-                                        value="82910 28322" aria-describedby="emailHelp">
+                                    <label for="exampleInputname-7" class="form-label stylelb">Mobile Number </label>
+                                    <input type="email" class="form-control modelpop" id="exampleInputname-7" value="82910 28322" aria-describedby="emailHelp">
                                 </div>
                                 <div class=" mb-2 col-md-12 col-lg-12 col-12">
-                                    <label for="exampleInputEmail1" class="form-label stylelb">Profession</label>
-                                    <input type="email" class="form-control modelpop" id="exampleInputEmail1"
-                                        value="Journalist" aria-describedby="emailHelp">
+                                    <label for="exampleInputname-8" class="form-label stylelb">Profession</label>
+                                    <input type="email" class="form-control modelpop" id="exampleInputname-8" value="Journalist" aria-describedby="emailHelp">
                                 </div>
                                 <div class="mb-2 col-md-12 col-lg-12 col-12">
-                                    <label for="exampleInputname" class="form-label stylelb">Valid From</label>
-                                    <input type="name" class="form-control modelpop" id="exampleInputEmail1"
-                                        value="28-08-2023" aria-describedby="emailHelp">
+                                    <label for="exampleInputname-9" class="form-label stylelb">Valid From</label>
+                                    <input type="name" class="form-control modelpop" id="exampleInputname-9" value="28-08-2023" aria-describedby="emailHelp">
                                 </div>
                             </form>
                         </div>
@@ -739,6 +710,14 @@
         </div>
     </div>
 
+    <!-- Button trigger modal  end-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.bxslider.min.js "></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
     <script type="text/javascript">
         $('.date').datepicker({
             format: 'dd-mm-yyyy'
@@ -748,7 +727,7 @@
         var dropdownWrapper = $('.eee-image__dropdown');
         dropdownWrapper.hide();
 
-        $('.eee-image--click').on('click', function (e) {
+        $('.eee-image--click').on('click', function(e) {
 
             var self = $(this);
             var dropdownMenu = self.parent().next('.eee-image__dropdown');
@@ -759,7 +738,7 @@
         });
 
         // Hide menu on click outside of the image
-        $(document).click(function (event) {
+        $(document).click(function(event) {
             if (!$(event.target).closest('.eee-image--click').length) {
                 if ($('.eee-image__dropdown').is(":visible")) {
                     $('.eee-image__dropdown').hide();
@@ -767,17 +746,6 @@
             }
         })
     </script>
-    <!-- Button trigger modal  end-->
-    <script src="js/jquery.min.js"></script>
+</body>
 
-
-
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/jquery.bxslider.min.js "></script>
-
-    <script src="js/custom.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/jquery-ui.js"></script>
-
-    </script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+</html>

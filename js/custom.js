@@ -1,6 +1,40 @@
 // image gallery
 
+<<<<<<< HEAD
 //closed
+=======
+
+$(document).ready(function() {
+
+
+    $(".filter-button").click(function() {
+
+        var value = $(this).attr('data-filter');
+        //alert(value);
+        if (value == "all") {
+            $('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+
+        } else {
+
+            $(".filter").not('.' + value).hide('3000');
+            $('.filter').filter('.' + value).show('3000');
+
+        }
+    });
+
+
+
+});
+
+$('.filter-button').click(function() {
+        var $this = $(this);
+        $('.filter-button').removeClass('active-12');
+        $(this).addClass('active-12');
+
+    })
+    //closed
+>>>>>>> 03c23db9de820c20e4758f767a29ad06214ca802
 
 $(document).ready(function () {
   $("#nav")
@@ -49,8 +83,28 @@ $(document).ready(function () {
   });
 });
 //tabs
+<<<<<<< HEAD
 $(document).ready(function () {
   console.log("document ready");
+=======
+
+
+$(document).ready(function() {
+    $(".admin-panel").on("click", function() {
+
+        $(".menu-open").slideToggle("open-panel");
+        $(".admin-panel").toggleClass("rotateIcon");
+
+
+    })
+
+})
+
+
+
+$(document).ready(function() {
+    console.log("document ready");
+>>>>>>> 03c23db9de820c20e4758f767a29ad06214ca802
 
   const labels = document.querySelectorAll(".accordion-item__label");
   const tabs = document.querySelectorAll(".accordion-tab");

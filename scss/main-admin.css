@@ -11578,6 +11578,7 @@ body,
 html {
   padding: 0;
   margin: 0;
+  height: auto;
   background-color: #F5F5F5;
   font-family: "Raleway", sans-serif !important;
   background-color: #eaeaea;
@@ -11637,6 +11638,11 @@ img {
 .btn.show {
   color: #73081C !important;
   background-color: transparent;
+}
+
+.device-manage-action .btn {
+  color: #fff !important;
+  background-color: #73081C;
 }
 
 .ul-menu-list ul li {
@@ -12190,6 +12196,7 @@ img {
 .bgcolor {
   background-color: #F8F8F8;
   padding-left: 10px;
+  padding-top: 20px !important;
   padding-bottom: 20px;
 }
 
@@ -12259,6 +12266,8 @@ img {
   line-height: 19px;
   letter-spacing: 0em;
   color: #676767;
+  display: flex;
+  justify-content: space-between;
 }
 
 .bg-order.border-bottom .active {
@@ -12307,8 +12316,12 @@ img {
   color: #676767 !important;
 }
 
+.right-panel {
+  margin-bottom: 34px;
+}
+
 .Scholar-p {
-  margin-left: 55px;
+  margin-left: 15px;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -12316,6 +12329,9 @@ img {
   letter-spacing: 0em;
   text-align: left;
   color: #676766;
+}
+.Scholar-p p {
+  margin-bottom: 0;
 }
 
 .fw {
@@ -12336,7 +12352,7 @@ img {
   letter-spacing: 0em;
   text-align: left;
   color: #A54141;
-  margin-top: -11px;
+  margin-top: 0;
 }
 
 .bg-order {
@@ -12347,7 +12363,7 @@ img {
 .my-laptop {
   background: url("../images/my-laptops.png") no-repeat;
   width: 56px;
-  height: 45px;
+  height: 70px;
   display: block;
   float: left;
   margin-right: 15px;
@@ -12390,7 +12406,7 @@ img {
   font-family: "Raleway", sans-serif !important;
   font-size: 16px;
   font-weight: 500;
-  line-height: 19px;
+  line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
   color: #676767;
@@ -12408,6 +12424,23 @@ img {
   color: #73081C !important;
 }
 
+.btn .btn:focus .btn.active {
+  outline: none !important;
+}
+
+.productInline .btn:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: #FFF !important;
+  border-color: #FFF;
+}
+
+.search-bar-favourites .form-select {
+  border: 1px solid #B4B4B4;
+  max-width: 74px;
+  border-radius: 23px;
+  padding: 6px 9px;
+}
+
 .btn.btn.dropdown-toggle {
   font-family: "Raleway", sans-serif !important;
   font-size: 16px;
@@ -12415,8 +12448,13 @@ img {
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
-  color: #ACACAC;
-  border-bottom: 2PX solid #ACACAC;
+  margin-right: 10px;
+  color: #676767;
+  border-bottom: 0PX solid #ACACAC;
+}
+
+.libcollection a {
+  color: #2D2D2D !important;
 }
 
 .activeorder {
@@ -12576,7 +12614,8 @@ img {
   line-height: 21px;
   letter-spacing: 0em;
   text-align: left;
-  margin-top: -24px;
+  margin-top: 7px;
+  margin-bottom: 3px !important;
 }
 
 .p-tittle {
@@ -12591,11 +12630,11 @@ img {
 .viewimg {
   width: 37px;
   height: 37px;
-  left: 16px;
+  left: 9px;
   border-radius: 8px;
+  bottom: 10px;
   background: #FFFFFF;
-  position: relative;
-  top: -57px !important;
+  position: absolute;
   text-align: center;
 }
 
@@ -12621,7 +12660,9 @@ img {
   line-height: 21px;
   letter-spacing: 0em;
   text-align: left;
+  max-width: 200px;
   color: #676766;
+  width: 100%;
 }
 
 .search-img {
@@ -12650,13 +12691,38 @@ img {
   border-width: 0px, 0px, 0px, 0px;
   border-color: #676767;
   border-radius: 22px;
+  padding-left: 45px;
 }
 
 .searchicone {
-  border-top-left-radius: 22px;
-  border-bottom-left-radius: 22px;
-  border-color: #676767;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-color: transparent;
   border-right: 0px;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 0px;
+  background: none;
+  border: 0;
+  padding: 8px 9px;
+  padding-left: 15px;
+}
+
+.ul-border {
+  border-bottom: 1px solid #BCBCBC !important;
+}
+
+.modelTop {
+  margin-top: 197px;
+}
+
+.showEntries {
+  display: flex;
+  max-width: 210px;
+  width: 100%;
+  align-items: center;
 }
 
 [class^=item] {
@@ -12672,20 +12738,20 @@ img {
 }
 
 .item-4 {
-  float: right;
-  top: 25px !important;
+  top: -1px !important;
   width: 27px;
-  height: 27px;
-  position: relative;
-  border-radius: 50%;
+  height: 32px;
+  position: absolute;
+  border-radius: 53%;
   background-color: #FFF;
   transition: 0.3s ease-out;
   z-index: 9;
+  right: -1px;
 }
 .item-4:before, .item-4:after {
   content: "";
   position: absolute;
-  width: 70%;
+  width: 48%;
   height: 2px;
   background-color: #555555;
   left: 50%;
@@ -12696,10 +12762,6 @@ img {
 }
 .item-4:before {
   transform: translate(-50%, -50%) rotate(-45deg);
-}
-.item-4:hover, .item-4:focus {
-  transform: scale(1.15);
-  opacity: 1;
 }
 
 .modelbtnhead {
@@ -12919,12 +12981,6 @@ input:disabled {
   padding: 5px 29px 9px 20px;
 }
 
-.imgmember {
-  float: left;
-  margin-right: 10px;
-  margin-top: 20px;
-}
-
 .btn.btn-secondary {
   background: none;
   border: none;
@@ -13028,6 +13084,11 @@ input:disabled {
   margin: 0 0 1.5em;
 }
 
+.contact-us {
+  max-width: 556px;
+  width: 100%;
+}
+
 .updatenew {
   font-family: "Raleway", sans-serif !important;
   font-size: 24px;
@@ -13109,6 +13170,7 @@ input:disabled {
 
 .pbbuttom {
   padding-bottom: 36px !important;
+  margin-top: 0px;
 }
 
 .input-group.form-first {
@@ -13132,7 +13194,7 @@ input:disabled {
   font-weight: 500;
   line-height: 21px;
   letter-spacing: 0em;
-  color: #BCBCBC;
+  color: #676767;
   text-align: left;
 }
 
@@ -13205,6 +13267,7 @@ input:disabled {
   width: 26px;
   border-radius: 4px;
   background: #EAEAEA;
+  float: right;
 }
 
 .table tr {
@@ -13228,7 +13291,7 @@ input:disabled {
 .table th {
   background-color: #f8f8f8;
   border: none;
-  padding: 13px;
+  padding: 7px;
   text-transform: none;
   font-family: "Raleway", sans-serif !important;
   font-size: 16px;
@@ -14599,6 +14662,7 @@ ul#navMenus li.list-group-item.active .my-devices {
 .input-group-save input {
   border: 1px solid #ccc;
   padding: 7px 15px;
+  outline: none;
   border-radius: 50px;
 }
 
@@ -14663,8 +14727,10 @@ ul#navMenus li.list-group-item.active .my-devices {
 }
 
 .buttonmodelpop {
-  width: 233px;
-  margin: 0 auto;
+  width: 92%;
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: flex-end;
 }
 .buttonmodelpop .cancelbutton {
   background: none;
@@ -14674,6 +14740,7 @@ ul#navMenus li.list-group-item.active .my-devices {
   width: 114px;
   font-weight: 700;
   font-size: 16px;
+  margin-right: 12px;
   font-family: "Raleway", sans-serif !important;
 }
 .buttonmodelpop .deactivebutton {
@@ -14712,6 +14779,10 @@ ul#navMenus li.list-group-item.active .my-devices {
 
 .modal {
   border-radius: 0 !important;
+}
+
+.bg-gray {
+  background-color: #FFFFFF !important;
 }
 
 /*side panel admin css*/
@@ -14759,6 +14830,7 @@ table.dataTable tfoot th {
   padding: 10px 26px;
 }
 
+<<<<<<< HEAD
 .imgmember {
   float: left;
   margin-right: 10px;
@@ -14799,6 +14871,8 @@ table.dataTable tfoot th {
   color: #73081C;
 }
 
+=======
+>>>>>>> 03c23db9de820c20e4758f767a29ad06214ca802
 .btn.btn-secondary {
   background: none;
   border: none;
@@ -15465,6 +15539,10 @@ table.dataTable tfoot th {
 
 .right-content-dod {
   padding-top: 10px;
+}
+
+.footer-always-bottom {
+  min-height: 800px;
 }
 
 .paid-color {
@@ -16483,8 +16561,34 @@ option {
 }
 
 /*submenu closed*/
+.form-outline .form-control {
+  background-color: transparent;
+  font-family: "Raleway", sans-serif !important;
+  max-width: 480px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-outline .form-control {
+  min-height: 156px;
+}
+
+.selectBox {
+  background-color: transparent;
+  font-family: "Raleway", sans-serif !important;
+  max-width: 480px;
+  width: 100%;
+  font-size: 14px !important;
+  font-weight: 500;
+}
+
 .form-select {
   border: 1px solid #B4B4B4;
+}
+
+.contact-header-top {
+  margin-top: 35px !important;
 }
 
 .back-main {
@@ -16590,6 +16694,7 @@ option {
   padding-left: 1.5em;
   font-size: 1.4em;
   height: 18px;
+  border: 1px solid #f0f0f0;
 }
 
 #sortable li span {
@@ -16728,7 +16833,7 @@ option {
   .dataTables_wrapper {
     position: relative;
     clear: both;
-    overflow-x: scroll !important;
+    overflow-x: auto !important;
     width: 1600px !important;
   }
   .incresefont {
@@ -17065,6 +17170,9 @@ option {
   }
 }
 @media (max-width: 992px) {
+  .m-none-tab {
+    margin-right: 0 !important;
+  }
   .searchinput .form-control {
     font-size: 14px;
     background-color: transparent;
@@ -17194,6 +17302,20 @@ ul.ui-sortable li {
   width: 100%;
 }
 
+.statistics {
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+.statistics .static-img {
+  display: block;
+  align-self: center;
+}
+.statistics .static-img img {
+  height: 45px;
+  width: 45px;
+}
+
 .gallery_product {
   margin-bottom: 30px;
   width: 100%;
@@ -17209,17 +17331,102 @@ ul.ui-sortable li {
 }
 
 .search-bar-favourites {
-  margin: 20px 0px;
-  max-width: 235px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px 35px;
+  max-width: 100%;
   width: 100%;
 }
 .search-bar-favourites input {
   background-color: transparent !important;
 }
+.search-bar-favourites .searchBox {
+  position: relative;
+}
 
 .active-12 {
   color: #73081C;
   border-bottom: 1px solid #73081C !important;
+}
+
+.centerButton {
+  text-align: center;
+}
+
+.select-multiselectoption {
+  padding-top: 60px !important;
+}
+
+#sortable {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#sortable li {
+  margin: 10px 3px 10px 3px;
+  padding: 0;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-left: 0;
+  font-size: 1.4em;
+  height: 45px;
+  border-radius: 38px;
+  padding-top: 10px;
+  padding-right: 16px;
+  line-height: 23px;
+  font-size: 16px;
+  color: #434343;
+  width: 100%;
+  text-align: left;
+}
+
+.border-right-div {
+  height: 63px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 2px;
+  background-color: #ccc;
+}
+
+.padding-div {
+  padding: 10px 20px !important;
+  border: 1px solid #ccc;
+  text-align: right;
+  display: block;
+}
+
+.border-right-div {
+  height: 63px;
+  position: relative;
+  width: 2px;
+  background-color: #ccc;
+}
+
+#sortable li span {
+  position: absolute;
+  margin-left: -1.3em;
+}
+
+.accordian-mneu-button button {
+  display: none;
+}
+
+.table-collection table tr:last-child {
+  border: 0;
+}
+
+.grid-view-result-div {
+  padding-top: 0px;
+}
+
+.tearms-condition-pop {
+  max-width: 697px;
+  width: 100%;
 }
 
 @media (min-width: 1400px) {
@@ -17330,6 +17537,7 @@ ul.ui-sortable li {
 @media (min-width: 1200px) {
   .select-multiselectoption {
     padding-top: 90px;
+    margin-bottom: 90px !important;
   }
   .select-multiselectoption .closedIcon {
     background: url("../images/closed.png") no-repeat;
@@ -17368,7 +17576,6 @@ ul.ui-sortable li {
   .dataTables_wrapper {
     position: relative;
     clear: both;
-    overflow-x: scroll !important;
     width: 1600px !important;
   }
   .dataTables_scrollBody {
@@ -17997,6 +18204,76 @@ ul.ui-sortable li {
   }
 }
 @media (max-width: 767.98px) {
+  .line-height-device {
+    line-height: 20px;
+  }
+  .pbbuttom {
+    padding-bottom: 36px !important;
+    margin-top: 20px;
+  }
+  .border-right-div {
+    display: none;
+  }
+  .d-flex-box {
+    display: flex !important;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  .centerButton {
+    text-align: left;
+  }
+  .img-benifit img {
+    width: 134px !important;
+  }
+  .statistics {
+    margin-bottom: 20px;
+  }
+  .right-content {
+    padding-top: 15px !important;
+  }
+  .rotateIcon i {
+    transform: rotate(180deg);
+  }
+  .admin-panel {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 13px;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .admin-panel .account-setting {
+    margin: 0;
+  }
+  .accordian-mneu-button button {
+    display: block;
+    float: right;
+    background-color: none;
+    border: 0;
+    width: 40px;
+    font-size: 30px;
+    border: 0 !important;
+    background-color: transparent;
+  }
+  .open-panel {
+    display: none;
+  }
+  .menu-open {
+    display: none;
+  }
+  .pos {
+    position: relative;
+  }
+  .select-multiselectoption {
+    padding-top: 120px !important;
+  }
+  .search-bar-favourites .searchBox {
+    margin-bottom: 20px;
+  }
+  .search-bar-favourites {
+    display: block;
+  }
   .h-tittle {
     font-size: 16px;
   }
@@ -18344,8 +18621,6 @@ ul.ui-sortable li {
   .viewimg {
     width: 34px;
     height: 35px;
-    left: 9px;
-    top: -45px !important;
   }
   .gallery_product {
     gap: 20px;
