@@ -1,5 +1,21 @@
 "use strict";
 
+// image gallery
+//closed
+$(document).ready(function () {
+  $("#nav").children("li").first().children("a").addClass("active-1").next().addClass("is-open").show();
+  $("#nav").on("click", "li > a", function () {
+    if (!$(this).hasClass("active-1")) {
+      $("#nav .is-open").removeClass("is-open").hide();
+      $(this).next().toggleClass("is-open").toggle();
+      $("#nav").find(".active-1").removeClass("active-1");
+      $(this).addClass("active-1");
+    } else {
+      $("#nav .is-open").removeClass("is-open").hide();
+      $(this).removeClass("active-1");
+    }
+  });
+});
 jQuery("#eye").click(function () {
   if (jQuery(this).hasClass("fa-eye-slash")) {
     jQuery(this).removeClass("fa-eye-slash");
@@ -110,8 +126,8 @@ function bar_progress(progress_line_object, direction) {
 
 jQuery(document).ready(function () {
   /*
-        Fullscreen background
-    */
+          Fullscreen background
+      */
   // $.backstretch("assets/img/backgrounds/1.jpg");
   $("#top-navbar-1").on("shown.bs.collapse", function () {
     $.backstretch("resize");
@@ -120,8 +136,8 @@ jQuery(document).ready(function () {
     $.backstretch("resize");
   });
   /*
-        Form
-    */
+          Form
+      */
 
   $(".f1 fieldset:first").fadeIn("slow"); // $('.f1 input[type="text"], .f1 input[type="password"], .f1 textarea').on('focus', function() {
   // 	$(this).removeClass('input-error');
@@ -320,7 +336,11 @@ $(".list-view").click(function () {
 });
 $(".dropdown-menu").click(function (event) {
   event.stopPropagation();
-});
+}); // $(".closedinnerpop ").on("click", function() {
+//     $("#myModalnewtag").hide();
+//     $(".modal-backdrop").hide();
+// });
+
 $(function () {
   $("#slider-range").slider({
     // min: 1500,
@@ -413,6 +433,18 @@ $(".edittext-b").click(function () {
   $(".form-first").hide();
   $(".input-group-save").show();
   $(".edit-text-right").show();
+});
+$(".text-right.cancel-button").click(function () {
+  $(this).parent(".edit-text-right").hide();
+  $(".eidtbutton").show();
+});
+$(".option-click-btn").on("click", function () {
+  if ($(this).parent(".options").hasClass("active")) {
+    $(this).parent(".options").removeClass("active");
+  } else {
+    $(".options").removeClass("active");
+    $(this).parent(".options").addClass("active");
+  }
 });
 $(".save-button").click(function () {
   $(".input-group-save").show();

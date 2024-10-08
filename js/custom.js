@@ -1,6 +1,7 @@
 // image gallery
 
 
+
 $(document).ready(function() {
 
 
@@ -31,24 +32,26 @@ $('.filter-button').click(function() {
 
     })
     //closed
-
 $(document).ready(function() {
+    $("#nav")
+        .children("li")
+        .first()
+        .children("a")
+        .addClass("active-1")
+        .next()
+        .addClass("is-open")
+        .show();
 
-    $('#nav').children('li').first().children('a').addClass('active-1')
-        .next().addClass('is-open').show();
+    $("#nav").on("click", "li > a", function() {
+        if (!$(this).hasClass("active-1")) {
+            $("#nav .is-open").removeClass("is-open").hide();
+            $(this).next().toggleClass("is-open").toggle();
 
-    $('#nav').on('click', 'li > a', function() {
-
-        if (!$(this).hasClass('active-1')) {
-
-            $('#nav .is-open').removeClass('is-open').hide();
-            $(this).next().toggleClass('is-open').toggle();
-
-            $('#nav').find('.active-1').removeClass('active-1');
-            $(this).addClass('active-1');
+            $("#nav").find(".active-1").removeClass("active-1");
+            $(this).addClass("active-1");
         } else {
-            $('#nav .is-open').removeClass('is-open').hide();
-            $(this).removeClass('active-1');
+            $("#nav .is-open").removeClass("is-open").hide();
+            $(this).removeClass("active-1");
         }
     });
 });
@@ -76,6 +79,7 @@ $(document).ready(function() {
     });
 });
 //tabs
+
 
 
 $(document).ready(function() {
@@ -195,8 +199,8 @@ function bar_progress(progress_line_object, direction) {
 
 jQuery(document).ready(function() {
     /*
-          Fullscreen background
-      */
+            Fullscreen background
+        */
     // $.backstretch("assets/img/backgrounds/1.jpg");
 
     $("#top-navbar-1").on("shown.bs.collapse", function() {
@@ -207,8 +211,8 @@ jQuery(document).ready(function() {
     });
 
     /*
-          Form
-      */
+            Form
+        */
     $(".f1 fieldset:first").fadeIn("slow");
 
     // $('.f1 input[type="text"], .f1 input[type="password"], .f1 textarea').on('focus', function() {
@@ -431,10 +435,16 @@ $(document).ready(function() {
 });
 
 
+
 $(document).ready(function() {
         $(".list-grid ").click(function() {
 
 
+            $(".grid-view").show();
+            $(".dashboad-list").hide();
+            $(".list-view-show").hide();
+        });
+        $(".list-grid ").click(function() {
             $(".grid-view").show();
             $(".dashboad-list").hide();
             $(".list-view-show").hide();
@@ -457,6 +467,11 @@ $(document).ready(function() {
         });
 
 
+        $(".dropdown-menu").click(function(event) {
+            event.stopPropagation();
+        });
+
+
     })
     // $(".closedinnerpop ").on("click", function() {
 
@@ -464,8 +479,6 @@ $(document).ready(function() {
 //     $(".modal-backdrop").hide();
 
 // });
-
-
 
 $(function() {
     $("#slider-range").slider({
@@ -594,6 +607,20 @@ $(".edittext-b").click(function() {
     $(".form-first").hide();
     $(".input-group-save").show();
     $(".edit-text-right").show();
+});
+
+$(".text-right.cancel-button").click(function() {
+    $(this).parent(".edit-text-right").hide();
+    $(".eidtbutton").show();
+});
+
+$(".option-click-btn").on("click", function() {
+    if ($(this).parent(".options").hasClass("active")) {
+        $(this).parent(".options").removeClass("active");
+    } else {
+        $(".options").removeClass("active");
+        $(this).parent(".options").addClass("active");
+    }
 });
 
 $(".save-button").click(function() {
@@ -767,13 +794,6 @@ var swiper = new Swiper(".associated-slider", {
     },
 });
 
-
-
-
-
-
-
-
 // Register js start form here  =================>
 
 function validatePassword() {
@@ -841,6 +861,7 @@ function togglePasswordVisibility() {
         }
     });
 }
+
 
 
 new ResizeObserver(() => scroll.update()).observe(document.querySelector("main"))
