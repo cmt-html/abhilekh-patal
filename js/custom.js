@@ -430,29 +430,35 @@ $(document).ready(function() {
     });
 });
 
-$(".list-grid ").click(function() {
-    $(".grid-view").show();
-    $(".dashboad-list").hide();
-    $(".list-view-show").hide();
-});
 
-$(".list-dashboard").click(function() {
-    $(".dashboad-list").show();
-    $(".grid-view").hide();
-    $(".list-view-show").hide();
-});
+$(document).ready(function() {
+        $(".list-grid ").click(function() {
 
-$(".list-view").click(function() {
-    $(".list-view-show").show();
-    $(".grid-view").hide();
-    $(".dashboad-list").hide();
-});
 
-$(".dropdown-menu").click(function(event) {
-    event.stopPropagation();
-});
+            $(".grid-view").show();
+            $(".dashboad-list").hide();
+            $(".list-view-show").hide();
+        });
 
-// $(".closedinnerpop ").on("click", function() {
+        $(".list-dashboard").click(function() {
+            $(".dashboad-list").show();
+            $(".grid-view").hide();
+            $(".list-view-show").hide();
+        });
+
+        $(".list-view").click(function() {
+            $(".list-view-show").show();
+            $(".grid-view").hide();
+            $(".dashboad-list").hide();
+        });
+
+        $(".dropdown-menu").click(function(event) {
+            event.stopPropagation();
+        });
+
+
+    })
+    // $(".closedinnerpop ").on("click", function() {
 
 //     $("#myModalnewtag").hide();
 //     $(".modal-backdrop").hide();
@@ -837,8 +843,11 @@ function togglePasswordVisibility() {
 }
 
 
+new ResizeObserver(() => scroll.update()).observe(document.querySelector("main"))
+
 
 const scroll = new LocomotiveScroll({
     el: document.querySelector("main"),
     smooth: true,
+
 });

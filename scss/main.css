@@ -11712,7 +11712,7 @@ input[type=search]::-webkit-search-results-decoration {
 
 .iconlist {
   text-align: left;
-  padding: 0;
+  padding: 20px 0px;
 }
 
 .menu-document {
@@ -12777,6 +12777,7 @@ input[type=search]::-webkit-search-results-decoration {
   font-family: "Raleway", sans-serif !important;
   font-weight: 500;
   line-height: 16px;
+  padding: 0 !important;
 }
 
 .line-height-div {
@@ -12939,7 +12940,7 @@ input[type=search]::-webkit-search-results-decoration {
   line-height: 38px;
   letter-spacing: 0em;
   text-align: left;
-  padding-bottom: 6px;
+  padding-bottom: 20 px;
 }
 
 .contentbody {
@@ -15594,6 +15595,11 @@ ul#nav {
   padding-bottom: 40px;
 }
 
+.list-view-content {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 1400px) {
   .container-xxl,
   .container-xl,
@@ -15705,6 +15711,14 @@ ul#nav {
 }
 
 @media (max-width: 1199.98px) {
+  .contentbody {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #676767;
+  }
   .closedIcon-search {
     position: absolute;
     right: 14px;
