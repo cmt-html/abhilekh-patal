@@ -1,8 +1,6 @@
 // image gallery
 
-<<<<<<< HEAD
-//closed
-=======
+
 
 $(document).ready(function() {
 
@@ -24,7 +22,8 @@ $(document).ready(function() {
     });
 
 
-
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
 });
 
 $('.filter-button').click(function() {
@@ -34,7 +33,7 @@ $('.filter-button').click(function() {
 
     })
     //closed
->>>>>>> 03c23db9de820c20e4758f767a29ad06214ca802
+
 
 $(document).ready(function () {
   $("#nav")
@@ -83,10 +82,7 @@ $(document).ready(function () {
   });
 });
 //tabs
-<<<<<<< HEAD
-$(document).ready(function () {
-  console.log("document ready");
-=======
+
 
 
 $(document).ready(function() {
@@ -104,8 +100,6 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     console.log("document ready");
->>>>>>> 03c23db9de820c20e4758f767a29ad06214ca802
-
   const labels = document.querySelectorAll(".accordion-item__label");
   const tabs = document.querySelectorAll(".accordion-tab");
 

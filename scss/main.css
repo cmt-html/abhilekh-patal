@@ -16965,6 +16965,32 @@ header .advanceSearch-btn {
 header #containerAdvanceSearch {
   display: none;
   top: 79px;
+  max-width: 978px;
+  width: 100%;
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 24px 23px;
+}
+header #containerAdvanceSearch select, header #containerAdvanceSearch input {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #9B9B9B;
+  border-radius: 25px !important;
+  padding: 7px 12px;
+  height: auto !important;
+  border-color: #676767;
+}
+header #containerAdvanceSearch .form-select {
+  background-position: 95% 50% !important;
+}
+header .avd-search {
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+header .adlebel {
+  font-size: 16px;
+  font-weight: 700;
 }
 
 input::-moz-placeholder {
@@ -17076,7 +17102,7 @@ nav.megahmenudrop {
   margin: 0 auto !important;
 }
 nav.megahmenudrop.active {
-  top: 79px;
+  top: 78px;
 }
 
 .backdrop-shaddow {
