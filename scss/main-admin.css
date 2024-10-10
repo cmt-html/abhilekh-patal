@@ -17360,7 +17360,7 @@ ul.ui-sortable li {
   margin-bottom: 30px;
   width: 100%;
   display: flex;
-  gap: 25px;
+  gap: 31px;
   flex-wrap: wrap;
 }
 
@@ -17588,6 +17588,10 @@ th {
 
 .bg-color-upload {
   background-color: #eaeaea !important;
+}
+
+.account-setting-1 .search-left {
+  margin-bottom: 40px;
 }
 
 @media (min-width: 1400px) {
