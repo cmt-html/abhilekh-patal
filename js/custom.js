@@ -702,6 +702,7 @@ $("header a").click(function() {
     $(".backdrop-shaddow").click();
 });
 
+
 // ==================================
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

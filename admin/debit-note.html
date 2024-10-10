@@ -449,8 +449,8 @@
                                 <li class=" list-group-item size ">
                                     <a href="#" data-toggle="tab">Dashboard</a>
                                 </li>
-                                <li class="list-group-item size "><a href="home-page-setting-crousal.html" data-toggle="tab">Home Page Setting</a></li>
-                                <li class="list-group-item size  activecolor"><a href="collections.html" data-toggle="tab">Collections</a></li>
+                                <li class="list-group-item size "><a href="home-page-setting.html" data-toggle="tab">Home Page Setting</a></li>
+                                <li class="list-group-item size  "><a href="collections.html" data-toggle="tab">Collections</a></li>
                                 <li class="list-group-item bg-transparent "><a href="user-management.html">User
                                         Management</a></li>
                                 <li class="list-group-item "><a href="reports.html" data-toggle="tab">Reports</a></li>
@@ -472,7 +472,7 @@
                                     <i class="fa fa-caret-right float-end" aria-hidden="true">&nbsp;</i>
                                     <ul>
                                         <li><a href="DOD-order.html">DOD Orders</a></li>
-                                        <li><a href="DOD-order.html">DOD Page Size</a></li>
+                                        <li><a href="DOD-or der.html">DOD Page Size</a></li>
                                         <li><a href="DOD-order.html">DOD Tax</a></li>
                                         <li><a href="DOD-order.html">DOD Promotions</a></li>
                                     </ul>
@@ -483,14 +483,13 @@
                                 <li class="list-group-item  "><a href="records-awaiting-verification-new.html"> Records
                                         Awaiting Verification</a></li>
                                 <li class="list-group-item  "><a href="credit-note.html">Credit Note </a></li>
-                                <li class="list-group-item  "><a href="debit-note.html">Debit Note </a></li>
+                                <li class="list-group-item  activecolor"><a href="debit-note.html">Debit Note </a></li>
                                 <li class="list-group-item  "><a href="">Download Order Details </a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="col-lg-8 col-xl-9  col-xxl-10 col-12 pt-2 pt-md-0 pb-5 leftcontent usermanagement right-content px-4 ps-md-4">
                 <div class="row">
                     <div class="col-md-3 p-0 ">
@@ -499,7 +498,7 @@
                     <div class="col-md-7 list-style-user justify-content-end d-flex"></div>
                     <div class="col-md-2 ">
                         <div class="collection-button-box float-end col-md-6 d-flex justify-content-end">
-                            <button class="btn collection-active float-start  mt-4 mt-xxl-0 mt-xl-0 " data-bs-toggle="modal" data-bs-target="#example-collection-create"> <i class="fa fa-plus  pe-2" aria-hidden="true"></i>Credit Note</button>
+                            <button class="btn collection-active float-start  mt-4 mt-xxl-0 mt-xl-0 " data-bs-toggle="modal" data-bs-target="#example-collection-create"> <i class="fa fa-plus  pe-2" aria-hidden="true"></i>Debit Note</button>
                         </div>
                     </div>
                     <div class="row">
@@ -682,6 +681,7 @@
         </div>
     </footer>
 
+
     <div class="modal fade" id="example-collection-create" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content rounded-3">
@@ -695,13 +695,14 @@
                             <label for="exampleFormControlTextarea1" class="form-label text-align-left d-block">Valid For: *</label>
                             <input type="text" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="uttarashahani@gmail.com">
                         </div>
-                        <div class="mb-3 text-align-left col-md-6">
-                            <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Reference DOD Request No.: *</label>
+                        <div class="mb-3 text-align-left col-md-12 col-lg-6 col-12">
+
+                            <label for="exampleFormControlTextarea1" class="form-label text-align-left d-block">Reference DOD Request No.: *</label>
                             <select class="form-control form-select rounded-5 inputstyle bg-transparent" aria-label="Default select example">
                                 <option selected>-Select-</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"> </option>
                             </select>
                         </div>
                         <div class="col-md-12">
@@ -720,8 +721,8 @@
                                     </div>
                                 </div>
                                 <div class="mb-3 text-align-left col-md-4 position-relative ">
-                                    <label for="exampleFormControlInput-1" class="form-label pt-2 modelcollectionformstyle">Amount: *</label>
-                                    <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput-1" placeholder="">
+                                    <label for="exampleFormControlInput-3" class="form-label pt-2 modelcollectionformstyle">Amount: *</label>
+                                    <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput-3" placeholder="">
                                     <span class="INR-text-end">INR</span>
                                 </div>
                             </div>
@@ -732,15 +733,20 @@
                         </div>
                     </div>
                     <div class=" pb-4 mt-3  ">
-                        <div class=" pb-4 mt-3 px-5 d-flex justify-content-end ">
-                            <button class="btn collection-button float-start me-3">Cancel</button>
-                            <button class="btn collection-active float-start"> Update</button>
+
+
+
+                        <div class=" button-style-create-note">
+                            <div class="button"><button class="btn collection-button float-start me-3 space-button">Cancel</button></div>
+                            <div class="button"><button class="btn collection-active float-start space-button "> Update</button></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Button trigger modal -->
+
     <div class="modal fade" id="example-collection-edit-create-note" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content rounded-3">
@@ -750,17 +756,21 @@
                 </div>
                 <div class="modal-body text-center bgcolor rounded-0 p-4">
                     <div class="row">
+
+
+
                         <div class="mb-3 col-md-12 col-12 col-lg-6">
-                            <label for="exampleFormControlInput-2" class="form-label text-align-left d-block">Valid For: *</label>
-                            <input type="text" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput-2" placeholder="uttarashahani@gmail.com">
+                            <label for="exampleFormControlTextarea4" class="form-label text-align-left d-block">Valid For: *</label>
+                            <input type="text" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput4" placeholder="uttarashahani@gmail.com">
                         </div>
-                        <div class="mb-3 text-align-left col-md-6">
-                            <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Reference DOD Request No.: *</label>
+                        <div class="mb-3 text-align-left col-md-12 col-lg-6 col-12">
+
+                            <label for="exampleFormControlTextarea1" class="form-label text-align-left d-block">Reference DOD Request No.: *</label>
                             <select class="form-control form-select rounded-5 inputstyle bg-transparent" aria-label="Default select example">
                                 <option selected>-Select-</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"> </option>
                             </select>
                         </div>
                         <div class="col-md-12">
@@ -772,22 +782,22 @@
                                             <input type="text" class="form-control bg-transparent rounded-5" placeholder="">
                                             <span class="input-group-append border-0">
                                                 <span class="input-group-text-1 bg-white d-block bg-transparent border-0">
-                                                    <span><img src="../../images/calender.png"></span>
+                                                    <span><img src="../images/calender.png"></span>
                                             </span>
                                             </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mb-3 text-align-left col-md-4 position-relative ">
-                                    <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Amount: *</label>
-                                    <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="11750">
+                                    <label for="exampleFormControlInput-5" class="form-label pt-2 modelcollectionformstyle">Amount: *</label>
+                                    <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput-5" placeholder="">
                                     <span class="INR-text-end">INR</span>
                                 </div>
                             </div>
                         </div>
                         <div class="mb-3 text-align-left col-md-12">
-                            <label for="exampleFormControlTextarea-11" class="form-label pt-2 modelcollectionformstyle">Explanation</label>
-                            <textarea class="form-control bg-transparent rounded-3" id="exampleFormControlTextarea-11" placeholder="Lorem ipsum" rows="3"></textarea>
+                            <label for="exampleFormControlTextarea-6" class="form-label pt-2 modelcollectionformstyle">Description : *</label>
+                            <textarea class="form-control bg-transparent rounded-3" id="exampleFormControlTextarea-6" placeholder="" rows="3"></textarea>
                         </div>
                         <div class="mb-3 text-align-left col-md-6">
                             <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Status: </label>
@@ -799,16 +809,15 @@
                             </select>
                         </div>
                     </div>
-                    <div class=" pb-4 mt-3  ">
-                        <div class=" pb-4 mt-3 px-5 d-flex justify-content-end ">
-                            <button class="btn collection-button float-start me-3">Cancel</button>
-                            <button class="btn collection-active float-start"> Update</button>
-                        </div>
+                    <div class="button-style-create-note">
+                        <div class="button"><button class="btn collection-button float-start me-3 space-button">Cancel</button></div>
+                        <div class="button"><button class="btn collection-active float-start space-button  space-button"> Update</button></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Button trigger modal -->
 
     <script src="../js/jquery.min.js"></script>

@@ -325,6 +325,7 @@ table.dataTable thead th,
 table.dataTable tfoot th {
     font-weight: 600;
     color: #676767;
+    text-transform: capitalize;
 }
 
 table.dataTable>thead>tr>th,
@@ -746,6 +747,12 @@ table.dataTable td {
 }
 
 @media screen and (max-width: 640px) {
+    table.dataTable tbody th,
+    table.dataTable tbody td {
+        padding: 20px 20px 10px 20px;
+        vertical-align: top !important;
+        word-wrap: anywhere;
+    }
     .dataTables_wrapper .dataTables_length,
     .dataTables_wrapper .dataTables_filter {
         float: none;

@@ -3,33 +3,36 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" type="text/css" href="../scss/main-admin.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="scss/main-admin.css" />
+
 
 
 </head>
 
 <body>
-
     <header>
+
+
+
+
 
         <nav class="navbar navbar-expand-xl bg-light fixed-top">
             <div class="container padding-off ">
-                <a href="#" class="navbar-brand"><img src="images/logo.png" alt="logo.png" /></a>
+                <a href="#" class="navbar-brand"><img src="/images/logo.png" /></a>
 
-                <div class="float-end ms-auto left-20"><img src="images/searchicon.png" onclick="search()" class="search-panel-icon" /></div>
+                <div class="float-end ms-auto left-20"><img src="/images/searchicon.png" onclick="search()" class="search-panel-icon" /></div>
 
                 <form class="search-panel">
 
                     <div class="crossIcon">
                         <input class="form-control searchdiv" type="search" id="tags" aria-label="Search" placeholder="SEARCH">
-                        <img src="images/searchicon.png" class="search-panel-icon" />
-                        <span><img src="images/crss-icon.png" class="crossIconclosed"></span></div>
+                        <img src="/images/searchicon.png" class="search-panel-icon" />
+                        <span><img src="/images/crss-icon.png" class="crossIconclosed"></span></div>
 
 
                     <div class="row">
@@ -160,7 +163,7 @@
                     </div>
                 </form>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
-               <img src="images/menu-icon.png" />
+               <img src="/images/menu-icon.png" />
                </button>
 
                 <div class="collapse navbar-collapse ul-menu-list " id="navbarSupportedContent">
@@ -200,7 +203,7 @@
                                                 <div class="searchinput col-md-6 col-6 col-lg-6 col-xl-6">
                                                     <span class="search"></span>
                                                     <input class="form-control" type="search" aria-label="Search" placeholder="SEARCH">
-                                                    <span class="closedIcon-search"><img id="searchCloseIconImg" src="images/closed-search.png" /></span>
+                                                    <span class="closedIcon-search"><img id="searchCloseIconImg" src="/images/closed-search.png" /></span>
                                                 </div>
                                                 <a id="aAdvanceSearch" class="searchButton col-md-6 col-6 col-lg-6 col-xl-6" type="submit">ADVANCE SEARCH</a>
                                                 <div id="containerAdvanceSearch" class="asvanceSearch col-md-12">
@@ -333,11 +336,11 @@
                                         <a href="#" class="text-decoration-underline increase-size increase">+A </a>
                                     </li>
                                     <li>
-                                        <a href="#"><img src="images/color-change.png"> </a>
+                                        <a href="#"><img src="/images/color-change.png"> </a>
                                     </li>
 
                                     <li>
-                                        <a href="#"><img src="images/bell-icon.png"> </a>
+                                        <a href="#"><img src="/images/bell-icon.png"> </a>
                                     </li>
 
                                     <li class="deskstop-lang">
@@ -474,7 +477,7 @@
 
 
                         <div class="nav-item dropdown dropdown-mega position-static demo-dropdown">
-                            <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"><img src="images/menu-icon.png" /></a>
+                            <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"><img src="/images/menu-icon.png" /></a>
                             <div class="dropdown-menu shadow megahmenudrop m-2">
                                 <div class="mega-content px-4">
                                     <div class="container ">
@@ -541,12 +544,12 @@
 
 
     <!-- all account part-setting start -->
-    <div class="container px-lg-5">
+    <div class="container">
         <div class="row mt-5 pt-5">
             <h1 class="account-setting pb-1">Account Settings</h1>
             <div class="col-md-6 col-lg-4 col-12 col-xl-3">
                 <div class="form position-relative">
-                    <span class="searchicon"><img src="images/searchicon.png" width="20px" /></span>
+                    <span class="searchicon"><img src="/images/searchicon.png" width="20px" /></span>
                     <input type="text" class=" search-left  " placeholder="SEARCH">
 
                     <div class="col-xs-3">
@@ -562,8 +565,6 @@
                             <li class="list-group-item focus "><span class="my-devices"></span><a href="#tab6" data-toggle="tab">Manage Devices</a></li>
                         </ul>
                     </div>
-
-
                     <!-- nav part end -->
                 </div>
             </div>
@@ -573,9 +574,9 @@
                 <div class="tab-content">
                     <!-- tab part start -->
                     <!-- MY accounnt  start -->
-                    <div class="tab-pane active m-none-tab" id="tab2">
-                        <h2 class="heading-my-account px-3 mt-4 mt-lg-0 pb-4 px-md-0">My Account</h2>
-                        <div class="col-md-12 col-lg-12 col-12 col-xl-12 bgwhite px-4 pt-4 mt-4 pb-5 ">
+                    <div class="tab-pane active m-0" id="tab2">
+                        <h2 class="heading-my-account px-3  pb-4 px-md-0">My Account</h2>
+                        <div class="col-md-12 col-lg-12 col-12 col-xl-12 bgwhite px-4 pt-2 mt-4 pb-5">
                             <div class="row">
                                 <div class="col-md-6 col-6 col-lg-6 col-xl-6 pb-4">
                                     <span class="personal-text">Personal Information</span>
@@ -638,17 +639,17 @@
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-12 col-12 col-xl-12 bgwhite p-4 p-md-4 mt-4">
-                            <div class="row position-relative">
-                                <div class="col-md-6 col-8 col-lg-6 col-xl-6 pb-4">
+                            <div class="row">
+                                <div class="col-md-6 col-6 col-lg-6 col-xl-6 pb-4">
                                     <span class="personal-text pe-2">My Interests</span>
                                     <i class="fa fa-info-circle pl-4" data-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom"></i>
                                 </div>
-                                <div class="col-md-6  col-4 col-lg-6 col-xl-6  eidtbuttons">
+                                <div class="col-md-6  col-6 col-lg-6 col-xl-6  eidtbuttons">
                                     <a class=" change-password text-right edittext-1" data-bs-toggle="modal" data-bs-target="#exampleedit">Edit</a>
                                 </div>
                                 <div class="pb-2 button-head"> Records</div>
                                 <div class="pb-4 ">
-                                    <button type="button" class=" px-4 btn-default btn-block me-3 mb-2 "><span></span>
+                                    <button type="button" class=" px-4 btn-default btn-block me-3 mb-2"><span></span>
                                         Finance Department</button>
                                     <button type="button" class="px-4 col-xs-12 btn-default btn-block mb-2 me-3"><span></span>
                                         Foreign & Politics
@@ -679,49 +680,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-md-12 col-lg-12 col-12 col-xl-12 bgwhite p-4 p-md-4 mt-4 memberShip">
-                            <div class="row">
-                                <div class="col-md-6 col-12 col-lg-6 col-xl-6 pb-4">
-                                    <span class="personal-text">Membership</span>
-                                </div>
-                                <div class="col-md-6  col-12 col-lg-6 col-xl-6 edit-text-right"><span class="text-right edittext d-block">Renew</span></div>
-                                <div class="col-md-2">
-                                    <h3 class="m-">Active Since
-                                    </h3>
-                                    <p class="m-0 ">12/08/2023</p>
-                                </div>
-                                <div class="col-md-2 ">
-                                    <h3 class="mt-4 mt-md-0">To
-                                    </h3>
-                                    <p class="m-0">12/08/2023</p>
-                                </div>
-
-
-
-
-                            </div>
-                        </div>
-
-
-
-                        <div class="col-md-12 col-lg-12 col-12 col-xl-12 bgwhite p-4 p-md-4 mt-4">
-                            <div class="contact-us-wrapper">
-                                <div class="row">
-                                    <div class="col-md-6 col-12 col-lg-6 col-xl-6 pb-4">
-                                        <span class="personal-text">Contact Us</span>
-                                    </div>
-                                    <!-- <div class="col-md-6  col-12 col-lg-6 col-xl-6 edit-text-right"><span class="text-right edittext d-block">Renew</span></div> -->
-                                    <div class="col-md-12">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                            <span class=" change-password p-0" data-bs-toggle="modal" data-bs-target="#exampleModcontact">Contact Us</span>
-                                        </p>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-md-12 col-lg-12 col-12 col-xl-12 bgwhite p-4 p-md-4 mt-4">
                             <div class="row">
                                 <div class="col-md-6 col-12 col-lg-6 col-xl-6 pb-4">
@@ -734,8 +692,23 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-12 col-lg-12 col-12 col-xl-12 bgwhite p-4 p-md-4 mt-4">
+                            <div class="row">
+                                <div class="col-md-6 col-12 col-lg-6 col-xl-6 pb-4">
+                                    <span class="personal-text">Contact Us</span>
+                                </div>
+                                <!-- <div class="col-md-6  col-12 col-lg-6 col-xl-6 edit-text-right"><span class="text-right edittext d-block">Renew</span></div> -->
+                                <div class="col-md-12">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        <br> incididunt ut labore et dolore magna aliqua.
+                                        <div class=" change-password p-0" data-bs-toggle="modal" data-bs-target="#exampleModcontact">Contact Us</div>
+                                </div>
 
-                        <div class="col-md-12 col-lg-12 col-12 col-xl-12 bgwhite p-4 p-md-4 mt-4 mb-4 backup-my-data">
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-lg-12 col-12 col-xl-12 bgwhite p-4 p-md-4 mt-4 mb-4">
                             <div class="row">
                                 <div class="col-md-6 col-12 col-lg-6 col-xl-6 pb-4 ">
                                     <span class="personal-text">Backup My Data</span>
@@ -770,17 +743,17 @@
                             <div class="col-md-12 account-setting-div">
                                 <div class="col-product">
                                     <div class="product position-relative edit_hover_class">
-                                        <img src="images/Screenshot1.png" width="100%" />
+                                        <img src="/images/Screenshot1.png" width="100%" />
                                         <div class="col-md-6">
                                             <div class="bgeye">
-                                                <img src="images/view.png">
+                                                <img src="/images/view.png">
                                                 <span>1594</span>
                                             </div>
                                         </div>
                                         <div class="col-md-6 ">
                                             <div class="dropdown iconhover ">
                                                 <a href='#' class=" bgdotted" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <img src="images/dotted.png" alt="">
+                                                    <img src="/images/dotted.png" alt="">
                                                 </a>
                                                 <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
                                                     <li>
@@ -801,17 +774,17 @@
                                         </div>
                                     </div>
                                     <div class="product position-relative edit_hover_class">
-                                        <img src="images/home-department.png" width="100%" />
+                                        <img src="/images/home-department.png" width="100%" />
                                         <div class="col-md-6">
                                             <div class="bgeye">
-                                                <img src="images/view.png">
+                                                <img src="/images/view.png">
                                                 <span>1594</span>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="dropdown">
                                                 <a href='#' class=" bgdotted" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <img src="images/dotted.png" alt="">
+                                                    <img src="/images/dotted.png" alt="">
                                                 </a>
                                                 <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
                                                     <li>
@@ -832,17 +805,17 @@
                                         </div>
                                     </div>
                                     <div class="product position-relative edit_hover_class">
-                                        <img src="images/ism-ay.png" width="100%" />
+                                        <img src="/images/ism-ay.png" width="100%" />
                                         <div class="col-md-6">
                                             <div class="bgeye">
-                                                <img src="images/view.png">
+                                                <img src="/images/view.png">
                                                 <span>1594</span>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="dropdown ">
                                                 <a href='#' class=" bgdotted" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <img src="images/dotted.png" alt="">
+                                                    <img src="/images/dotted.png" alt="">
                                                 </a>
                                                 <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
                                                     <li>
@@ -865,17 +838,17 @@
                                 </div>
                                 <div class="col-product">
                                     <div class="product position-relative edit_hover_class">
-                                        <img src="images/consolution.png" width="100%" />
+                                        <img src="/images/consolution.png" width="100%" />
                                         <div class="col-md-6">
                                             <div class="bgeye">
-                                                <img src="images/view.png">
+                                                <img src="/images/view.png">
                                                 <span>1594</span>
                                             </div>
                                         </div>
                                         <div class="col-md-6 ">
                                             <div class="dropdown ">
                                                 <a href='#' class=" bgdotted" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <img src="images/dotted.png" alt="">
+                                                    <img src="/images/dotted.png" alt="">
                                                 </a>
                                                 <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
                                                     <li>
@@ -896,17 +869,17 @@
                                         </div>
                                     </div>
                                     <div class="product position-relative edit_hover_class">
-                                        <img src="images/part.png" width="100%" />
+                                        <img src="/images/part.png" width="100%" />
                                         <div class="col-md-6">
                                             <div class="bgeye">
-                                                <img src="images/view.png">
+                                                <img src="/images/view.png">
                                                 <span>1594</span>
                                             </div>
                                         </div>
                                         <div class="col-md-6 ">
                                             <div class="dropdown ">
                                                 <a href='#' class=" bgdotted" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <img src="images/dotted.png" alt="">
+                                                    <img src="/images/dotted.png" alt="">
                                                 </a>
                                                 <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
                                                     <li>
@@ -927,17 +900,17 @@
                                         </div>
                                     </div>
                                     <div class="product position-relative edit_hover_class">
-                                        <img src="images/north-western.png" width="100%" />
+                                        <img src="/images/north-western.png" width="100%" />
                                         <div class="col-md-6">
                                             <div class="bgeye">
-                                                <img src="images/view.png">
+                                                <img src="/images/view.png">
                                                 <span>1594</span>
                                             </div>
                                         </div>
                                         <div class="col-md-6 ">
                                             <div class="dropdown ">
                                                 <a href='#' class=" bgdotted" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <img src="images/dotted.png" alt="">
+                                                    <img src="/images/dotted.png" alt="">
                                                 </a>
                                                 <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
                                                     <li>
@@ -960,7 +933,7 @@
                                 </div>
                                 <div class="col-product">
                                     <div class="product">
-                                        <img src="images/sneha-balahar.png" width="100%" />
+                                        <img src="/images/sneha-balahar.png" width="100%" />
                                         <div class="col-md-6"></div>
                                         <div class="col-md-6"></div>
                                         <div class="col-md-12 pb-3">
@@ -969,7 +942,7 @@
                                         </div>
                                     </div>
                                     <div class="product">
-                                        <img src="images/Rashtriya-Tarang.png" width="100%" />
+                                        <img src="/images/Rashtriya-Tarang.png" width="100%" />
                                         <div class="col-md-6"></div>
                                         <div class="col-md-6"></div>
                                         <div class="col-md-12 pb-3">
@@ -978,7 +951,7 @@
                                         </div>
                                     </div>
                                     <div class="product">
-                                        <img src="images/indian-institute.png" width="100%" />
+                                        <img src="/images/indian-institute.png" width="100%" />
                                         <div class="col-md-6"></div>
                                         <div class="col-md-6"></div>
                                         <div class="col-md-12 pb-3">
@@ -1016,7 +989,7 @@
                                             <div class="col col-md-5 col-lg-4 col-xl-4">
                                                 <div class="form position-relative">
                                                     <span class="searchicon">
-                                                        <img src="images/searchicon.png" width="20px" />
+                                                        <img src="/images/searchicon.png" width="20px" />
                                                     </span>
                                                     <input type="text" class=" search-left mb-4 " placeholder="SEARCH">
                                                 </div>
@@ -1082,8 +1055,8 @@
                                 <div class="bgwhite  p-2 mt-4">
                                     <div class=" bgcolor  mt-2">
                                         <div class="row">
-                                            <div class="  col-sm-5 col-md-4 col-lg-3 col-xl-2 pb-2">
-                                                <img src="images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
+                                            <div class="  col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                                                <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                             </div>
                                             <div class=" col-md-6 col-sm-7 col-lg-7 col-xl-8 ">
                                                 <div class="card-body ">
@@ -1125,8 +1098,8 @@
                                 <div class="bgwhite  p-2 mt-4">
                                     <div class=" bgcolor mt-2">
                                         <div class="row">
-                                            <div class="  col-sm-5 col-md-4 col-lg-3 col-xl-2 pb-2">
-                                                <img src="images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
+                                            <div class="  col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                                                <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                             </div>
                                             <div class=" col-md-6 col-sm-7 col-lg-7 col-xl-8 ">
                                                 <div class="card-body ">
@@ -1168,8 +1141,8 @@
                                 <div class="bgwhite  p-2 mt-4">
                                     <div class=" bgcolor  pt-0 pt-md-0 pt-lg-0 pt-xl-0 mt-3">
                                         <div class="row">
-                                            <div class="  col-sm-5 col-md-4 col-lg-3 col-xl-2 pb-2">
-                                                <img src="images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
+                                            <div class="  col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                                                <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                             </div>
                                             <div class=" col-md-6 col-sm-7 col-lg-7 col-xl-8 ">
                                                 <div class="card-body ">
@@ -1211,8 +1184,8 @@
                                 <div class="bgwhite  p-2 mt-4">
                                     <div class=" bgcolor  pt-0 pt-md-0 pt-lg-0 pt-xl-0 mt-3">
                                         <div class="row">
-                                            <div class="  col-sm-5 col-md-4 col-lg-3 col-xl-2 pb-2">
-                                                <img src="images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
+                                            <div class="  col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                                                <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                             </div>
                                             <div class=" col-md-6 col-sm-7 col-lg-7 col-xl-8 ">
                                                 <div class="card-body ">
@@ -1254,8 +1227,8 @@
                                 <div class="bgwhite p-4 p-md-4 mt-4">
                                     <div class=" bgcolor  pt-0 pt-md-0 pt-lg-0 pt-xl-0 mt-3">
                                         <div class="row">
-                                            <div class="  col-sm-5 col-md-4 col-lg-3 col-xl-2 pb-2">
-                                                <img src="images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
+                                            <div class="  col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                                                <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                             </div>
                                             <div class="col-md-6 col-sm-7 col-lg-7 col-xl-8">
                                                 <div class="card-body ">
@@ -1334,7 +1307,7 @@
                                 <div class="col col-xm-12 col-md-3 col-lg-4 col-xl-3">
                                     <div class="form position-relative">
                                         <span class="searchicon">
-                                            <img src="images/searchicon.png" width="20px" />
+                                            <img src="/images/searchicon.png" width="20px" />
                                         </span>
                                         <input type="text" class=" search-left mb-4 " placeholder="SEARCH">
                                     </div>
@@ -1343,6 +1316,7 @@
                                     <span class="text-right edittext  edittext-b">10 items</span>
                                 </div>
                             </div>
+
                             <div class="navtabstyle pb-3">
                                 <ul class="nav nav-tabs nav-text-start " id="myTab" role="tablist" style="border-bottom: 1px solid #BCBCBC;">
                                     <li class="nav-item ">
@@ -1355,15 +1329,15 @@
                                     <li class="nav-item">
                                         <a class="nav-link navtabstyle filter-button " data-filter="sprinkle">Page on Demand (POD)</a>
                                     </li>
-                                    <!-- <li class="nav-item">
-                                        <a class="nav-link navtabstyle filter-button" data-filter="irrigation">Others</a>
-                                    </li> -->
+                                    <li class="nav-item">
+                                        <a class="nav-link navtabstyle filter-button" data-toggle="tab" data-filter="irrigation">Others</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <!-- tab-nav end-->
                         <div class="productInline">
-                            <div class="grid-view-result-div filter all">
+                            <div class="grid-view-result-div all">
                                 <div class=" bgcolor pt-0 pt-md-0 pt-lg-0 pt-xl-4 mt-3 px-4">
                                     <div class="d-flex pb-3 border-bottom">
                                         <div class="col-3 orderdetail">Order places on: <span class="orderdate">07 Sep, 2023</span>
@@ -1374,7 +1348,7 @@
                                         <div class="col-7  orderdetail text-end ">Order Number: <span class="orderdate"> AP_00000064</span>
                                         </div>
                                     </div>
-                                    <div class="row pt-3 gap-product">
+                                    <div class="row pt-3 pb-4">
                                         <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                             <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                         </div>
@@ -1419,8 +1393,8 @@
                                         <div class="col-7 px-3 orderdetail text-end">Order Number: <span class="orderdate"> AP_00000064</span>
                                         </div>
                                     </div>
-                                    <div class="row pt-3 gap-product">
-                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2 pb-2">
+                                    <div class="row pt-3">
+                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                             <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                         </div>
                                         <div class="col-md-8 col-sm-7 col-lg-9 col-xl-10">
@@ -1453,7 +1427,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2 pb-2">
+                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                             <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                         </div>
                                         <div class="col-md-8 col-sm-7 col-lg-9 col-xl-10">
@@ -1486,7 +1460,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2 pb-2">
+                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                             <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                         </div>
                                         <div class=" col-md-8 col-sm-7 col-lg-9 col-xl-10 ">
@@ -1531,7 +1505,7 @@
                                         <div class="col-6  orderdetail text-end pe-5">Order Number: <span class="orderdate"> AP_00000064</span>
                                         </div>
                                     </div>
-                                    <div class="row pt-3 gap-product">
+                                    <div class="row pt-3">
                                         <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                             <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                         </div>
@@ -1568,7 +1542,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-view-result-div filter hdpe">
+                            <div class="grid-view-result-div hdpe">
                                 <div class=" bgcolor pt-0 pt-md-0 pt-lg-0 pt-xl-4 mt-3">
                                     <div class="d-flex pb-3 border-bottom">
                                         <div class="col-3 orderdetail">Order places on: <span class="orderdate">07 Sep, 2023</span>
@@ -1579,7 +1553,7 @@
                                         <div class="col-6  orderdetail text-end pe-5">Order Number: <span class="orderdate"> AP_00000064</span>
                                         </div>
                                     </div>
-                                    <div class="row pt-3 gap-product">
+                                    <div class="row pt-3">
                                         <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                             <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                         </div>
@@ -1625,8 +1599,8 @@
                                         <div class="col-6  orderdetail text-end pe-5">Order Number: <span class="orderdate"> AP_00000064</span>
                                         </div>
                                     </div>
-                                    <div class="row pt-3 gap-product">
-                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2 pb-2">
+                                    <div class="row pt-3">
+                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                             <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                         </div>
                                         <div class="col-md-8 col-sm-7 col-lg-9 col-xl-10">
@@ -1658,7 +1632,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2 pb-2">
+                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                             <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                         </div>
                                         <div class="col-md-8 col-sm-7 col-lg-9 col-xl-10">
@@ -1689,9 +1663,11 @@
                                                     </figcaption>
                                                 </div>
                                             </div>
-
+                                            <div class="  pt-3 pt-md-4 pt-lg-4 pt-xl-4 mt-3">
+                                                <div class="row"></div>
+                                            </div>
                                         </div>
-                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2 pb-2">
+                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                             <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                         </div>
                                         <div class=" col-md-8 col-sm-7 col-lg-9 col-xl-10 ">
@@ -1735,7 +1711,7 @@
                                         <div class="col-6  orderdetail text-end pe-5">Order Number: <span class="orderdate"> AP_00000064</span>
                                         </div>
                                     </div>
-                                    <div class="row pt-3 gap-product">
+                                    <div class="row pt-3">
                                         <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                             <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                         </div>
@@ -1772,7 +1748,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-view-result-div filter sprinkle">
+                            <div class="grid-view-result-div sprinkle">
                                 <div class=" bgcolor pt-0 pt-md-0 pt-lg-0 pt-xl-4 mt-3">
                                     <div class="d-flex pb-3 border-bottom">
                                         <div class="col-3 orderdetail">Order places on: <span class="orderdate">07 Sep, 2023</span>
@@ -1783,7 +1759,7 @@
                                         <div class="col-6  orderdetail text-end pe-5">Order Number: <span class="orderdate"> AP_00000064</span>
                                         </div>
                                     </div>
-                                    <div class="row pt-3 gap-product">
+                                    <div class="row pt-3">
                                         <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                             <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                         </div>
@@ -1829,8 +1805,8 @@
                                         <div class="col-6  orderdetail text-end pe-5">Order Number: <span class="orderdate"> AP_00000064</span>
                                         </div>
                                     </div>
-                                    <div class="row pt-3 gap-product">
-                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2 pb-2">
+                                    <div class="row pt-3">
+                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                             <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                         </div>
                                         <div class="col-md-8 col-sm-7 col-lg-9 col-xl-10">
@@ -1862,7 +1838,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2 pb-2">
+                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                             <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                         </div>
                                         <div class="col-md-8 col-sm-7 col-lg-9 col-xl-10">
@@ -1893,9 +1869,11 @@
                                                     </figcaption>
                                                 </div>
                                             </div>
-
+                                            <div class="  pt-3 pt-md-4 pt-lg-4 pt-xl-4 mt-3">
+                                                <div class="row"></div>
+                                            </div>
                                         </div>
-                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2 pb-2">
+                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                             <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                         </div>
                                         <div class=" col-md-8 col-sm-7 col-lg-9 col-xl-10 ">
@@ -1939,7 +1917,7 @@
                                         <div class="col-6  orderdetail text-end pe-5">Order Number: <span class="orderdate"> AP_00000064</span>
                                         </div>
                                     </div>
-                                    <div class="row pt-3 gap-product">
+                                    <div class="row pt-3">
                                         <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                             <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                         </div>
@@ -1976,7 +1954,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-view-result-div filter irrigation">
+                            <div class="grid-view-result-div irrigation">
                                 <div class=" bgcolor pt-0 pt-md-0 pt-lg-0 pt-xl-4 mt-3">
                                     <div class="d-flex pb-3 border-bottom">
                                         <div class="col-3 orderdetail">Order places on: <span class="orderdate">07 Sep, 2023</span>
@@ -1987,7 +1965,7 @@
                                         <div class="col-6  orderdetail text-end pe-5">Order Number: <span class="orderdate"> AP_00000064</span>
                                         </div>
                                     </div>
-                                    <div class="row pt-3 gap-product">
+                                    <div class="row pt-3">
                                         <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                             <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                         </div>
@@ -2033,8 +2011,8 @@
                                         <div class="col-6  orderdetail text-end pe-5">Order Number: <span class="orderdate"> AP_00000064</span>
                                         </div>
                                     </div>
-                                    <div class="row pt-3 gap-product">
-                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2 pb-2">
+                                    <div class="row pt-3">
+                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                             <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                         </div>
                                         <div class="col-md-8 col-sm-7 col-lg-9 col-xl-10">
@@ -2066,7 +2044,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2 pb-2">
+                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                             <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                         </div>
                                         <div class="col-md-8 col-sm-7 col-lg-9 col-xl-10">
@@ -2097,9 +2075,11 @@
                                                     </figcaption>
                                                 </div>
                                             </div>
-
+                                            <div class="  pt-3 pt-md-4 pt-lg-4 pt-xl-4 mt-3">
+                                                <div class="row"></div>
+                                            </div>
                                         </div>
-                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2 pb-2">
+                                        <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                             <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                         </div>
                                         <div class=" col-md-8 col-sm-7 col-lg-9 col-xl-10 ">
@@ -2143,7 +2123,7 @@
                                         <div class="col-6  orderdetail text-end pe-5">Order Number: <span class="orderdate"> AP_00000064</span>
                                         </div>
                                     </div>
-                                    <div class="row pt-3 gap-product">
+                                    <div class="row pt-3">
                                         <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2">
                                             <img src="/images/1.png" width="100%" class="img-fluid rounded-start" alt="...">
                                         </div>
@@ -2238,59 +2218,31 @@
                                     <span class="personal-text">Statistics</span>
                                 </div>
                                 <!-- <div class="col-md-6  col-12 col-lg-6 col-xl-6 edit-text-right"><span class="text-right edittext d-block">Renew</span></div> -->
-
-                                <div class="right-panel">
-                                    <div class="row">
-                                        <div class="col-md-4 ">
-
-                                            <div class="statistics">
-
-                                                <div class="static-img"><img src="images/Rectangle-img.png" /></div>
-                                                <div class="Scholar-p">
-                                                    <p class="p-scholer fw">Selected Plan</p>
-                                                    <p>Lorem ipsum</p>
-                                                    <p class="plans">See more plans ></p>
-                                                </div>
-                                                <span class="border-right-div"></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="statistics">
-
-                                                <div class="static-img"><img src="images/Rectangle-img.png" /></div>
-                                                <div class="Scholar-p">
-                                                    <p class="p-scholer fw">Renewal Plan</p>
-                                                    <p>Lorem ipsum</p>
-                                                    <p class="plans"> View my payment method ></p>
-                                                </div>
-                                                <span class="border-right-div"></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="statistics">
-                                                <div class="static-img"><img src="images/Rectangle-img.png" /></div>
-                                                <div class="Scholar-p">
-                                                    <p class="p-scholer fw">Manage</p>
-                                                    <p>Lorem ipsum</p>
-                                                    <p class="plans">Update, Cancel & more ></p>
-                                                </div>
-                                            </div>
+                                <div class="row pb-">
+                                    <div class="col-md-4">
+                                        <img style='float:left; margin-top: 20px;' src="/images/Rectangle-img.png" />
+                                        <div class="Scholar-p">
+                                            <p class="p-scholer fw">Selected Plan</p>
+                                            <p>Lorem ipsum</p>
+                                            <p class="plans">See more plans ></p>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-md-12 col-lg-12 col-12 col-xl-12 bgwhite p-4 p-md-4 mt-4">
-                            <div class="row">
-                                <div class="col-md-6 col-12 col-lg-6 col-xl-6 pb-4">
-                                    <span class="personal-text">Membership Ending Date </span>
-                                </div>
-                                <!-- <div class="col-md-6  col-12 col-lg-6 col-xl-6 edit-text-right"><span class="text-right edittext d-block">Renew</span></div> -->
-                                <div class="col-md-12">
-                                    <p>1st January, 2023
-                                        <span class="change-password">Click here to Renew</span>
-                                    </p>
+                                    <div class="col-md-4">
+                                        <img style='float:left; margin-top: 20px;' src="/images/Rectangle-img.png" />
+                                        <div class="Scholar-p">
+                                            <p class="p-scholer fw">Renewal Plan</p>
+                                            <p>Lorem ipsum</p>
+                                            <p class="plans"> View my payment method ></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img style='float:left; margin-top: 20px;' src="/images/Rectangle-img.png" />
+                                        <div class="Scholar-p">
+                                            <p class="p-scholer fw">Manage</p>
+                                            <p>Lorem ipsum</p>
+                                            <p class="plans">Update, Cancel & more ></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -2302,39 +2254,31 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-12 pb-3">
-                                        <div class="statistics">
-                                            <div class="static-img img-benifit"><img class="imgmember" src="images/Rectangle-img.png" /></div>
-                                            <div class="Scholar-p">
-                                                <p class="p-scholer fw">Scholar Section</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. </p>
-                                            </div>
+                                        <img class="imgmember" src="/images/Rectangle-img.png" style='margin-top: 20px' ; />
+                                        <div class="Scholar-p">
+                                            <p class="p-scholer fw">Scholar Section</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. </p>
                                         </div>
                                     </div>
                                     <div class="col-md-12 pb-3">
-                                        <div class="statistics">
-                                            <div class="static-img img-benifit"><img class="imgmember" src="images/Rectangle-img.png" /></div>
-                                            <div class="Scholar-p">
-                                                <p class="p-scholer fw">Personal Library</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. </p>
-                                            </div>
+                                        <img class="imgmember" src="/images/Rectangle-img.png" />
+                                        <div class="Scholar-p">
+                                            <p class="p-scholer fw">Personal Library</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. </p>
                                         </div>
                                     </div>
                                     <div class="col-md-12 pb-3">
-                                        <div class="statistics">
-                                            <div class="static-img img-benifit"><img class="imgmember" src="images/Rectangle-img.png" /></div>
-                                            <div class="Scholar-p">
-                                                <p class="p-scholer fw">Document Translation</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. </p>
-                                            </div>
+                                        <img class="imgmember" src="/images/Rectangle-img.png" />
+                                        <div class="Scholar-p">
+                                            <p class="p-scholer fw">Document Translation</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. </p>
                                         </div>
                                     </div>
                                     <div class="col-md-12 pb-3">
-                                        <div class="statistics">
-                                            <div class="static-img img-benifit"><img class="imgmember" src="images/Rectangle-img.png" /></div>
-                                            <div class="Scholar-p">
-                                                <p class="p-scholer fw">Upto 5 DOD Free per Month </p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. </p>
-                                            </div>
+                                        <img class="imgmember" src="/images/Rectangle-img.png" />
+                                        <div class="Scholar-p">
+                                            <p class="p-scholer fw">Upto 5 DOD Free per Month </p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -2356,7 +2300,7 @@
                         <div class="col-md-12 col-lg-12 col-12 col-xl-12 bgwhite e px-4 pt-2 mt-4">
                             <div class="row">
                                 <div class="col-md-6 col-12 col-lg-6 col-xl-6 pb-4">
-                                    <span class="personal-text ">Terms and conditions</span>
+                                    <span class="personal-text">Terms and conditions</span>
                                 </div>
                                 <!-- <div class="col-md-6  col-12 col-lg-6 col-xl-6 edit-text-right"><span class="text-right edittext d-block">Renew</span></div> -->
                                 <div class="col-md-12 pb-4">
@@ -2378,33 +2322,33 @@
                             <div class="col-md-6 col-6 col-lg-6 col-xl-6 pb-3">
                                 <span class="personal-text">Your Devices</span>
                             </div>
-                            <div class="bg-order border-bottom device-manage pb-1 d-flex-box">
+                            <div class="bg-order border-bottom device-manage pb-1">
                                 <div class="col-sm-4 active ">Devices</div>
                                 <div class="col-sm-4">Last Registered on</div>
                                 <div class="col-sm-4">Action</div>
                             </div>
                             <div class="bg-order device-manage-action pt-3 pb-2">
                                 <div class="col-md-4">
-                                    <div>
+                                    <div class="">
                                         <span class="my-laptop"></span>
-                                        <p class="m-0 pt-md-2">Laptop- 435</p>
+                                        <p class="pt-3">Laptop- 435</p>
                                     </div>
                                 </div>
-                                <div class="col-md-2 pt-md-2 mb-4">On Going Session, 02th Sept </div>
-                                <div class="col-sm-6  pt-md-2 centerButton">
-                                    <button type="button" class="btn btn-light">Forget</button>
+                                <div class="col-md-2 pt-md-2">On Going Session, 02th Sept </div>
+                                <div class="col-sm-6  pt-md-2 text-center">
+                                    <button type="button" class="btn btn-light">Deregister</button>
                                 </div>
                             </div>
                             <div class="bg-order device-manage-action pt-3 pbbuttom">
                                 <div class="col-sm-4 ">
-                                    <div class="andriod mb-1">
+                                    <div class="andriod">
                                         <span class="my-phone"></span>
-                                        <p class="md-pt-0 m-0 pt-md-2 line-height-device">Android device </p>
+                                        <p class="pt-2 ">Android device </p>
                                     </div>
                                 </div>
-                                <div class="col-md-2  pt-md-2 mb-4">28th Aug </div>
-                                <div class="col-sm-6 pt-md-2 centerButton">
-                                    <button type="button" class="btn btn-light">Forget</button>
+                                <div class="col-md-2  pt-md-2">28th Aug </div>
+                                <div class="col-sm-6 pt-md-2 text-center">
+                                    <button type="button" class="btn btn-light">Deregister</button>
                                 </div>
                             </div>
                         </div>
@@ -2732,12 +2676,12 @@
                         <input type="password" class="form-control logininput" id="exampleFormControlInput1" placeholder="">
                     </div>
                     <div class="mb-3 text-align-left">
-                        <label for="exampleFormControlInput-2" class="form-label">Enter New Password: *</label>
-                        <input type="password" class="form-control logininput" id="exampleFormControlInput-2" placeholder="">
+                        <label for="exampleFormControlInput1" class="form-label">Enter New Password: *</label>
+                        <input type="password" class="form-control logininput" id="exampleFormControlInput1" placeholder="">
                     </div>
                     <div class="mb-3 text-align-left">
-                        <label for="exampleFormControlInput-3" class="form-label ">Reenter Password: *</label>
-                        <input type="password" class="form-control logininput" id="exampleFormControlInput-3" placeholder="">
+                        <label for="exampleFormControlInput1" class="form-label ">Reenter Password: *</label>
+                        <input type="password" class="form-control logininput" id="exampleFormControlInput1" placeholder="">
                     </div>
 
 
@@ -2758,17 +2702,17 @@
     <!-- membership term $ condition popup start -->
 
     <div class="modal fade mt-5" id="memberModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered tearms-condition-pop">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content  border-0">
-                <div class="border-bottom mx-4">
+                <div class="border-bottom">
                     <div class=" m-2 modal-headers  border-0">
 
 
                         <button type="button" class="btn-close closedinnerpop float-end" data-bs-dismiss="modal" aria-label="Close"></button>
 
                     </div>
-                    <h5 class="mx-0 updatenew">Terms and Conditions</h5>
-                    <p class="mx-0 updatecondition">
+                    <h5 class="mx-4 updatenew">Terms and Conditions</h5>
+                    <p class="mx-4 updatecondition">
                         Last Updated on August, 23 2023
                     </p>
                 </div>
@@ -2777,10 +2721,10 @@
 
                 <div class="modal-body  rounded-0">
                     <div class="  longEnough content" data-mcs-theme="red">
-                        <h2 class="heading-models mx-2 mb-2">Terms</h2>
+                        <h2 class="heading-models mx-4 mb-2">Terms</h2>
                         <p class="membercontent mx-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p class="membercontent mx-2">
+                        <p class="membercontent mx-4">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Ut niyhg eeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut yulg aliquip ex ea commodo consequat. Duis
                             aute irure dolor in Ut fugiat hbjk ereprehenderit in voluptate velit esse cillum dolore eu fugiat nulla hnjl pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpah qui officia deserunt mollit anim id est laborum.
                             . Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla tfvjhb pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa q hbjk ereprehenderit in voluptate velit esse cillum
@@ -2804,28 +2748,27 @@
     <!--  contact-us before login popup start-->
 
     <div class="modal fade px-4" id="exampleModcontact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered contact-us">
-            <div class="modal-content bg-gray">
-                <div class="modal-header border-0 ">
-                    <h5 class="modal-headers contact-header-top">Contact Us</h5>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content ">
+                <div class="modal-header border-0">
+                    <h5 class="modal-headers">Contact Us</h5>
                     <button type="button" class="btn-close closedinnerpop" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body text-center rounded-0 px-5">
-                    <!-- <div class="mb-3 text-align-left">
-                        <label for="exampleFormControlInput-21" class="form-label">Full Name : *</label>
-                        <input type="name" class="form-control logininput" id="exampleFormControlInput-21" placeholder="">
+                <div class="modal-body text-center bgcolor rounded-0 px-5">
+                    <div class="mb-3 text-align-left">
+                        <label for="exampleFormControlInput" class="form-label">Full Name : *</label>
+                        <input type="name" class="form-control logininput" id="exampleFormControlInput1" placeholder="">
                     </div>
                     <div class="mb-3 text-align-left">
-                        <label for="exampleFormControlInput22" class="form-label">Email Id : *</label>
-                        <input type="email" class="form-control logininput" id="exampleFormControlInput22" placeholder="">
-                    </div> -->
+                        <label for="exampleFormControlInput1" class="form-label">Email Id : *</label>
+                        <input type="email" class="form-control logininput" id="exampleFormControlInput1" placeholder="">
+                    </div>
                     <div class="mb-3 text-align-left">
-                        <label for="exampleFormControlInput-21" class="form-label">Subject</label>
-                        <select class="form-select  logininput selectBox" aria-label="Default select example">
-                        <option selected>-Type or Select-</option>
-                        <option value="1"></option>
-                        <option value="2"></option>
-                        <option value="3"></option>
+                        <select class="form-select  logininput" aria-label="Default select example">
+                        <option selected></option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
                       </select>
                     </div>
                     <div class="mb-3 text-align-left">
@@ -2842,7 +2785,7 @@
 
 
                 <div class=" col-12 pb-4 mt-3 px-5 ">
-                    <button type="button" class="col-12 deactivebutton-set ">Submit</button>
+                    <button type="button" class="col-12 deactivebutton-set ">Set Password</button>
                 </div>
             </div>
         </div>
@@ -2857,7 +2800,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content ">
                 <div class="modal-header border-0">
-                    <h5 class="modal-headers ">Contact Us</h5>
+                    <h5 class="modal-headers">Contact Us</h5>
                     <button type="button" class="btn-close closedinnerpop" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center bgcolor rounded-0 px-5">
@@ -2907,15 +2850,14 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.js"></script>
 
 
+    <script src="../js/jquery.bxslider.min.js "></script>
 
-
-    <script src="js/custom.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/jquery-ui.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="../js/main.js "></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
 
 
