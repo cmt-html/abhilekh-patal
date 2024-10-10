@@ -1,27 +1,7 @@
 "use strict";
 
 // image gallery
-$(document).ready(function () {
-  $(".filter-button").click(function () {
-    var value = $(this).attr('data-filter'); //alert(value);
-
-    if (value == "all") {
-      $('.filter').removeClass('hidden');
-      $('.filter').show('1000');
-    } else {
-      $(".filter").not('.' + value).hide('3000');
-      $('.filter').filter('.' + value).show('3000');
-    }
-  });
-  $("#header").load("header.html");
-  $("#footer").load("footer.html");
-});
-$('.filter-button').click(function () {
-  var $this = $(this);
-  $('.filter-button').removeClass('active-12');
-  $(this).addClass('active-12');
-}); //closed
-
+//closed
 $(document).ready(function () {
   $("#nav").children("li").first().children("a").addClass("active-1").next().addClass("is-open").show();
   $("#nav").on("click", "li > a", function () {

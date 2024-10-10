@@ -447,7 +447,7 @@
                         </section>
                         <section class="accordion-content">
                             <article class="accordion-item accordion-active" data-actab-group="0" data-actab-id="0">
-                                <h4 class="accordion-item__label">Title 1</h4>
+                                <h4 class="accordion-item__label">POD Orders</h4>
                                 <div class="accordion-item__container">
                                     <div class="row">
                                         <div class="col-md-6 d-flex mobile-block justify-content-start  pt-3 pb-2">
@@ -655,7 +655,7 @@
                                 </div>
                             </article>
                             <article class="accordion-item" data-actab-group="0" data-actab-id="1">
-                                <h4 class="accordion-item__label">Title 2</h4>
+                                <h4 class="accordion-item__label">POD Page Rate</h4>
                                 <div class="accordion-item__container">
                                     <div class="button-pod float-end">
                                         <div class="collection-button-box  col-md-6 d-flex justify-content-end">
@@ -810,6 +810,8 @@
     </footer>
 
     <!-- Button trigger modal -->
+
+
     <div class="modal fade" id="example-collection-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content rounded-3">
@@ -820,34 +822,44 @@
                 <div class="modal-body text-center bgcolor rounded-0 p-4">
                     <div class="row">
                         <div class="mb-3 text-align-left col-md-12">
-                            <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Collection Size: *</label>
-                            <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput1" placeholder="">
+                            <label for="exampleFormControlInput41" class="form-label pt-2 modelcollectionformstyle">Collection Size: *</label>
+                            <input type="text" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput41" placeholder="Freedom">
                         </div>
                         <div class="mb-3 text-align-left col-md-12">
-                            <label for="exampleFormControlInput1" class="form-label pt-2 modelcollectionformstyle">Description : *</label>
-                            <textarea class="form-control bg-transparent rounded-3" id="exampleFormControlTextarea1" placeholder="" rows="3"></textarea>
+                            <label for="exampleFormControlTextarea42" class="form-label pt-2 modelcollectionformstyle">Description : *</label>
+                            <textarea class="form-control bg-transparent rounded-3" id="exampleFormControlTextarea42" placeholder="Standard Size Page " rows="3"></textarea>
                         </div>
-                        <div class="mx-auto col-md-12 col-lg-12 col-xl-10">
-                            <div class="mb-3 text-align-left float-start position-relative ">
-                                <label for="exampleFormControlInput10" class="form-label pt-2 modelcollectionformstyle">Rate per page for Indian National: *</label>
-                                <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput10" placeholder="">
-                                <span class="INR-text">INR</span>
+
+                        <div class="formRate">
+                            <div class="mb-3 text-align-left col-md-5 ">
+                                <label for="exampleFormControlInput42" class="form-label pt-2 modelcollectionformstyle">Rate per page for Indian National: *</label>
+                                <div class="input-group date bg-transparent PriceRate">
+                                    <input type="text" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput42" placeholder="">
+                                    <span class="inr">INR</span>
+
+                                </div>
                             </div>
-                            <div class="mb-3 text-align-left float-start ms-lg-5 ms-md-0 ms-0 position-relative">
-                                <label for="exampleFormControlInput11" class="form-label pt-2 modelcollectionformstyle">Rate per page for Foreign National: *</label>
-                                <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput11" placeholder="">
-                                <span class="INR-text-end">INR</span>
+                            <div class="mb-3 text-align-left col-md-5">
+                                <label for="exampleFormControlInput43" class="form-label pt-2 modelcollectionformstyle">Rate per page for Foreign National: *</label>
+                                <div class="input-group date bg-transparent PriceRate">
+                                    <input type="text" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput43" placeholder="">
+                                    <span class="inr">INR</span>
+
+                                </div>
                             </div>
+
                         </div>
                     </div>
-                    <div class="pb-4 mt-3">
-                        <button type="button" class="deactivebutton float-end">Add Plan</button>
+
+
+                    <div class="button-style-create-note mt-3">
+                        <div class="button"><button class="btn collection-active float-start  space-button">Add Page Si ze</button></div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <div class="modal fade" id="example-collection-edit-col" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content rounded-3">
@@ -858,40 +870,52 @@
                 <div class="modal-body text-center bgcolor rounded-0 p-4">
                     <div class="row">
                         <div class="mb-3 text-align-left col-md-12">
-                            <label for="exampleFormControlInput12" class="form-label pt-2 modelcollectionformstyle">Collection Size: *</label>
-                            <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput12" placeholder="Public Record">
+                            <label for="exampleFormControlInput41" class="form-label pt-2 modelcollectionformstyle">Collection Size: *</label>
+                            <input type="text" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput41" placeholder="Public Record">
                         </div>
                         <div class="mb-3 text-align-left col-md-12">
-                            <label for="exampleFormControlTextarea3" class="form-label pt-2 modelcollectionformstyle">Description : *</label>
-                            <textarea class="form-control bg-transparent rounded-3" id="exampleFormControlTextarea3" placeholder="Public Record" rows="3"></textarea>
+                            <label for="exampleFormControlTextarea42" class="form-label pt-2 modelcollectionformstyle">Description : *</label>
+                            <textarea class="form-control bg-transparent rounded-3" id="exampleFormControlTextarea42" placeholder="Public Record " rows="3"></textarea>
                         </div>
-                        <div class="mx-auto col-md-12 col-lg-12 col-xl-10">
-                            <div class="mb-3 text-align-left float-start position-relative ">
-                                <label for="exampleFormControlInput14" class="form-label pt-2 modelcollectionformstyle">Rate per page for Indian National: *</label>
-                                <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput14" placeholder="10.00">
-                                <span class="INR-text">INR</span>
+
+                        <div class="formRate">
+                            <div class="mb-3 text-align-left col-md-5 ">
+                                <label for="exampleFormControlInput42" class="form-label pt-2 modelcollectionformstyle">Rate per page for Indian National: *</label>
+                                <div class="input-group date bg-transparent PriceRate">
+                                    <input type="text" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput42" placeholder="10.00">
+                                    <span class="inr">INR</span>
+
+                                </div>
                             </div>
-                            <div class="mb-3 text-align-left float-start ms-lg-5 ms-md-0 ms-0 position-relative">
-                                <label for="exampleFormControlInput15" class="form-label pt-2 modelcollectionformstyle">Rate per page for Foreign National: *</label>
-                                <input type="password" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput15" placeholder="10.00">
-                                <span class="INR-text-end">INR</span>
+                            <div class="mb-3 text-align-left col-md-5">
+                                <label for="exampleFormControlInput43" class="form-label pt-2 modelcollectionformstyle">Rate per page for Foreign National: *</label>
+                                <div class="input-group date bg-transparent PriceRate">
+                                    <input type="text" class="form-control rounded-5 inputstyle bg-transparent" id="exampleFormControlInput43" placeholder="40.00">
+                                    <span class="inr">INR</span>
+
+                                </div>
                             </div>
+
                         </div>
                     </div>
-                    <div class=" pb-4 mt-3  d-flex justify-content-end ">
-                        <button class="btn collection-button float-start me-3">Cancel</button>
-                        <button class="btn collection-active float-start"> Update</button>
+
+
+                    <div class="button-style-create-note mt-3 ">
+                        <div class="button"><button class="btn collection-button float-start me-3 space-button">Cancel</button></div>
+                        <div class="button"><button class="btn collection-active float-start space-button  space-button"> Update</button></div>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
 
+
     <div class="modal fade" id="exampleModal-collection-delete-pod" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-md">
             <div class="modal-content rounded-3">
                 <div class="modal-header rounded-0 border-0">
-                    <h5 class="update-order-text">Edit Plan</h5>
+                    <h5 class="update-order-text"></h5>
                     <button type="button" class="btn-close closedinnerpop" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center bgcolor deletetext rounded-0 p-4">
@@ -899,11 +923,9 @@
                         <h1>Are You Sure? </h1>
                         <p>Do you really want to Delete this POD Page Rate?</p>
                     </div>
-                    <div class="pb-4 mt-3">
-                        <div class="collection-button-box float-end col-md-12 d-flex justify-content-center">
-                            <button class="btn collection-button float-start me-3">Cancel</button>
-                            <button class="btn collection-active float-start">Delete</button>
-                        </div>
+                    <div class="button-style-create-note mt-3 deleteCenter">
+                        <div class="button"><button class="btn collection-button float-start me-3 space-button">Cancel</button></div>
+                        <div class="button"><button class="btn collection-active float-start space-button  space-button"> Delete</button></div>
                     </div>
                 </div>
             </div>

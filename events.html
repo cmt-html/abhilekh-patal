@@ -16,11 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <title>Plan Visit</title>
-    <style>
-        #ui-datepicker-div {
-            display: none !important;
-        }
-    </style>
 </head>
 
 <body>
@@ -450,181 +445,86 @@
     </header>
 
     <!-- PLAN VISIT PAGE START  -->
-    <section class="select-plan-visite pb-5 bg-color-gray2 ">
-        <div class="container pt-md-5 mt-md-4">
-            <div class="plan-visit">
-                <p class=" planvisit  mb-4">Plan your visit to NAI</p>
-                <p class="mb-5 p-details">Personal Details :</p>
+    <section class="select-plan-event pb-5 bg-color-gray2 ">
+        <div class="container px-md-5">
+
+            <div class="row">
+                <div class="heading-event">
+                    <h2>Events</h2>
+                </div>
+
+                <div class="card-wrapper">
+                    <p class="card-heading">Ongoing Event</p>
+
+                    <div class="cards-main">
+                        <div class="cards-event">
+
+
+                            <p>Gandhi Throughout the history</p>
+                        </div>
+
+
+                        <div class="cards-event-text">
+
+                            <h3>Jahangir Art Gallery</h3>
+                            <p><u>Address:</u> 161B, Mahatma Gandhi Road, Kala Ghoda, Fort, Mumbai, Maharashtra 400001</p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
             </div>
-            <div class="row ps-4">
-                <div class="col-md-6">
 
-                    <div class="row">
-                        <div class="mb-3">
-                            <div class="row">
-                                <label for="inputlocation" class="col-md-4 col-form-label">Prefix :</label>
-                                <div class="col-md-7">
-                                    <select class="form-select selectinput">
-                                <option selected> -Select-</option>
-                                <option value="1">New Delhi</option>
-                                <option value="2">BHUBANESWAR</option>
-                                <option value="3">BHOPAL</option>
-                                <option value="3">PUNE</option>
-                            </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="row">
-                                <label for="staticName-1" class="col-md-4 col-form-label">Full Name :</label>
-                                <div class="col-md-7">
-                                    <input type="name" class="form-control logininput" id="staticName-1" value="" title="name.">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="row">
-                                <label for="staticName-2" class="col-md-4 col-form-label">Father’s/ Husbands Name. :</label>
-                                <div class="col-md-7">
-                                    <input type="name" class="form-control logininput " id="staticName-2" value="" title="name.">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3 ">
-                            <div class="row">
-                                <label for="staticbirth" class="col-md-4 col-form-label">Date of Birth :</label>
-                                <div class="col-md-7">
-                                    <input type="date" class="date form-control logininput " data-date-format="mm-dd-yyyy" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3 ">
-                            <div class="row">
-                                <label for="inputQualification" class="col-md-4  col-form-label">Qualification :</label>
-                                <div class="col-md-7">
-                                    <input type="Qualification" class="form-control logininput " id="staticQualification" value="" title="Qualification">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3 ">
-                            <div class="row">
-                                <label for="inputCountry" class="col-md-4  col-form-label">Nationality :</label>
-                                <div class="col-md-7">
-                                    <input type="country" class="form-control logininput" id="staticcountry" value="" title="country">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3 ">
-                            <div class="row">
-                                <label for="staticemail" class="col-md-4 col-form-label">Email Id :</label>
-                                <div class="col-md-7">
-                                    <input type="email" class="form-control logininput " id="staticemail" value="" title="email">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3 ">
-                            <div class="row">
-                                <label for="staticPhone" class="col-md-4 col-form-label">Mobile Number :</label>
-                                <div class="col-md-7">
-                                    <input name="Phone" type="Phone no" class="form-control logininput" id="staticPhone " placeholder="" title="Phone no.">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3 ">
-                            <div class="row">
-                                <label for="exampleFormControlTextarea1" class="col-md-4 col-form-label">Address (local) :</label>
-                                <div class="col-md-7">
-                                    <textarea class="form-control rounded-3" id="exampleFormControlTextarea1" rows="3" style="background: none;"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3 ">
-                            <div class="row">
-                                <label for="exampleFormControlTextarea" class="col-md-4 col-form-label">Address (Permanant) :</label>
-                                <div class="col-md-7">
-                                    <textarea class="form-control rounded-3" id="exampleFormControlTextarea" rows="3" style="background: none;"></textarea>
-                                </div>
-                            </div>
-                        </div>
+            <div class="pastEventWrapper">
+                <h2 class="card-heading">Past Event</h2>
+
+
+                <div class="cards-main">
+                    <div class="cards-event">
+
+
+                        <p>The Restless Visionary</p>
                     </div>
+
+                    <div class="cards-event">
+
+
+                        <p>Lorem Ipsum</p>
+                    </div>
+
+                    <div class="cards-event">
+
+
+                        <p>Lorem Ipsum</p>
+                    </div>
+
+                    <div class="cards-event">
+
+
+                        <p>Lorem Ipsum</p>
+                    </div>
+
+
+
+
+
 
                 </div>
 
-                <div class="col-md-6 ps-lg-5">
-                    <p class="mb-5 p-details">Professional Details :</p>
-                    <div class="mb-3 ">
-                        <div class="row">
-                            <label for="inputCountry" class="col-md-4 col-form-label">Profession :</label>
-                            <div class="col-md-7">
-                                <input type="text" class="form-control logininput " id="inputCountry" value="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <div class="row">
-                            <label for="inputCountry-1" class="col-md-4 col-form-label">Subject of Research:</label>
-                            <div class="col-md-7">
-                                <input type="text" class="form-control logininput " id="inputCountry-1" value="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3 ">
-                        <div class="row">
-                            <label for="inputCountry-2" class="col-md-4 col-form-label">University/ Institute Registered
-                            with:</label>
-                            <div class="col-md-7">
-                                <input type="text" class="form-control logininput " id="inputCountry-2" value="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3  borderstyle pb-4 ">
-                        <div class="row">
-                            <label for="inputCountry-3" class="col-md-4 col-form-label">Period for which admission is
-                            sought:</label>
-                            <div class="col-md-7">
-                                <input type="text" class="form-control logininput " id="inputCountry-3" value="">
-                            </div>
-                        </div>
-                    </div>
-                    <p class="mb-4 mt-5 p-details">Particulars of Records to be consulted:</p>
-                    <div class="layoutdetails">
-                        <form class="row g-3 m-2 formdetails">
-                            <div class="col-md-4">
-                                <label for="validationDefault01" class="form-label">First name</label>
-                                <input type="text" class="form-control logininput" id="validationDefault01" value="type here.." required>
-                            </div>
-                            <div class="col-md-4">
-                                <label for="validationDefault02" class="form-label">Period</label>
-                                <input type="text" class="form-control logininput" id="validationDefault02" value="type here.." required>
-                            </div>
-                            <div class="col-md-4">
-                                <label for="validationDefaultUsername" class="form-label">Remark</label>
-                                <div class="input-group">
-                                    <input type="text" class="form-control logininput" id="validationDefaultUsername" value="type here.." aria-describedby="inputGroupPrepend2" required>
-                                </div>
-                            </div>
-                            <div class="col-12 pb-4">
-                                <button class="btn btn-primary buttonadd" type="submit"> + Add</button>
-                            </div>
-                        </form>
-                    </div>
-                    <p class="scholars mt-4 ">*Scholars are requested to attach a letter of recommendation from their University/ Institute/Department. However, the foreign scholars are requested to broing a letter of accreditation from the diplomatic representatives of their
-                        country in India as well.</p>
-                    <fieldset class="upload_dropZone radius-upload text-center mb-3 p-4">
-                        <legend class="visually-hidden">Image uploader</legend>
-                        <svg class="upload_svg" width="60" height="2px" aria-hidden="true">
-                            <use href="#icon-imageUpload"></use>
-                        </svg>
-                        <p class="small my-2"> Drag and drop files here orDrag</p>
-                        <input id="upload_image_background" data-post-name="image_background" data-post-url="https://someplace.com/image/uploads/backgrounds/" class="pos invisible" type="file" multiple accept="image/jpeg, image/png, image/svg+xml" />
-                        <label class="btn btn-upload mb-3" for="upload_image_background">Browse Document</label>
-                        <div class="upload_gallery d-flex flex-wrap justify-content-center gap-3 mb-0"></div>
-                    </fieldset>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-2">
-                        <button class="btn btn-primary next  btn-btnstart" data-bs-target="#exampleModalplan" data-bs-toggle="modal">Next
-                        </button>
-                    </div>
-                </div>
+
+
+
+
+
+
             </div>
         </div>
     </section>
