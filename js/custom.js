@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
   $("#head").load("/root/head.html");
 
@@ -10,7 +8,19 @@ $(document).ready(function () {
   $("#footer").load("/root/footer.html");
 });
 
+
+
+
 function afterHeaderCall() {
+
+  function closeMenus(){
+    $(".asvanceSearch").hide();
+    $(".backdrop-shaddow").hide();
+    $(".megahmenudrop, .searchButton").removeClass("active");
+    $(".mobile-advanceSearch").removeClass("active");
+  }
+
+
   $(document).ready(function () {
     $(".filter-button").click(function () {
       var value = $(this).attr("data-filter");
@@ -27,6 +37,10 @@ function afterHeaderCall() {
           .show("3000");
       }
     });
+
+    $(".close-avd-btn").click(function(){
+      closeMenus();
+    })
 
     $(".filter-button").click(function () {
       var $this = $(this);
@@ -55,6 +69,43 @@ function afterHeaderCall() {
         $(this).removeClass("active-1");
       }
     });
+
+    $(".advance-search #search").on("focus", function(){
+      $(".advance-search").addClass("search-active");
+    });
+
+    $(".advance-search #search").on("focusout", function(){
+      $(".advance-search").removeClass("search-active");
+    });
+
+
+    // Range Slider
+
+    $("#avdRangSlider").slider({
+      range: true,
+      min: 1800,
+      max: 2040,
+      values: [1887, 2007],
+      slide: function (event, ui) {
+        $(".from").val(ui.values[0]);
+        $(".to").val(ui.values[1]);
+      },
+    });
+
+    $(".from").change(function () {
+      var value = $(this).val();
+      console.log(typeof value);
+      $("#avdRangSlider").slider("values", 0, value);
+    });
+
+    $(".to").change(function () {
+      var value = $(this).val();
+      console.log(typeof value);
+      $("#avdRangSlider").slider("values", 1, value);
+    });
+
+
+    // Range Slider close
 
     jQuery("#eye").click(function () {
       if (jQuery(this).hasClass("fa-eye-slash")) {
@@ -538,6 +589,7 @@ auto complete
     });
 
     $(".searchButton").click(function () {
+      $(this).addClass("active");
       $(".asvanceSearch").slideToggle();
       $(".backdrop-shaddow").toggleClass("show");
     });
@@ -550,6 +602,7 @@ auto complete
     });
 
     $(".backdrop-shaddow").on("click", function () {
+      $(".searchButton").removeClass("active");
       $("nav.megahmenudrop").removeClass("active");
       $(".backdrop-shaddow").removeClass("show");
       $("body").removeClass("menuActive");
@@ -574,6 +627,7 @@ auto complete
       $("#containerAdvanceSearch").appendTo(".mobile-advanceSearch");
 
       $(".advanceSearch-btn").on("click", function () {
+       
         $(this)
           .parent()
           .parent()
