@@ -8,18 +8,13 @@ $(document).ready(function () {
   $("#footer").load("/root/footer.html");
 });
 
-
-
-
 function afterHeaderCall() {
-
-  function closeMenus(){
+  function closeMenus() {
     $(".asvanceSearch").hide();
     $(".backdrop-shaddow").hide();
     $(".megahmenudrop, .searchButton").removeClass("active");
     $(".mobile-advanceSearch").removeClass("active");
   }
-
 
   $(document).ready(function () {
     $(".filter-button").click(function () {
@@ -38,9 +33,9 @@ function afterHeaderCall() {
       }
     });
 
-    $(".close-avd-btn").click(function(){
+    $(".close-avd-btn").click(function () {
       closeMenus();
-    })
+    });
 
     $(".filter-button").click(function () {
       var $this = $(this);
@@ -70,14 +65,13 @@ function afterHeaderCall() {
       }
     });
 
-    $(".advance-search #search").on("focus", function(){
+    $(".advance-search #search").on("focus", function () {
       $(".advance-search").addClass("search-active");
     });
 
-    $(".advance-search #search").on("focusout", function(){
+    $(".advance-search #search").on("focusout", function () {
       $(".advance-search").removeClass("search-active");
     });
-
 
     // Range Slider
 
@@ -103,7 +97,6 @@ function afterHeaderCall() {
       console.log(typeof value);
       $("#avdRangSlider").slider("values", 1, value);
     });
-
 
     // Range Slider close
 
@@ -627,7 +620,6 @@ auto complete
       $("#containerAdvanceSearch").appendTo(".mobile-advanceSearch");
 
       $(".advanceSearch-btn").on("click", function () {
-       
         $(this)
           .parent()
           .parent()
@@ -716,6 +708,7 @@ auto complete
       slidesPerView: 4,
       spaceBetween: 10,
       centeredSlides: false,
+      autoHeight: false,
 
       pagination: { el: ".swiper-pagination", clickable: true },
 
@@ -746,74 +739,6 @@ auto complete
       },
     });
 
-    // Register js start form here  =================>
-
-    function validatePassword() {
-      const password = document.getElementById("password").value;
-
-      // Validate length
-      const length = document.getElementById("length");
-      if (password.length >= 8) {
-        length.classList.remove("invalid");
-        length.classList.add("valid");
-      } else {
-        length.classList.remove("valid");
-        length.classList.add("invalid");
-      }
-
-      // Validate number
-      const number = document.getElementById("number");
-      if (/\d/.test(password)) {
-        number.classList.remove("invalid");
-        number.classList.add("valid");
-      } else {
-        number.classList.remove("valid");
-        number.classList.add("invalid");
-      }
-
-      // Validate special character
-      const special = document.getElementById("special");
-      if (/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
-        special.classList.remove("invalid");
-        special.classList.add("valid");
-      } else {
-        special.classList.remove("valid");
-        special.classList.add("invalid");
-      }
-
-      // Validate uppercase letter
-      const uppercase = document.getElementById("uppercase");
-      if (/[A-Z]/.test(password)) {
-        uppercase.classList.remove("invalid");
-        uppercase.classList.add("valid");
-      } else {
-        uppercase.classList.remove("valid");
-        uppercase.classList.add("invalid");
-      }
-
-      // Validate lowercase letter
-      const lowercase = document.getElementById("lowercase");
-      if (/[a-z]/.test(password)) {
-        lowercase.classList.remove("invalid");
-        lowercase.classList.add("valid");
-      } else {
-        lowercase.classList.remove("valid");
-        lowercase.classList.add("invalid");
-      }
-    }
-
-    function togglePasswordVisibility() {
-      const passwordInput = document.querySelectorAll(".password");
-
-      passwordInput.forEach((el) => {
-        if (el.type === "password") {
-          el.type = "text";
-        } else {
-          el.type = "password";
-        }
-      });
-    }
-
     new ResizeObserver(() => scroll.update()).observe(
       document.querySelector("main")
     );
@@ -822,5 +747,73 @@ auto complete
       el: document.querySelector("main"),
       smooth: true,
     });
+  });
+}
+
+// Register js start form here  =================>
+
+function validatePassword() {
+  const password = document.getElementById("password").value;
+
+  // Validate length
+  const length = document.getElementById("length");
+  if (password.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+
+  // Validate number
+  const number = document.getElementById("number");
+  if (/\d/.test(password)) {
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+
+  // Validate special character
+  const special = document.getElementById("special");
+  if (/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+    special.classList.remove("invalid");
+    special.classList.add("valid");
+  } else {
+    special.classList.remove("valid");
+    special.classList.add("invalid");
+  }
+
+  // Validate uppercase letter
+  const uppercase = document.getElementById("uppercase");
+  if (/[A-Z]/.test(password)) {
+    uppercase.classList.remove("invalid");
+    uppercase.classList.add("valid");
+  } else {
+    uppercase.classList.remove("valid");
+    uppercase.classList.add("invalid");
+  }
+
+  // Validate lowercase letter
+  const lowercase = document.getElementById("lowercase");
+  if (/[a-z]/.test(password)) {
+    lowercase.classList.remove("invalid");
+    lowercase.classList.add("valid");
+  } else {
+    lowercase.classList.remove("valid");
+    lowercase.classList.add("invalid");
+  }
+}
+
+function togglePasswordVisibility() {
+  const passwordInput = document.querySelectorAll(".password");
+
+  passwordInput.forEach((el) => {
+    if (el.type === "password") {
+      el.type = "text";
+    } else {
+      el.type = "password";
+    }
   });
 }

@@ -29,7 +29,7 @@ header {
   z-index: 9;
   background-color: #fff;
   padding: 15px 0 !important;
-  box-shadow: -77px 62px 28px 0px #ababab00;
+  box-shadow: -12px 10px 16px 0px rgba(171, 171, 171, 0.09);
 
   .logo {
     max-width: 187px !important;
@@ -231,7 +231,6 @@ header {
 
   .avd-search {
     margin-bottom: 24px;
-    font-size: 18px;
   }
 
   .adlebel {
@@ -451,11 +450,18 @@ body.menuActive {
 }
 
 @media (width > 1200px) {
+  .close-input {
+    visibility: hidden;
+  }
   .advance-search.search-active {
     .advanceSearch-btn {
       width: 0;
       opacity: 0;
       border: 1px solid #73081c;
+    }
+
+    .close-input {
+      visibility: visible;
     }
 
     .search-wrap {
@@ -492,7 +498,7 @@ body.menuActive {
     font-size: 22px;
   }
   .mode-and-notifiation img {
-    width: 64px;
+    width: 30px !important;
   }
 }
 
@@ -717,7 +723,7 @@ body.menuActive {
       margin: 0px auto;
       max-width: 100%;
       padding: 0 15px;
-      transition: height .3s;
+      transition: height 0.3s;
       overflow-y: auto;
       height: 85%;
       transform: none;
@@ -791,7 +797,6 @@ body.menuActive {
     }
 
     .advanceSearch-btn {
-      font-size: 18px;
       font-weight: 700;
       color: #73081c;
       text-decoration: underline;
@@ -810,8 +815,12 @@ body.menuActive {
 
     .nav-middle-part .search-wrap input {
       width: 100%;
-      padding: 10px 0;
+      padding: 8px 0;
     }
+  }
+
+  header .avd-rang-label {
+    position: relative;
   }
 
   .border-div {
@@ -899,6 +908,15 @@ body.menuActive {
 }
 
 @media (max-width: 600px) {
+
+  .search-icon.only-mobile span {
+    font-size: 24px;
+}
+
+.heandler-icons .material-symbols-outlined {
+  font-size: 30px;
+}
+
   .mobile-header .expolore-btn ul li {
     margin: 0 0px;
   }
@@ -928,7 +946,8 @@ body.menuActive {
 
   .mobile-advanceSearch .advanceSearch-btn {
     padding: 9px 9px !important;
-    font-size: 17px;
+    font-size: 14px;
+    line-height: normal;
   }
 }
 

@@ -13852,11 +13852,16 @@ input[type=search]::-webkit-search-results-decoration {
   margin-bottom: 60px;
 }
 
+.counterdiv {
+  margin-bottom: 65px !important;
+}
+
 .trending-slider .img-with-icon {
   position: relative;
   margin-bottom: 4px;
   border-radius: 12px;
   overflow: hidden;
+  max-height: 375px;
 }
 .trending-slider .img-with-icon img {
   width: 100%;
@@ -17043,7 +17048,7 @@ header {
   z-index: 9;
   background-color: #fff;
   padding: 15px 0 !important;
-  box-shadow: -77px 62px 28px 0px rgba(171, 171, 171, 0);
+  box-shadow: -12px 10px 16px 0px rgba(171, 171, 171, 0.09);
 }
 header .logo {
   max-width: 187px !important;
@@ -17219,7 +17224,6 @@ header #containerAdvanceSearch .form-select {
 }
 header .avd-search {
   margin-bottom: 24px;
-  font-size: 18px;
 }
 header .adlebel {
   font-size: 16px;
@@ -17397,10 +17401,16 @@ body.menuActive {
 }
 
 @media (width > 1200px) {
+  .close-input {
+    visibility: hidden;
+  }
   .advance-search.search-active .advanceSearch-btn {
     width: 0;
     opacity: 0;
     border: 1px solid #73081c;
+  }
+  .advance-search.search-active .close-input {
+    visibility: visible;
   }
   .advance-search.search-active .search-wrap {
     border: 1px solid #676767 !important;
@@ -17432,7 +17442,7 @@ body.menuActive {
     font-size: 22px;
   }
   .mode-and-notifiation img {
-    width: 64px;
+    width: 30px !important;
   }
 }
 @media (max-width: 1200px) {
@@ -17680,7 +17690,6 @@ body.menuActive {
     height: 100%;
   }
   .mobile-advanceSearch.active .advanceSearch-btn {
-    font-size: 18px;
     font-weight: 700;
     color: #73081c;
     text-decoration: underline;
@@ -17695,7 +17704,10 @@ body.menuActive {
   }
   .mobile-advanceSearch .nav-middle-part .search-wrap input {
     width: 100%;
-    padding: 10px 0;
+    padding: 8px 0;
+  }
+  header .avd-rang-label {
+    position: relative;
   }
   .border-div {
     display: none;
@@ -17760,6 +17772,12 @@ body.menuActive {
   }
 }
 @media (max-width: 600px) {
+  .search-icon.only-mobile span {
+    font-size: 24px;
+  }
+  .heandler-icons .material-symbols-outlined {
+    font-size: 30px;
+  }
   .mobile-header .expolore-btn ul li {
     margin: 0 0px;
   }
@@ -17784,7 +17802,8 @@ body.menuActive {
   }
   .mobile-advanceSearch .advanceSearch-btn {
     padding: 9px 9px !important;
-    font-size: 17px;
+    font-size: 14px;
+    line-height: normal;
   }
 }
 @media (max-width: 350px) {

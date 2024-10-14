@@ -2467,12 +2467,17 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-bottom: 60px;
 }
 
+.counterdiv {
+    margin-bottom: 65px !important;
+}
+
 .trending-slider {
     .img-with-icon {
         position: relative;
         margin-bottom: 4px;
         border-radius: 12px;
         overflow: hidden;
+        max-height: 375px;
         img {
             width: 100%;
             height: 100%;

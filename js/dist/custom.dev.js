@@ -559,6 +559,7 @@ function afterHeaderCall() {
       slidesPerView: 4,
       spaceBetween: 10,
       centeredSlides: false,
+      autoHeight: false,
       pagination: {
         el: ".swiper-pagination",
         clickable: true
@@ -584,77 +585,7 @@ function afterHeaderCall() {
           slidesPerView: 4
         }
       }
-    }); // Register js start form here  =================>
-
-    function validatePassword() {
-      var password = document.getElementById("password").value; // Validate length
-
-      var length = document.getElementById("length");
-
-      if (password.length >= 8) {
-        length.classList.remove("invalid");
-        length.classList.add("valid");
-      } else {
-        length.classList.remove("valid");
-        length.classList.add("invalid");
-      } // Validate number
-
-
-      var number = document.getElementById("number");
-
-      if (/\d/.test(password)) {
-        number.classList.remove("invalid");
-        number.classList.add("valid");
-      } else {
-        number.classList.remove("valid");
-        number.classList.add("invalid");
-      } // Validate special character
-
-
-      var special = document.getElementById("special");
-
-      if (/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
-        special.classList.remove("invalid");
-        special.classList.add("valid");
-      } else {
-        special.classList.remove("valid");
-        special.classList.add("invalid");
-      } // Validate uppercase letter
-
-
-      var uppercase = document.getElementById("uppercase");
-
-      if (/[A-Z]/.test(password)) {
-        uppercase.classList.remove("invalid");
-        uppercase.classList.add("valid");
-      } else {
-        uppercase.classList.remove("valid");
-        uppercase.classList.add("invalid");
-      } // Validate lowercase letter
-
-
-      var lowercase = document.getElementById("lowercase");
-
-      if (/[a-z]/.test(password)) {
-        lowercase.classList.remove("invalid");
-        lowercase.classList.add("valid");
-      } else {
-        lowercase.classList.remove("valid");
-        lowercase.classList.add("invalid");
-      }
-    }
-
-    function togglePasswordVisibility() {
-      var passwordInput = document.querySelectorAll(".password");
-      passwordInput.forEach(function (el) {
-        if (el.type === "password") {
-          el.type = "text";
-        } else {
-          el.type = "password";
-        }
-      });
-    }
-
+    });
     new ResizeObserver(function () {
       return scroll.update();
     }).observe(document.querySelector("main"));
@@ -662,5 +593,75 @@ function afterHeaderCall() {
       el: document.querySelector("main"),
       smooth: true
     });
+  });
+} // Register js start form here  =================>
+
+
+function validatePassword() {
+  var password = document.getElementById("password").value; // Validate length
+
+  var length = document.getElementById("length");
+
+  if (password.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  } // Validate number
+
+
+  var number = document.getElementById("number");
+
+  if (/\d/.test(password)) {
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  } // Validate special character
+
+
+  var special = document.getElementById("special");
+
+  if (/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+    special.classList.remove("invalid");
+    special.classList.add("valid");
+  } else {
+    special.classList.remove("valid");
+    special.classList.add("invalid");
+  } // Validate uppercase letter
+
+
+  var uppercase = document.getElementById("uppercase");
+
+  if (/[A-Z]/.test(password)) {
+    uppercase.classList.remove("invalid");
+    uppercase.classList.add("valid");
+  } else {
+    uppercase.classList.remove("valid");
+    uppercase.classList.add("invalid");
+  } // Validate lowercase letter
+
+
+  var lowercase = document.getElementById("lowercase");
+
+  if (/[a-z]/.test(password)) {
+    lowercase.classList.remove("invalid");
+    lowercase.classList.add("valid");
+  } else {
+    lowercase.classList.remove("valid");
+    lowercase.classList.add("invalid");
+  }
+}
+
+function togglePasswordVisibility() {
+  var passwordInput = document.querySelectorAll(".password");
+  passwordInput.forEach(function (el) {
+    if (el.type === "password") {
+      el.type = "text";
+    } else {
+      el.type = "password";
+    }
   });
 }
