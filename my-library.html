@@ -3,28 +3,226 @@
 
 <head>
     <div id="head">&nbsp;</div>
+    <!-- <link rel="stylesheet" type="text/css" href="scss/main-admin.css" /> -->
     <title>My Library</title>
 </head>
 
 
-<body>
+<body class="bg-color-gray2">
     <div id="header">&nbsp;</div>
 
-    <main>
-        <section class="select-multiselectoption">
-            <div class="container pt-5 px-auto mt-4">
-                <div class="text-starts tag pb-3 "> My Library</div>
+    <main class="main-my-library">
+        <section class="">
+            <div class="container mt-md-5">
+                <h1 class="my-lib-heading"> My Library </h1>
+            </div>
+            <div class="container mt-5 px-auto mt-4">
+
+                <div class="text-starts tag pb-3 "> My Favourites</div>
+
+                <!-- Start Imran Code -->
+                <div class="fev-cards-cont">
+                    <div class="fev-card-wrap">
+                        <ul>
+                            <li>
+                                <a href="mylibrary-collection.html">
+                                    <div class="fev-card">
+                                        <div class="fev-img-wrap">
+                                            <img src="/images/library1.png" alt="library1.png">
+                                            <img src="/images/library2.png" alt="library2.png">
+                                            <img src="/images/library3.png" alt="library3.png">
+                                            <img src="/images/library4.png" alt="library4.png">
+
+                                            <div class="no-of-imgs">
+                                                <h2>+12</h2>
+                                            </div>
+                                        </div>
+                                        <div class="fev-card-details">
+                                            <h2>Mahatma Gandhi</h2>
+                                            <p>15 Records <span>7d</span> </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mylibrary-collection.html">
+                                    <div class="fev-card">
+                                        <div class="fev-img-wrap">
+                                            <img src="/images/library1.png" alt="library1.png">
+                                            <img src="/images/library2.png" alt="library2.png">
+                                            <img src="/images/library3.png" alt="library3.png">
+                                            <img src="/images/library4.png" alt="library4.png">
+
+                                            <div class="no-of-imgs">
+                                                <h2>+7</h2>
+                                            </div>
+                                        </div>
+                                        <div class="fev-card-details">
+                                            <h2>World War I</h2>
+                                            <p>10 Records <span>5mo</span> </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="new-collection">
+                                <a href="#myModalnewcreat" data-bs-toggle="modal">
+                                    <div class="fev-card">
+                                        <div class="fev-img-wrap">
+                                            <div class="new-collection-btn">
+                                                <img src="/images/create new.png" alt="create new.png">
+                                                <h2> New Collection </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="my-tags">
+                    <div class="tag-heading">
+                        <h2 class="text-starts"> My Tags <span>10 tags</span> </h2>
+                    </div>
+
+                    <div class="tags">
+                        <ul>
+                            <li>
+                                <a href="#" data-bs-toggle="modal"> # Somnath Temple <span>(21)</span> </a>
+                            </li>
+                            <li>
+                                <a href="#" data-bs-toggle="modal"> # Mahatma Gandhi <span>(38)</span> </a>
+                            </li>
+                            <li>
+                                <a href="#" data-bs-toggle="modal"># Agriculture History <span>(18)</span> </a>
+                            </li>
+                            <li>
+                                <a href="#" data-bs-toggle="modal"> # Ayurveda <span>(20)</span> </a>
+                            </li>
+                            <li class="create-new-tag">
+                                <a href="#" data-bs-toggle="modal">
+                                    <img src="/images/icons/plus-icon.svg" alt="plus-icon.svg"> Create New Tag </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="my-tags my-paper">
+                    <div class="tag-heading">
+                        <h2 class="text-starts"> My Papers (Coming Soon) </h2>
+                    </div>
+
+                    <div class="fev-cards-cont">
+                        <div class="fev-card-wrap note-with-folder">
+                            <ul>
+                                <li class="new-collection locked">
+                                    <a href="#myModalnewcreat" data-bs-toggle="modal">
+                                        <div class="fev-card">
+                                            <div class="fev-img-wrap">
+                                                <div class="new-collection-btn">
+                                                    <img src="/images/create new.png" alt="create new.png">
+                                                    <h2> New Notes </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+
+
+                            <div class="folders">
+                                <div class="folder">
+                                    <div class="tab-color">&nbsp;</div>
+                                    <div class="image-wrraper">
+                                        <img src="/images/part.png" alt="part.png">
+                                        <img src="/images/part.png" alt="part.png">
+                                        <img src="/images/part.png" alt="part.png">
+                                    </div>
+                                    <div class="cont-wrapper">
+                                        <div class="cont">
+                                            <h3>Mahatma Gandhi</h3>
+                                            <p>Created on, 26th July</p>
+                                        </div>
+                                        <div class="actions1">
+                                            <ul>
+                                                <li>
+                                                    <img src="/images/icons/picture.icon.svg" alt="picture.icon.svg">
+                                                </li>
+                                                <li>
+                                                    <img src="/images/icons/mic-icon.svg" alt="mic-icon.svg">
+                                                </li>
+                                                <li>
+                                                    <img src="/images/icons/Layer-icon.svg" alt="Layer-icon.svg">
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="folder">
+                                    <div class="tab-color">&nbsp;</div>
+                                    <div class="image-wrraper">
+                                        <img src="/images/part.png" alt="part.png">
+                                        <img src="/images/part.png" alt="part.png">
+                                    </div>
+                                    <div class="cont-wrapper">
+                                        <div class="cont">
+                                            <h3>Mahatma Gandhi</h3>
+                                            <p>Created on, 26th July</p>
+                                        </div>
+                                        <div class="actions1">
+                                            <ul>
+                                                <li>
+                                                    <img src="/images/icons/picture.icon.svg" alt="picture.icon.svg">
+                                                </li>
+                                                <li>
+                                                    <img src="/images/icons/mic-icon.svg" alt="mic-icon.svg">
+                                                </li>
+                                                <li>
+                                                    <img src="/images/icons/Layer-icon.svg" alt="Layer-icon.svg">
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- close Imran Code  -->
+
+
+                <!-- <h2> Old Code Start From Here </h2>
+
+
                 <div class="row card-box">
+
                     <div class="col-md-3 ">
                         <div class="libimag ">
                             <a class="addlist" href="mylibrary-collection.html">
                                 <div class=" libimag">
                                     <div class="images">
-                                        <div class="imgright"><img src="images/library1.png" class="card-img-top " alt="..."></div>
-                                        <div class="imgright"> <img src="images/library2.png" class="card-img-top" alt="..."></div>
+                                        <div class="imgright"><img src="images/library1.png" class="card-img-top "
+                                                alt="..."></div>
+                                        <div class="imgright"> <img src="images/library2.png" class="card-img-top"
+                                                alt="..."></div>
                                     </div>
                                     <div class="images ">
-                                        <div class="imgleft"> <img src="images/library3.png" class="card-img-top" alt="..."></div>
+                                        <div class="imgleft"> <img src="images/library3.png" class="card-img-top"
+                                                alt="..."></div>
                                         <div class="imgleft position-relative">
                                             <img src="images/library4.png" class="card-img-top" alt="...">
                                             <div class="text-center mark">+12 </div>
@@ -32,10 +230,10 @@
                                     </div>
                                 </div>
                                 <div class="body">
-                                    <h5 class="card-titles">Mahatma Gandhi</h5>
-                                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-                                    <!-- <p class="card-text"><i class="fa fa-lock pe-2" aria-hidden="true"></i>Private collection</p> -->
-                                    <div class="text-starts Recordcount  "> 15 Records <span class="calculate-day">7d</span></div>
+                                    <div class="text-starts Recordcount  ">
+                                        <h5 class="card-titles">Mahatma Gandhi</h5>
+                                        <p> 15 Records <span class="calculate-day">7d</span></p>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -44,148 +242,168 @@
                     <div class="col-md-3 ">
                         <div class="libimag ">
                             <div class="images">
-                                <div class="imgright"><img src="images/library1.png" class="card-img-top" alt="..."></div>
-                                <div class="imgright"> <img src="images/library2.png" class="card-img-top" alt="..."></div>
+                                <div class="imgright"><img src="images/library1.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="imgright"> <img src="images/library2.png" class="card-img-top" alt="...">
+                                </div>
                             </div>
                             <div class="images">
-                                <div class="imgleft"> <img src="images/library3.png" class="card-img-top" alt="..."></div>
+                                <div class="imgleft"> <img src="images/library3.png" class="card-img-top" alt="...">
+                                </div>
                                 <div class="imgleft position-relative">
                                     <img src="images/library4.png" class="card-img-top" alt="...">
-                                    <span class="text-center mark">+7</span ><a  href="/mylibrary-collection.html"></a>
-                                    </div>
+                                    <span class="text-center mark">+7</span><a href="/mylibrary-collection.html"></a>
                                 </div>
                             </div>
-                            <div class="body pt-2">
+                        </div>
+                        <div class="body pt-2">
+                            <div class="text-starts Recordcount ">
                                 <h5 class="card-titles">World War I</h5>
-                                <!-- <p class="card-text"><i class="fa fa-lock pe-2" aria-hidden="true"></i>Private collection</p>-->
-                                <div class="text-starts Recordcount "> 10 Records <span class="calculate-day">5mo</span></div>
+                                <p> 10 Records <span class="calculate-day">5mo</span></p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-md-3 col-sm-8">
-                            <div class="libimag">
-                                <div class="imglists tex mx-md-2">
-                                    <div class="text-center pt-5 ">
-                                        <div class="text-center pb-3 d-inline-block align">
-                                            <a href="#myModalnewcreat" role="button" class="btn btn-lg btn-btnstart " data-bs-toggle="modal">
-                                                <img class=" img-fluid " src="images/create new.png" class="d-inline-block align" alt="..."></a>
-                                        </div>
-                                        <div class="text-center notes pb-md-5 px-4"> New Collection</div>
+                    <div class="col-md-3 col-sm-8">
+                        <div class="libimag">
+                            <div class="imglists tex mx-md-2">
+                                <div class="">
+                                    <div class="text-center pb-3 d-inline-block align">
+                                        <a href="#myModalnewcreat" role="button" class="btn btn-lg btn-btnstart "
+                                            data-bs-toggle="modal">
+                                            <img class=" img-fluid d-inline-block" src="images/create new.png"
+                                                alt="create new.png"></a>
                                     </div>
+                                    <div class="text-center notes"> New Collection</div>
                                 </div>
                             </div>
-                            <div class="col-auto col-sm-2"></div>
                         </div>
+                        <div class="col-auto col-sm-2"></div>
+                    </div>
 
-                        <div class="text-starts tag pt-5 pb-3 "> My Tags <span class="">10 tags</span></div>
-                        <div class="">
-                            <button type="button" class="  col-lg-2 col-md-2 col-sm-3 col-xs-12  btn-default btn-block "><span>#</span>
-                                Somnath Temple (21)
-                            </button>
-                            <button type="button" class="  col-lg-2 col-md-2 col-sm-3 col-xs-12 btn-default btn-block "><span>#</span>
-                                Mahatma Gandhi(38)
-                            </button>
-                            <button type="button" class="  col-lg-2 col-md-2 col-sm-3 col-xs-12 btn-default btn-block "><span>#</span>
-                                Agriculture History(18)
-                            </button>
-                            <button type="button" class="  col-lg-2 col-md-2 col-sm-3 col-xs-12 btn-default btn-block "><span>#</span>
-                                Ayurveda(20)
-                            </button>
-                            <a href="#myModalnewtag" role="button" data-bs-toggle="modal">
-                                <button type="button " class=" col-lg-2 col-md-2 col-sm-3 col-xs-12 btn-default addnew btn-block"><span>+</span>
+                    <div class="text-starts tag pt-5 pb-3 "> My Tags <span class="">10 tags</span></div>
+                    <div class="">
+                        <button type="button"
+                            class="  col-lg-2 col-md-2 col-sm-3 col-xs-12  btn-default btn-block "><span>#</span>
+                            Somnath Temple (21)
+                        </button>
+                        <button type="button"
+                            class="  col-lg-2 col-md-2 col-sm-3 col-xs-12 btn-default btn-block "><span>#</span>
+                            Mahatma Gandhi(38)
+                        </button>
+                        <button type="button"
+                            class="  col-lg-2 col-md-2 col-sm-3 col-xs-12 btn-default btn-block "><span>#</span>
+                            Agriculture History(18)
+                        </button>
+                        <button type="button"
+                            class="  col-lg-2 col-md-2 col-sm-3 col-xs-12 btn-default btn-block "><span>#</span>
+                            Ayurveda(20)
+                        </button>
+                        <a href="#myModalnewtag" role="button" data-bs-toggle="modal">
+                            <button type="button "
+                                class=" col-lg-2 col-md-2 col-sm-3 col-xs-12 btn-default addnew btn-block"><span>+</span>
                                 Create New Tag
                             </button></a>
-                        </div>
+                    </div>
 
-                        <div class="row">
-                            <div class="text-starts tag pt-5"> My Papers (Coming Soon)</div>
-                            <div class="col-md-3 pt-3 pb-5">
-                                <div class="note-add">
-                                    <div class="text-start tag pb-5 pt-2"><img class=" img-fluid" src="images/padlock.png" class="d-inline-block align" alt="..."></div>
-                                    <div class="text-center   pb-2"><img class="img-fluid" src="images/create new.png" class="d-inline-block align" alt="..."></div>
-                                    <div class="text-center notes px-4"> New Notes </div>
+                    <div class="row">
+                        <div class="text-starts tag pt-5"> My Papers (Coming Soon)</div>
+                        <div class="col-md-3 pt-3 pb-5">
+                            <div class="note-add">
+                                <div class="text-start tag pb-5 pt-2"><img class=" img-fluid" src="images/padlock.png"
+                                        class="d-inline-block align" alt="..."></div>
+                                <div class="text-center   pb-2"><img class="img-fluid" src="images/create new.png"
+                                        class="d-inline-block align" alt="..."></div>
+                                <div class="text-center notes px-4"> New Notes </div>
+                            </div>
+                        </div>
+                        <div class="col-auto"></div>
+                    </div>
+                </div> -->
+            </div>
+
+
+
+
+
+            <div id="myModalnewcreat" class="modal fade mt-4" tabindex="-1" style="padding-top: 129px;">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header modelhead text-start">
+                            <h5 class="modal-title ">Create Collection </h5>
+                        </div>
+                        <div class="modal-body">
+                            <section class="wrapper forgotps">
+                                <div class="container">
+                                    <div class="col-sm-8 offset col-lg-12 offset-lg-12 col-xl-12 offset-xl-12">
+                                        <form class="rounded bg-white">
+                                            <div class="inputDivS">
+                                                <label class="inputLabel mb-2" for="text">Name Collection : *</label>
+                                                <input type="text" class="inputreset" id="name" name="name" required>
+                                            </div>
+                                            <div class="modal-footers fmodels mx-3 pt-5">
+                                                <div class="buttonWrapper  text-end">
+                                                    <button type="submit" id="submitButton"
+                                                        onclick="validateSignupForm()" class=" pure-button btnadd">
+                                                        <span class="btnsubmit-add">submit</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-auto"></div>
+                            </section>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div id="myModalnewcreat" class="modal fade mt-4" tabindex="-1" style="padding-top: 129px;">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header modelhead text-start">
-                                <h5 class="modal-title ">Create Collection </h5>
-                            </div>
-                            <div class="modal-body">
-                                <section class="wrapper forgotps">
-                                    <div class="container">
-                                        <div class="col-sm-8 offset col-lg-12 offset-lg-12 col-xl-12 offset-xl-12">
-                                            <form class="rounded bg-white">
-                                                <div class="inputDivS">
-                                                    <label class="inputLabel" for="text">Name Collection : *</label>
-                                                    <input type="text" class="inputreset" id="name" name="name" required>
+            <div id="myModalnewtag" class="modal fade mt-4" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header modelhead text-start">
+                            <h5 class="modal-title ">Create Tag</h5>
+                            <button type="button" class=" closedinnerpop close" data-ds-dismiss="modal"><span
+                                    aria-hidden="true" class="modal_button">&times;</span><span class="sr-only"></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <section class="wrapper forgotps">
+                                <div class="container">
+                                    <div class="col-sm-8 offset col-lg-12 offset-lg-12 col-xl-12 offset-xl-12">
+                                        <form class="rounded bg-white">
+                                            <div class="inputDivS">
+                                                <label class="inputLabel mb-2" for="text">Name Tag : *</label>
+                                                <input type="text" class="inputreset" id="name" name="name" required>
+                                            </div>
+                                            <div class="modal-footers fmodels mx-3 pt-5">
+                                                <div class="buttonWrapper  text-end">
+                                                    <button type="submit" id="submitButton"
+                                                        onclick="validateSignupForm()" class=" pure-button btnadd">
+                                                        <span class="btnsubmit-add">submit</span>
+                                                    </button>
                                                 </div>
-                                                <div class="modal-footers fmodels mx-3 pt-5">
-                                                    <div class="buttonWrapper  text-end">
-                                                        <button type="submit" id="submitButton" onclick="validateSignupForm()" class=" pure-button btnadd">
-                                                            <span class="btnsubmit-add">submit</span>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                </section>
-                            </div>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </div>
-
-                <div id="myModalnewtag" class="modal fade mt-4" tabindex="-1">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header modelhead text-start">
-                                <h5 class="modal-title ">Create Tag</h5>
-                                <button type="button" class=" closedinnerpop close" data-ds-dismiss="modal"><span aria-hidden="true" class="modal_button">&times;</span><span class="sr-only"></span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <section class="wrapper forgotps">
-                                    <div class="container">
-                                        <div class="col-sm-8 offset col-lg-12 offset-lg-12 col-xl-12 offset-xl-12">
-                                            <form class="rounded bg-white">
-                                                <div class="inputDivS">
-                                                    <label class="inputLabel" for="text">Name Tag : *</label>
-                                                    <input type="text" class="inputreset" id="name" name="name" required>
-                                                </div>
-                                                <div class="modal-footers fmodels mx-3 pt-5">
-                                                    <div class="buttonWrapper  text-end">
-                                                        <button type="submit" id="submitButton" onclick="validateSignupForm()" class=" pure-button btnadd">
-                                                            <span class="btnsubmit-add">submit</span>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
         </section>
 
-        
+
         <div id="footer">&nbsp;</div>
     </main>
 
-        <script src="js/jquery.min.js "></script>
-        <script src="js/jquery.bxslider.min.js "></script>
-        <script src="js/custom.js "></script>
-        <script src="js/main.js "></script>
-        <script src="js/jquery-ui.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js "></script>
+    <script src="js/jquery.bxslider.min.js "></script>
+    <script src="js/custom.js "></script>
+    <script src="js/main.js "></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

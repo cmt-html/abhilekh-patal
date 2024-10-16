@@ -4,6 +4,11 @@
   margin: 0 auto;
 }
 
+ul{
+  margin: 0;
+  padding: 0;
+}
+
 .f-v-center {
   display: flex;
   align-items: center;
@@ -33,6 +38,7 @@ header {
 
   .logo {
     max-width: 187px !important;
+    width: 100%;
     margin: 0;
   }
 
@@ -178,7 +184,7 @@ header {
     align-items: center;
     overflow: hidden;
     transition: width 0.5s ease;
-    border: 1px solid #676767;
+    border: 1px solid #676767 !important;
     color: #73081c;
     font-weight: 700;
   }
@@ -472,7 +478,7 @@ body.menuActive {
 
   .advanceSearch-btn.active {
     background: #f1e6e8;
-    border: 1px solid #73081c;
+    border: 1px solid #73081c !important;
   }
 }
 
