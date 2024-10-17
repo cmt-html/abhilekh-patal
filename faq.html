@@ -2,15 +2,7 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon-icon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="scss/main-admin.css" />
-    <link rel="stylesheet" type="text/css" href="scss/main.css" />
+    <div id="head">&nbsp;</div>
     <title>FAQ</title>
 
 </head>
@@ -18,438 +10,9 @@
 <body class="bg-color-gray2">
 
     <body>
-        <header>
-            <nav class="navbar navbar-expand-xl bg-light fixed-top">
-                <div class="container padding-off ">
-                    <a href="index.html" class="navbar-brand"><img src="images/logo.png" /></a>
-                    <div class="float-end ms-auto left-20"><img src="images/searchicon.png" onclick="search()" class="search-panel-icon" />
-                    </div>
-                    <form class="search-panel">
-                        <div class="crossIcon">
-                            <input class="form-control searchdiv" type="search" id="tags" aria-label="Search" placeholder="SEARCH">
-                            <img src="images/searchicon.png" class="search-panel-icon" />
-                            <span><img src="images/crss-icon.png" class="crossIconclosed"></span>
-                        </div>
-                        <div class="row">
-                            <div class="advance-serach mb-3 float-start ">
-                                <a href="#" class="col-md-6 advance-serach-active">ADVANCE SEARCH</a>
-                            </div>
-                        </div>
-                        <div class="form-search">
-                            <div class="row">
-                                <div>
-                                    <div class="row">
-                                        <div class="inputGroup col-md-12 col-12  mb-3">
-                                            <label>Category</label>
-                                            <select class="form-select" aria-label="Default select example">
-                                            <option selected>-Select or type-</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                        </div>
-                                        <div class="inputGroup col-md-12 col-12  mb-3">
-                                            <label>Document Type</label>
-                                            <select class="form-select" aria-label="Default select example">
-                                            <option selected>-Select-</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                        </div>
-                                        <div class="inputGroup col-md-12 col-12  mb-3">
-                                            <label>Department</label>
-                                            <select class="form-select" aria-label="Default select example">
-                                            <option selected>-Select or type-</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                        </div>
-                                        <div class="inputGroup col-md-12 col-12  mb-3">
-                                            <label>Branch</label>
-                                            <select class="form-select" aria-label="Default select example">
-                                            <option selected>-Select or type-</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                        </div>
-                                        <div class="inputGroup col-md-12 col-12 mb-3 ">
-                                            <label>Place</label>
-                                            <select class="form-select" aria-label="Default select example">
-                                            <option selected>-Select or type-</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                        </div>
-                                        <div class="inputGroup col-md-12 col-12 mb-3 ">
-                                            <label>Language</label>
-                                            <select class="form-select" aria-label="Default select example">
-                                            <option selected>-Select or type-</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                        </div>
-                                        <div class="inputGroup col-md-12 col-12 mb-3 ">
-                                            <label>Category</label>
-                                            <select class="form-select" aria-label="Default select example">
-                                            <option selected>-Select or type-</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                        </div>
-                                        <div class="inputGroup col-md-12 col-12 mb-3 ">
-                                            <label>Year of Publication</label>
-                                            <select class="form-select" aria-label="Default select example">
-                                            <option selected>-Select or type-</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                        </div>
-                                    </div>
-                                    <div class="inputGroup range-slider-div col-md-12">
-                                        <div class=" position-relative">
-                                            <span class="col-md-12 col-lg-2 pb-2 select-fonts"> Year</span>
-                                            <div id="slider-range-mobile"></div>
-                                            <div class=" position-relative">
-                                                <li class="  float-start widthinput" style="list-style: none;"><span class="fs">From </span><input type="text" name="specificFromYear" id="amount14" type="number" class="form-control rageinput" value="1245"></li>
-                                                <li class="  float-end widthinput" style="float: left; list-style: none;">
-                                                    <span class="fsfs">To </span><input type="text" name="specificToYear" id="amount14" type="number" class="form-control rageinput" value="2000"></li>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="inputGroup col-md-6">
-                                                <label class="adlebel mb-2">Keyword</label>
-                                                <input type="text" class="form-control input-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type here">
-                                            </div>
+        <div id="header">&nbsp;</div>
 
-                                        </div>
-                                    </div>
-                                    <div class=" buttonadvancesearch-mobile ">
-                                        <div>
-                                            <button class="resetbutton text-align-end">Reset</button>
-                                            <button class="applybutton ">Search</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
-                    <img src="images/menu-icon.png" />
-                </button>
-                    <div class="collapse navbar-collapse ul-menu-list " id="navbarSupportedContent">
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
-                            <ul>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                <div class="left-div ">
-                                    <li>
-                                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link" href="grid-view.html">EXPLORE</a>
-                                    </li>
-                                    <li class="mobile-lang">
-                                        <div class="dropdown dropdown-li">
-                                            <button class="textlanguage  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                            ENG
-                                        </button>
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                <li><a class="dropdown-item" href="#">English</a></li>
-                                                <li><a class="dropdown-item" href="#">Hindi</a></li>
-                                                <li><a class="dropdown-item" href="#">Marathi</a></li>
-                                            </ul>
-                                    </li>
-                                    </div>
-                                    <div class="right-div">
-                                        <li>
-                                            <form>
-                                                <div class="row ">
-                                                    <div class="searchinput col-md-6 col-6 col-lg-6 col-xl-6">
-                                                        <span class="search"></span>
-                                                        <input class="form-control" type="search" aria-label="Search" placeholder="SEARCH">
-                                                        <span class="closedIcon-search"><img id="searchCloseIconImg"
-                                                        src="images/closed-search.png" /></span>
-                                                    </div>
-                                                    <a id="aAdvanceSearch" class="searchButton col-md-6 col-6 col-lg-6 col-xl-6" type="submit">ADVANCE SEARCH</a>
-                                                    <div id="containerAdvanceSearch" class="asvanceSearch col-md-12">
-                                                        <div class="row pb-4">
-                                                            <div class="AdSearch text-align-start">Advance Search </div>
-                                                        </div>
-                                                        <div class="row mb-3 ">
-                                                            <div class="inputGroup col-md-3  ">
-                                                                <label class="adlebel mb-2">Category</label>
-                                                                <select class="form-select" aria-label="Default select example">
-                                                            <option default selected>-Select or type-</option>
-                                                            <option value="1">One</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                        </select>
-                                                            </div>
-                                                            <div class="inputGroup col-md-3">
-                                                                <label class="adlebel mb-2">Document Type</label>
-                                                                <select class="form-select " aria-label="Default select example">
-                                                            <option default selected>-Select-</option>
-                                                            <option value="1">One</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                        </select>
-                                                            </div>
-                                                            <div class="inputGroup col-md-3">
-                                                                <label class="adlebel mb-2">Department</label>
-                                                                <select class="form-select" aria-label="Default select example">
-                                                            <option default selected>-Select or type-</option>
-                                                            <option value="1">One</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                        </select>
-                                                            </div>
-                                                            <div class="inputGroup col-md-3">
-                                                                <label class="adlebel mb-2 ">Branch</label>
-                                                                <select class="form-select" aria-label="Default select example">
-                                                            <option default selected>-Select or type-</option>
-                                                            <option value="1">One</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                        </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mb-3 ">
-                                                            <div class="inputGroup col-md-3  ">
-                                                                <label class="adlebel mb-2">Place</label>
-
-                                                                <select class="form-select" aria-label="Default select example">
-                                                            <option default selected>-Select or type-</option>
-                                                            <option value="1">One</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                        </select>
-                                                            </div>
-                                                            <div class="inputGroup col-md-3">
-                                                                <label class="adlebel mb-2">Language</label>
-                                                                <select class="form-select" aria-label="Default select example">
-
-
-
-                                                            <option default selected>-Select or type-</option>
-                                                            <option value="1">One</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                        </select>
-                                                            </div>
-                                                            <div class="inputGroup col-md-3 position-relative">
-                                                                <span class="border-div"></span>
-
-                                                                <label class="adlebel mb-2">Year of Publication</label>
-                                                                <select class="form-select" aria-label="Default select example">
-                                                            <option default selected>-Select or type-</option>
-                                                            <option value="1">One</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                        </select>
-                                                            </div>
-                                                            <div class="inputGroup col-md-3">
-                                                                <div class="row position-relative">
-                                                                    <span class="col-md-12 pb-2 select-fonts"> Year</span>
-                                                                    <div id="slider-range-home"></div>
-                                                                    <div class="col-md-6 " style="padding-left: 10px;"><span class="fs">From </span><input type="text" name="specificFromYear" id="amount12" type="number" class="form-control rageinput" value="1245"></div>
-                                                                    <div class="col-md-6 text-right float-end align-items-right">
-                                                                        <span class="fsfs">To </span><input type="text" name="specificToYear" id="amount12" type="number" class="form-control rageinput" value="2000">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row search-top-div">
-                                                            <div class="inputGroup col-md-6">
-                                                                <label class="adlebel mb-2">Keyword</label>
-                                                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type here">
-                                                            </div>
-                                                            <div class=" buttonadvancesearch ">
-                                                                <div>
-                                                                    <button class="resetbutton text-align-end">Reset</button>
-                                                                    <button class="applybutton ">Search</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </li>
-                                        <li>
-                                            <a href="#" id="" class="text-decoration-underline incresefont decrease">-A </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" id="" class="text-decoration-underline incresefont">A </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="text-decoration-underline increase-size increase">+A </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="images/color-change.png"> </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#"><img src="images/bell-icon.png"> </a>
-                                        </li>
-                                        <li class="deskstop-lang">
-                                            <div class="dropdown dropdown-li">
-                                                <button class="textlanguage  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                            ENG
-                                        </button>
-                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                    <li><a class="dropdown-item" href="#">English</a></li>
-                                                    <li><a class="dropdown-item" href="#">Hindi</a></li>
-                                                    <li><a class="dropdown-item" href="#">Marathi</a></li>
-                                                </ul>
-                                        </li>
-                                        <li class="text-login-text">
-                                            <a href="#">Welcome Admin</a>
-                                        </li>
-                            </ul>
-                            <ul class="accordion-menu">
-                                <li>
-                                    <div class="dropdownlink"> Explore
-                                        <i class="fa fa-sort-desc" aria-hidden="true"></i>
-                                    </div>
-                                    <ul class="submenuItems">
-                                        <li><a href="grid-view.html">Explore</a><span class="new">New</span></li>
-                                        <li><a href="grid-view.html">Collection</a></li>
-                                        <li><a href="nexus-search.html">Nexus</a><span class="new">New</span></li>
-                                        <li><a href="#">Events</a></li>
-                                        <li><a href="#">Exhibitions</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <div class="dropdownlink"> My Library
-                                        <i class="fa fa-sort-desc" aria-hidden="true"></i>
-                                    </div>
-                                    <ul class="submenuItems">
-                                        <li><a href="../My-Labrary.html">My Library</a></li>
-                                        <li><a href="account-seiing-lib-Selected-Tag.html">My Tags</a></li>
-                                        <li>
-                                            <li><a href="admin/account-setting-lib-collection.html">My Favourite</a>
-                                            </li>
-                                            <li><a href="#">Scholar Section</a><span class="new">New</span></li>
-                                            <li><a href="../plan-visit.html">Plan your visit to NAI</a><span class="new">New</span></li>
-                                    </ul>
-                                    </li>
-                                    <li>
-                                        <div class="dropdownlink"> About Us
-                                            <i class="fa fa-sort-desc" aria-hidden="true"></i>
-                                        </div>
-                                        <ul class="submenuItems">
-                                            <li><a href="about-us.html">About Us</a></li>
-                                            <li><a href="#">Associated Repository</a></li>
-                                            <li><a href="benifits.html">Benefits</a></li>
-                                            <li><a href="mylibrary-collection.html">Mylibrary Collection</a></li>
-                                            <li><a href="#">Tips</a></li>
-                                            <li><a href="../faq.html">FAQ</a></li>
-
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <div class="dropdownlink">Account
-                                            <i class="fa fa-sort-desc" aria-hidden="true"></i>
-                                        </div>
-                                        <ul class="submenuItems">
-                                            <li><a href="account-setting-user-admin.html">My Account</a></li>
-                                            <li>
-                                                <a href="">Admin Panel</a>
-                                            </li>
-                                            <li><a href="upload.html">Upload</a></li>
-                                            <li><a href="records-awaiting-verification-new.html">Records Awaiting
-                                            Verification</a></li>
-                                            <li><a href="#">Logout</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <div class="dropdownlink">Contact Us
-                                            <i class="fa fa-sort-desc" aria-hidden="true"></i>
-                                        </div>
-                                        <ul class="submenuItems">
-                                            <li><a href="#">Action 1</a></li>
-                                            <li><a href="#">Action 2</a></li>
-                                            <li><a href="#">Action 3</a></li>
-                                        </ul>
-                                    </li>
-                            </ul>
-                            </div>
-                            </div>
-                            <div class="nav-item fontstyle ">
-                                <a class="nav-link text-color login-text" href="#">Welcome Admin</a>
-                            </div>
-                            <div class="nav-item dropdown dropdown-mega position-static demo-dropdown">
-                                <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"><img src="images/menu-icon.png" /></a>
-                                <div class="dropdown-menu shadow megahmenudrop m-2">
-                                    <div class="mega-content px-4">
-                                        <div class="container ">
-                                            <div class="row row-cols-5 ">
-                                                <div class="flex-item col1">
-                                                    <h5 class="">Explore</h5>
-                                                    <ul class="meghamenuli">
-                                                        <li><a href="grid-view.html"> Explore</a><span class="new">New</span></li>
-                                                        <li><a href="grid-view.html">Collection</a></li>
-                                                        <li><a href="nexus-search.html">Nexus</a><span class="new">New</span></li>
-                                                        <li><a href="#">Events</a></li>
-                                                        <li><a href="#">Exhibitions</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="flex-item col2">
-                                                    <h5>My Library</h5>
-                                                    <ul class="meghamenuli">
-                                                        <li><a href="My-Labrary.html">My Library</a></li>
-                                                        <li><a href="admin/account-seiing-lib-Selected-Tag.html">My Tags</a></li>
-                                                        <li><a href="admin/account-setting-lib-collection.html">My Favourite</a>
-                                                        </li>
-                                                        <li><a href="#">Scholar Section</a> <span class="new">New</span></li>
-                                                        <li><a href="plan-visit.html">Plan your visit to NAI</a><span class="new">New</span> </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="flex-item col3">
-                                                    <h5>About Us</h5>
-                                                    <ul class="meghamenuli">
-                                                        <li><a href="about-us.html">About Us</a></li>
-                                                        <li><a href="#">Associated Repository</a></li>
-                                                        <li><a href="benifits.html">Benefits</a></li>
-                                                        <li><a href="#">Tips</a></li>
-                                                        <li><a href="faq.html">FAQ</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="flex-item col4">
-                                                    <h5>Account</h5>
-                                                    <ul class="meghamenuli">
-                                                        <li><a href="admin/account-setting-user-admin.html">My Account</a></li>
-                                                        <li>
-                                                            <a href="admin/collections.html">Admin Panel</a>
-                                                        </li>
-                                                        <li><a href="admin/upload.html">Upload</a></li>
-                                                        <li><a href="admin/records-awaiting-verification-new.html">Records Awaiting
-                                                    Verification</a></li>
-                                                        <li><a href="#">Logout</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="flex-item col5">
-                                                    <h5>Contact Us</h5>
-                                                    <ul class="meghamenuli">
-                                                        <li><a href="#">Contact Us</a></li>
-                                                        <li><a href="#">Help</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-            </nav>
-        </header>
-
-        <div>
+        <main>
             <section>
 
 
@@ -457,7 +20,8 @@
                     <div class="pt-5 mt-3 position-relative">
                         <div class="text-center">
                             <div class="aboutimg ">
-                                <img class="img-responsive d-inline-block" src="images/faq.png" alt="" width="100%" height="">
+                                <img class="img-responsive d-inline-block" src="images/faq.png" alt="" width="100%"
+                                    height="">
                             </div>
                             <div class=" imgwords-search imgword">
                                 <h2 class="text-center pt-top"> FAQ</h2>
@@ -466,7 +30,8 @@
                                         <div class="col-md-12">
                                             <div class="form">
                                                 <i class="fa fa-search"></i>
-                                                <input type="text" class="form-control form-input search " placeholder="Search for answers">
+                                                <input type="text" class="form-control form-input search "
+                                                    placeholder="Search for answers">
                                             </div>
                                         </div>
                                     </div>
@@ -482,7 +47,8 @@
                             <div class="evry-tax-head text-center">
                                 <h1 class="head-text">Frequently Asked Questions</h1>
                             </div>
-                            <div class=" text-center caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem <br>ipsum dolor sit amet, consectetur
+                            <div class=" text-center caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do Lorem <br>ipsum dolor sit amet, consectetur
                             </div>
                         </div>
 
@@ -490,7 +56,8 @@
                     <div class="row">
                         <ul id="nav">
                             <li>
-                                <a class="nav-link mb-3 md-m-4 " id="v-pills-home-tab" href="#" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                <a class="nav-link mb-3 md-m-4 " id="v-pills-home-tab" href="#" role="tab"
+                                    aria-controls="v-pills-home" aria-selected="true">
                                     <i class="fasquare"></i>
                                     <span class="font-weight-bold small textuppercase">General Information.</span>
                                 </a>
@@ -498,20 +65,31 @@
                                     <h2 class="headcontent  mb-2 fw-bolds">General Information:</h2>
 
                                     <h2 class=" headcontent  mb-2 fw-bolds"> 1. What is Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-2 px-4 pb-2"> Abhilekh Patal is a digital repository curated by the National Archives of India (NAI) that provides access to a vast collection of historical records and documents.
+                                    <p class="pcontent mb-2 px-4 pb-2"> Abhilekh Patal is a digital repository curated
+                                        by the National Archives of India (NAI) that provides access to a vast
+                                        collection of historical records and documents.
                                     </p>
-                                    <h2 class="headcontent  mb-2 fw-bolds"> 2. What is the purpose of Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-4 mb-2 px-4"> The main goal of Abhilekh Patal is to offer easy access to India's historical archives, allowing users to explore and learn about the country's history, culture, and heritage. .
+                                    <h2 class="headcontent  mb-2 fw-bolds"> 2. What is the purpose of Abhilekh Patal?
+                                    </h2>
+                                    <p class="pcontent mb-4 mb-2 px-4"> The main goal of Abhilekh Patal is to offer easy
+                                        access to India's historical archives, allowing users to explore and learn about
+                                        the country's history, culture, and heritage. .
                                     </p>
                                     <h2 class=" headcontent  mb-2 fw-bolds"> 3. Who can use Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-2 px-4 pb-2"> The main goal of Abhilekh Patal is to offer easy access to India's historical archives, allowing users to explore and learn about the country's history, culture, and heritage.</p>
-                                    <h2 class="headcontent  mb-2 fw-bolds"> 4. Is Abhilekh Patal affiliated with the National Archives of India?</h2>
-                                    <p class="pcontent mb-2 mb-2 px-4 pb-2"> Abhilekh Patal is open to a wide range of users, including researchers, students, history enthusiasts, anyone interested in learning about India's heritage and past.</p>
+                                    <p class="pcontent mb-2 px-4 pb-2"> The main goal of Abhilekh Patal is to offer easy
+                                        access to India's historical archives, allowing users to explore and learn about
+                                        the country's history, culture, and heritage.</p>
+                                    <h2 class="headcontent  mb-2 fw-bolds"> 4. Is Abhilekh Patal affiliated with the
+                                        National Archives of India?</h2>
+                                    <p class="pcontent mb-2 mb-2 px-4 pb-2"> Abhilekh Patal is open to a wide range of
+                                        users, including researchers, students, history enthusiasts, anyone interested
+                                        in learning about India's heritage and past.</p>
 
                                 </div>
                             </li>
                             <li>
-                                <a class="nav-link mb-3 md-m-4 " id="v-pills-home-tab-8" href="#" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                <a class="nav-link mb-3 md-m-4 " id="v-pills-home-tab-8" href="#" role="tab"
+                                    aria-controls="v-pills-home" aria-selected="true">
                                     <i class="fasquare"></i>
                                     <span class="font-weight-bold small textuppercase">Accessing Records.  </span>
                                 </a>
@@ -519,21 +97,32 @@
 
 
                                     <h2 class=" headcontent  mb-2 fw-bolds"> 1. What is Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-2 px-4 pb-2"> Abhilekh Patal is a digital repository curated by the National Archives of India (NAI) that provides access to a vast collection of historical records and documents.
+                                    <p class="pcontent mb-2 px-4 pb-2"> Abhilekh Patal is a digital repository curated
+                                        by the National Archives of India (NAI) that provides access to a vast
+                                        collection of historical records and documents.
                                     </p>
-                                    <h2 class="headcontent  mb-2 fw-bolds"> 2. What is the purpose of Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-4 mb-2 px-4"> The main goal of Abhilekh Patal is to offer easy access to India's historical archives, allowing users to explore and learn about the country's history, culture, and heritage. .
+                                    <h2 class="headcontent  mb-2 fw-bolds"> 2. What is the purpose of Abhilekh Patal?
+                                    </h2>
+                                    <p class="pcontent mb-4 mb-2 px-4"> The main goal of Abhilekh Patal is to offer easy
+                                        access to India's historical archives, allowing users to explore and learn about
+                                        the country's history, culture, and heritage. .
                                     </p>
                                     <h2 class=" headcontent  mb-2 fw-bolds"> 3. Who can use Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-2 px-4 pb-2"> The main goal of Abhilekh Patal is to offer easy access to India's historical archives, allowing users to explore and learn about the country's history, culture, and heritage.</p>
-                                    <h2 class="headcontent  mb-2 fw-bolds"> 4. Is Abhilekh Patal affiliated with the National Archives of India?</h2>
-                                    <p class="pcontent mb-2 mb-2 px-4 pb-2"> Abhilekh Patal is open to a wide range of users, including researchers, students, history enthusiasts, anyone interested in learning about India's heritage and past.</p>
+                                    <p class="pcontent mb-2 px-4 pb-2"> The main goal of Abhilekh Patal is to offer easy
+                                        access to India's historical archives, allowing users to explore and learn about
+                                        the country's history, culture, and heritage.</p>
+                                    <h2 class="headcontent  mb-2 fw-bolds"> 4. Is Abhilekh Patal affiliated with the
+                                        National Archives of India?</h2>
+                                    <p class="pcontent mb-2 mb-2 px-4 pb-2"> Abhilekh Patal is open to a wide range of
+                                        users, including researchers, students, history enthusiasts, anyone interested
+                                        in learning about India's heritage and past.</p>
 
 
                                 </div>
                             </li>
                             <li>
-                                <a class="nav-link mb-3 md-m-4 " id="v-pills-home-tab-7" href="#" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                <a class="nav-link mb-3 md-m-4 " id="v-pills-home-tab-7" href="#" role="tab"
+                                    aria-controls="v-pills-home" aria-selected="true">
                                     <i class="fasquare"></i>
                                     <span class="font-weight-bold small textuppercase">Types of Records.  </span>
                                 </a>
@@ -541,22 +130,33 @@
 
 
                                     <h2 class=" headcontent  mb-2 fw-bolds"> 1. What is Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-2 px-4 pb-2"> Abhilekh Patal is a digital repository curated by the National Archives of India (NAI) that provides access to a vast collection of historical records and documents.
+                                    <p class="pcontent mb-2 px-4 pb-2"> Abhilekh Patal is a digital repository curated
+                                        by the National Archives of India (NAI) that provides access to a vast
+                                        collection of historical records and documents.
                                     </p>
-                                    <h2 class="headcontent  mb-2 fw-bolds"> 2. What is the purpose of Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-4 mb-2 px-4"> The main goal of Abhilekh Patal is to offer easy access to India's historical archives, allowing users to explore and learn about the country's history, culture, and heritage. .
+                                    <h2 class="headcontent  mb-2 fw-bolds"> 2. What is the purpose of Abhilekh Patal?
+                                    </h2>
+                                    <p class="pcontent mb-4 mb-2 px-4"> The main goal of Abhilekh Patal is to offer easy
+                                        access to India's historical archives, allowing users to explore and learn about
+                                        the country's history, culture, and heritage. .
                                     </p>
                                     <h2 class=" headcontent  mb-2 fw-bolds"> 3. Who can use Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-2 px-4 pb-2"> The main goal of Abhilekh Patal is to offer easy access to India's historical archives, allowing users to explore and learn about the country's history, culture, and heritage.</p>
-                                    <h2 class="headcontent  mb-2 fw-bolds"> 4. Is Abhilekh Patal affiliated with the National Archives of India?</h2>
-                                    <p class="pcontent mb-2 mb-2 px-4 pb-2"> Abhilekh Patal is open to a wide range of users, including researchers, students, history enthusiasts, anyone interested in learning about India's heritage and past.</p>
+                                    <p class="pcontent mb-2 px-4 pb-2"> The main goal of Abhilekh Patal is to offer easy
+                                        access to India's historical archives, allowing users to explore and learn about
+                                        the country's history, culture, and heritage.</p>
+                                    <h2 class="headcontent  mb-2 fw-bolds"> 4. Is Abhilekh Patal affiliated with the
+                                        National Archives of India?</h2>
+                                    <p class="pcontent mb-2 mb-2 px-4 pb-2"> Abhilekh Patal is open to a wide range of
+                                        users, including researchers, students, history enthusiasts, anyone interested
+                                        in learning about India's heritage and past.</p>
 
 
                                 </div>
                             </li>
                             <li>
 
-                                <a class="nav-link mb-3 md-m-4 " id="v-pills-home-tab-6" href="#" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                <a class="nav-link mb-3 md-m-4 " id="v-pills-home-tab-6" href="#" role="tab"
+                                    aria-controls="v-pills-home" aria-selected="true">
                                     <i class="fasquare"></i>
                                     <span class="font-weight-bold small textuppercase">Fees and Services.</span>
                                 </a>
@@ -565,15 +165,25 @@
 
 
                                     <h2 class=" headcontent  mb-2 fw-bolds"> 1. What is Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-2 px-4 pb-2"> Abhilekh Patal is a digital repository curated by the National Archives of India (NAI) that provides access to a vast collection of historical records and documents.
+                                    <p class="pcontent mb-2 px-4 pb-2"> Abhilekh Patal is a digital repository curated
+                                        by the National Archives of India (NAI) that provides access to a vast
+                                        collection of historical records and documents.
                                     </p>
-                                    <h2 class="headcontent  mb-2 fw-bolds"> 2. What is the purpose of Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-4 mb-2 px-4"> The main goal of Abhilekh Patal is to offer easy access to India's historical archives, allowing users to explore and learn about the country's history, culture, and heritage. .
+                                    <h2 class="headcontent  mb-2 fw-bolds"> 2. What is the purpose of Abhilekh Patal?
+                                    </h2>
+                                    <p class="pcontent mb-4 mb-2 px-4"> The main goal of Abhilekh Patal is to offer easy
+                                        access to India's historical archives, allowing users to explore and learn about
+                                        the country's history, culture, and heritage. .
                                     </p>
                                     <h2 class=" headcontent  mb-2 fw-bolds"> 3. Who can use Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-2 px-4 pb-2"> The main goal of Abhilekh Patal is to offer easy access to India's historical archives, allowing users to explore and learn about the country's history, culture, and heritage.</p>
-                                    <h2 class="headcontent  mb-2 fw-bolds"> 4. Is Abhilekh Patal affiliated with the National Archives of India?</h2>
-                                    <p class="pcontent mb-2 mb-2 px-4 pb-2"> Abhilekh Patal is open to a wide range of users, including researchers, students, history enthusiasts, anyone interested in learning about India's heritage and past.</p>
+                                    <p class="pcontent mb-2 px-4 pb-2"> The main goal of Abhilekh Patal is to offer easy
+                                        access to India's historical archives, allowing users to explore and learn about
+                                        the country's history, culture, and heritage.</p>
+                                    <h2 class="headcontent  mb-2 fw-bolds"> 4. Is Abhilekh Patal affiliated with the
+                                        National Archives of India?</h2>
+                                    <p class="pcontent mb-2 mb-2 px-4 pb-2"> Abhilekh Patal is open to a wide range of
+                                        users, including researchers, students, history enthusiasts, anyone interested
+                                        in learning about India's heritage and past.</p>
 
 
                                 </div>
@@ -581,7 +191,8 @@
 
                             <li>
 
-                                <a class="nav-link mb-3 md-m-4 " id="v-pills-home-tab-5" href="#" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                <a class="nav-link mb-3 md-m-4 " id="v-pills-home-tab-5" href="#" role="tab"
+                                    aria-controls="v-pills-home" aria-selected="true">
                                     <i class="fasquare"></i>
                                     <span class="font-weight-bold small textuppercase">Fees and Services.</span>
                                 </a>
@@ -590,22 +201,33 @@
 
 
                                     <h2 class=" headcontent  mb-2 fw-bolds"> 1. What is Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-2 px-4 pb-2"> Abhilekh Patal is a digital repository curated by the National Archives of India (NAI) that provides access to a vast collection of historical records and documents.
+                                    <p class="pcontent mb-2 px-4 pb-2"> Abhilekh Patal is a digital repository curated
+                                        by the National Archives of India (NAI) that provides access to a vast
+                                        collection of historical records and documents.
                                     </p>
-                                    <h2 class="headcontent  mb-2 fw-bolds"> 2. What is the purpose of Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-4 mb-2 px-4"> The main goal of Abhilekh Patal is to offer easy access to India's historical archives, allowing users to explore and learn about the country's history, culture, and heritage. .
+                                    <h2 class="headcontent  mb-2 fw-bolds"> 2. What is the purpose of Abhilekh Patal?
+                                    </h2>
+                                    <p class="pcontent mb-4 mb-2 px-4"> The main goal of Abhilekh Patal is to offer easy
+                                        access to India's historical archives, allowing users to explore and learn about
+                                        the country's history, culture, and heritage. .
                                     </p>
                                     <h2 class=" headcontent  mb-2 fw-bolds"> 3. Who can use Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-2 px-4 pb-2"> The main goal of Abhilekh Patal is to offer easy access to India's historical archives, allowing users to explore and learn about the country's history, culture, and heritage.</p>
-                                    <h2 class="headcontent  mb-2 fw-bolds"> 4. Is Abhilekh Patal affiliated with the National Archives of India?</h2>
-                                    <p class="pcontent mb-2 mb-2 px-4 pb-2"> Abhilekh Patal is open to a wide range of users, including researchers, students, history enthusiasts, anyone interested in learning about India's heritage and past.</p>
+                                    <p class="pcontent mb-2 px-4 pb-2"> The main goal of Abhilekh Patal is to offer easy
+                                        access to India's historical archives, allowing users to explore and learn about
+                                        the country's history, culture, and heritage.</p>
+                                    <h2 class="headcontent  mb-2 fw-bolds"> 4. Is Abhilekh Patal affiliated with the
+                                        National Archives of India?</h2>
+                                    <p class="pcontent mb-2 mb-2 px-4 pb-2"> Abhilekh Patal is open to a wide range of
+                                        users, including researchers, students, history enthusiasts, anyone interested
+                                        in learning about India's heritage and past.</p>
 
 
                                 </div>
                             </li>
                             <li>
 
-                                <a class="nav-link mb-3 md-m-4 " id="v-pills-home-tab-4" href="#" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                <a class="nav-link mb-3 md-m-4 " id="v-pills-home-tab-4" href="#" role="tab"
+                                    aria-controls="v-pills-home" aria-selected="true">
                                     <i class="fasquare"></i>
                                     <span class="font-weight-bold small textuppercase">Navigation and Research</span>
                                 </a>
@@ -614,22 +236,33 @@
 
 
                                     <h2 class=" headcontent  mb-2 fw-bolds"> 1. What is Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-2 px-4 pb-2"> Abhilekh Patal is a digital repository curated by the National Archives of India (NAI) that provides access to a vast collection of historical records and documents.
+                                    <p class="pcontent mb-2 px-4 pb-2"> Abhilekh Patal is a digital repository curated
+                                        by the National Archives of India (NAI) that provides access to a vast
+                                        collection of historical records and documents.
                                     </p>
-                                    <h2 class="headcontent  mb-2 fw-bolds"> 2. What is the purpose of Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-4 mb-2 px-4"> The main goal of Abhilekh Patal is to offer easy access to India's historical archives, allowing users to explore and learn about the country's history, culture, and heritage. .
+                                    <h2 class="headcontent  mb-2 fw-bolds"> 2. What is the purpose of Abhilekh Patal?
+                                    </h2>
+                                    <p class="pcontent mb-4 mb-2 px-4"> The main goal of Abhilekh Patal is to offer easy
+                                        access to India's historical archives, allowing users to explore and learn about
+                                        the country's history, culture, and heritage. .
                                     </p>
                                     <h2 class=" headcontent  mb-2 fw-bolds"> 3. Who can use Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-2 px-4 pb-2"> The main goal of Abhilekh Patal is to offer easy access to India's historical archives, allowing users to explore and learn about the country's history, culture, and heritage.</p>
-                                    <h2 class="headcontent  mb-2 fw-bolds"> 4. Is Abhilekh Patal affiliated with the National Archives of India?</h2>
-                                    <p class="pcontent mb-2 mb-2 px-4 pb-2"> Abhilekh Patal is open to a wide range of users, including researchers, students, history enthusiasts, anyone interested in learning about India's heritage and past.</p>
+                                    <p class="pcontent mb-2 px-4 pb-2"> The main goal of Abhilekh Patal is to offer easy
+                                        access to India's historical archives, allowing users to explore and learn about
+                                        the country's history, culture, and heritage.</p>
+                                    <h2 class="headcontent  mb-2 fw-bolds"> 4. Is Abhilekh Patal affiliated with the
+                                        National Archives of India?</h2>
+                                    <p class="pcontent mb-2 mb-2 px-4 pb-2"> Abhilekh Patal is open to a wide range of
+                                        users, including researchers, students, history enthusiasts, anyone interested
+                                        in learning about India's heritage and past.</p>
 
 
                                 </div>
                             </li>
                             <li>
 
-                                <a class="nav-link mb-3 md-m-4 " id="v-pills-home-tab-3" href="#" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                <a class="nav-link mb-3 md-m-4 " id="v-pills-home-tab-3" href="#" role="tab"
+                                    aria-controls="v-pills-home" aria-selected="true">
                                     <i class="fasquare"></i>
                                     <span class="font-weight-bold small textuppercase">Scope and Contributions</span>
                                 </a>
@@ -638,22 +271,33 @@
 
 
                                     <h2 class=" headcontent  mb-2 fw-bolds"> 1. What is Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-2 px-4 pb-2"> Abhilekh Patal is a digital repository curated by the National Archives of India (NAI) that provides access to a vast collection of historical records and documents.
+                                    <p class="pcontent mb-2 px-4 pb-2"> Abhilekh Patal is a digital repository curated
+                                        by the National Archives of India (NAI) that provides access to a vast
+                                        collection of historical records and documents.
                                     </p>
-                                    <h2 class="headcontent  mb-2 fw-bolds"> 2. What is the purpose of Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-4 mb-2 px-4"> The main goal of Abhilekh Patal is to offer easy access to India's historical archives, allowing users to explore and learn about the country's history, culture, and heritage. .
+                                    <h2 class="headcontent  mb-2 fw-bolds"> 2. What is the purpose of Abhilekh Patal?
+                                    </h2>
+                                    <p class="pcontent mb-4 mb-2 px-4"> The main goal of Abhilekh Patal is to offer easy
+                                        access to India's historical archives, allowing users to explore and learn about
+                                        the country's history, culture, and heritage. .
                                     </p>
                                     <h2 class=" headcontent  mb-2 fw-bolds"> 3. Who can use Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-2 px-4 pb-2"> The main goal of Abhilekh Patal is to offer easy access to India's historical archives, allowing users to explore and learn about the country's history, culture, and heritage.</p>
-                                    <h2 class="headcontent  mb-2 fw-bolds"> 4. Is Abhilekh Patal affiliated with the National Archives of India?</h2>
-                                    <p class="pcontent mb-2 mb-2 px-4 pb-2"> Abhilekh Patal is open to a wide range of users, including researchers, students, history enthusiasts, anyone interested in learning about India's heritage and past.</p>
+                                    <p class="pcontent mb-2 px-4 pb-2"> The main goal of Abhilekh Patal is to offer easy
+                                        access to India's historical archives, allowing users to explore and learn about
+                                        the country's history, culture, and heritage.</p>
+                                    <h2 class="headcontent  mb-2 fw-bolds"> 4. Is Abhilekh Patal affiliated with the
+                                        National Archives of India?</h2>
+                                    <p class="pcontent mb-2 mb-2 px-4 pb-2"> Abhilekh Patal is open to a wide range of
+                                        users, including researchers, students, history enthusiasts, anyone interested
+                                        in learning about India's heritage and past.</p>
 
 
                                 </div>
                             </li>
                             <li>
 
-                                <a class="nav-link mb-3 md-m-4 " id="v-pills-home-tab-1" href="#" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                <a class="nav-link mb-3 md-m-4 " id="v-pills-home-tab-1" href="#" role="tab"
+                                    aria-controls="v-pills-home" aria-selected="true">
                                     <i class="fasquare"></i>
                                     <span class="font-weight-bold small textuppercase">Updates and Support</span>
                                 </a>
@@ -662,22 +306,33 @@
 
 
                                     <h2 class=" headcontent  mb-2 fw-bolds"> 1. What is Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-2 px-4 pb-2"> Abhilekh Patal is a digital repository curated by the National Archives of India (NAI) that provides access to a vast collection of historical records and documents.
+                                    <p class="pcontent mb-2 px-4 pb-2"> Abhilekh Patal is a digital repository curated
+                                        by the National Archives of India (NAI) that provides access to a vast
+                                        collection of historical records and documents.
                                     </p>
-                                    <h2 class="headcontent  mb-2 fw-bolds"> 2. What is the purpose of Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-4 mb-2 px-4"> The main goal of Abhilekh Patal is to offer easy access to India's historical archives, allowing users to explore and learn about the country's history, culture, and heritage. .
+                                    <h2 class="headcontent  mb-2 fw-bolds"> 2. What is the purpose of Abhilekh Patal?
+                                    </h2>
+                                    <p class="pcontent mb-4 mb-2 px-4"> The main goal of Abhilekh Patal is to offer easy
+                                        access to India's historical archives, allowing users to explore and learn about
+                                        the country's history, culture, and heritage. .
                                     </p>
                                     <h2 class=" headcontent  mb-2 fw-bolds"> 3. Who can use Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-2 px-4 pb-2"> The main goal of Abhilekh Patal is to offer easy access to India's historical archives, allowing users to explore and learn about the country's history, culture, and heritage.</p>
-                                    <h2 class="headcontent  mb-2 fw-bolds"> 4. Is Abhilekh Patal affiliated with the National Archives of India?</h2>
-                                    <p class="pcontent mb-2 mb-2 px-4 pb-2"> Abhilekh Patal is open to a wide range of users, including researchers, students, history enthusiasts, anyone interested in learning about India's heritage and past.</p>
+                                    <p class="pcontent mb-2 px-4 pb-2"> The main goal of Abhilekh Patal is to offer easy
+                                        access to India's historical archives, allowing users to explore and learn about
+                                        the country's history, culture, and heritage.</p>
+                                    <h2 class="headcontent  mb-2 fw-bolds"> 4. Is Abhilekh Patal affiliated with the
+                                        National Archives of India?</h2>
+                                    <p class="pcontent mb-2 mb-2 px-4 pb-2"> Abhilekh Patal is open to a wide range of
+                                        users, including researchers, students, history enthusiasts, anyone interested
+                                        in learning about India's heritage and past.</p>
 
 
                                 </div>
                             </li>
                             <li>
 
-                                <a class="nav-link mb-3 md-m-4 " id="v-pills-home-tab-2" href="#" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                <a class="nav-link mb-3 md-m-4 " id="v-pills-home-tab-2" href="#" role="tab"
+                                    aria-controls="v-pills-home" aria-selected="true">
                                     <i class="fasquare"></i>
                                     <span class="font-weight-bold small textuppercase">Contact Information</span>
                                 </a>
@@ -686,15 +341,25 @@
 
 
                                     <h2 class=" headcontent  mb-2 fw-bolds"> 1. What is Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-2 px-4 pb-2"> Abhilekh Patal is a digital repository curated by the National Archives of India (NAI) that provides access to a vast collection of historical records and documents.
+                                    <p class="pcontent mb-2 px-4 pb-2"> Abhilekh Patal is a digital repository curated
+                                        by the National Archives of India (NAI) that provides access to a vast
+                                        collection of historical records and documents.
                                     </p>
-                                    <h2 class="headcontent  mb-2 fw-bolds"> 2. What is the purpose of Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-4 mb-2 px-4"> The main goal of Abhilekh Patal is to offer easy access to India's historical archives, allowing users to explore and learn about the country's history, culture, and heritage. .
+                                    <h2 class="headcontent  mb-2 fw-bolds"> 2. What is the purpose of Abhilekh Patal?
+                                    </h2>
+                                    <p class="pcontent mb-4 mb-2 px-4"> The main goal of Abhilekh Patal is to offer easy
+                                        access to India's historical archives, allowing users to explore and learn about
+                                        the country's history, culture, and heritage. .
                                     </p>
                                     <h2 class=" headcontent  mb-2 fw-bolds"> 3. Who can use Abhilekh Patal?</h2>
-                                    <p class="pcontent mb-2 px-4 pb-2"> The main goal of Abhilekh Patal is to offer easy access to India's historical archives, allowing users to explore and learn about the country's history, culture, and heritage.</p>
-                                    <h2 class="headcontent  mb-2 fw-bolds"> 4. Is Abhilekh Patal affiliated with the National Archives of India?</h2>
-                                    <p class="pcontent mb-2 mb-2 px-4 pb-2"> Abhilekh Patal is open to a wide range of users, including researchers, students, history enthusiasts, anyone interested in learning about India's heritage and past.</p>
+                                    <p class="pcontent mb-2 px-4 pb-2"> The main goal of Abhilekh Patal is to offer easy
+                                        access to India's historical archives, allowing users to explore and learn about
+                                        the country's history, culture, and heritage.</p>
+                                    <h2 class="headcontent  mb-2 fw-bolds"> 4. Is Abhilekh Patal affiliated with the
+                                        National Archives of India?</h2>
+                                    <p class="pcontent mb-2 mb-2 px-4 pb-2"> Abhilekh Patal is open to a wide range of
+                                        users, including researchers, students, history enthusiasts, anyone interested
+                                        in learning about India's heritage and past.</p>
 
 
                                 </div>
@@ -714,80 +379,55 @@
                         <div class="evry-tax-head text-center">
                             <h1 class="head-text">Didn’t find an answer?</h1>
                         </div>
-                        <div class=" text-center caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem <br>ipsum dolor sit amet, consectetur
+                        <div class=" text-center caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do Lorem <br>ipsum dolor sit amet, consectetur
                         </div>
                         <div class="text-center">
-                            <button type="button" class="btn btn-light buttoncontactus  text-center m-4" data-bs-toggle="modal" data-bs-target="#contactFormfterLogin">Contact Us</button>
+                            <button type="button" class="btn btn-light buttoncontactus  text-center m-4"
+                                data-bs-toggle="modal" data-bs-target="#contactFormfterLogin">Contact Us</button>
                         </div>
                     </div>
                 </div>
             </section>
-
-        </div>
-
-
-
-        <footer class="bg-footer pt-5 pb-5 mt-0">
-            <div class="container">
-                <div class="row mx-2 ">
-                    <ul class="col-md-3 ">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="">Contact Us</a></li>
-                        <li><a href="Privacy-and-Copyright-Policy.html">Privacy & Copyright Policy</a></li>
-                    </ul>
-                    <ul class="col-md-3 ">
-                        <li><a href="term-condition.html">Terms & Conditions</a></li>
-                        <li><a href="Disclaimer.html">Disclaimer</a></li>
-                        <li><a href="# ">Sitemap</a></li>
-                        <li><a href="Cancellation-Return-Refund-Policy.html">Cancellation, Return <br>& Refund Policy</a></li>
-                    </ul>
-                    <ul class="col-md-3 ">
-                        <li>NATIONAL ARCHIVES OF<br> INDIA National Archives<br> Building,Janpath, New<br> Delhi 110001. INDIA</li>
-                        <div class="pt-4">
-                            <span class="col-md-4 links d-inline">T:<a href="tel:011-23384797 ">011- 23384797</a></span>
-                            <span class="col-md-4 links  d-inline">E:<a href="mailto:archives@nic.in ">archives[at]nic[dot]in</a></span>
-                        </div>
-                    </ul>
-                    <ul class="col-md-3 ">
-                        <p>© National Archives of India. All Rights Reserved.</p>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+            <div id="footer">&nbsp;</div>
+        </main>
 
 
-
-        <div class="modal fade px-md-4 contact-modal" id="contactFormfterLogin" tabindex="-1" aria-labelledby="contactFormfterLogin" aria-hidden="true">
+        <div class="modal fade px-md-4 contact-modal" id="contactFormfterLogin" tabindex="-1"
+            aria-labelledby="contactFormfterLogin" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content ">
                     <div class="modal-header border-0 mt-md-4">
                         <h5 class="modal-headers">Contact Us</h5>
-                        <button type="button" class="btn-close closedinnerpop" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close closedinnerpop" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
                     <div class="modal-body text-center rounded-0 px-md-5 ">
                         <div class="mb-3 text-align-left">
                             <label for="exampleFormControlInput" class="form-label">Full Name : *</label>
-                            <input type="name" class="form-control logininput" id="exampleFormControlInput1" placeholder="">
+                            <input type="name" class="form-control logininput" id="exampleFormControlInput1"
+                                placeholder="">
                         </div>
                         <div class="mb-3 text-align-left">
                             <label for="exampleFormControlInput-11" class="form-label">Email Id : *</label>
-                            <input type="email" class="form-control logininput" id="exampleFormControlInput-11" placeholder="">
+                            <input type="email" class="form-control logininput" id="exampleFormControlInput-11"
+                                placeholder="">
                         </div>
                         <div class="mb-3 text-align-left">
                             <label class="form-label">Subject</label>
                             <select class="form-select  logininput" aria-label="Default select example">
-                            <option selected></option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
+                                <option selected></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
                         </div>
                         <div class="mb-3 text-align-left">
 
                             <div class="form-outline">
                                 <label class="form-label" for="textAreaExample1">Message</label>
-                                <textarea class="form-control bg-color-trans" id="textAreaExample1" rows="4" placeholder="Type here..."></textarea>
+                                <textarea class="form-control bg-color-trans" id="textAreaExample1" rows="4"
+                                    placeholder="Type here..."></textarea>
 
                             </div>
                         </div>

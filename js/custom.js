@@ -395,28 +395,7 @@ function afterHeaderCall() {
         );
     });
 
-    $(".list-grid ").click(function () {
-      $(".grid-view").show();
-      $(".dashboad-list").hide();
-      $(".list-view-show").hide();
-    });
-    $(".list-grid ").click(function () {
-      $(".grid-view").show();
-      $(".dashboad-list").hide();
-      $(".list-view-show").hide();
-    });
-
-    $(".list-dashboard").click(function () {
-      $(".dashboad-list").show();
-      $(".grid-view").hide();
-      $(".list-view-show").hide();
-    });
-
-    $(".list-view").click(function () {
-      $(".list-view-show").show();
-      $(".grid-view").hide();
-      $(".dashboad-list").hide();
-    });
+    
 
     $(".dropdown-menu").click(function (event) {
       event.stopPropagation();
@@ -738,15 +717,6 @@ auto complete
         },
       },
     });
-
-    new ResizeObserver(() => scroll.update()).observe(
-      document.querySelector("main")
-    );
-
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector("main"),
-      smooth: true,
-    });
   });
 }
 
@@ -817,3 +787,40 @@ function togglePasswordVisibility() {
     }
   });
 }
+
+
+
+
+$(".list-grid ").click(function () {
+  $(".grid-view").show();
+  $(".dashboad-list").hide();
+  $(".list-view-show").hide();
+});
+$(".list-grid ").click(function () {
+  $(".grid-view").show();
+  $(".dashboad-list").hide();
+  $(".list-view-show").hide();
+});
+
+$(".list-dashboard").click(function () {
+  $(".dashboad-list").show();
+  $(".grid-view").hide();
+  $(".list-view-show").hide();
+});
+
+$(".list-view").click(function () {
+  $(".list-view-show").show();
+  $(".grid-view").hide();
+  $(".dashboad-list").hide();
+});
+
+
+
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("main"),
+  smooth: true,
+});
+
+new ResizeObserver(() => scroll.update()).observe(
+  document.querySelector("main")
+);

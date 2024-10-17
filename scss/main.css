@@ -11584,13 +11584,6 @@ html {
   overflow-x: hidden;
 }
 
-.container {
-  max-width: 1470px !important;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 .overflow-auto-body {
   height: 100% !important;
 }
@@ -11611,6 +11604,10 @@ dl {
   font-size: inherit;
   color: inherit;
   font-weight: inherit;
+}
+
+input, textarea, label, button {
+  font-family: inherit !important;
 }
 
 .bg-color-light-pink {
@@ -12394,9 +12391,8 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 .bg-about-section {
-  background: url(../images/about.png) no-repeat !important;
-  background-size: auto;
-  background-size: cover;
+  background: url("../images/about.png") no-repeat !important;
+  background-size: cover !important;
   font-family: Inter;
   padding-top: 3.2%;
   background-size: 100%;
@@ -12809,6 +12805,8 @@ input[type=search]::-webkit-search-results-decoration {
   line-height: 23px;
   letter-spacing: 0em;
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .headingview {
@@ -12819,6 +12817,8 @@ input[type=search]::-webkit-search-results-decoration {
   line-height: 28px;
   letter-spacing: 0em;
   text-align: left;
+  max-width: 100%;
+  width: 100%;
 }
 
 .pleft {
@@ -12834,6 +12834,7 @@ input[type=search]::-webkit-search-results-decoration {
   font-weight: 500;
   line-height: 16px;
   padding: 0 !important;
+  display: flex;
 }
 
 .line-height-div {
@@ -13290,8 +13291,11 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 .backButton {
-  height: 45px !important;
-  width: 160px !important;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .form i {
@@ -13361,6 +13365,38 @@ input[type=search]::-webkit-search-results-decoration {
   letter-spacing: 0em;
   text-align: left;
   color: #909090;
+}
+
+.dropdown-menu-5-explore {
+  width: 250px;
+  padding: 18px 20px;
+}
+
+.document-view-by-year .document-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+.document-view-by-year .select-font, .document-view-by-year .document-inputs, .document-view-by-year .document-inputs-rang {
+  padding: 0;
+  margin-bottom: 20px;
+}
+.document-view-by-year .document-inputs {
+  margin-bottom: 20px;
+}
+.document-view-by-year .document-inputs input {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+}
+.document-view-by-year .document-inputs-rang {
+  width: 100%;
+  height: 30px;
+  margin: 0;
+}
+.document-view-by-year .ui-widget.ui-widget-content {
+  width: 100%;
+  left: 0;
+  right: 0;
 }
 
 /*login end css*/
@@ -15263,7 +15299,6 @@ ul#nav {
 
 .select-plan-event {
   padding-top: 90px;
-  height: 100vh;
 }
 
 .heading-event h2, .heading-event .h2 {
@@ -16054,6 +16089,11 @@ ul#nav {
     left: 10px;
   }
 }
+.select-multiselectoption.expolore-page {
+  padding-top: 90px !important;
+  margin: 0 !important;
+}
+
 .select-multiselectoption {
   padding-top: 90px;
 }
@@ -17032,7 +17072,23 @@ ul#nav {
   }
   .headingview {
     padding: 20px 0px 20px 0px;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: normal;
+  }
+  .viewgrid {
+    font-size: 13px;
+  }
+  .grid-view-result-div img.img-fluid {
+    max-width: 60%;
+    margin: 0 auto;
+    display: block;
+  }
+  .grid-view-result-div .iconlist {
+    display: flex;
+    justify-content: space-around;
+  }
+  .col-product h1, .col-product .h1 {
+    font-size: 14px;
   }
   #container ul li {
     list-style: none;
@@ -17222,6 +17278,9 @@ ul#nav {
   .fev-cards-cont .new-collection .fev-card .new-collection-btn img {
     max-width: 50px;
   }
+  .expolore-page .dropdown.dropdown-lan {
+    max-width: 120px;
+  }
 }
 @media (max-width: 460px) {
   .associated-slider {
@@ -17238,7 +17297,7 @@ ul#nav {
   }
 }
 .container {
-  max-width: 1384px;
+  max-width: 1384px !important;
   padding: 0 12px;
   margin: 0 auto;
 }
@@ -17269,7 +17328,7 @@ header {
   width: 100%;
   top: 0 !important;
   left: 0;
-  z-index: 9;
+  z-index: 9999;
   background-color: #fff;
   padding: 15px 0 !important;
   box-shadow: -12px 10px 16px 0px rgba(171, 171, 171, 0.09);
@@ -17444,6 +17503,24 @@ header #containerAdvanceSearch .avd-rang-input input {
   padding: 8px 12px;
   outline: none;
 }
+header #containerAdvanceSearch .avd-rang-input .input-year {
+  position: relative;
+}
+header #containerAdvanceSearch .avd-rang-input .input-year::before {
+  position: absolute;
+  top: -6px;
+  left: 16px;
+  font-size: 9px;
+  color: #9b9b9b;
+  background-color: #fff;
+  padding: 0 2px;
+}
+header #containerAdvanceSearch .avd-rang-input .input-year.from::before {
+  content: "From";
+}
+header #containerAdvanceSearch .avd-rang-input .input-year.to::before {
+  content: "To";
+}
 header #containerAdvanceSearch .form-select {
   background-position: 95% 50% !important;
 }
@@ -17463,6 +17540,28 @@ header .ui-widget.ui-widget-content {
   width: 75% !important;
   top: 50% !important;
   margin: 0 !important;
+}
+header .advance-range-wrap {
+  position: relative;
+}
+header .advance-range-wrap::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  top: 0;
+  background: #9b9b9b;
+}
+header .advance-range-wrap::after {
+  content: "Or";
+  position: absolute;
+  left: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  color: #000;
+  font-size: 12px;
 }
 
 input::-moz-placeholder {
@@ -17994,6 +18093,31 @@ body.menuActive {
   }
   .close-input span {
     font-size: 26px !important;
+  }
+  .advance-range-wrap {
+    padding-top: 30px;
+    margin-top: 30px;
+  }
+  .advance-range-wrap .avd-rang-label {
+    margin-bottom: 20px !important;
+  }
+  header .advance-range-wrap::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background: #9b9b9b;
+    transform: translateX(-50%);
+  }
+  header .advance-range-wrap::after {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 18px;
+    padding: 0 5px;
   }
 }
 @media (max-width: 600px) {

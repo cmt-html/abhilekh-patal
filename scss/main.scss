@@ -21,12 +21,12 @@ html {
   overflow-x: hidden;
 }
 
-.container {
-    max-width: 1470px !important;
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-}
+// .container {
+//     max-width: 1470px !important;
+//     width: 100%;
+//     padding: 0 15px;
+//     margin: 0 auto;
+// }
 
 .overflow-auto-body {
   height: 100% !important;
@@ -48,6 +48,10 @@ dl {
   font-size: inherit;
   color: inherit;
   font-weight: inherit;
+}
+
+input, textarea, label, button{
+  font-family: inherit !important;
 }
 
 .bg-color-light-pink {
@@ -929,9 +933,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .bg-about-section {
-  background: url(../images/about.png) no-repeat !important;
-  background-size: auto;
-  background-size: cover;
+  background: url("../images/about.png") no-repeat !important;
+  background-size: cover !important;
   font-family: Inter;
   padding-top: 3.2%;
   background-size: 100%;
@@ -1354,6 +1357,8 @@ input[type="search"]::-webkit-search-results-decoration {
   line-height: 23px;
   letter-spacing: 0em;
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .headingview {
@@ -1364,6 +1369,9 @@ input[type="search"]::-webkit-search-results-decoration {
   line-height: 28px;
   letter-spacing: 0em;
   text-align: left;
+  max-width: 100%;
+  width: 100%;
+  
 }
 
 .pleft {
@@ -1379,6 +1387,7 @@ input[type="search"]::-webkit-search-results-decoration {
   font-weight: 500;
   line-height: 16px;
   padding: 0 !important;
+  display: flex;
 }
 
 .line-height-div {
@@ -1860,8 +1869,13 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .backButton {
-  height: 45px !important;
-  width: 160px !important;
+  // height: 45px !important;
+  // width: 160px !important;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .form i {
@@ -1931,6 +1945,47 @@ input[type="search"]::-webkit-search-results-decoration {
   letter-spacing: 0em;
   text-align: left;
   color: #909090;
+}
+
+.dropdown-menu-5-explore {
+  width: 250px;
+  padding: 18px 20px;
+}
+
+
+.document-view-by-year {
+  .document-inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .select-font, .document-inputs, .document-inputs-rang {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .document-inputs {
+    margin-bottom: 20px ;
+
+    input{
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 500;
+
+    }
+  }
+
+  .document-inputs-rang {
+    width: 100%;
+    height: 30px;
+    margin: 0;
+  }
+
+  .ui-widget.ui-widget-content {
+    width: 100%;
+    left: 0;
+    right: 0
+  }
 }
 
 /*login end css*/
@@ -3891,7 +3946,6 @@ ul#nav {
 
 .select-plan-event {
   padding-top: 90px;
-  height: 100vh;
 }
 
 // events css
@@ -4812,6 +4866,11 @@ ul#nav {
 }
 
 @include media-breakpoint-up(xl) {
+}
+
+.select-multiselectoption.expolore-page{
+  padding-top: 90px !important;
+  margin: 0 !important;
 }
 
 .select-multiselectoption {
@@ -5882,8 +5941,32 @@ ul#nav {
   }
   .headingview {
     padding: 20px 0px 20px 0px;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: normal;
   }
+  .viewgrid{
+    font-size: 13px;
+  }
+
+  .grid-view-result-div {
+    img.img-fluid{
+
+      max-width: 60%;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .iconlist {
+      display: flex;
+      justify-content: space-around;
+      
+    }
+  }
+
+  .col-product h1 {
+    font-size: 14px;
+  }
+
   #container ul li {
     list-style: none;
     float: left;
@@ -6085,6 +6168,11 @@ ul#nav {
   .fev-cards-cont .fev-card .fev-img-wrap {     width: 200px;  height: 200px; }
   .fev-cards-cont .fev-card .fev-img-wrap img { max-width: 99px; max-height: 99px; }
   .fev-cards-cont .new-collection .fev-card .new-collection-btn img { max-width: 50px; }
+  .expolore-page {
+    .dropdown.dropdown-lan {
+      max-width: 120px;
+    }
+  }
 
 }
 
