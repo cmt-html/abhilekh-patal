@@ -3,7 +3,6 @@
 
 <head>
     <div id="head">&nbsp;</div>
-    <!-- <link rel="stylesheet" type="text/css" href="scss/main-admin.css" /> -->
     <title>My Library</title>
 </head>
 
@@ -102,7 +101,7 @@
                                 <a href="#" data-bs-toggle="modal"> # Ayurveda <span>(20)</span> </a>
                             </li>
                             <li class="create-new-tag">
-                                <a href="#" data-bs-toggle="modal">
+                                <a href="#modalCreateTag" data-bs-toggle="modal">
                                     <img src="/images/icons/plus-icon.svg" alt="plus-icon.svg"> Create New Tag </a>
                             </li>
                         </ul>
@@ -196,11 +195,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
 
                 <!-- close Imran Code  -->
 
@@ -321,89 +315,103 @@
                     </div>
                 </div> -->
             </div>
-
-
-
-
-
-            <div id="myModalnewcreat" class="modal fade mt-4" tabindex="-1" style="padding-top: 129px;">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header modelhead text-start">
-                            <h5 class="modal-title ">Create Collection </h5>
-                        </div>
-                        <div class="modal-body">
-                            <section class="wrapper forgotps">
-                                <div class="container">
-                                    <div class="col-sm-8 offset col-lg-12 offset-lg-12 col-xl-12 offset-xl-12">
-                                        <form class="rounded bg-white">
-                                            <div class="inputDivS">
-                                                <label class="inputLabel mb-2" for="text">Name Collection : *</label>
-                                                <input type="text" class="inputreset" id="name" name="name" required>
-                                            </div>
-                                            <div class="modal-footers fmodels mx-3 pt-5">
-                                                <div class="buttonWrapper  text-end">
-                                                    <button type="submit" id="submitButton"
-                                                        onclick="validateSignupForm()" class=" pure-button btnadd">
-                                                        <span class="btnsubmit-add">submit</span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="myModalnewtag" class="modal fade mt-4" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header modelhead text-start">
-                            <h5 class="modal-title ">Create Tag</h5>
-                            <button type="button" class=" closedinnerpop close" data-ds-dismiss="modal"><span
-                                    aria-hidden="true" class="modal_button">&times;</span><span class="sr-only"></span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <section class="wrapper forgotps">
-                                <div class="container">
-                                    <div class="col-sm-8 offset col-lg-12 offset-lg-12 col-xl-12 offset-xl-12">
-                                        <form class="rounded bg-white">
-                                            <div class="inputDivS">
-                                                <label class="inputLabel mb-2" for="text">Name Tag : *</label>
-                                                <input type="text" class="inputreset" id="name" name="name" required>
-                                            </div>
-                                            <div class="modal-footers fmodels mx-3 pt-5">
-                                                <div class="buttonWrapper  text-end">
-                                                    <button type="submit" id="submitButton"
-                                                        onclick="validateSignupForm()" class=" pure-button btnadd">
-                                                        <span class="btnsubmit-add">submit</span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
-
 
         <div id="footer">&nbsp;</div>
     </main>
 
-    <script src="js/jquery.min.js "></script>
-    <script src="js/jquery.bxslider.min.js "></script>
-    <script src="js/custom.js "></script>
-    <script src="js/main.js "></script>
+
+
+
+
+    <div id="myModalnewcreat" class="modal fade mt-4 modalCreateTag" tabindex="-1" style="padding-top: 129px;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modelhead text-start">
+                    <h5 class="modal-title ">Create Collection </h5>
+                </div>
+                <div class="modal-body">
+                    <section class="wrapper forgotps">
+                        <div class="container">
+                            <div class="col-sm-8 offset col-lg-12 offset-lg-12 col-xl-12 offset-xl-12">
+                                <form class="rounded bg-white">
+                                    <div class="inputDivS">
+                                        <label class="inputLabel mb-2" for="text">Name Collection : *</label>
+                                        <input type="text" class="inputreset" id="name" name="name" required>
+                                    </div>
+                                    <div class="modal-footers fmodels mx-3 pt-5">
+                                        <div class="buttonWrapper  text-end">
+                                            <button type="submit" class=" pure-button btnadd">
+                                                <span class="btnsubmit-add">Create Collection</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalCreateTag" class="modal fade mt-4 modalCreateTag" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header modelhead text-start bg-white">
+                    <h5 class="modal-title ">Create Tag</h5>
+                    <button type="button" class="closedinnerpop close" data-bs-dismiss="modal">
+                        <span aria-hidden="true" class="modal_button">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <section class="wrapper forgotps">
+                        <div class="container">
+                            <div class="col-sm-8 offset col-lg-12 offset-lg-12 col-xl-12 offset-xl-12">
+                                <form class="rounded">
+                                    <div class="inputDivS">
+                                        <label class="inputLabel mb-2" for="tagName">Name Tag : *</label>
+                                        <input type="text" class="inputreset" id="tagName" name="" required>
+                                    </div>
+                                    <div class="inputDivS">
+                                        <label class="inputLabel mb-2" for="url">URL : </label>
+                                        <input type="text" class="inputreset" id="url" name="" >
+                                    </div>
+                                    <div class="inputDivS">
+                                        <label class="inputLabel mb-2" for="collections">Collections : </label>
+                                        <input type="text" class="inputreset" id="collections" name="" placeholder="type here.."  >
+                                    </div>
+                                    <div class="inputDivS">
+                                        <label class="inputLabel mb-2" for="Privacy">Privacy </label>
+                                        <select name="" id="Privacy" class="form-select inputreset" aria-label="Default select">
+                                            <option value="Public">Public</option>
+                                            <option value="Public">Public</option>
+                                            <option value="Public">Public</option>
+                                        </select>
+                                    </div>
+                                    <div class="modal-footers fmodels mx-3 pt-5">
+                                        <div class="buttonWrapper  text-end">
+                                            <button type="submit" class=" pure-button btnadd">
+                                                <span class="btnsubmit-add">Create Tag</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
     <script src="js/jquery-ui.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 
 </html>

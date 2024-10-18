@@ -13582,17 +13582,6 @@ img {
   text-align: left;
 }
 
-.viewimg {
-  width: 37px;
-  height: 37px;
-  left: 9px;
-  border-radius: 8px;
-  bottom: 10px;
-  background: #FFFFFF;
-  position: absolute;
-  text-align: center;
-}
-
 .countviewer {
   color: #73081C;
   font-family: "Raleway", sans-serif !important;
@@ -13692,18 +13681,35 @@ img {
   margin-right: 0;
 }
 
-.item-4 {
-  top: -1px !important;
+.gallery_product.filter {
+  height: auto;
+  background: none;
+}
+.gallery_product .viewimg {
+  width: 37px;
+  height: 37px;
+  top: initial !important;
+  left: 9px;
+  border-radius: 8px;
+  bottom: 10px;
+  background: #FFFFFF;
+  position: absolute;
+  text-align: center;
+}
+.gallery_product .item-4 {
+  top: 0px !important;
   width: 27px;
-  height: 32px;
+  height: 27px;
   position: absolute;
   border-radius: 53%;
   background-color: #FFF;
   transition: 0.3s ease-out;
   z-index: 9;
-  right: -1px;
+  right: 0px;
+  opacity: 1;
+  padding: 1px 4px;
 }
-.item-4:before, .item-4:after {
+.gallery_product .item-4:before, .gallery_product .item-4:after {
   content: "";
   position: absolute;
   width: 48%;
@@ -13712,10 +13718,10 @@ img {
   left: 50%;
   top: 49%;
 }
-.item-4:after {
+.gallery_product .item-4:after {
   transform: translate(-50%, -50%) rotate(45deg);
 }
-.item-4:before {
+.gallery_product .item-4:before {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
@@ -16558,7 +16564,7 @@ table.dataTable tfoot th {
 }
 
 .form-select:focus {
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 .bg-total {
@@ -18453,6 +18459,8 @@ ul.ui-sortable li {
 }
 .search-bar-favourites .searchBox {
   position: relative;
+  border: 1px solid #676767;
+  border-radius: 25px;
 }
 
 .active-12 {
@@ -20448,7 +20456,112 @@ ul#navMenus li.list-group-item a,
     padding: 40px 0 110px 0;
   }
 }
+.height-100vh {
+  min-height: 100vh !important;
+}
+
+.height-50vh {
+  min-height: 50vh !important;
+}
+
+.height-60vh {
+  min-height: 60vh !important;
+}
+
+.height-70vh {
+  min-height: 70vh !important;
+}
+
+.searchInput .fas {
+  color: #676767;
+  padding-right: 0px;
+  font-size: 16px;
+}
+
+.sexsus-search-box {
+  background: #fff;
+  border-radius: 25px;
+  position: relative;
+}
+.sexsus-search-box .icon {
+  z-index: 1;
+}
+.sexsus-search-box input#search-input {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: inherit;
+  position: relative;
+  z-index: 1;
+}
+.sexsus-search-box input#search-input::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+}
+.sexsus-search-box ul#suggestions-list {
+  overflow-y: auto;
+  position: absolute;
+  width: 100%;
+  max-height: 400px;
+  background: #fff;
+  padding-top: 44px;
+  top: 0;
+  z-index: 0;
+  border-radius: 25px;
+}
+.sexsus-search-box ul#suggestions-list li {
+  padding: 8px 40px;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+.sexsus-search-box ul#suggestions-list li i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+}
+.sexsus-search-box ul#suggestions-list li:hover {
+  background: #F1F1F1;
+}
+
+/* Clock and search icons */
+.suggestions li.history .icon:before {
+  content: "🕑";
+  /* Clock icon */
+}
+
+.suggestions li.suggestion .icon:before {
+  content: "🔍";
+  /* Search icon */
+}
+
+input, select, option, textarea, button {
+  outline: none !important;
+}
+
+.modalCreateTag input, .modalCreateTag select, .modalCreateTag option {
+  font-weight: 600 !important;
+  font-family: inherit;
+  font-size: 14px;
+}
+.modalCreateTag::placeholder {
+  font-weight: 600 !important;
+}
+.modalCreateTag .modal-content {
+  background: #F8F8F8 !important;
+}
+.modalCreateTag .wrapper.forgotps {
+  margin-bottom: 20px;
+}
+
 @media (width < 600px) {
+  .searcharea {
+    font-size: 20px;
+    line-height: normal;
+  }
+
   .wrap-img-cont {
     flex-direction: column;
     margin-right: 15px;
@@ -20463,6 +20576,11 @@ ul#navMenus li.list-group-item a,
   }
   .manage-devices table td, .manage-devices table th {
     padding: 20px 10px !important;
+  }
+
+  ul#myTab {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 415px) {
